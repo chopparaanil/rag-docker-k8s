@@ -1,0 +1,3307 @@
+Understand Pressure Stall Information (PSI) Metrics | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+中文 (Chinese)
+
+
+
+中文 (Chinese) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Understand Pressure Stall Information (PSI) Metrics
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Requirements
+Understanding PSI Metrics
+Example Scenarios
+Generating CPU Pressure
+Generating Memory Pressure
+Generating I/O Pressure
+What's next
+Kubernetes Documentation
+Reference
+Instrumentation
+Understand Pressure Stall Information (PSI) Metrics
+Understand Pressure Stall Information (PSI) Metrics
+Detailed explanation of Pressure Stall Information (PSI) metrics and how to use them to identify resource pressure in Kubernetes.
+FEATURE STATE:
+
+
+Kubernetes v1.36 [stable]
+(enabled by default)
+As a stable feature, Kubernetes lets you configure the kubelet to collect Linux kernel
+
+Pressure Stall Information
+
+(PSI) for CPU, memory, and I/O usage. The information is collected at node, pod and container level.
+Starting with Kubernetes v.1.36, the 
+KubeletPSI
+ 
+feature gate
+ is locked to true and cannot be disabled.
+PSI metrics are exposed through two different sources:
+The kubelet's 
+Summary API
+, which provides PSI data at the node, pod, and container level.
+The 
+/metrics/cadvisor
+ endpoint on the kubelet, which exposes PSI metrics in the 
+Prometheus format
+.
+Requirements
+Pressure Stall Information requires the following on your Linux nodes:
+The Linux kernel must be version 
+4.20 or newer
+.
+The kernel must be compiled with the 
+CONFIG_PSI=y
+ option. Most modern distributions enable this by default. You can check your kernel's configuration by running 
+zgrep CONFIG_PSI /proc/config.gz
+.
+Some Linux distributions may compile PSI into the kernel but disable it by default. If so, you need to enable it at boot time by adding the 
+psi=1
+ parameter to the kernel command line.
+The node must be using 
+cgroup v2
+.
+Understanding PSI Metrics
+Pressure Stall Information (PSI) metrics are provided for three resources: CPU, memory, and I/O. They are categorized into two main types of pressure: 
+some
+ and 
+full
+.
+some
+: This value indicates that some tasks (one or more) are stalled on a resource. For example, if some tasks are waiting for I/O, this metric will increase. This can be an early indicator of resource contention.
+full
+: This value indicates that 
+all
+ non-idle tasks are stalled on a resource simultaneously. This signifies a more severe resource shortage, where the entire system is unable to make progress.
+Each pressure type provides four metrics: 
+avg10
+, 
+avg60
+, 
+avg300
+, and 
+total
+. The 
+avg
+ values represent the percentage of wall-clock time that tasks were stalled over 10-second, 60-second, and 5-minute moving averages. The 
+total
+ value is a cumulative counter in microseconds showing the total time tasks have been stalled.
+Let's take for example the following query from the Summary API:
+kubectl get --raw "/api/v1/nodes/$(kubectl get nodes -o jsonpath='{.items[0].metadata.name}')/proxy/stats/summary" | jq '.pods[].containers[] | select(.name=="<CONTAINER_NAME>") | {name, cpu: .cpu.psi, memory: .memory.psi, io: .io.psi}'
+.
+This returns the information in a json format as such.
+{
+  "name": "<CONTAINER_NAME>",
+  "cpu": {
+    "full": {
+      "total": 0,
+      "avg10": 0,
+      "avg60": 0,
+      "avg300": 0
+    },
+    "some": {
+      "total": 35232438,
+      "avg10": 0.74,
+      "avg60": 0.52,
+      "avg300": 0.21,
+    },  
+  },
+  "memory": {
+    "full": {
+      "total": 539105,
+      "avg10": 0,
+      "avg60": 0,
+      "avg300": 0
+    },
+    "some": {
+      "total": 658164,
+      "avg10": 0.01,
+      "avg60": 0.01,
+      "avg300": 0.00,
+    },
+    }
+  },
+  "io": {
+    "full": {
+      "total": 33190987,
+      "avg10": 0.31,
+      "avg60": 0.22,
+      "avg300": 0.05,
+    },
+    "some": {
+      "total": 40809937,
+      "avg10": 0.52,
+      "avg60": 0.45,
+      "avg300": 0.12,
+    }
+  }
+}
+
+Here is a simple spike scenario. The cpu.some 
+avg10
+ value of 
+0.74
+ indicates that in the last 10 seconds, at least one task in this container was stalled on the CPU for 0.74% of the time (0.0074 seconds or 74 milliseconds). Because 
+avg10
+ (0.74) is significantly higher than 
+avg300
+ (0.21) on the same resource, this suggests a recent surge in resource contention rather than a sustained long-term bottleneck. If monitored continuously and the 
+avg300
+ metrics increase as well, we can diagnose a more serious, lasting issue!
+Additionally, notice how in this example 
+cpu.some
+ shows pressure, while 
+cpu.full
+ remains at 0.00. This tells us that while some processes were delayed waiting for CPU time, the container as a whole was still making progress. A non-zero full value would indicate that all non-idle tasks were stalled simultaneously, a much bigger problem.
+Although not as human-readable, the 
+total
+ value of 35232438 represents the cumulative stall time in microseconds, that allow latency spike detection that otherwise may not show in the averages.
+As a final note, when observing high I/O Pressure alongside low Memory Pressure, it can indicate that the application is waiting on disk throughput rather than failing due to a lack of available RAM. The node is not over-committed on memory, and a different diagnosis for disk consumption can be investigated.
+Example Scenarios
+You can use a simple Pod with a stress-testing tool to generate resource pressure and observe the PSI metrics. The following examples use the 
+agnhost
+ container image, which includes the 
+stress
+ tool.
+Generating CPU Pressure
+Create a Pod that generates CPU pressure using the 
+stress
+ utility. This workload will put a heavy load on one CPU core.
+Create a file named 
+cpu-pressure-pod.yaml
+:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+cpu-pressure-pod
+
+
+spec
+:
+
+
+  
+restartPolicy
+:
+ 
+Never
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+cpu-stress
+
+
+    
+image
+:
+ 
+registry.k8s.io/e2e-test-images/agnhost:2.47
+
+
+    
+args
+:
+
+
+    
+- 
+"stress"
+
+
+    
+- 
+"--cpus"
+
+
+    
+- 
+"1"
+
+
+    
+resources
+:
+
+
+      
+limits
+:
+
+
+        
+cpu
+:
+ 
+"500m"
+
+
+      
+requests
+:
+
+
+        
+cpu
+:
+ 
+"500m"
+
+
+Apply it to your cluster: 
+kubectl apply -f cpu-pressure-pod.yaml
+Observing CPU Pressure
+After the Pod is running, you can observe the CPU pressure through either the Summary API or the Prometheus metrics endpoint.
+Using the Summary API:
+Watch the summary stats for your node. In a separate terminal, run:
+# Replace <node-name> with the name of a node in your cluster
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/stats/summary"
+ | jq 
+'.pods[] | select(.podRef.name | contains("cpu-pressure-pod"))'
+
+
+You will see the 
+some
+ PSI metrics for CPU increase in the summary API output. The 
+avg10
+ value for 
+some
+ pressure should rise above zero, indicating that tasks are spending time stalled on the CPU.
+Using the Prometheus metrics endpoint:
+Query the 
+/metrics/cadvisor
+ endpoint to see the 
+container_pressure_cpu_waiting_seconds_total
+ metric.
+# Replace <node-name> with the name of the node where the pod is running
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/metrics/cadvisor"
+ | 
+\
+
+    grep 
+'container_pressure_cpu_waiting_seconds_total{container="cpu-stress"'
+
+
+The output should show an increasing value, indicating that the container is spending time stalled waiting for CPU resources.
+Cleanup
+Clean up the Pod when you are finished:
+kubectl delete pod cpu-pressure-pod
+
+Generating Memory Pressure
+This example creates a Pod that continuously writes to files in the container's writable layer, causing the kernel's page cache to grow and forcing memory reclamation, which generates pressure.
+Create a file named 
+memory-pressure-pod.yaml
+:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+memory-pressure-pod
+
+
+spec
+:
+
+
+  
+restartPolicy
+:
+ 
+Never
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+memory-stress
+
+
+    
+image
+:
+ 
+registry.k8s.io/e2e-test-images/agnhost:2.47
+
+
+    
+command
+:
+ 
+[
+"/bin/sh"
+,
+ 
+"-c"
+]
+
+
+    
+args
+:
+
+
+    
+- 
+"i=0; while true; do dd if=/dev/zero of=testfile.$i bs=1M count=50 &>/dev/null; i=$(((i+1)%5)); sleep 0.1; done"
+
+
+    
+resources
+:
+
+
+      
+limits
+:
+
+
+        
+memory
+:
+ 
+"200M"
+
+
+      
+requests
+:
+
+
+        
+memory
+:
+ 
+"200M"
+
+
+Apply it to your cluster: 
+kubectl apply -f memory-pressure-pod.yaml
+Observing Memory Pressure
+Using the Summary API:
+In the summary output, you will observe an increase in the 
+full
+ PSI metrics for memory, indicating that the system is under significant memory pressure.
+# Replace <node-name> with the name of a node in your cluster
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/stats/summary"
+ | jq 
+'.pods[] | select(.podRef.name | contains("memory-pressure-pod"))'
+
+
+Using the Prometheus metrics endpoint:
+Query the 
+/metrics/cadvisor
+ endpoint to see the 
+container_pressure_memory_waiting_seconds_total
+ metric.
+# Replace <node-name> with the name of the node where the pod is running
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/metrics/cadvisor"
+ | 
+\
+
+    grep 
+'container_pressure_memory_waiting_seconds_total{container="memory-stress"'
+
+
+In the output, you will observe an increasing value for the metric, indicating that the system is under significant memory pressure.
+Cleanup
+Clean up the Pod when you are finished:
+kubectl delete pod memory-pressure-pod
+
+Generating I/O Pressure
+This Pod generates I/O pressure by repeatedly writing a file to disk and using 
+sync
+ to flush the data from memory, which creates I/O stalls.
+Create a file named 
+io-pressure-pod.yaml
+:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+io-pressure-pod
+
+
+spec
+:
+
+
+  
+restartPolicy
+:
+ 
+Never
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+io-stress
+
+
+    
+image
+:
+ 
+registry.k8s.io/e2e-test-images/agnhost:2.47
+
+
+    
+command
+:
+ 
+[
+"/bin/sh"
+,
+ 
+"-c"
+]
+
+
+    
+args
+:
+
+
+      
+- 
+"while true; do dd if=/dev/zero of=testfile bs=1M count=128 &>/dev/null; sync; rm testfile &>/dev/null; done"
+
+
+Apply this to your cluster: 
+kubectl apply -f io-pressure-pod.yaml
+Observing I/O Pressure
+Using the Summary API:
+You will see the 
+some
+ PSI metrics for I/O increase as the Pod continuously writes to disk.
+# Replace <node-name> with the name of a node in your cluster
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/stats/summary"
+ | jq 
+'.pods[] | select(.podRef.name | contains("io-pressure-pod"))'
+
+
+Using the Prometheus metrics endpoint:
+Query the 
+/metrics/cadvisor
+ endpoint to see the 
+container_pressure_io_waiting_seconds_total
+ metric.
+# Replace <node-name> with the name of the node where the pod is running
+
+
+kubectl get --raw 
+"/api/v1/nodes/<node-name>/proxy/metrics/cadvisor"
+ | 
+\
+
+    grep 
+'container_pressure_io_waiting_seconds_total{container="io-stress"'
+
+
+You will see the metric's value increase as the Pod continuously writes to disk.
+Cleanup
+Clean up the Pod when you are finished:
+kubectl delete pod io-pressure-pod
+
+What's next
+The task pages for 
+Troubleshooting Clusters
+ discuss
+how to use a metrics pipeline that rely on these data.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 07, 2026 at 11:27 PM PST: 
+polish and added example per feedback (47fac02a76)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

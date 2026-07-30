@@ -1,0 +1,3548 @@
+PersistentVolumeClaim | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+PersistentVolumeClaim
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Create an issue
+
+
+ (auto-generated page)
+ Print entire section
+PersistentVolumeClaim
+PersistentVolumeClaimSpec
+Beta level
+PersistentVolumeClaimStatus
+PersistentVolumeClaimList
+Operations
+get
+ read the specified PersistentVolumeClaim
+get
+ read status of the specified PersistentVolumeClaim
+list
+ list or watch objects of kind PersistentVolumeClaim
+list
+ list or watch objects of kind PersistentVolumeClaim
+create
+ create a PersistentVolumeClaim
+update
+ replace the specified PersistentVolumeClaim
+update
+ replace status of the specified PersistentVolumeClaim
+patch
+ partially update the specified PersistentVolumeClaim
+patch
+ partially update status of the specified PersistentVolumeClaim
+delete
+ delete a PersistentVolumeClaim
+deletecollection
+ delete collection of PersistentVolumeClaim
+Kubernetes Documentation
+Reference
+Kubernetes API
+Config and Storage Resources
+PersistentVolumeClaim
+PersistentVolumeClaim
+PersistentVolumeClaim is a user's request for and claim to a persistent volume.
+apiVersion: v1
+import "k8s.io/api/core/v1"
+PersistentVolumeClaim
+PersistentVolumeClaim is a user's request for and claim to a persistent volume
+apiVersion
+: v1
+kind
+: PersistentVolumeClaim
+metadata
+ (
+ObjectMeta
+)
+Standard object's metadata. More info: 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+spec
+ (
+PersistentVolumeClaimSpec
+)
+spec defines the desired characteristics of a volume requested by a pod author. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+status
+ (
+PersistentVolumeClaimStatus
+)
+status represents the current information/status of a persistent volume claim. Read-only. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+PersistentVolumeClaimSpec
+PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes
+accessModes
+ ([]string)
+Atomic: will be replaced during a merge
+accessModes contains the desired access modes the volume should have. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+selector
+ (
+LabelSelector
+)
+selector is a label query over volumes to consider for binding.
+resources
+ (VolumeResourceRequirements)
+resources represents the minimum resources the volume should have. Users are allowed to specify resource requirements that are lower than previous value but must still be higher than capacity recorded in the status field of the claim. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+VolumeResourceRequirements describes the storage resource requirements for a volume.
+resources.limits
+ (map[string]
+Quantity
+)
+Limits describes the maximum amount of compute resources allowed. More info: 
+https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+resources.requests
+ (map[string]
+Quantity
+)
+Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. Requests cannot exceed Limits. More info: 
+https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+volumeName
+ (string)
+volumeName is the binding reference to the PersistentVolume backing this claim.
+storageClassName
+ (string)
+storageClassName is the name of the StorageClass required by the claim. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1
+volumeMode
+ (string)
+volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec.
+Beta level
+dataSource
+ (
+TypedLocalObjectReference
+)
+dataSource field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot) * An existing PVC (PersistentVolumeClaim) If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source. When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified. If the namespace is specified, then dataSourceRef will not be copied to dataSource.
+dataSourceRef
+ (TypedObjectReference)
+dataSourceRef specifies the object from which to populate the volume with data, if a non-empty volume is desired. This may be any object from a non-empty API group (non core object) or a PersistentVolumeClaim object. When this field is specified, volume binding will only succeed if the type of the specified object matches some installed volume populator or dynamic provisioner. This field will replace the functionality of the dataSource field and as such if both fields are non-empty, they must have the same value. For backwards compatibility, when namespace isn't specified in dataSourceRef, both fields (dataSource and dataSourceRef) will be set to the same value automatically if one of them is empty and the other is non-empty. When namespace is specified in dataSourceRef, dataSource isn't set to the same value and must be empty. There are three important differences between dataSource and dataSourceRef: * While dataSource only allows two specific types of objects, dataSourceRef
+allows any non-core object, as well as PersistentVolumeClaim objects.
+While dataSource ignores disallowed values (dropping them), dataSourceRef
+preserves all values, and generates an error if a disallowed value is
+specified.
+While dataSource only allows local objects, dataSourceRef allows objects
+in any namespaces.
+(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled. (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
+TypedObjectReference contains enough information to let you locate the typed referenced object
+dataSourceRef.kind
+ (string), required
+Kind is the type of resource being referenced
+dataSourceRef.name
+ (string), required
+Name is the name of resource being referenced
+dataSourceRef.apiGroup
+ (string)
+APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
+dataSourceRef.namespace
+ (string)
+Namespace is the namespace of resource being referenced Note that when a namespace is specified, a gateway.networking.k8s.io/ReferenceGrant object is required in the referent namespace to allow that namespace's owner to accept the reference. See the ReferenceGrant documentation for details. (Alpha) This field requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
+volumeAttributesClassName
+ (string)
+volumeAttributesClassName may be used to set the VolumeAttributesClass used by this claim. If specified, the CSI driver will create or update the volume with the attributes defined in the corresponding VolumeAttributesClass. This has a different purpose than storageClassName, it can be changed after the claim is created. An empty string or nil value indicates that no VolumeAttributesClass will be applied to the claim. If the claim enters an Infeasible error state, this field can be reset to its previous value (including nil) to cancel the modification. If the resource referred to by volumeAttributesClass does not exist, this PersistentVolumeClaim will be set to a Pending state, as reflected by the modifyVolumeStatus field, until such as a resource exists. More info: 
+https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/
+PersistentVolumeClaimStatus
+PersistentVolumeClaimStatus is the current status of a persistent volume claim.
+accessModes
+ ([]string)
+Atomic: will be replaced during a merge
+accessModes contains the actual access modes the volume backing the PVC has. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
+allocatedResourceStatuses
+ (map[string]string)
+allocatedResourceStatuses stores status of resource being resized for the given PVC. Key names follow standard Kubernetes label syntax. Valid values are either:
+* Un-prefixed keys:
+- storage - the capacity of the volume.
+* Custom resources must use implementation-defined prefixed names such as "example.com/my-custom-resource"
+Apart from above values - keys that are unprefixed or have kubernetes.io prefix are considered reserved and hence may not be used.
+ClaimResourceStatus can be in any of following states:
+- ControllerResizeInProgress:
+State set when resize controller starts resizing the volume in control-plane.
+- ControllerResizeFailed:
+State set when resize has failed in resize controller with a terminal error.
+- NodeResizePending:
+State set when resize controller has finished resizing the volume but further resizing of
+volume is needed on the node.
+- NodeResizeInProgress:
+State set when kubelet starts resizing the volume.
+- NodeResizeFailed:
+State set when resizing has failed in kubelet with a terminal error. Transient errors don't set
+NodeResizeFailed.
+For example: if expanding a PVC for more capacity - this field can be one of the following states:
+- pvc.status.allocatedResourceStatus['storage'] = "ControllerResizeInProgress"
+- pvc.status.allocatedResourceStatus['storage'] = "ControllerResizeFailed"
+- pvc.status.allocatedResourceStatus['storage'] = "NodeResizePending"
+- pvc.status.allocatedResourceStatus['storage'] = "NodeResizeInProgress"
+- pvc.status.allocatedResourceStatus['storage'] = "NodeResizeFailed"
+When this field is not set, it means that no resize operation is in progress for the given PVC.
+A controller that receives PVC update with previously unknown resourceName or ClaimResourceStatus should ignore the update for the purpose it was designed. For example - a controller that only is responsible for resizing capacity of the volume, should ignore PVC updates that change other valid resources associated with PVC.
+allocatedResources
+ (map[string]
+Quantity
+)
+allocatedResources tracks the resources allocated to a PVC including its capacity. Key names follow standard Kubernetes label syntax. Valid values are either:
+* Un-prefixed keys:
+- storage - the capacity of the volume.
+* Custom resources must use implementation-defined prefixed names such as "example.com/my-custom-resource"
+Apart from above values - keys that are unprefixed or have kubernetes.io prefix are considered reserved and hence may not be used.
+Capacity reported here may be larger than the actual capacity when a volume expansion operation is requested. For storage quota, the larger value from allocatedResources and PVC.spec.resources is used. If allocatedResources is not set, PVC.spec.resources alone is used for quota calculation. If a volume expansion capacity request is lowered, allocatedResources is only lowered if there are no expansion operations in progress and if the actual volume capacity is equal or lower than the requested capacity.
+A controller that receives PVC update with previously unknown resourceName should ignore the update for the purpose it was designed. For example - a controller that only is responsible for resizing capacity of the volume, should ignore PVC updates that change other valid resources associated with PVC.
+capacity
+ (map[string]
+Quantity
+)
+capacity represents the actual resources of the underlying volume.
+conditions
+ ([]PersistentVolumeClaimCondition)
+Patch strategy: merge on key 
+type
+Map: unique values on key type will be kept during a merge
+conditions is the current Condition of persistent volume claim. If underlying persistent volume is being resized then the Condition will be set to 'Resizing'.
+PersistentVolumeClaimCondition contains details about state of pvc
+conditions.status
+ (string), required
+Status is the status of the condition. Can be True, False, Unknown. More info: 
+https://kubernetes.io/docs/reference/kubernetes-api/config-and-storage-resources/persistent-volume-claim-v1/#:~:text=state%20of%20pvc-,conditions.status,-(string)%2C%20required
+conditions.type
+ (string), required
+Type is the type of the condition. More info: 
+https://kubernetes.io/docs/reference/kubernetes-api/config-and-storage-resources/persistent-volume-claim-v1/#:~:text=set%20to%20%27ResizeStarted%27.-,PersistentVolumeClaimCondition,-contains%20details%20about
+conditions.lastProbeTime
+ (Time)
+lastProbeTime is the time we probed the condition.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+conditions.lastTransitionTime
+ (Time)
+lastTransitionTime is the time the condition transitioned from one status to another.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+conditions.message
+ (string)
+message is the human-readable message indicating details about last transition.
+conditions.reason
+ (string)
+reason is a unique, this should be a short, machine understandable string that gives the reason for condition's last transition. If it reports "Resizing" that means the underlying persistent volume is being resized.
+currentVolumeAttributesClassName
+ (string)
+currentVolumeAttributesClassName is the current name of the VolumeAttributesClass the PVC is using. When unset, there is no VolumeAttributeClass applied to this PersistentVolumeClaim
+modifyVolumeStatus
+ (ModifyVolumeStatus)
+ModifyVolumeStatus represents the status object of ControllerModifyVolume operation. When this is unset, there is no ModifyVolume operation being attempted.
+ModifyVolumeStatus represents the status object of ControllerModifyVolume operation
+modifyVolumeStatus.status
+ (string), required
+status is the status of the ControllerModifyVolume operation. It can be in any of following states:
+Pending
+Pending indicates that the PersistentVolumeClaim cannot be modified due to unmet requirements, such as
+the specified VolumeAttributesClass not existing.
+InProgress
+InProgress indicates that the volume is being modified.
+Infeasible
+Infeasible indicates that the request has been rejected as invalid by the CSI driver. To
+resolve the error, a valid VolumeAttributesClass needs to be specified.
+Note: New statuses can be added in the future. Consumers should check for unknown statuses and fail appropriately.
+modifyVolumeStatus.targetVolumeAttributesClassName
+ (string)
+targetVolumeAttributesClassName is the name of the VolumeAttributesClass the PVC currently being reconciled
+phase
+ (string)
+phase represents the current phase of PersistentVolumeClaim.
+PersistentVolumeClaimList
+PersistentVolumeClaimList is a list of PersistentVolumeClaim items.
+apiVersion
+: v1
+kind
+: PersistentVolumeClaimList
+metadata
+ (
+ListMeta
+)
+Standard list metadata. More info: 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+items
+ ([]
+PersistentVolumeClaim
+), required
+items is a list of persistent volume claims. More info: 
+https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+Operations
+get
+ read the specified PersistentVolumeClaim
+HTTP Request
+GET /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+401: Unauthorized
+get
+ read status of the specified PersistentVolumeClaim
+HTTP Request
+GET /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+401: Unauthorized
+list
+ list or watch objects of kind PersistentVolumeClaim
+HTTP Request
+GET /api/v1/namespaces/{namespace}/persistentvolumeclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+allowWatchBookmarks
+ (
+in query
+): boolean
+allowWatchBookmarks
+continue
+ (
+in query
+): string
+continue
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+watch
+ (
+in query
+): boolean
+watch
+Response
+200 (
+PersistentVolumeClaimList
+): OK
+401: Unauthorized
+list
+ list or watch objects of kind PersistentVolumeClaim
+HTTP Request
+GET /api/v1/persistentvolumeclaims
+Parameters
+allowWatchBookmarks
+ (
+in query
+): boolean
+allowWatchBookmarks
+continue
+ (
+in query
+): string
+continue
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+watch
+ (
+in query
+): boolean
+watch
+Response
+200 (
+PersistentVolumeClaimList
+): OK
+401: Unauthorized
+create
+ create a PersistentVolumeClaim
+HTTP Request
+POST /api/v1/namespaces/{namespace}/persistentvolumeclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+PersistentVolumeClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+201 (
+PersistentVolumeClaim
+): Created
+202 (
+PersistentVolumeClaim
+): Accepted
+401: Unauthorized
+update
+ replace the specified PersistentVolumeClaim
+HTTP Request
+PUT /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+PersistentVolumeClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+201 (
+PersistentVolumeClaim
+): Created
+401: Unauthorized
+update
+ replace status of the specified PersistentVolumeClaim
+HTTP Request
+PUT /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+PersistentVolumeClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+201 (
+PersistentVolumeClaim
+): Created
+401: Unauthorized
+patch
+ partially update the specified PersistentVolumeClaim
+HTTP Request
+PATCH /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+201 (
+PersistentVolumeClaim
+): Created
+401: Unauthorized
+patch
+ partially update status of the specified PersistentVolumeClaim
+HTTP Request
+PATCH /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+PersistentVolumeClaim
+): OK
+201 (
+PersistentVolumeClaim
+): Created
+401: Unauthorized
+delete
+ delete a PersistentVolumeClaim
+HTTP Request
+DELETE /api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the PersistentVolumeClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+DeleteOptions
+dryRun
+ (
+in query
+): string
+dryRun
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+Response
+200 (
+PersistentVolumeClaim
+): OK
+202 (
+PersistentVolumeClaim
+): Accepted
+401: Unauthorized
+deletecollection
+ delete collection of PersistentVolumeClaim
+HTTP Request
+DELETE /api/v1/namespaces/{namespace}/persistentvolumeclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+DeleteOptions
+continue
+ (
+in query
+): string
+continue
+dryRun
+ (
+in query
+): string
+dryRun
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+Response
+200 (
+Status
+): OK
+401: Unauthorized
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 24, 2026 at 2:17 PM PST: 
+Update API resource reference for v1.36.0 (#55505) (d405670c62)
+This page is automatically generated.
+If you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

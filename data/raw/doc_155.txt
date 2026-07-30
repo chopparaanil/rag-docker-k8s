@@ -1,0 +1,5727 @@
+Volumes | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Português (Portuguese)
+
+
+Español (Spanish)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Volumes
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Volume API reference
+
+
+ Edit this page
+ Third party content advice
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Why volumes are important
+How volumes work
+Types of volumes
+configMap
+downwardAPI
+emptyDir
+fc (fibre channel)
+gcePersistentDisk (deprecated)
+gitRepo (disabled)
+hostPath
+image
+iscsi
+local
+nfs
+persistentVolumeClaim
+portworxVolume (deprecated)
+projected
+secret
+Using subPath
+Using subPath with expanded environment variables
+Resources
+Out-of-tree volume plugins
+csi
+flexVolume (deprecated)
+Mount propagation
+Read-only mounts
+Recursive read-only mounts
+What's next
+Kubernetes Documentation
+Concepts
+Storage
+Volumes
+Volumes
+Kubernetes 
+volumes
+ provide a way for containers in a 
+Pod
+
+to access and share data via the filesystem. There are different kinds of volume that you can use for different purposes,
+such as:
+populating a configuration file based on a 
+ConfigMap
+
+or a 
+Secret
+providing some temporary scratch space for a Pod
+sharing a filesystem between two different containers in the same Pod
+sharing a filesystem between two different Pods (even if those Pods run on different nodes)
+durably storing data so that it stays available even if the Pod restarts or is replaced
+passing configuration information to an app running in a container, based on details of the Pod
+the container is in
+(for example: telling a 
+sidecar container
+
+what namespace the Pod is running in)
+providing read-only access to data in a different container image
+Data sharing can be between different local processes within a container, or between different containers,
+or between Pods.
+Why volumes are important
+Data persistence:
+ On-disk files in a container are ephemeral, which presents some problems for
+non-trivial applications when running in containers. One problem occurs when
+a container crashes or is stopped; the container state is not saved, so all of the
+files that were created or modified during the lifetime of the container are lost.
+After a crash, kubelet restarts the container with a clean state.
+Shared storage:
+ Another problem occurs when multiple containers are running in a 
+Pod
+ and
+need to share files. It can be challenging to set up
+and access a shared filesystem across all of the containers.
+The Kubernetes 
+volume
+ abstraction
+can help you to solve both of these problems.
+Before you learn about volumes, PersistentVolumes, and PersistentVolumeClaims, you should read up
+about 
+Pods
+ and make sure that you understand how
+Kubernetes uses Pods to run containers.
+How volumes work
+Kubernetes supports many types of volumes. A 
+Pod
+
+can use any number of volume types simultaneously.
+
+Ephemeral volume
+ types have a lifetime linked to a specific Pod,
+but 
+persistent volumes
+ exist beyond
+the lifetime of any individual Pod. When a Pod ceases to exist, Kubernetes destroys ephemeral volumes;
+however, Kubernetes does not destroy persistent volumes.
+For any kind of volume in a given Pod, data is preserved across container restarts.
+At its core, a volume is a directory, possibly with some data in it, which
+is accessible to the containers in a pod. How that directory comes to be, the
+medium that backs it, and the contents of it are determined by the particular
+volume type used.
+To use a volume, specify the volumes to provide for the Pod in 
+.spec.volumes
+
+and declare where to mount those volumes into containers in 
+.spec.containers[*].volumeMounts
+.
+When a Pod is launched, a process in the container sees a filesystem view composed from the initial contents of
+the 
+container image
+, plus volumes
+(if defined) mounted inside the container.
+The process sees a root filesystem that initially matches the contents of the container image.
+Any writes to within that filesystem hierarchy, if allowed, affect what that process views
+when it performs a subsequent filesystem access.
+Volumes are mounted at 
+specified paths
+ within the container filesystem.
+For each container defined within a Pod, you must independently specify where
+to mount each volume that the container uses.
+Volumes cannot mount within other volumes (but see 
+Using subPath
+
+for a related mechanism). Also, a volume cannot contain a hard link to anything in
+a different volume.
+Types of volumes
+Kubernetes supports several types of volumes.
+configMap
+A 
+ConfigMap
+
+provides a way to inject configuration data into Pods.
+The data stored in a ConfigMap can be referenced in a volume of type
+
+configMap
+ and then consumed by containerized applications running in a Pod.
+When referencing a ConfigMap, you provide the name of the ConfigMap in the
+volume. You can customize the path to use for a specific
+entry in the ConfigMap. The following configuration shows how to mount
+the 
+log-config
+ ConfigMap onto a Pod called 
+configmap-pod
+:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+configmap-pod
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+test
+
+
+      
+image
+:
+ 
+busybox:1.28
+
+
+      
+command
+:
+ 
+[
+'sh'
+,
+ 
+'-c'
+,
+ 
+'echo "The app is running!" && tail -f /dev/null'
+]
+
+
+      
+volumeMounts
+:
+
+
+        
+- 
+name
+:
+ 
+config-vol
+
+
+          
+mountPath
+:
+ 
+/etc/config
+
+
+  
+volumes
+:
+
+
+    
+- 
+name
+:
+ 
+config-vol
+
+
+      
+configMap
+:
+
+
+        
+name
+:
+ 
+log-config
+
+
+        
+items
+:
+
+
+          
+- 
+key
+:
+ 
+log_level
+
+
+            
+path
+:
+ 
+log_level.conf
+
+
+The 
+log-config
+ ConfigMap is mounted as a volume, and all contents stored in
+its 
+log_level
+ entry are mounted into the Pod at path 
+/etc/config/log_level.conf
+.
+Note that this path is derived from the volume's 
+mountPath
+ and the 
+path
+
+keyed with 
+log_level
+.
+Note:
+You must 
+create a ConfigMap
+
+before you can use it.
+A ConfigMap is always mounted as 
+readOnly
+.
+A container using a ConfigMap as a 
+subPath
+ volume mount will not
+receive updates when the ConfigMap changes.
+Text data is exposed as files using the UTF-8 character encoding.
+For other character encodings, use 
+binaryData
+.
+downwardAPI
+A 
+downwardAPI
+ volume makes 
+downward API
+
+data available to applications. Within the volume, you can find the exposed
+data as read-only files in plain text format.
+Note:
+A container using the downward API as a 
+subPath
+ volume mount does not
+receive updates when field values change.
+See 
+Expose Pod Information to Containers Through Files
+
+to learn more.
+emptyDir
+For a Pod that defines an 
+emptyDir
+ volume, the volume is created when the Pod is assigned to a node.
+As the name says, the 
+emptyDir
+ volume is initially empty. All containers in the Pod can read and write the same
+files in the 
+emptyDir
+ volume, though that volume can be mounted at the same
+or different paths in each container. When a Pod is removed from a node for
+any reason, the data in the 
+emptyDir
+ is deleted permanently.
+Note:
+A container crashing does 
+not
+ remove a Pod from a node. The data in an 
+emptyDir
+ volume
+is safe across container crashes.
+Some uses for an 
+emptyDir
+ are:
+scratch space, such as for a disk-based merge sort
+checkpointing a long computation for recovery from crashes
+holding files that a content-manager container fetches while a webserver
+container serves the data
+The 
+emptyDir.medium
+ field controls where 
+emptyDir
+ volumes are stored. By
+default 
+emptyDir
+ volumes are stored on whatever medium that backs the node
+such as disk, SSD, or network storage, depending on your environment. If you set
+the 
+emptyDir.medium
+ field to 
+"Memory"
+, Kubernetes mounts a tmpfs (RAM-backed
+filesystem) for you instead. While tmpfs is very fast, be aware that, unlike
+disks, files you write count against the memory limit of the container that wrote them.
+A size limit can be specified for the default medium, which limits the capacity
+of the 
+emptyDir
+ volume. The storage is allocated from
+
+node ephemeral storage
+.
+If that is filled up from another source (for example, log files or image overlays),
+the 
+emptyDir
+ may run out of capacity before this limit.
+If no size is specified, memory-backed volumes are sized to node allocatable memory.
+Caution:
+Please check 
+here
+
+for points to note in terms of resource management when using memory-backed 
+emptyDir
+.
+emptyDir configuration example
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-pd
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+image
+:
+ 
+registry.k8s.io/test-webserver
+
+
+    
+name
+:
+ 
+test-container
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/cache
+
+
+      
+name
+:
+ 
+cache-volume
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+cache-volume
+
+
+    
+emptyDir
+:
+
+
+      
+sizeLimit
+:
+ 
+500Mi
+
+
+emptyDir memory configuration example
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-pd
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+image
+:
+ 
+registry.k8s.io/test-webserver
+
+
+    
+name
+:
+ 
+test-container
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/cache
+
+
+      
+name
+:
+ 
+cache-volume
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+cache-volume
+
+
+    
+emptyDir
+:
+
+
+      
+sizeLimit
+:
+ 
+500Mi
+
+
+      
+medium
+:
+ 
+Memory
+
+
+fc (fibre channel)
+An 
+fc
+ volume type allows an existing fibre channel block storage volume
+to be mounted in a Pod. You can specify single or multiple target world wide names (WWNs)
+using the parameter 
+targetWWNs
+ in your Volume configuration. If multiple WWNs are specified,
+targetWWNs expect that those WWNs are from multi-path connections.
+Note:
+You must configure FC SAN Zoning to allocate and mask those LUNs (volumes) to the target WWNs
+beforehand so that Kubernetes hosts can access them.
+gcePersistentDisk (deprecated)
+In Kubernetes 1.36, all operations for the in-tree 
+gcePersistentDisk
+ type
+are redirected to the 
+pd.csi.storage.gke.io
+ 
+CSI
+ driver.
+The 
+gcePersistentDisk
+ in-tree storage driver was deprecated in the Kubernetes v1.17 release
+and then removed entirely in the v1.28 release.
+The Kubernetes project suggests that you use the
+
+Google Compute Engine Persistent Disk CSI
+
+third party storage driver instead.
+gitRepo (disabled)
+Warning:
+Kubernetes 1.36 does 
+not
+ include the 
+gitRepo
+ volume
+driver. The last version that provided a way to use this driver was Kubernetes
+v1.35, and it has been deprecated since the 
+v1.11
+ minor
+release.
+To provision a Pod that has a Git repository mounted, you can mount an
+
+emptyDir
+ volume into an 
+init container
+
+that clones the repo using Git, then mount the 
+EmptyDir
+ into the Pod's container.
+You can restrict the use of 
+gitRepo
+ volumes in your cluster using
+
+policies
+, such as
+
+ValidatingAdmissionPolicy
+.
+You can use the following Common Expression Language (CEL) expression as
+part of a policy to reject use of 
+gitRepo
+ volumes:
+!has(object.spec.volumes) || !object.spec.volumes.exists(v, has(v.gitRepo))
+
+hostPath
+A 
+hostPath
+ volume mounts a file or directory from the host node's filesystem
+into your Pod. This is not something that most Pods will need, but it offers a
+powerful escape hatch for some applications.
+Warning:
+Using the 
+hostPath
+ volume type presents many security risks.
+If you can avoid using a 
+hostPath
+ volume, you should. For example,
+define a 
+local
+ PersistentVolume
+, and use that instead.
+If you are restricting access to specific directories on the node using
+admission-time validation, that restriction is only effective when you
+additionally require that any mounts of that 
+hostPath
+ volume are
+
+read only
+. If you allow a read-write mount of any host path by an
+untrusted Pod, the containers in that Pod may be able to subvert the
+read-write host mount.
+Take care when using 
+hostPath
+ volumes, whether these are mounted as read-only
+or as read-write, because:
+Access to the host filesystem can expose privileged system credentials (such as for the kubelet) or privileged APIs
+(such as the container runtime socket) that can be used for container escape or to attack other
+parts of the cluster.
+Pods with identical configuration (such as created from a PodTemplate) may
+behave differently on different nodes due to different files on the nodes.
+hostPath
+ volume usage is not treated as ephemeral storage usage.
+You need to monitor the disk usage by yourself because excessive 
+hostPath
+ disk
+usage will lead to disk pressure on the node.
+Some uses for a 
+hostPath
+ are:
+running a container that needs access to node-level system components
+(such as a container that transfers system logs to a central location,
+accessing those logs using a read-only mount of 
+/var/log
+)
+making a configuration file stored on the host system available read-only
+to a 
+static Pod
+;
+unlike normal Pods, static Pods cannot access ConfigMaps
+hostPath
+ volume types
+In addition to the required 
+path
+ property, you can optionally specify a
+
+type
+ for a 
+hostPath
+ volume.
+The available values for 
+type
+ are:
+Value
+Behavior
+‌""
+Empty string (default) is for backward compatibility, which means that no checks will be performed before mounting the 
+hostPath
+ volume.
+DirectoryOrCreate
+If nothing exists at the given path, an empty directory will be created there as needed with permission set to 0755, having the same group and ownership with Kubelet.
+Directory
+A directory must exist at the given path.
+FileOrCreate
+If nothing exists at the given path, an empty file will be created there as needed with permission set to 0644, having the same group and ownership with Kubelet.
+File
+A file must exist at the given path.
+Socket
+A UNIX socket must exist at the given path.
+CharDevice
+(Linux nodes only)
+ A character device must exist at the given path.
+BlockDevice
+(Linux nodes only)
+ A block device must exist at the given path.
+Caution:
+The 
+FileOrCreate
+ mode does 
+not
+ create the parent directory of the file. If the parent directory
+of the mounted file does not exist, the Pod fails to start. To ensure that this mode works,
+you can try to mount directories and files separately, as shown in the
+
+FileOrCreate
+ example
+ for 
+hostPath
+.
+Some files or directories created on the underlying hosts might only be
+accessible by root. You then either need to run your process as root in a
+
+privileged container
+
+or modify the file permissions on the host to read from or write to a 
+hostPath
+ volume.
+hostPath configuration example
+Linux node
+Windows node
+
+
+---
+
+
+# This manifest mounts /data/foo on the host as /foo inside the
+
+
+# single container that runs within the hostpath-example-linux Pod.
+
+
+#
+
+
+# The mount into the container is read-only.
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+hostpath-example-linux
+
+
+spec
+:
+
+
+  
+os
+:
+ 
+{
+ 
+name
+:
+ 
+linux }
+
+
+  
+nodeSelector
+:
+
+
+    
+kubernetes.io/os
+:
+ 
+linux
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+example-container
+
+
+    
+image
+:
+ 
+registry.k8s.io/test-webserver
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/foo
+
+
+      
+name
+:
+ 
+example-volume
+
+
+      
+readOnly
+:
+ 
+true
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+example-volume
+
+
+    
+# mount /data/foo, but only if that directory already exists
+
+
+    
+hostPath
+:
+
+
+      
+path
+:
+ 
+/data/foo
+ 
+# directory location on host
+
+
+      
+type
+:
+ 
+Directory
+ 
+# this field is optional
+
+
+
+
+---
+
+
+# This manifest mounts C:\Data\foo on the host as C:\foo, inside the
+
+
+# single container that runs within the hostpath-example-windows Pod.
+
+
+#
+
+
+# The mount into the container is read-only.
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+hostpath-example-windows
+
+
+spec
+:
+
+
+  
+os
+:
+ 
+{
+ 
+name
+:
+ 
+windows }
+
+
+  
+nodeSelector
+:
+
+
+    
+kubernetes.io/os
+:
+ 
+windows
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+example-container
+
+
+    
+image
+:
+ 
+microsoft/windowsservercore:1709
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+name
+:
+ 
+example-volume
+
+
+      
+mountPath
+:
+ 
+"C:\\foo"
+
+
+      
+readOnly
+:
+ 
+true
+
+
+  
+volumes
+:
+
+
+    
+# mount C:\Data\foo from the host, but only if that directory already exists
+
+
+  
+- 
+name
+:
+ 
+example-volume
+
+
+    
+hostPath
+:
+
+
+      
+path
+:
+ 
+"C:\\Data\\foo"
+ 
+# directory location on host
+
+
+      
+type
+:
+ 
+Directory      
+ 
+# this field is optional
+
+
+hostPath FileOrCreate configuration example
+The following manifest defines a Pod that mounts 
+/var/local/aaa
+
+inside the single container in the Pod. If the node does not
+already have a path 
+/var/local/aaa
+, the kubelet creates
+it as a directory and then mounts it into the Pod.
+If 
+/var/local/aaa
+ already exists but is not a directory,
+the Pod fails. Additionally, the kubelet attempts to make
+a file named 
+/var/local/aaa/1.txt
+ inside that directory
+(as seen from the host); if something already exists at
+that path and isn't a regular file, the Pod fails.
+Here's the example manifest:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-webserver
+
+
+spec
+:
+
+
+  
+os
+:
+ 
+{
+ 
+name
+:
+ 
+linux }
+
+
+  
+nodeSelector
+:
+
+
+    
+kubernetes.io/os
+:
+ 
+linux
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+test-webserver
+
+
+    
+image
+:
+ 
+registry.k8s.io/test-webserver:latest
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/var/local/aaa
+
+
+      
+name
+:
+ 
+mydir
+
+
+    
+- 
+mountPath
+:
+ 
+/var/local/aaa/1.txt
+
+
+      
+name
+:
+ 
+myfile
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+mydir
+
+
+    
+hostPath
+:
+
+
+      
+# Ensure the file directory is created.
+
+
+      
+path
+:
+ 
+/var/local/aaa
+
+
+      
+type
+:
+ 
+DirectoryOrCreate
+
+
+  
+- 
+name
+:
+ 
+myfile
+
+
+    
+hostPath
+:
+
+
+      
+path
+:
+ 
+/var/local/aaa/1.txt
+
+
+      
+type
+:
+ 
+FileOrCreate
+
+
+image
+FEATURE STATE:
+
+
+Kubernetes v1.36 [stable]
+(enabled by default)
+An 
+image
+ volume source represents an OCI object (a container image or
+artifact) which is available on the kubelet's host machine.
+An example of using the 
+image
+ volume source is:
+pods/image-volumes.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+image-volume
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+shell
+
+
+    
+command
+:
+ 
+[
+"sleep"
+,
+ 
+"infinity"
+]
+
+
+    
+image
+:
+ 
+debian
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+name
+:
+ 
+volume
+
+
+      
+mountPath
+:
+ 
+/volume
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+volume
+
+
+    
+image
+:
+
+
+      
+reference
+:
+ 
+quay.io/crio/artifact:v2
+
+
+      
+pullPolicy
+:
+ 
+IfNotPresent
+
+
+The volume is resolved at Pod startup, depending on which 
+pullPolicy
+ value is
+provided:
+Always
+The kubelet always attempts to pull the reference. If the pull fails,
+the kubelet sets the Pod to 
+Failed
+.
+Never
+The kubelet never pulls the reference and only uses a local image or artifact.
+The Pod becomes 
+Failed
+ if any layers of the image aren't already present locally,
+or if the manifest for that image isn't already cached.
+IfNotPresent
+The kubelet pulls if the reference isn't already present on disk. The Pod becomes
+
+Failed
+ if the reference isn't present and the pull fails.
+The volume gets re-resolved if the Pod gets deleted and recreated, which means
+that new remote content will become available on Pod recreation. A failure to
+resolve or pull the image during Pod startup will block containers from starting
+and may add significant latency. Failures will be retried using normal volume
+backoff and will be reported on the Pod reason and message.
+The types of objects that may be mounted by this volume are defined by the
+container runtime implementation on a host machine. At a minimum, they must include
+all valid types supported by the container image field. The OCI object gets
+mounted in a single directory (
+spec.containers[*].volumeMounts[*].mountPath
+)
+and will be mounted read-only.
+Besides that:
+subPath
+ or
+
+subPathExpr
+
+mounts for containers (
+spec.containers[*].volumeMounts[*].subPath
+, 
+spec.containers[*].volumeMounts[*].subPathExpr
+)
+are only supported from Kubernetes v1.33.
+The field 
+spec.securityContext.fsGroupChangePolicy
+ has no effect on this
+volume type.
+The 
+AlwaysPullImages
+ Admission Controller
+
+does also work for this volume source like for container images.
+The following fields are available for the 
+image
+ type:
+reference
+Artifact reference to be used. For example, you could specify
+
+registry.k8s.io/conformance:v1.36.0
+ to load the
+files from the Kubernetes conformance test image. Behaves in the same way as
+
+pod.spec.containers[*].image
+. Pull secrets will be assembled in the same way
+as for the container image by looking up node credentials, service account image
+pull secrets, and Pod spec image pull secrets. This field is optional to allow
+higher level config management to default or override container images in
+workload controllers like Deployments and StatefulSets.
+
+More info about container images
+.
+pullPolicy
+Policy for pulling OCI objects. Possible values are: 
+Always
+, 
+Never
+, or
+
+IfNotPresent
+. Defaults to 
+Always
+ if 
+:latest
+ tag is specified, or
+
+IfNotPresent
+ otherwise.
+See the 
+Use an Image Volume With a Pod
+
+example for more details on how to use the volume source.
+iscsi
+An 
+iscsi
+ volume allows an existing iSCSI (SCSI over IP) volume to be mounted
+into your Pod. Unlike 
+emptyDir
+, which is erased when a Pod is removed, the
+contents of an 
+iscsi
+ volume are preserved, and the volume is merely
+unmounted. This means that an iscsi volume can be pre-populated with data, and
+that data can be shared between Pods.
+Note:
+You must have your own iSCSI server running with the volume created before you can use it.
+A feature of iSCSI is that it can be mounted as read-only by multiple consumers
+simultaneously. This means that you can pre-populate a volume with your dataset
+and then serve it in parallel from as many Pods as you need. Unfortunately,
+iSCSI volumes can only be mounted by a single consumer in read-write mode.
+Simultaneous writers are not allowed.
+local
+A 
+local
+ volume represents a mounted local storage device such as a disk,
+partition or directory.
+Local volumes can only be used as a statically created PersistentVolume. Dynamic
+provisioning is not supported.
+Compared to 
+hostPath
+ volumes, 
+local
+ volumes are used in a durable and
+portable manner without manually scheduling Pods to nodes. The system is aware
+of the volume's node constraints by looking at the node affinity on the PersistentVolume.
+However, 
+local
+ volumes are subject to the availability of the underlying
+node and are not suitable for all applications. If a node becomes unhealthy,
+then the 
+local
+ volume becomes inaccessible to the Pod. The Pod using this volume
+is unable to run. Applications using 
+local
+ volumes must be able to tolerate this
+reduced availability, as well as potential data loss, depending on the
+durability characteristics of the underlying disk.
+The following example shows a PersistentVolume using a 
+local
+ volume and
+
+nodeAffinity
+:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+PersistentVolume
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+example-pv
+
+
+spec
+:
+
+
+  
+capacity
+:
+
+
+    
+storage
+:
+ 
+100Gi
+
+
+  
+volumeMode
+:
+ 
+Filesystem
+
+
+  
+accessModes
+:
+
+
+  
+- ReadWriteOnce
+
+
+  
+persistentVolumeReclaimPolicy
+:
+ 
+Delete
+
+
+  
+storageClassName
+:
+ 
+local-storage
+
+
+  
+local
+:
+
+
+    
+path
+:
+ 
+/mnt/disks/ssd1
+
+
+  
+nodeAffinity
+:
+
+
+    
+required
+:
+
+
+      
+nodeSelectorTerms
+:
+
+
+      
+- 
+matchExpressions
+:
+
+
+        
+- 
+key
+:
+ 
+kubernetes.io/hostname
+
+
+          
+operator
+:
+ 
+In
+
+
+          
+values
+:
+
+
+          
+- example-node
+
+
+You must set a PersistentVolume 
+nodeAffinity
+ when using 
+local
+ volumes.
+The Kubernetes scheduler uses the PersistentVolume 
+nodeAffinity
+ to schedule
+these Pods to the correct node.
+PersistentVolume 
+volumeMode
+ can be set to "Block" (instead of the default
+value "Filesystem") to expose the local volume as a raw block device.
+When using local volumes, it is recommended to create a StorageClass with
+
+volumeBindingMode
+ set to 
+WaitForFirstConsumer
+. For more details, see the
+local 
+StorageClass
+ example.
+Delaying volume binding ensures that the PersistentVolumeClaim binding decision
+will also be evaluated with any other node constraints the Pod may have,
+such as node resource requirements, node selectors, Pod affinity, and Pod anti-affinity.
+An external static provisioner can be run separately for improved management of
+the local volume lifecycle. Note that this provisioner does not support dynamic
+provisioning yet. For an example on how to run an external local provisioner, see the
+
+local volume provisioner user guide
+.
+Note:
+The local PersistentVolume requires manual cleanup and deletion by the
+user if the external static provisioner is not used to manage the volume
+lifecycle.
+nfs
+An 
+nfs
+ volume allows an existing NFS (Network File System) share to be
+mounted into a Pod. Unlike 
+emptyDir
+, which is erased when a Pod is
+removed, the contents of an 
+nfs
+ volume are preserved, and the volume is merely
+unmounted. This means that an NFS volume can be pre-populated with data, and
+that data can be shared between Pods. NFS can be mounted by multiple
+writers simultaneously.
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-pd
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+image
+:
+ 
+registry.k8s.io/test-webserver
+
+
+    
+name
+:
+ 
+test-container
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/my-nfs-data
+
+
+      
+name
+:
+ 
+test-volume
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+test-volume
+
+
+    
+nfs
+:
+
+
+      
+server
+:
+ 
+my-nfs-server.example.com
+
+
+      
+path
+:
+ 
+/my-nfs-volume
+
+
+      
+readOnly
+:
+ 
+true
+
+
+Note:
+You must have your own NFS server running with the share exported before you can use it.
+Also note that you can't specify NFS mount options in a Pod spec. You can either set mount options server-side or
+use 
+/etc/nfsmount.conf
+.
+You can also mount NFS volumes via PersistentVolumes, which do allow you to set mount options.
+persistentVolumeClaim
+A 
+persistentVolumeClaim
+ volume is used to mount a
+
+PersistentVolume
+ into a Pod. PersistentVolumeClaims
+are a way for users to "claim" durable storage (such as an iSCSI volume)
+without knowing the details of the particular cloud environment.
+See the information about 
+PersistentVolumes
+ for more
+details.
+portworxVolume (deprecated)
+FEATURE STATE:
+
+
+Kubernetes v1.25 [deprecated]
+A 
+portworxVolume
+ is an elastic block storage layer that runs hyperconverged with
+Kubernetes. 
+Portworx
+ fingerprints storage
+in a server, tiers based on capabilities, and aggregates capacity across multiple servers.
+Portworx runs in-guest in virtual machines or on bare metal Linux nodes.
+A 
+portworxVolume
+ can be dynamically created through Kubernetes, or it can also
+be pre-provisioned and referenced inside a Pod.
+Here is an example Pod referencing a pre-provisioned Portworx volume:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-portworx-volume-pod
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+image
+:
+ 
+registry.k8s.io/test-webserver
+
+
+    
+name
+:
+ 
+test-container
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+mountPath
+:
+ 
+/mnt
+
+
+      
+name
+:
+ 
+pxvol
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+pxvol
+
+
+    
+# This Portworx volume must already exist.
+
+
+    
+portworxVolume
+:
+
+
+      
+volumeID
+:
+ 
+"pxvol"
+
+
+      
+fsType
+:
+ 
+"<fs-type>"
+
+
+Note:
+Make sure you have an existing PortworxVolume with the name 
+pxvol
+
+before using it in the Pod.
+Portworx CSI migration
+FEATURE STATE:
+
+
+Kubernetes v1.33 [stable]
+(enabled by default)
+In Kubernetes 1.36, all operations for the in-tree
+Portworx volumes are redirected to the 
+pxd.portworx.com
+
+Container Storage Interface (CSI) Driver by default.
+Portworx CSI Driver
+
+must be installed on the cluster.
+projected
+A projected volume maps several existing volume sources into the same
+directory. For more details, see 
+projected volumes
+.
+secret
+A 
+secret
+ volume is used to pass sensitive information, such as passwords, to
+Pods. You can store secrets in the Kubernetes API and mount them as files for
+use by Pods without coupling to Kubernetes directly. 
+secret
+ volumes are
+backed by tmpfs (a RAM-backed filesystem), so they are never written to
+non-volatile storage.
+Note:
+You must create a Secret in the Kubernetes API before you can use it.
+A Secret is always mounted as 
+readOnly
+.
+A container using a Secret as a 
+subPath
+ volume mount will not
+receive Secret updates.
+For more details, see 
+Configuring Secrets
+.
+Using subPath
+Sometimes, it is useful to share one volume for multiple uses in a single Pod.
+The 
+volumeMounts[*].subPath
+ property specifies a sub-path inside the referenced volume
+instead of its root.
+The following example shows how to configure a Pod with a LAMP stack (Linux, Apache, MySQL, PHP)
+using a single, shared volume. This sample 
+subPath
+ configuration is not recommended
+for production use.
+The PHP application's code and assets map to the volume's 
+html
+ folder and
+the MySQL database is stored in the volume's 
+mysql
+ folder. For example:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+my-lamp-site
+
+
+spec
+:
+
+
+    
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+mysql
+
+
+      
+image
+:
+ 
+mysql
+
+
+      
+env
+:
+
+
+      
+- 
+name
+:
+ 
+MYSQL_ROOT_PASSWORD
+
+
+        
+value
+:
+ 
+"rootpasswd"
+
+
+      
+volumeMounts
+:
+
+
+      
+- 
+mountPath
+:
+ 
+/var/lib/mysql
+
+
+        
+name
+:
+ 
+site-data
+
+
+        
+subPath
+:
+ 
+mysql
+
+
+    
+- 
+name
+:
+ 
+php
+
+
+      
+image
+:
+ 
+php:7.0-apache
+
+
+      
+volumeMounts
+:
+
+
+      
+- 
+mountPath
+:
+ 
+/var/www/html
+
+
+        
+name
+:
+ 
+site-data
+
+
+        
+subPath
+:
+ 
+html
+
+
+    
+volumes
+:
+
+
+    
+- 
+name
+:
+ 
+site-data
+
+
+      
+persistentVolumeClaim
+:
+
+
+        
+claimName
+:
+ 
+my-lamp-site-data
+
+
+Using subPath with expanded environment variables
+FEATURE STATE:
+
+
+Kubernetes v1.17 [stable]
+Use the 
+subPathExpr
+ field to construct 
+subPath
+ directory names from
+downward API environment variables.
+The 
+subPath
+ and 
+subPathExpr
+ properties are mutually exclusive.
+In this example, a 
+Pod
+ uses 
+subPathExpr
+ to create a directory 
+pod1
+ within
+the 
+hostPath
+ volume 
+/var/log/pods
+.
+The 
+hostPath
+ volume takes the 
+Pod
+ name from the 
+downwardAPI
+.
+The host directory 
+/var/log/pods/pod1
+ is mounted at 
+/logs
+ in the container.
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+pod1
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+container1
+
+
+    
+env
+:
+
+
+    
+- 
+name
+:
+ 
+POD_NAME
+
+
+      
+valueFrom
+:
+
+
+        
+fieldRef
+:
+
+
+          
+apiVersion
+:
+ 
+v1
+
+
+          
+fieldPath
+:
+ 
+metadata.name
+
+
+    
+image
+:
+ 
+busybox:1.28
+
+
+    
+command
+:
+ 
+[
+ 
+"sh"
+,
+ 
+"-c"
+,
+ 
+"while [ true ]; do echo 'Hello'; sleep 10; done | tee -a /logs/hello.txt"
+ 
+]
+
+
+    
+volumeMounts
+:
+
+
+    
+- 
+name
+:
+ 
+workdir1
+
+
+      
+mountPath
+:
+ 
+/logs
+
+
+      
+# The variable expansion uses round brackets (not curly brackets).
+
+
+      
+subPathExpr
+:
+ 
+$(POD_NAME)
+
+
+  
+restartPolicy
+:
+ 
+Never
+
+
+  
+volumes
+:
+
+
+  
+- 
+name
+:
+ 
+workdir1
+
+
+    
+hostPath
+:
+
+
+      
+path
+:
+ 
+/var/log/pods
+
+
+Resources
+The storage medium (such as Disk or SSD) of an 
+emptyDir
+ volume is determined by the
+medium of the filesystem holding the kubelet root dir (typically
+
+/var/lib/kubelet
+). There is no limit on how much space an 
+emptyDir
+ or
+
+hostPath
+ volume can consume, and no isolation between containers or
+Pods.
+To learn about requesting space using a resource specification, see
+
+how to manage resources
+.
+Out-of-tree volume plugins
+The out-of-tree volume plugins include
+
+Container Storage Interface
+ (CSI), and also
+FlexVolume (which is deprecated). These plugins enable storage vendors to create custom storage plugins
+without adding their plugin source code to the Kubernetes repository.
+Previously, all volume plugins were "in-tree". The "in-tree" plugins were built, linked, compiled,
+and shipped with the core Kubernetes binaries. This meant that adding a new storage system to
+Kubernetes (a volume plugin) required checking code into the core Kubernetes code repository.
+Both CSI and FlexVolume allow volume plugins to be developed independently of
+the Kubernetes code base, and deployed (installed) on Kubernetes clusters as
+extensions.
+For storage vendors looking to create an out-of-tree volume plugin, please refer
+to the 
+volume plugin FAQ
+.
+csi
+Container Storage Interface
+
+(CSI) defines a standard interface for container orchestration systems (like
+Kubernetes) to expose arbitrary storage systems to their container workloads.
+Please read the 
+CSI design proposal
+
+for more information.
+Note:
+Support for CSI spec versions 0.2 and 0.3 is deprecated in Kubernetes
+v1.13 and will be removed in a future release.
+Note:
+CSI drivers may not be compatible across all Kubernetes releases.
+Please check the specific CSI driver's documentation for supported
+deployment steps for each Kubernetes release and a compatibility matrix.
+Once a CSI-compatible volume driver is deployed on a Kubernetes cluster, users
+may use the 
+csi
+ volume type to attach or mount the volumes exposed by the
+CSI driver.
+A 
+csi
+ volume can be used in a Pod in three different ways:
+through a reference to a 
+PersistentVolumeClaim
+with a 
+generic ephemeral volume
+with a 
+CSI ephemeral volume
+
+if the driver supports that
+The following fields are available to storage administrators to configure a CSI
+persistent volume:
+driver
+: A string value that specifies the name of the volume driver to use.
+This value must correspond to the value returned in the 
+GetPluginInfoResponse
+
+by the CSI driver as defined in the
+
+CSI spec
+.
+It is used by Kubernetes to identify which CSI driver to call out to, and by
+CSI driver components to identify which PV objects belong to the CSI driver.
+volumeHandle
+: A string value that uniquely identifies the volume. This value
+must correspond to the value returned in the 
+volume.id
+ field of the
+
+CreateVolumeResponse
+ by the CSI driver as defined in the
+
+CSI spec
+.
+The value is passed as 
+volume_id
+ in all calls to the CSI volume driver when
+referencing the volume.
+readOnly
+: An optional boolean value indicating whether the volume is to be
+"ControllerPublished" (attached) as read-only. Default is false. This value is passed
+to the CSI driver via the 
+readonly
+ field in the 
+ControllerPublishVolumeRequest
+.
+fsType
+: If the PV's 
+VolumeMode
+ is 
+Filesystem
+, then this field may be used
+to specify the filesystem that should be used to mount the volume. If the
+volume has not been formatted and formatting is supported, this value will be
+used to format the volume.
+This value is passed to the CSI driver via the 
+VolumeCapability
+ field of
+
+ControllerPublishVolumeRequest
+, 
+NodeStageVolumeRequest
+, and
+
+NodePublishVolumeRequest
+.
+volumeAttributes
+: A map of string to string that specifies static properties
+of a volume. This map must correspond to the map returned in the
+
+volume.attributes
+ field of the 
+CreateVolumeResponse
+ by the CSI driver as
+defined in the 
+CSI spec
+.
+The map is passed to the CSI driver via the 
+volume_context
+ field in the
+
+ControllerPublishVolumeRequest
+, 
+NodeStageVolumeRequest
+, and
+
+NodePublishVolumeRequest
+.
+controllerPublishSecretRef
+: A reference to the secret object containing
+sensitive information to pass to the CSI driver to complete the CSI
+
+ControllerPublishVolume
+ and 
+ControllerUnpublishVolume
+ calls. This field is
+optional, and may be empty if no secret is required. If the Secret
+contains more than one secret, all secrets are passed.
+nodeExpandSecretRef
+: A reference to the secret containing sensitive
+information to pass to the CSI driver to complete the CSI
+
+NodeExpandVolume
+ call. This field is optional and may be empty if no
+secret is required. If the object contains more than one secret, all
+secrets are passed. When you have configured secret data for node-initiated
+volume expansion, the kubelet passes that data via the 
+NodeExpandVolume()
+
+call to the CSI driver. All supported versions of Kubernetes offer the
+
+nodeExpandSecretRef
+ field, and have it available by default. Kubernetes releases
+prior to v1.25 did not include this support.
+Enable the 
+feature gate
+
+named 
+CSINodeExpandSecret
+ for each kube-apiserver and for the kubelet on every
+node. Since Kubernetes version 1.27, this feature has been enabled by default
+and no explicit enablement of the feature gate is required.
+You must also be using a CSI driver that supports or requires secret data during
+node-initiated storage resize operations.
+nodePublishSecretRef
+: A reference to the secret object containing
+sensitive information to pass to the CSI driver to complete the CSI
+
+NodePublishVolume
+ call. This field is optional and may be empty if no
+secret is required. If the secret object contains more than one secret, all
+secrets are passed.
+nodeStageSecretRef
+: A reference to the secret object containing
+sensitive information to pass to the CSI driver to complete the CSI
+
+NodeStageVolume
+ call. This field is optional and may be empty if no secret
+is required. If the Secret contains more than one secret, all secrets
+are passed.
+CSI raw block volume support
+FEATURE STATE:
+
+
+Kubernetes v1.18 [stable]
+Vendors with external CSI drivers can implement raw block volume support
+in Kubernetes workloads.
+You can set up your
+
+PersistentVolume/PersistentVolumeClaim with raw block volume support
+
+as usual, without any CSI-specific changes.
+CSI ephemeral volumes
+FEATURE STATE:
+
+
+Kubernetes v1.25 [stable]
+You can directly configure CSI volumes within the Pod
+specification. Volumes specified in this way are ephemeral and do not
+persist across Pod restarts. See
+
+Ephemeral Volumes
+
+for more information.
+For more information on how to develop a CSI driver, refer to the
+
+kubernetes-csi documentation
+Windows CSI proxy
+FEATURE STATE:
+
+
+Kubernetes v1.22 [stable]
+CSI node plugins need to perform various privileged
+operations like scanning of disk devices and mounting of file systems. These operations
+differ for each host operating system. For Linux worker nodes, containerized CSI node
+plugins are typically deployed as privileged containers. For Windows worker nodes,
+privileged operations for containerized CSI node plugins are supported using
+
+csi-proxy
+, a community-managed,
+stand-alone binary that needs to be pre-installed on each Windows node.
+For more details, refer to the deployment guide of the CSI plugin you wish to deploy.
+Migrating to CSI drivers from in-tree plugins
+FEATURE STATE:
+
+
+Kubernetes v1.25 [stable]
+The 
+CSIMigration
+ feature directs operations against existing in-tree
+plugins to corresponding CSI plugins (which are expected to be installed and configured).
+As a result, operators do not have to make any
+configuration changes to existing Storage Classes, PersistentVolumes, or PersistentVolumeClaims
+(referring to in-tree plugins) when transitioning to a CSI driver that supersedes an in-tree plugin.
+Note:
+Existing PVs created by an in-tree volume plugin can still be used in the future without any configuration
+changes, even after the migration to CSI is completed for that volume type, and even after you upgrade to a
+version of Kubernetes that doesn't have compiled-in support for that kind of storage.
+As part of that migration, you - or another cluster administrator - 
+must
+ have installed and configured
+the appropriate CSI driver for that storage. The core of Kubernetes does not install that software for you.
+After that migration, you can also define new PVCs and PVs that refer to the legacy, built-in
+storage integrations.
+Provided you have the appropriate CSI driver installed and configured, the PV creation continues
+to work, even for brand-new volumes. The actual storage management now happens through
+the CSI driver.
+The operations and features that are supported include:
+provisioning/delete, attach/detach, mount/unmount, and resizing of volumes.
+In-tree plugins that support 
+CSIMigration
+ and have a corresponding CSI driver implemented
+are listed in 
+Types of Volumes
+.
+flexVolume (deprecated)
+FEATURE STATE:
+
+
+Kubernetes v1.23 [deprecated]
+FlexVolume is an out-of-tree plugin interface that uses an exec-based model to interface
+with storage drivers. The FlexVolume driver binaries must be installed in a pre-defined
+volume plugin path on each node, and in some cases, the control plane nodes as well.
+Pods interact with FlexVolume drivers through the 
+flexVolume
+ in-tree volume plugin.
+The following FlexVolume 
+plugins
+,
+deployed as PowerShell scripts on the host, support Windows nodes:
+SMB
+iSCSI
+Note:
+FlexVolume is deprecated. Using an out-of-tree CSI driver is the recommended way to integrate external storage with Kubernetes.
+Maintainers of the FlexVolume driver should implement a CSI Driver and help migrate users of FlexVolume drivers to CSI.
+Users of FlexVolume should move their workloads to use the equivalent CSI Driver.
+Mount propagation
+Caution:
+Mount propagation is a low-level feature that does not work consistently on all
+volume types. The Kubernetes project recommends only using mount propagation with 
+hostPath
+
+or memory-backed 
+emptyDir
+ volumes. See
+
+Kubernetes issue #95049
+
+for more context.
+Mount propagation allows for sharing volumes mounted by a container to
+other containers in the same Pod, or even to other Pods on the same node.
+Mount propagation of a volume is controlled by the 
+mountPropagation
+ field
+in 
+containers[*].volumeMounts
+. Its values are:
+None
+ - This volume mount will not receive any subsequent mounts
+that are mounted to this volume or any of its subdirectories by the host.
+In a similar fashion, no mounts created by the container will be visible on
+the host. This is the default mode.
+This mode is equal to 
+rprivate
+ mount propagation as described in
+
+mount(8)
+However, the CRI runtime may choose 
+rslave
+ mount propagation (i.e.,
+
+HostToContainer
+) when 
+rprivate
+ propagation is not applicable.
+cri-dockerd (Docker) is known to choose 
+rslave
+ mount propagation when the
+mount source contains the Docker daemon's root directory (
+/var/lib/docker
+).
+HostToContainer
+ - This volume mount will receive all subsequent mounts
+that are mounted to this volume or any of its subdirectories.
+In other words, if the host mounts anything inside the volume mount, the
+container will see it mounted there.
+Similarly, if any Pod with 
+Bidirectional
+ mount propagation to the same
+volume mounts anything there, the container with 
+HostToContainer
+ mount
+propagation will see it.
+This mode is equal to 
+rslave
+ mount propagation as described in the
+
+mount(8)
+Bidirectional
+ - This volume mount behaves the same as the 
+HostToContainer
+ mount.
+In addition, all volume mounts created by the container will be propagated
+back to the host and to all containers of all Pods that use the same volume.
+A typical use case for this mode is a Pod with a FlexVolume or CSI driver, or
+a Pod that needs to mount something on the host using a 
+hostPath
+ volume.
+This mode is equal to 
+rshared
+ mount propagation as described in the
+
+mount(8)
+Warning:
+Bidirectional
+ mount propagation can be dangerous. It can damage
+the host operating system, and therefore, it is allowed only in privileged
+containers. Familiarity with Linux kernel behavior is strongly recommended.
+In addition, any volume mounts created by containers in Pods must be destroyed
+(unmounted) by the containers on termination.
+Read-only mounts
+A mount can be made read-only by setting the 
+.spec.containers[*].volumeMounts[*].readOnly
+
+field to 
+true
+.
+This does not make the volume itself read-only, but that specific container will
+not be able to write to it.
+Other containers in the Pod may mount the same volume as read-write.
+On Linux, read-only mounts are not recursively read-only by default.
+For example, consider a Pod that mounts the hosts 
+/mnt
+ as a 
+hostPath
+ volume. If
+there is another filesystem mounted read-write on 
+/mnt/<SUBMOUNT>
+ (such as tmpfs,
+NFS, or USB storage), the volume mounted into the container(s) will also have a writeable
+
+/mnt/<SUBMOUNT>
+, even if the mount itself was specified as read-only.
+Recursive read-only mounts
+FEATURE STATE:
+
+
+Kubernetes v1.33 [stable]
+(enabled by default)
+Recursive read-only mounts can be enabled by setting the
+
+RecursiveReadOnlyMounts
+ 
+feature gate
+
+for kubelet and kube-apiserver, and setting the 
+.spec.containers[*].volumeMounts[*].recursiveReadOnly
+
+field for a Pod.
+The allowed values are:
+Disabled
+ (default): no effect.
+Enabled
+: makes the mount recursively read-only.
+Needs all the following requirements to be satisfied:
+readOnly
+ is set to 
+true
+mountPropagation
+ is unset, or set to 
+None
+The host is running with Linux kernel v5.12 or later
+The 
+CRI-level
+ container runtime supports recursive read-only mounts
+The OCI-level container runtime supports recursive read-only mounts.
+It will fail if any of these is not true.
+IfPossible
+: attempts to apply 
+Enabled
+, and falls back to 
+Disabled
+
+if the feature is not supported by the kernel or the runtime class.
+Example:
+storage/rro.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+rro
+
+
+spec
+:
+
+
+  
+volumes
+:
+
+
+    
+- 
+name
+:
+ 
+mnt
+
+
+      
+hostPath
+:
+
+
+        
+# tmpfs is mounted on /mnt/tmpfs
+
+
+        
+path
+:
+ 
+/mnt
+
+
+  
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+busybox
+
+
+      
+image
+:
+ 
+busybox
+
+
+      
+args
+:
+ 
+[
+"sleep"
+,
+ 
+"infinity"
+]
+
+
+      
+volumeMounts
+:
+
+
+        
+# /mnt-rro/tmpfs is not writable
+
+
+        
+- 
+name
+:
+ 
+mnt
+
+
+          
+mountPath
+:
+ 
+/mnt-rro
+
+
+          
+readOnly
+:
+ 
+true
+
+
+          
+mountPropagation
+:
+ 
+None
+
+
+          
+recursiveReadOnly
+:
+ 
+Enabled
+
+
+        
+# /mnt-ro/tmpfs is writable
+
+
+        
+- 
+name
+:
+ 
+mnt
+
+
+          
+mountPath
+:
+ 
+/mnt-ro
+
+
+          
+readOnly
+:
+ 
+true
+
+
+        
+# /mnt-rw/tmpfs is writable
+
+
+        
+- 
+name
+:
+ 
+mnt
+
+
+          
+mountPath
+:
+ 
+/mnt-rw
+
+
+When this property is recognized by kubelet and kube-apiserver,
+the 
+.status.containerStatuses[*].volumeMounts[*].recursiveReadOnly
+ field is set to either
+
+Enabled
+ or 
+Disabled
+.
+Implementations
+Note:
+ This section links to third party projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for these projects, which are listed alphabetically. To add a project to this list, read the 
+content guide
+ before submitting a change. 
+More information.
+The following container runtimes are known to support recursive read-only mounts.
+CRI-level:
+containerd
+, since v2.0
+CRI-O
+, since v1.30
+OCI-level:
+runc
+, since v1.1
+crun
+, since v1.8.6
+What's next
+Follow an example of 
+deploying WordPress and MySQL with Persistent Volumes
+.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 14, 2026 at 1:15 AM PST: 
+fix(links): update kubernetes/community links from master to main (03c191bcc4)
+Items on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the 
+CNCF website guidelines
+ for more details.
+You should read the 
+content guide
+ before proposing a change that adds an extra third-party link.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

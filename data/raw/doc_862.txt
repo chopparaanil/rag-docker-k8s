@@ -1,0 +1,3055 @@
+Reviewing for approvers and reviewers | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Reviewing for approvers and reviewers
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Reviewing a PR
+Commit into another person's PR
+Prow commands for reviewing
+Triage and categorize issues
+Triaging an issue
+Adding and removing issue labels
+Issue lifecycle labels
+Handling special issue types
+Duplicate issues
+Dead link issues
+Blog issues
+Support requests or code bug reports
+Squashing
+Kubernetes Documentation
+Contribute
+Reviewing changes
+For approvers and reviewers
+Reviewing for approvers and reviewers
+SIG Docs 
+Reviewers
+ and
+
+Approvers
+ do a few extra things
+when reviewing a change.
+Every week a specific docs approver volunteers to triage and review pull requests.
+This person is the "PR Wrangler" for the week. See the
+
+PR Wrangler scheduler
+
+for more information. To become a PR Wrangler, attend the weekly SIG Docs meeting
+and volunteer. Even if you are not on the schedule for the current week, you can
+still review pull requests (PRs) that are not already under active review.
+In addition to the rotation, a bot assigns reviewers and approvers
+for the PR based on the owners for the affected files.
+Reviewing a PR
+Kubernetes documentation follows the
+
+Kubernetes code review process
+.
+Everything described in 
+Reviewing a pull request
+
+applies, but Reviewers and Approvers should also do the following:
+Using the 
+/assign
+ Prow command to assign a specific reviewer to a PR as needed.
+This is extra important when it comes to requesting technical review from code contributors.
+Note:
+Look at the 
+reviewers
+ field in the front-matter at the top of a Markdown file to see who can
+provide technical review.
+Making sure the PR follows the 
+Content
+
+and 
+Style
+ guides; link the author to the
+relevant part of the guide(s) if it doesn't.
+Using the GitHub 
+Request Changes
+ option when applicable to suggest changes to the PR author.
+Changing your review status in GitHub using the 
+/approve
+ or 
+/lgtm
+ Prow commands,
+if your suggestions are implemented.
+Commit into another person's PR
+Leaving PR comments is helpful, but there might be times when you need to commit
+into another person's PR instead.
+Do not "take over" for another person unless they explicitly ask
+you to, or you want to resurrect a long-abandoned PR. While it may be faster
+in the short term, it deprives the person of the chance to contribute.
+The process you use depends on whether you need to edit a file that is already
+in the scope of the PR, or a file that the PR has not yet touched.
+You can't commit into someone else's PR if either of the following things is
+true:
+If the PR author pushed their branch directly to the
+
+https://github.com/kubernetes/website/
+
+repository. Only a reviewer with push access can commit to another user's PR.
+Note:
+Encourage the author to push their branch to their fork before
+opening the PR next time.
+The PR author explicitly disallows edits from approvers.
+Prow commands for reviewing
+Prow
+ is
+the Kubernetes-based CI/CD system that runs jobs against pull requests (PRs). Prow
+enables chatbot-style commands to handle GitHub actions across the Kubernetes
+organization, like 
+adding and removing labels
+,
+closing issues, and assigning an approver. Enter Prow commands as GitHub comments
+using the 
+/<command-name>
+ format.
+The most common prow commands reviewers and approvers use are:
+Prow commands for reviewing
+Prow Command
+Role Restrictions
+Description
+/lgtm
+Organization members
+Signals that you've finished reviewing a PR and are satisfied with the changes.
+/approve
+Approvers
+Approves a PR for merging.
+/assign
+Anyone
+Assigns a person to review or approve a PR
+/close
+Organization members
+Closes an issue or PR.
+/hold
+Anyone
+Adds the 
+do-not-merge/hold
+ label, indicating the PR cannot be automatically merged.
+/hold cancel
+Anyone
+Removes the 
+do-not-merge/hold
+ label.
+To view the commands that you can use in a PR, see the
+
+Prow Command Reference
+.
+Triage and categorize issues
+In general, SIG Docs follows the
+
+Kubernetes issue triage
+
+process and uses the same labels.
+This GitHub Issue 
+filter
+
+finds issues that might need triage.
+Triaging an issue
+Validate the issue
+Make sure the issue is about website documentation. Some issues can be closed quickly by
+answering a question or pointing the reporter to a resource. See the
+
+Support requests or code bug reports
+ section for details.
+Assess whether the issue has merit.
+Add the 
+triage/needs-information
+ label if the issue doesn't have enough
+detail to be actionable or the template is not filled out adequately.
+Close the issue if it has both the 
+lifecycle/stale
+ and 
+triage/needs-information
+ labels.
+Add a priority label (the
+
+Issue Triage Guidelines
+
+define priority labels in detail)
+Issue labels
+Label
+Description
+priority/critical-urgent
+Do this right now.
+priority/important-soon
+Do this within 3 months.
+priority/important-longterm
+Do this within 6 months.
+priority/backlog
+Deferrable indefinitely. Do when resources are available.
+priority/awaiting-more-evidence
+Placeholder for a potentially good issue so it doesn't get lost.
+help
+ or 
+good first issue
+Suitable for someone with very little Kubernetes or SIG Docs experience. See 
+Help Wanted and Good First Issue Labels
+ for more information.
+At your discretion, take ownership of an issue and submit a PR for it
+(especially if it's quick or relates to work you're already doing).
+If you have questions about triaging an issue, ask in 
+#sig-docs
+ on Slack or
+the 
+kubernetes-sig-docs mailing list
+.
+Adding and removing issue labels
+To add a label, leave a comment in one of the following formats:
+/<label-to-add>
+ (for example, 
+/good-first-issue
+)
+/<label-category> <label-to-add>
+ (for example, 
+/triage needs-information
+ or 
+/language ja
+)
+To remove a label, leave a comment in one of the following formats:
+/remove-<label-to-remove>
+ (for example, 
+/remove-help
+)
+/remove-<label-category> <label-to-remove>
+ (for example, 
+/remove-triage needs-information
+)
+In both cases, the label must already exist. If you try to add a label that does not exist, the command is
+silently ignored.
+For a list of all labels, see the 
+website repository's Labels section
+.
+Not all labels are used by SIG Docs.
+Issue lifecycle labels
+Issues are generally opened and closed quickly.
+However, sometimes an issue is inactive after its opened.
+Other times, an issue may need to remain open for longer than 90 days.
+Issue lifecycle labels
+Label
+Description
+lifecycle/stale
+After 90 days with no activity, an issue is automatically labeled as stale. The issue will be automatically closed if the lifecycle is not manually reverted using the 
+/remove-lifecycle stale
+ command.
+lifecycle/frozen
+An issue with this label will not become stale after 90 days of inactivity. A user manually adds this label to issues that need to remain open for much longer than 90 days, such as those with a 
+priority/important-longterm
+ label.
+Handling special issue types
+SIG Docs encounters the following types of issues often enough to document how
+to handle them.
+Duplicate issues
+If a single problem has one or more issues open for it, combine them into a single issue.
+You should decide which issue to keep open (or
+open a new issue), then move over all relevant information and link related issues.
+Finally, label all other issues that describe the same problem with
+
+triage/duplicate
+ and close them. Only having a single issue to work on reduces confusion
+and avoids duplicate work on the same problem.
+Dead link issues
+If the dead link issue is in the API or 
+kubectl
+ documentation, assign them
+
+/priority critical-urgent
+ until the problem is fully understood. Assign all
+other dead link issues 
+/priority important-longterm
+, as they must be manually fixed.
+Blog issues
+We expect 
+Kubernetes Blog
+ entries to become
+outdated over time. Therefore, we only maintain blog entries less than a year old.
+If an issue is related to a blog entry that is more than one year old,
+you should typically close the issue without fixing.
+You can send a link to 
+article updates and maintenance
+
+as part of the message you send when you close the PR.
+It is OK to make an exception where a relevant justification applies.
+Support requests or code bug reports
+Some docs issues are actually issues with the underlying code, or requests for
+assistance when something, for example a tutorial, doesn't work.
+For issues unrelated to docs, close the issue with the 
+kind/support
+ label and a comment
+directing the requester to support venues (Slack, Stack Overflow) and, if
+relevant, the repository to file an issue for bugs with features (
+kubernetes/kubernetes
+
+is a great place to start).
+Sample response to a request for support:
+This issue sounds more like a request for support and less
+like an issue specifically for docs. I encourage you to bring
+your question to the `#kubernetes-users` channel in
+[Kubernetes slack](https://slack.k8s.io/). You can also search
+resources like
+[Stack Overflow](https://stackoverflow.com/questions/tagged/kubernetes)
+for answers to similar questions.
+
+You can also open issues for Kubernetes functionality in
+https://github.com/kubernetes/kubernetes.
+
+If this is a documentation issue, please re-open this issue.
+
+Sample code bug report response:
+This sounds more like an issue with the code than an issue with
+the documentation. Please open an issue at
+https://github.com/kubernetes/kubernetes/issues.
+
+If this is a documentation issue, please re-open this issue.
+
+Squashing
+As an approver, when you review pull requests (PRs), there are various cases
+where you might do the following:
+Advise the contributor to squash their commits.
+Squash the commits for the contributor.
+Advise the contributor not to squash yet.
+Prevent squashing.
+Advising contributors to squash
+: A new contributor might not know that they
+should squash commits in their pull requests (PRs). If this is the case, advise
+them to do so, provide links to useful information, and offer to arrange help if
+they need it. Some useful links:
+Opening pull requests and squashing your commits
+
+for documentation contributors.
+GitHub Workflow
+, including diagrams, for developers.
+Squashing commits for contributors
+: If a contributor might have difficulty
+squashing commits or there is time pressure to merge a PR, you can perform the
+squash for them:
+The kubernetes/website repo is
+
+configured to allow squashing for pull request merges
+.
+Simply select the 
+Squash commits
+ button.
+In the PR, if the contributor enables maintainers to manage the PR, you can
+squash their commits and update their fork with the result. Before you squash,
+advise them to save and push their latest changes to the PR. After you squash,
+advise them to pull the squashed commit to their local clone.
+You can get GitHub to squash the commits by using a label so that Tide / GitHub
+performs the squash or by clicking the 
+Squash commits
+ button when you merge the PR.
+Advise contributors to avoid squashing
+If one commit does something broken or unwise, and the last commit reverts this
+error, don't squash the commits. Even though the "Files changed" tab in the PR
+on GitHub and the Netlify preview will both look OK, merging this PR might create
+rebase or merge conflicts for other folks. Intervene as you see fit to avoid that
+risk to other contributors.
+Never squash
+If you're launching a localization or releasing the docs for a new version,
+you are merging in a branch that's not from a user's fork, 
+never squash the commits
+.
+Not squashing is essential because you must maintain the commit history for those files.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 14, 2026 at 1:15 AM PST: 
+fix(links): update kubernetes/community links from master to main (03c191bcc4)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

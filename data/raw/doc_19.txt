@@ -1,0 +1,121 @@
+Partners | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Tiếng Việt (Vietnamese)
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+Kubernetes Partners
+Kubernetes works with partners to create a strong, vibrant codebase that supports a spectrum of complementary platforms.
+Kubernetes Certified Service Providers
+Vetted service providers with deep experience helping enterprises successfully adopt Kubernetes.
+See KCSP Partners
+Interested in becoming a
+
+KCSP
+?
+Certified Kubernetes Distributions, Hosted Platforms, and Installers
+Software conformance ensures that every vendor’s version of Kubernetes supports the required APIs.
+See Conformance Partners
+Interested in becoming
+
+Kubernetes Certified
+?
+Kubernetes Training Partners
+Vetted training providers who have deep experience in cloud native technology training.
+See KCNTP Partners
+Interested in becoming a
+
+KCNTP
+?
+
+
+
+
+
+
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

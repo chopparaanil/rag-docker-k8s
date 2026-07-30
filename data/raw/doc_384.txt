@@ -1,0 +1,6127 @@
+Declarative Management of Kubernetes Objects Using Configuration Files | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+한국어 (Korean)
+
+
+Español (Spanish)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Declarative Management of Kubernetes Objects Using Configuration Files
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Before you begin
+Trade-offs
+Overview
+How to create objects
+How to update objects
+How to delete objects
+Recommended: 
+kubectl delete -f <filename>
+Alternative: 
+kubectl apply -f <directory> --prune
+How to view an object
+How apply calculates differences and merges changes
+Merge patch calculation
+How different types of fields are merged
+Merging changes to primitive fields
+Merging changes to map fields
+Merging changes for fields of type list
+Default field values
+How to clear server-defaulted fields or fields set by other writers
+How to change ownership of a field between the configuration file and direct imperative writers
+Changing the owner from a direct imperative writer to a configuration file
+Changing the owner from a configuration file to a direct imperative writer
+Changing management methods
+Migrating from imperative command management to declarative object configuration
+Migrating from imperative object configuration to declarative object configuration
+Defining controller selectors and PodTemplate labels
+What's next
+Kubernetes Documentation
+Tasks
+Manage Kubernetes Objects
+Declarative Management of Kubernetes Objects Using Configuration Files
+Declarative Management of Kubernetes Objects Using Configuration Files
+Kubernetes objects can be created, updated, and deleted by storing multiple
+object configuration files in a directory and using 
+kubectl apply
+ to
+recursively create and update those objects as needed. This method
+retains writes made to live objects without merging the changes
+back into the object configuration files. 
+kubectl diff
+ also gives you a
+preview of what changes 
+apply
+ will make.
+Before you begin
+Install 
+kubectl
+.
+You need to have a Kubernetes cluster, and the kubectl command-line tool must
+be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a
+cluster, you can create one by using
+
+minikube
+
+or you can use one of these Kubernetes playgrounds:
+iximiuz Labs
+Killercoda
+KodeKloud
+To check the version, enter 
+kubectl version
+.
+Trade-offs
+The 
+kubectl
+ tool supports three kinds of object management:
+Imperative commands
+Imperative object configuration
+Declarative object configuration
+See 
+Kubernetes Object Management
+
+for a discussion of the advantages and disadvantage of each kind of object management.
+Overview
+Declarative object configuration requires a firm understanding of
+the Kubernetes object definitions and configuration. Read and complete
+the following documents if you have not already:
+Managing Kubernetes Objects Using Imperative Commands
+Imperative Management of Kubernetes Objects Using Configuration Files
+Following are definitions for terms used in this document:
+object configuration file / configuration file
+: A file that defines the
+configuration for a Kubernetes object. This topic shows how to pass configuration
+files to 
+kubectl apply
+. Configuration files are typically stored in source control, such as Git.
+live object configuration / live configuration
+: The live configuration
+values of an object, as observed by the Kubernetes cluster. These are kept in the Kubernetes
+cluster storage, typically etcd.
+declarative configuration writer / declarative writer
+: A person or software component
+that makes updates to a live object. The live writers referred to in this topic make changes
+to object configuration files and run 
+kubectl apply
+ to write the changes.
+How to create objects
+Use 
+kubectl apply
+ to create all objects, except those that already exist,
+defined by configuration files in a specified directory:
+kubectl apply -f <directory>
+
+This sets the 
+kubectl.kubernetes.io/last-applied-configuration: '{...}'
+
+annotation on each object. The annotation contains the contents of the object
+configuration file that was used to create the object.
+Note:
+Add the 
+-R
+ flag to recursively process directories.
+Here's an example of an object configuration file:
+application/simple_deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Run 
+kubectl diff
+ to print the object that will be created:
+kubectl diff -f https://k8s.io/examples/application/simple_deployment.yaml
+
+Note:
+diff
+ uses 
+server-side dry-run
+,
+which needs to be enabled on 
+kube-apiserver
+.
+Since 
+diff
+ performs a server-side apply request in dry-run mode,
+it requires granting 
+PATCH
+, 
+CREATE
+, and 
+UPDATE
+ permissions.
+See 
+Dry-Run Authorization
+
+for details.
+Create the object using 
+kubectl apply
+:
+kubectl apply -f https://k8s.io/examples/application/simple_deployment.yaml
+
+Print the live configuration using 
+kubectl get
+:
+kubectl get -f https://k8s.io/examples/application/simple_deployment.yaml -o yaml
+
+The output shows that the 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation
+was written to the live configuration, and it matches the configuration file:
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# This is the json representation of simple_deployment.yaml
+
+
+    
+# It was written by kubectl apply when the object was created
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"minReadySeconds":5,"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.14.2","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+  
+# ...
+
+
+spec
+:
+
+
+  
+# ...
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+        
+# ...
+
+
+      
+# ...
+
+
+    
+# ...
+
+
+  
+# ...
+
+
+How to update objects
+You can also use 
+kubectl apply
+ to update all objects defined in a directory, even
+if those objects already exist. This approach accomplishes the following:
+Sets fields that appear in the configuration file in the live configuration.
+Clears fields removed from the configuration file in the live configuration.
+kubectl diff -f <directory>
+
+kubectl apply -f <directory>
+
+Note:
+Add the 
+-R
+ flag to recursively process directories.
+Here's an example configuration file:
+application/simple_deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Create the object using 
+kubectl apply
+:
+kubectl apply -f https://k8s.io/examples/application/simple_deployment.yaml
+
+Note:
+For purposes of illustration, the preceding command refers to a single
+configuration file instead of a directory.
+Print the live configuration using 
+kubectl get
+:
+kubectl get -f https://k8s.io/examples/application/simple_deployment.yaml -o yaml
+
+The output shows that the 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation
+was written to the live configuration, and it matches the configuration file:
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# This is the json representation of simple_deployment.yaml
+
+
+    
+# It was written by kubectl apply when the object was created
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"minReadySeconds":5,"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.14.2","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+  
+# ...
+
+
+spec
+:
+
+
+  
+# ...
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+        
+# ...
+
+
+      
+# ...
+
+
+    
+# ...
+
+
+  
+# ...
+
+
+Directly update the 
+replicas
+ field in the live configuration by using 
+kubectl scale
+.
+This does not use 
+kubectl apply
+:
+kubectl scale deployment/nginx-deployment --replicas
+=
+2
+
+
+Print the live configuration using 
+kubectl get
+:
+kubectl get deployment nginx-deployment -o yaml
+
+The output shows that the 
+replicas
+ field has been set to 2, and the 
+last-applied-configuration
+
+annotation does not contain a 
+replicas
+ field:
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# note that the annotation does not contain replicas
+
+
+    
+# because it was not updated through apply
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"minReadySeconds":5,"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.14.2","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+  
+# ...
+
+
+spec
+:
+
+
+  
+replicas
+:
+ 
+2
+ 
+# written by scale
+
+
+  
+# ...
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+      
+# ...
+
+
+Update the 
+simple_deployment.yaml
+ configuration file to change the image from
+
+nginx:1.14.2
+ to 
+nginx:1.16.1
+, and delete the 
+minReadySeconds
+ field:
+application/update_deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.16.1
+ 
+# update the image
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Apply the changes made to the configuration file:
+kubectl diff -f https://k8s.io/examples/application/update_deployment.yaml
+
+kubectl apply -f https://k8s.io/examples/application/update_deployment.yaml
+
+Print the live configuration using 
+kubectl get
+:
+kubectl get -f https://k8s.io/examples/application/update_deployment.yaml -o yaml
+
+The output shows the following changes to the live configuration:
+The 
+replicas
+ field retains the value of 2 set by 
+kubectl scale
+.
+This is possible because it is omitted from the configuration file.
+The 
+image
+ field has been updated to 
+nginx:1.16.1
+ from 
+nginx:1.14.2
+.
+The 
+last-applied-configuration
+ annotation has been updated with the new image.
+The 
+minReadySeconds
+ field has been cleared.
+The 
+last-applied-configuration
+ annotation no longer contains the 
+minReadySeconds
+ field.
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# The annotation contains the updated image to nginx 1.16.1,
+
+
+    
+# but does not contain the updated replicas to 2
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.16.1","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+    
+# ...
+
+
+spec
+:
+
+
+  
+replicas
+:
+ 
+2
+ 
+# Set by `kubectl scale`.  Ignored by `kubectl apply`.
+
+
+  
+# minReadySeconds cleared by `kubectl apply`
+
+
+  
+# ...
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.16.1
+ 
+# Set by `kubectl apply`
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+        
+# ...
+
+
+      
+# ...
+
+
+    
+# ...
+
+
+  
+# ...
+
+
+Warning:
+Mixing 
+kubectl apply
+ with the imperative object configuration commands
+
+create
+ and 
+replace
+ is not supported. This is because 
+create
+
+and 
+replace
+ do not retain the 
+kubectl.kubernetes.io/last-applied-configuration
+
+that 
+kubectl apply
+ uses to compute updates.
+How to delete objects
+There are two approaches to delete objects managed by 
+kubectl apply
+.
+Recommended: 
+kubectl delete -f <filename>
+Manually deleting objects using the imperative command is the recommended
+approach, as it is more explicit about what is being deleted, and less likely
+to result in the user deleting something unintentionally:
+kubectl delete -f <filename>
+
+Alternative: 
+kubectl apply -f <directory> --prune
+As an alternative to 
+kubectl delete
+, you can use 
+kubectl apply
+ to identify objects to be deleted after
+their manifests have been removed from a directory in the local filesystem.
+In Kubernetes 1.36, there are two pruning modes available in kubectl apply:
+Allowlist-based pruning: This mode has existed since kubectl v1.5 but is still
+in alpha due to usability, correctness and performance issues with its design.
+The ApplySet-based mode is designed to replace it.
+ApplySet-based pruning: An 
+apply set
+ is a server-side object (by default, a Secret)
+that kubectl can use to accurately and efficiently track set membership across 
+apply
+
+operations. This mode was introduced in alpha in kubectl v1.27 as a replacement for allowlist-based pruning.
+Allow list
+Apply set
+FEATURE STATE:
+
+
+Kubernetes v1.5 [alpha]
+Warning:
+Take care when using 
+--prune
+ with 
+kubectl apply
+ in allow list mode. Which
+objects are pruned depends on the values of the 
+--prune-allowlist
+, 
+--selector
+
+and 
+--namespace
+ flags, and relies on dynamic discovery of the objects in scope.
+Especially if flag values are changed between invocations, this can lead to objects
+being unexpectedly deleted or retained.
+To use allowlist-based pruning, add the following flags to your 
+kubectl apply
+ invocation:
+--prune
+: Delete previously applied objects that are not in the set passed to the current invocation.
+--prune-allowlist
+: A list of group-version-kinds (GVKs) to consider for pruning.
+This flag is optional but strongly encouraged, as its default value is a partial
+list of both namespaced and cluster-scoped types, which can lead to surprising results.
+--selector/-l
+: Use a label selector to constrain the set of objects selected
+for pruning. This flag is optional but strongly encouraged.
+--all
+: use instead of 
+--selector/-l
+ to explicitly select all previously
+applied objects of the allowlisted types.
+Allowlist-based pruning queries the API server for all objects of the allowlisted GVKs that match the given labels (if any), and attempts to match the returned live object configurations against the object
+manifest files. If an object matches the query, and it does not have a
+manifest in the directory, and it has a 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation,
+it is deleted.
+kubectl apply -f <directory> --prune -l <labels> --prune-allowlist
+=
+<gvk-list>
+
+Warning:
+Apply with prune should only be run against the root directory
+containing the object manifests. Running against sub-directories
+can cause objects to be unintentionally deleted if they were previously applied,
+have the labels given (if any), and do not appear in the subdirectory.
+FEATURE STATE:
+
+
+Kubernetes v1.27 [alpha]
+Caution:
+kubectl apply --prune --applyset
+ is in alpha, and backwards incompatible
+changes might be introduced in subsequent releases.
+To use ApplySet-based pruning, set the 
+KUBECTL_APPLYSET=true
+ environment variable,
+and add the following flags to your 
+kubectl apply
+ invocation:
+--prune
+: Delete previously applied objects that are not in the set passed
+to the current invocation.
+--applyset
+: The name of an object that kubectl can use to accurately and
+efficiently track set membership across 
+apply
+ operations.
+KUBECTL_APPLYSET
+=
+true
+ kubectl apply -f <directory> --prune --applyset
+=
+<name>
+
+By default, the type of the ApplySet parent object used is a Secret. However,
+ConfigMaps can also be used in the format: 
+--applyset=configmaps/<name>
+.
+When using a Secret or ConfigMap, kubectl will create the object if it does not already exist.
+It is also possible to use custom resources as ApplySet parent objects. To enable
+this, label the Custom Resource Definition (CRD) that defines the resource you want
+to use with the following: 
+applyset.kubernetes.io/is-parent-type: true
+. Then, create
+the object you want to use as an ApplySet parent (kubectl does not do this automatically
+for custom resources). Finally, refer to that object in the applyset flag as follows:
+
+--applyset=<resource>.<group>/<name>
+ (for example, 
+widgets.custom.example.com/widget-name
+).
+With ApplySet-based pruning, kubectl adds the 
+applyset.kubernetes.io/part-of=<parentID>
+
+label to each object in the set before they are sent to the server. For performance reasons,
+it also collects the list of resource types and namespaces that the set contains and adds
+these in annotations on the live parent object. Finally, at the end of the apply operation,
+it queries the API server for objects of those types in those namespaces
+(or in the cluster scope, as applicable) that belong to the set, as defined by the
+
+applyset.kubernetes.io/part-of=<parentID>
+ label.
+Caveats and restrictions:
+Each object may be a member of at most one set.
+The 
+--namespace
+ flag is required when using any namespaced parent, including
+the default Secret. This means that ApplySets spanning multiple namespaces must
+use a cluster-scoped custom resource as the parent object.
+To safely use ApplySet-based pruning with multiple directories,
+use a unique ApplySet name for each.
+How to view an object
+You can use 
+kubectl get
+ with 
+-o yaml
+ to view the configuration of a live object:
+kubectl get -f <filename|url> -o yaml
+
+How apply calculates differences and merges changes
+Caution:
+A 
+patch
+ is an update operation that is scoped to specific fields of an object
+instead of the entire object. This enables updating only a specific set of fields
+on an object without reading the object first.
+When 
+kubectl apply
+ updates the live configuration for an object,
+it does so by sending a patch request to the API server. The
+patch defines updates scoped to specific fields of the live object
+configuration. The 
+kubectl apply
+ command calculates this patch request
+using the configuration file, the live configuration, and the
+
+last-applied-configuration
+ annotation stored in the live configuration.
+Merge patch calculation
+The 
+kubectl apply
+ command writes the contents of the configuration file to the
+
+kubectl.kubernetes.io/last-applied-configuration
+ annotation. This
+is used to identify fields that have been removed from the configuration
+file and need to be cleared from the live configuration. Here are the steps used
+to calculate which fields should be deleted or set:
+Calculate the fields to delete. These are the fields present in
+
+last-applied-configuration
+ and missing from the configuration file.
+Calculate the fields to add or set. These are the fields present in
+the configuration file whose values don't match the live configuration.
+Here's an example. Suppose this is the configuration file for a Deployment object:
+application/update_deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.16.1
+ 
+# update the image
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Also, suppose this is the live configuration for the same Deployment object:
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# note that the annotation does not contain replicas
+
+
+    
+# because it was not updated through apply
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"minReadySeconds":5,"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.14.2","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+  
+# ...
+
+
+spec
+:
+
+
+  
+replicas
+:
+ 
+2
+ 
+# written by scale
+
+
+  
+# ...
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+      
+# ...
+
+
+Here are the merge calculations that would be performed by 
+kubectl apply
+:
+Calculate the fields to delete by reading values from
+
+last-applied-configuration
+ and comparing them to values in the
+configuration file.
+Clear fields explicitly set to null in the local object configuration file
+regardless of whether they appear in the 
+last-applied-configuration
+.
+In this example, 
+minReadySeconds
+ appears in the
+
+last-applied-configuration
+ annotation, but does not appear in the configuration file.
+
+Action:
+ Clear 
+minReadySeconds
+ from the live configuration.
+Calculate the fields to set by reading values from the configuration
+file and comparing them to values in the live configuration. In this example,
+the value of 
+image
+ in the configuration file does not match
+the value in the live configuration. 
+Action:
+ Set the value of 
+image
+ in the live configuration.
+Set the 
+last-applied-configuration
+ annotation to match the value
+of the configuration file.
+Merge the results from 1, 2, 3 into a single patch request to the API server.
+Here is the live configuration that is the result of the merge:
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+# ...
+
+
+    
+# The annotation contains the updated image to nginx 1.16.1,
+
+
+    
+# but does not contain the updated replicas to 2
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"apps/v1","kind":"Deployment",
+
+      "metadata":{"annotations":{},"name":"nginx-deployment","namespace":"default"},
+
+      "spec":{"selector":{"matchLabels":{"app":nginx}},"template":{"metadata":{"labels":{"app":"nginx"}},
+
+      "spec":{"containers":[{"image":"nginx:1.16.1","name":"nginx",
+
+      "ports":[{"containerPort":80}]}]}}}}
+      
+
+    
+# ...
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+# ...
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+replicas
+:
+ 
+2
+ 
+# Set by `kubectl scale`.  Ignored by `kubectl apply`.
+
+
+  
+# minReadySeconds cleared by `kubectl apply`
+
+
+  
+# ...
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+# ...
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.16.1
+ 
+# Set by `kubectl apply`
+
+
+        
+# ...
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+        
+# ...
+
+
+      
+# ...
+
+
+    
+# ...
+
+
+  
+# ...
+
+
+How different types of fields are merged
+How a particular field in a configuration file is merged with
+the live configuration depends on the
+type of the field. There are several types of fields:
+primitive
+: A field of type string, integer, or boolean.
+For example, 
+image
+ and 
+replicas
+ are primitive fields. 
+Action:
+ Replace.
+map
+, also called 
+object
+: A field of type map or a complex type that contains subfields. For example, 
+labels
+,
+
+annotations
+,
+spec
+ and 
+metadata
+ are all maps. 
+Action:
+ Merge elements or subfields.
+list
+: A field containing a list of items that can be either primitive types or maps.
+For example, 
+containers
+, 
+ports
+, and 
+args
+ are lists. 
+Action:
+ Varies.
+When 
+kubectl apply
+ updates a map or list field, it typically does
+not replace the entire field, but instead updates the individual subelements.
+For instance, when merging the 
+spec
+ on a Deployment, the entire 
+spec
+ is
+not replaced. Instead the subfields of 
+spec
+, such as 
+replicas
+, are compared
+and merged.
+Merging changes to primitive fields
+Primitive fields are replaced or cleared.
+Note:
+-
+ is used for "not applicable" because the value is not used.
+Field in object configuration file
+Field in live object configuration
+Field in last-applied-configuration
+Action
+Yes
+Yes
+-
+Set live to configuration file value.
+Yes
+No
+-
+Set live to local configuration.
+No
+-
+Yes
+Clear from live configuration.
+No
+-
+No
+Do nothing. Keep live value.
+Merging changes to map fields
+Fields that represent maps are merged by comparing each of the subfields or elements of the map:
+Note:
+-
+ is used for "not applicable" because the value is not used.
+Key in object configuration file
+Key in live object configuration
+Field in last-applied-configuration
+Action
+Yes
+Yes
+-
+Compare sub fields values.
+Yes
+No
+-
+Set live to local configuration.
+No
+-
+Yes
+Delete from live configuration.
+No
+-
+No
+Do nothing. Keep live value.
+Merging changes for fields of type list
+Merging changes to a list uses one of three strategies:
+Replace the list if all its elements are primitives.
+Merge individual elements in a list of complex elements.
+Merge a list of primitive elements.
+The choice of strategy is made on a per-field basis.
+Replace the list if all its elements are primitives
+Treat the list the same as a primitive field. Replace or delete the
+entire list. This preserves ordering.
+Example:
+ Use 
+kubectl apply
+ to update the 
+args
+ field of a Container in a Pod. This sets
+the value of 
+args
+ in the live configuration to the value in the configuration file.
+Any 
+args
+ elements that had previously been added to the live configuration are lost.
+The order of the 
+args
+ elements defined in the configuration file is
+retained in the live configuration.
+# last-applied-configuration value
+
+
+    
+args
+:
+ 
+[
+"a"
+,
+ 
+"b"
+]
+
+
+
+
+# configuration file value
+
+
+    
+args
+:
+ 
+[
+"a"
+,
+ 
+"c"
+]
+
+
+
+
+# live configuration
+
+
+    
+args
+:
+ 
+[
+"a"
+,
+ 
+"b"
+,
+ 
+"d"
+]
+
+
+
+
+# result after merge
+
+
+    
+args
+:
+ 
+[
+"a"
+,
+ 
+"c"
+]
+
+
+Explanation:
+ The merge used the configuration file value as the new list value.
+Merge individual elements of a list of complex elements:
+Treat the list as a map, and treat a specific field of each element as a key.
+Add, delete, or update individual elements. This does not preserve ordering.
+This merge strategy uses a special tag on each field called a 
+patchMergeKey
+. The
+
+patchMergeKey
+ is defined for each field in the Kubernetes source code:
+
+types.go
+
+When merging a list of maps, the field specified as the 
+patchMergeKey
+ for a given element
+is used like a map key for that element.
+Example:
+ Use 
+kubectl apply
+ to update the 
+containers
+ field of a PodSpec.
+This merges the list as though it was a map where each element is keyed
+by 
+name
+.
+# last-applied-configuration value
+
+
+    
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+nginx
+
+
+      
+image
+:
+ 
+nginx:1.16
+
+
+    
+- 
+name: nginx-helper-a # key
+:
+ 
+nginx-helper-a; will be deleted in result
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+    
+- 
+name: nginx-helper-b # key
+:
+ 
+nginx-helper-b; will be retained
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+
+
+# configuration file value
+
+
+    
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+nginx
+
+
+      
+image
+:
+ 
+nginx:1.16
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-b
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+    
+- 
+name: nginx-helper-c # key
+:
+ 
+nginx-helper-c; will be added in result
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+
+
+# live configuration
+
+
+    
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+nginx
+
+
+      
+image
+:
+ 
+nginx:1.16
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-a
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-b
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+      
+args
+:
+ 
+[
+"run"
+]
+ 
+# Field will be retained
+
+
+    
+- 
+name: nginx-helper-d # key
+:
+ 
+nginx-helper-d; will be retained
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+
+
+# result after merge
+
+
+    
+containers
+:
+
+
+    
+- 
+name
+:
+ 
+nginx
+
+
+      
+image
+:
+ 
+nginx:1.16
+
+
+      
+# Element nginx-helper-a was deleted
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-b
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+      
+args
+:
+ 
+[
+"run"
+]
+ 
+# Field was retained
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-c
+ 
+# Element was added
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+    
+- 
+name
+:
+ 
+nginx-helper-d
+ 
+# Element was ignored
+
+
+      
+image
+:
+ 
+helper:1.3
+
+
+Explanation:
+The container named "nginx-helper-a" was deleted because no container
+named "nginx-helper-a" appeared in the configuration file.
+The container named "nginx-helper-b" retained the changes to 
+args
+
+in the live configuration. 
+kubectl apply
+ was able to identify
+that "nginx-helper-b" in the live configuration was the same
+"nginx-helper-b" as in the configuration file, even though their fields
+had different values (no 
+args
+ in the configuration file). This is
+because the 
+patchMergeKey
+ field value (name) was identical in both.
+The container named "nginx-helper-c" was added because no container
+with that name appeared in the live configuration, but one with
+that name appeared in the configuration file.
+The container named "nginx-helper-d" was retained because
+no element with that name appeared in the last-applied-configuration.
+Merge a list of primitive elements
+As of Kubernetes 1.5, merging lists of primitive elements is not supported.
+Note:
+Which of the above strategies is chosen for a given field is controlled by
+the 
+patchStrategy
+ tag in 
+types.go
+
+If no 
+patchStrategy
+ is specified for a field of type list, then
+the list is replaced.
+Default field values
+The API server sets certain fields to default values in the live configuration if they are
+not specified when the object is created.
+Here's a configuration file for a Deployment. The file does not specify 
+strategy
+:
+application/simple_deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Create the object using 
+kubectl apply
+:
+kubectl apply -f https://k8s.io/examples/application/simple_deployment.yaml
+
+Print the live configuration using 
+kubectl get
+:
+kubectl get -f https://k8s.io/examples/application/simple_deployment.yaml -o yaml
+
+The output shows that the API server set several fields to default values in the live
+configuration. These fields were not specified in the configuration file.
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+# ...
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+minReadySeconds
+:
+ 
+5
+
+
+  
+replicas
+:
+ 
+1
+ 
+# defaulted by apiserver
+
+
+  
+strategy
+:
+
+
+    
+rollingUpdate
+:
+ 
+# defaulted by apiserver - derived from strategy.type
+
+
+      
+maxSurge
+:
+ 
+1
+
+
+      
+maxUnavailable
+:
+ 
+1
+
+
+    
+type
+:
+ 
+RollingUpdate
+ 
+# defaulted by apiserver
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+creationTimestamp
+:
+ 
+null
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+imagePullPolicy
+:
+ 
+IfNotPresent
+ 
+# defaulted by apiserver
+
+
+        
+name
+:
+ 
+nginx
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+          
+protocol
+:
+ 
+TCP
+ 
+# defaulted by apiserver
+
+
+        
+resources
+:
+ 
+{}
+ 
+# defaulted by apiserver
+
+
+        
+terminationMessagePath
+:
+ 
+/dev/termination-log
+ 
+# defaulted by apiserver
+
+
+      
+dnsPolicy
+:
+ 
+ClusterFirst
+ 
+# defaulted by apiserver
+
+
+      
+restartPolicy
+:
+ 
+Always
+ 
+# defaulted by apiserver
+
+
+      
+securityContext
+:
+ 
+{}
+ 
+# defaulted by apiserver
+
+
+      
+terminationGracePeriodSeconds
+:
+ 
+30
+ 
+# defaulted by apiserver
+
+
+# ...
+
+
+In a patch request, defaulted fields are not re-defaulted unless they are explicitly cleared
+as part of a patch request. This can cause unexpected behavior for
+fields that are defaulted based
+on the values of other fields. When the other fields are later changed,
+the values defaulted from them will not be updated unless they are
+explicitly cleared.
+For this reason, it is recommended that certain fields defaulted
+by the server are explicitly defined in the configuration file, even
+if the desired values match the server defaults. This makes it
+easier to recognize conflicting values that will not be re-defaulted
+by the server.
+Example:
+# last-applied-configuration
+
+
+spec
+:
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+
+
+# configuration file
+
+
+spec
+:
+
+
+  
+strategy
+:
+
+
+    
+type
+:
+ 
+Recreate
+ 
+# updated value
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+
+
+# live configuration
+
+
+spec
+:
+
+
+  
+strategy
+:
+
+
+    
+type
+:
+ 
+RollingUpdate
+ 
+# defaulted value
+
+
+    
+rollingUpdate
+:
+ 
+# defaulted value derived from type
+
+
+      
+maxSurge 
+:
+ 
+1
+
+
+      
+maxUnavailable
+:
+ 
+1
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+
+
+# result after merge - ERROR!
+
+
+spec
+:
+
+
+  
+strategy
+:
+
+
+    
+type: Recreate # updated value
+:
+ 
+incompatible with rollingUpdate
+
+
+    
+rollingUpdate: # defaulted value
+:
+ 
+incompatible with "type: Recreate"
+
+
+      
+maxSurge 
+:
+ 
+1
+
+
+      
+maxUnavailable
+:
+ 
+1
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+Explanation:
+The user creates a Deployment without defining 
+strategy.type
+.
+The server defaults 
+strategy.type
+ to 
+RollingUpdate
+ and defaults the
+
+strategy.rollingUpdate
+ values.
+The user changes 
+strategy.type
+ to 
+Recreate
+. The 
+strategy.rollingUpdate
+
+values remain at their defaulted values, though the server expects them to be cleared.
+If the 
+strategy.rollingUpdate
+ values had been defined initially in the configuration file,
+it would have been more clear that they needed to be deleted.
+Apply fails because 
+strategy.rollingUpdate
+ is not cleared. The 
+strategy.rollingupdate
+
+field cannot be defined with a 
+strategy.type
+ of 
+Recreate
+.
+Recommendation: These fields should be explicitly defined in the object configuration file:
+Selectors and PodTemplate labels on workloads, such as Deployment, StatefulSet, Job, DaemonSet,
+ReplicaSet, and ReplicationController
+Deployment rollout strategy
+How to clear server-defaulted fields or fields set by other writers
+Fields that do not appear in the configuration file can be cleared by
+setting their values to 
+null
+ and then applying the configuration file.
+For fields defaulted by the server, this triggers re-defaulting
+the values.
+How to change ownership of a field between the configuration file and direct imperative writers
+These are the only methods you should use to change an individual object field:
+Use 
+kubectl apply
+.
+Write directly to the live configuration without modifying the configuration file:
+for example, use 
+kubectl scale
+.
+Changing the owner from a direct imperative writer to a configuration file
+Add the field to the configuration file. For the field, discontinue direct updates to
+the live configuration that do not go through 
+kubectl apply
+.
+Changing the owner from a configuration file to a direct imperative writer
+As of Kubernetes 1.5, changing ownership of a field from a configuration file to
+an imperative writer requires manual steps:
+Remove the field from the configuration file.
+Remove the field from the 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation on the live object.
+Changing management methods
+Kubernetes objects should be managed using only one method at a time.
+Switching from one method to another is possible, but is a manual process.
+Note:
+It is OK to use imperative deletion with declarative management.
+Migrating from imperative command management to declarative object configuration
+Migrating from imperative command management to declarative object
+configuration involves several manual steps:
+Export the live object to a local configuration file:
+kubectl get <kind>/<name> -o yaml > <kind>_<name>.yaml
+
+Manually remove the 
+status
+ field from the configuration file.
+Note:
+This step is optional, as 
+kubectl apply
+ does not update the status field
+even if it is present in the configuration file.
+Set the 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation on the object:
+kubectl replace --save-config -f <kind>_<name>.yaml
+
+Change processes to use 
+kubectl apply
+ for managing the object exclusively.
+Migrating from imperative object configuration to declarative object configuration
+Set the 
+kubectl.kubernetes.io/last-applied-configuration
+ annotation on the object:
+kubectl replace --save-config -f <kind>_<name>.yaml
+
+Change processes to use 
+kubectl apply
+ for managing the object exclusively.
+Defining controller selectors and PodTemplate labels
+Warning:
+Updating selectors on controllers is strongly discouraged.
+The recommended approach is to define a single, immutable PodTemplate label
+used only by the controller selector with no other semantic meaning.
+Example:
+selector
+:
+
+
+  
+matchLabels
+:
+
+
+      
+controller-selector
+:
+ 
+"apps/v1/deployment/nginx"
+
+
+template
+:
+
+
+  
+metadata
+:
+
+
+    
+labels
+:
+
+
+      
+controller-selector
+:
+ 
+"apps/v1/deployment/nginx"
+
+
+What's next
+Managing Kubernetes Objects Using Imperative Commands
+Imperative Management of Kubernetes Objects Using Configuration Files
+Kubectl Command Reference
+Kubernetes API Reference
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified August 24, 2023 at 6:38 PM PST: 
+Use code_sample shortcode instead of code shortcode (e8b136c3b3)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

@@ -1,0 +1,4403 @@
+Managing Service Accounts | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Managing Service Accounts
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Before you begin
+User accounts versus service accounts
+Bound service account tokens
+Additional metadata in Pod bound tokens
+Verifying and inspecting private claims
+Bound service account token volume mechanism
+Manual Secret management for ServiceAccounts
+Auto-generated legacy ServiceAccount token clean up
+Control plane details
+ServiceAccount controller
+Token controller
+ServiceAccount admission controller
+Legacy ServiceAccount token tracking controller
+Legacy ServiceAccount token cleaner
+TokenRequest API
+Create additional API tokens
+Delete/invalidate a ServiceAccount token
+Delete/invalidate a long-lived/legacy ServiceAccount token
+Delete/invalidate a short-lived ServiceAccount token
+External ServiceAccount token signing and key management
+Metadata
+FetchKeys
+Sign
+Clean up
+What's next
+Kubernetes Documentation
+Reference
+API Access Control
+Managing Service Accounts
+Managing Service Accounts
+A 
+ServiceAccount
+ provides an identity for processes that run in a Pod.
+A process inside a Pod can use the identity of its associated service account to
+authenticate to the cluster's API server.
+For an introduction to service accounts, read 
+configure service accounts
+.
+This task guide explains some of the concepts behind ServiceAccounts. The
+guide also explains how to obtain or revoke tokens that represent
+ServiceAccounts, and how to (optionally) bind a ServiceAccount's validity to
+the lifetime of an API object.
+Before you begin
+You need to have a Kubernetes cluster, and the kubectl command-line tool must
+be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a
+cluster, you can create one by using
+
+minikube
+
+or you can use one of these Kubernetes playgrounds:
+iximiuz Labs
+Killercoda
+KodeKloud
+To be able to follow these steps exactly, ensure you have a namespace named
+
+examplens
+.
+If you don't, create one by running:
+kubectl create namespace examplens
+
+User accounts versus service accounts
+Kubernetes distinguishes between the concept of a user account and a service account
+for a number of reasons:
+User accounts are for humans. Service accounts are for application processes,
+which (for Kubernetes) run in containers that are part of pods.
+User accounts are intended to be global: names must be unique across all
+namespaces of a cluster. No matter what namespace you look at, a particular
+username that represents a user represents the same user.
+In Kubernetes, service accounts are namespaced: two different namespaces can
+contain ServiceAccounts that have identical names.
+Typically, a cluster's user accounts might be synchronised from a corporate
+database, where new user account creation requires special privileges and is
+tied to complex business processes. By contrast, service account creation is
+intended to be more lightweight, allowing cluster users to create service accounts
+for specific tasks on demand. Separating ServiceAccount creation from the steps to
+onboard human users makes it easier for workloads to follow the principle of
+least privilege.
+Auditing considerations for humans and service accounts may differ; the separation
+makes that easier to achieve.
+A configuration bundle for a complex system may include definition of various service
+accounts for components of that system. Because service accounts can be created
+without many constraints and have namespaced names, such configuration is
+usually portable.
+Bound service account tokens
+ServiceAccount tokens can be bound to API objects that exist in the kube-apiserver.
+This can be used to tie the validity of a token to the existence of another API object.
+Supported object types are as follows:
+Pod (used for projected volume mounts, see below)
+Secret (can be used to allow revoking a token by deleting the Secret)
+Node (can be used to auto-revoke a token when its Node is deleted; creating new node-bound tokens is GA in v1.33+)
+When a token is bound to an object, the object's 
+metadata.name
+ and 
+metadata.uid
+ are
+stored as extra 'private claims' in the issued JWT.
+When a bound token is presented to the kube-apiserver, the service account authenticator
+will extract and verify these claims.
+If the referenced object or the ServiceAccount is pending deletion (for example, due to finalizers),
+then for any instant that is 60 seconds (or more) after the 
+.metadata.deletionTimestamp
+ date,
+authentication with that token would fail.
+If the referenced object no longer exists (or its 
+metadata.uid
+ does not match),
+the request will not be authenticated.
+Additional metadata in Pod bound tokens
+FEATURE STATE:
+
+
+Kubernetes v1.32 [stable]
+(enabled by default)
+When a service account token is bound to a Pod object, additional metadata is also
+embedded into the token that indicates the value of the bound pod's 
+spec.nodeName
+ field,
+and the uid of that Node, if available.
+This node information is 
+not
+ verified by the kube-apiserver when the token is used for authentication.
+It is included so integrators do not have to fetch Pod or Node API objects to check the associated Node name
+and uid when inspecting a JWT.
+Verifying and inspecting private claims
+The TokenReview API can be used to verify and extract private claims from a token:
+First, assume you have a pod named 
+test-pod
+ and a service account named 
+my-sa
+.
+Create a token that is bound to this Pod:
+kubectl create token my-sa --bound-object-kind
+=
+"Pod"
+ --bound-object-name
+=
+"test-pod"
+
+
+Copy this token into a new file named 
+tokenreview.yaml
+:
+apiVersion
+:
+ 
+authentication.k8s.io/v1
+
+
+kind
+:
+ 
+TokenReview
+
+
+spec
+:
+
+
+  
+token
+:
+ 
+<token from step 2>
+
+
+Submit this resource to the apiserver for review:
+# use '-o yaml' to inspect the output
+
+
+kubectl create -o yaml -f tokenreview.yaml
+
+You should see an output like below:
+apiVersion
+:
+ 
+authentication.k8s.io/v1
+
+
+kind
+:
+ 
+TokenReview
+
+
+metadata
+:
+
+
+  
+creationTimestamp
+:
+ 
+null
+
+
+spec
+:
+
+
+  
+token
+:
+ 
+<token>
+
+
+status
+:
+
+
+  
+audiences
+:
+
+
+  
+- https://kubernetes.default.svc.cluster.local
+
+
+  
+authenticated
+:
+ 
+true
+
+
+  
+user
+:
+
+
+    
+extra
+:
+
+
+      
+authentication.kubernetes.io/credential-id
+:
+
+
+      
+- JTI=7ee52be0-9045-4653-aa5e-0da57b8dccdc
+
+
+      
+authentication.kubernetes.io/node-name
+:
+
+
+      
+- kind-control-plane
+
+
+      
+authentication.kubernetes.io/node-uid
+:
+
+
+      
+- 497e9d9a-47aa-4930-b0f6-9f2fb574c8c6
+
+
+      
+authentication.kubernetes.io/pod-name
+:
+
+
+      
+- test-pod
+
+
+      
+authentication.kubernetes.io/pod-uid
+:
+
+
+      
+- e87dbbd6-3d7e-45db-aafb-72b24627dff5
+
+
+    
+groups
+:
+
+
+    
+- system:serviceaccounts
+
+
+    
+- system:serviceaccounts:default
+
+
+    
+- system:authenticated
+
+
+    
+uid
+:
+ 
+f8b4161b-2e2b-11e9-86b7-2afc33b31a7e
+
+
+    
+username
+:
+ 
+system:serviceaccount:default:my-sa
+
+
+Note:
+Despite using 
+kubectl create -f
+ to create this resource, and defining it similar to
+other resource types in Kubernetes, TokenReview is a special type and the kube-apiserver
+does not actually persist the TokenReview object into etcd.
+Hence 
+kubectl get tokenreview
+ is not a valid command.
+Schema for service account private claims
+The schema for the Kubernetes-specific claims within JWT tokens is not currently documented,
+however the relevant code area can be found in
+
+the serviceaccount package
+
+in the Kubernetes codebase.
+You can inspect a JWT using standard JWT decoding tool. Below is an example of a JWT for the
+
+my-serviceaccount
+ ServiceAccount, bound to a Pod object named 
+my-pod
+ which is scheduled
+to the Node 
+my-node
+, in the 
+my-namespace
+ namespace:
+{
+
+  
+"aud"
+: [
+
+    
+"https://my-audience.example.com"
+
+
+  ],
+
+  
+"exp"
+: 
+1729605240
+,
+
+  
+"iat"
+: 
+1729601640
+,
+
+  
+"iss"
+: 
+"https://my-cluster.example.com"
+,
+
+  
+"jti"
+: 
+"aed34954-b33a-4142-b1ec-389d6bbb4936"
+,
+
+  
+"kubernetes.io"
+: {
+
+    
+"namespace"
+: 
+"my-namespace"
+,
+
+    
+"node"
+: {
+
+      
+"name"
+: 
+"my-node"
+,
+
+      
+"uid"
+: 
+"646e7c5e-32d6-4d42-9dbd-e504e6cbe6b1"
+
+
+    },
+
+    
+"pod"
+: {
+
+      
+"name"
+: 
+"my-pod"
+,
+
+      
+"uid"
+: 
+"5e0bd49b-f040-43b0-99b7-22765a53f7f3"
+
+
+    },
+
+    
+"serviceaccount"
+: {
+
+      
+"name"
+: 
+"my-serviceaccount"
+,
+
+      
+"uid"
+: 
+"14ee3fa4-a7e2-420f-9f9a-dbc4507c3798"
+
+
+    }
+
+  },
+
+  
+"nbf"
+: 
+1729601640
+,
+
+  
+"sub"
+: 
+"system:serviceaccount:my-namespace:my-serviceaccount"
+
+
+}
+
+Note:
+The 
+aud
+ and 
+iss
+ fields in this JWT may differ between different Kubernetes clusters depending
+on your configuration.
+The presence of both the 
+pod
+ and 
+node
+ claim implies that this token is bound
+to a 
+Pod
+ object. When verifying Pod bound ServiceAccount tokens, the API server 
+does not
+
+verify the existence of the referenced Node object.
+Services that run outside of Kubernetes and want to perform offline validation of JWTs may
+use this schema, along with a compliant JWT validator configured with OpenID Discovery information
+from the API server, to verify presented JWTs without requiring use of the TokenReview API.
+Services that verify JWTs in this way 
+do not verify
+ the claims embedded in the JWT token to be
+current and still valid.
+This means if the token is bound to an object, and that object no longer exists, the token will still
+be considered valid (until the configured token expires).
+Clients that require assurance that a token's bound claims are still valid 
+MUST
+ use the TokenReview
+API to present the token to the 
+kube-apiserver
+ for it to verify and expand the embedded claims, using
+similar steps to the 
+Verifying and inspecting private claims
+
+section above, but with a 
+supported client library
+.
+For more information on JWTs and their structure, see the 
+JSON Web Token RFC
+.
+Bound service account token volume mechanism
+FEATURE STATE:
+
+
+Kubernetes v1.22 [stable]
+(enabled by default)
+By default, the Kubernetes control plane (specifically, the
+
+ServiceAccount admission controller
+)
+adds a 
+projected volume
+ to Pods,
+and this volume includes a token for Kubernetes API access.
+Here's an example of how that looks for a launched Pod:
+...
+
+
+  
+- 
+name
+:
+ 
+kube-api-access-<random-suffix>
+
+
+    
+projected
+:
+
+
+      
+sources
+:
+
+
+        
+- 
+serviceAccountToken
+:
+
+
+            
+path
+:
+ 
+token
+ 
+# must match the path the app expects
+
+
+        
+- 
+configMap
+:
+
+
+            
+items
+:
+
+
+              
+- 
+key
+:
+ 
+ca.crt
+
+
+                
+path
+:
+ 
+ca.crt
+
+
+            
+name
+:
+ 
+kube-root-ca.crt
+
+
+        
+- 
+downwardAPI
+:
+
+
+            
+items
+:
+
+
+              
+- 
+fieldRef
+:
+
+
+                  
+apiVersion
+:
+ 
+v1
+
+
+                  
+fieldPath
+:
+ 
+metadata.namespace
+
+
+                
+path
+:
+ 
+namespace
+
+
+That manifest snippet defines a projected volume that consists of three sources. In this case,
+each source also represents a single path within that volume. The three sources are:
+A 
+serviceAccountToken
+ source, that contains a token that the kubelet acquires from kube-apiserver.
+The kubelet fetches time-bound tokens using the TokenRequest API. A token served for a TokenRequest expires
+either when the pod is deleted or after a defined lifespan (by default, that is 1 hour).
+The kubelet also refreshes that token before the token expires.
+The token is bound to the specific Pod and has the kube-apiserver as its audience.
+This mechanism superseded an earlier mechanism that added a volume based on a Secret,
+where the Secret represented the ServiceAccount for the Pod, but did not expire.
+A 
+configMap
+ source. The ConfigMap contains a bundle of certificate authority data. Pods can use these
+certificates to make sure that they are connecting to your cluster's kube-apiserver (and not to middlebox
+or an accidentally misconfigured peer).
+A 
+downwardAPI
+ source that looks up the name of the namespace containing the Pod, and makes
+that name information available to application code running inside the Pod.
+Any container within the Pod that mounts this particular volume can access the above information.
+Note:
+There is no specific mechanism to invalidate a token issued via TokenRequest. If you no longer
+trust a bound service account token for a Pod, you can delete that Pod. Deleting a Pod expires
+its bound service account tokens.
+Manual Secret management for ServiceAccounts
+Versions of Kubernetes before v1.22 automatically created credentials for accessing
+the Kubernetes API. This older mechanism was based on creating token Secrets that
+could then be mounted into running Pods.
+In more recent versions, including Kubernetes v1.36, API credentials
+are 
+obtained directly
+ using the
+
+TokenRequest
+ API,
+and are mounted into Pods using a projected volume.
+The tokens obtained using this method have bounded lifetimes, and are automatically
+invalidated when the Pod they are mounted into is deleted.
+You can still 
+manually create
+
+a Secret to hold a service account token; for example, if you need a token that never expires.
+Once you manually create a Secret and link it to a ServiceAccount,
+the Kubernetes control plane automatically populates the token into that Secret.
+Note:
+Although the manual mechanism for creating a long-lived ServiceAccount token exists,
+using 
+TokenRequest
+
+to obtain short-lived API access tokens is recommended instead.
+Auto-generated legacy ServiceAccount token clean up
+Before version 1.24, Kubernetes automatically generated Secret-based tokens for
+ServiceAccounts. To distinguish between automatically generated tokens and
+manually created ones, Kubernetes checks for a reference from the
+ServiceAccount's secrets field. If the Secret is referenced in the 
+secrets
+
+field, it is considered an auto-generated legacy token. Otherwise, it is
+considered a manually created legacy token. For example:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+ServiceAccount
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+build-robot
+
+
+  
+namespace
+:
+ 
+default
+
+
+secrets
+:
+
+
+  
+- 
+name
+:
+ 
+build-robot-secret
+ 
+# usually NOT present for a manually generated token
+
+
+Beginning from version 1.29, legacy ServiceAccount tokens that were generated
+automatically will be marked as invalid if they remain unused for a certain
+period of time (set to default at one year). Tokens that continue to be unused
+for this defined period (again, by default, one year) will subsequently be
+purged by the control plane.
+If users use an invalidated auto-generated token, the token validator will
+add an audit annotation for the key-value pair
+
+authentication.k8s.io/legacy-token-invalidated: <secret name>/<namespace>
+,
+increment the 
+invalid_legacy_auto_token_uses_total
+ metric count,
+update the Secret label 
+kubernetes.io/legacy-token-last-used
+ with the new
+date,
+return an error indicating that the token has been invalidated.
+When receiving this validation error, users can update the Secret to remove the
+
+kubernetes.io/legacy-token-invalid-since
+ label to temporarily allow use of
+this token.
+Here's an example of an auto-generated legacy token that has been marked with the
+
+kubernetes.io/legacy-token-last-used
+ and 
+kubernetes.io/legacy-token-invalid-since
+
+labels:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Secret
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+build-robot-secret
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+labels
+:
+
+
+    
+kubernetes.io/legacy-token-last-used
+:
+ 
+2022-10-24
+
+
+    
+kubernetes.io/legacy-token-invalid-since
+:
+ 
+2023-10-25
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/service-account.name
+:
+ 
+build-robot
+
+
+type
+:
+ 
+kubernetes.io/service-account-token
+
+
+Control plane details
+ServiceAccount controller
+A ServiceAccount controller manages the ServiceAccounts inside namespaces, and
+ensures a ServiceAccount named "default" exists in every active namespace.
+Token controller
+The service account token controller runs as part of 
+kube-controller-manager
+.
+This controller acts asynchronously. It:
+watches for ServiceAccount deletion and deletes all corresponding ServiceAccount
+token Secrets.
+watches for ServiceAccount token Secret addition, and ensures the referenced
+ServiceAccount exists, and adds a token to the Secret if needed.
+watches for Secret deletion and removes a reference from the corresponding
+ServiceAccount if needed.
+You must pass a service account private key file to the token controller in
+the 
+kube-controller-manager
+ using the 
+--service-account-private-key-file
+
+flag. The private key is used to sign generated service account tokens.
+Similarly, you must pass the corresponding public key to the 
+kube-apiserver
+
+using the 
+--service-account-key-file
+ flag. The public key will be used to
+verify the tokens during authentication.
+FEATURE STATE:
+
+
+Kubernetes v1.36 [stable]
+(enabled by default)
+An alternate setup to setting 
+--service-account-private-key-file
+ and 
+--service-account-key-file
+ flags is
+to configure an external JWT signer for 
+external ServiceAccount token signing and key management
+.
+Note that these setups are mutually exclusive and cannot be configured together.
+ServiceAccount admission controller
+The modification of pods is implemented via a plugin
+called an 
+Admission Controller
+.
+It is part of the API server.
+This admission controller acts synchronously to modify pods as they are created.
+When this plugin is active (and it is by default on most distributions), then
+it does the following when a Pod is created:
+If the pod does not have a 
+.spec.serviceAccountName
+ set, the admission controller sets the name of the
+ServiceAccount for this incoming Pod to 
+default
+.
+The admission controller ensures that the ServiceAccount referenced by the incoming Pod exists. If there
+is no ServiceAccount with a matching name, the admission controller rejects the incoming Pod. That check
+applies even for the 
+default
+ ServiceAccount.
+Provided that neither the ServiceAccount's 
+automountServiceAccountToken
+ field nor the
+Pod's 
+automountServiceAccountToken
+ field is set to 
+false
+:
+the admission controller mutates the incoming Pod, adding an extra
+
+volume
+ that contains
+a token for API access.
+the admission controller adds a 
+volumeMount
+ to each container in the Pod,
+skipping any containers that already have a volume mount defined for the path
+
+/var/run/secrets/kubernetes.io/serviceaccount
+.
+For Linux containers, that volume is mounted at 
+/var/run/secrets/kubernetes.io/serviceaccount
+;
+on Windows nodes, the mount is at the equivalent path.
+If the spec of the incoming Pod doesn't already contain any 
+imagePullSecrets
+, then the
+admission controller adds 
+imagePullSecrets
+, copying them from the 
+ServiceAccount
+.
+Legacy ServiceAccount token tracking controller
+FEATURE STATE:
+
+
+Kubernetes v1.28 [stable]
+(enabled by default)
+This controller generates a ConfigMap called
+
+kube-system/kube-apiserver-legacy-service-account-token-tracking
+ in the
+
+kube-system
+ namespace. The ConfigMap records the timestamp when legacy service
+account tokens began to be monitored by the system.
+Legacy ServiceAccount token cleaner
+FEATURE STATE:
+
+
+Kubernetes v1.30 [stable]
+(enabled by default)
+The legacy ServiceAccount token cleaner runs as part of the
+
+kube-controller-manager
+ and checks every 24 hours to see if any auto-generated
+legacy ServiceAccount token has not been used in a 
+specified amount of time
+.
+If so, the cleaner marks those tokens as invalid.
+The cleaner works by first checking the ConfigMap created by the control plane
+(provided that 
+LegacyServiceAccountTokenTracking
+ is enabled). If the current
+time is a 
+specified amount of time
+ after the date in the ConfigMap, the
+cleaner then loops through the list of Secrets in the cluster and evaluates each
+Secret that has the type 
+kubernetes.io/service-account-token
+.
+If a Secret meets all of the following conditions, the cleaner marks it as
+invalid:
+The Secret is auto-generated, meaning that it is bi-directionally referenced
+by a ServiceAccount.
+The Secret is not currently mounted by any pods.
+The Secret has not been used in a 
+specified amount of time
+ since it was
+created or since it was last used.
+The cleaner marks a Secret invalid by adding a label called
+
+kubernetes.io/legacy-token-invalid-since
+ to the Secret, with the current date
+as the value. If an invalid Secret is not used in a 
+specified amount of time
+,
+the cleaner will delete it.
+Note:
+All the 
+specified amount of time
+ above defaults to one year. The cluster
+administrator can configure this value through the
+
+--legacy-service-account-token-clean-up-period
+ command line argument for the
+
+kube-controller-manager
+ component.
+TokenRequest API
+FEATURE STATE:
+
+
+Kubernetes v1.22 [stable]
+You use the 
+TokenRequest
+
+subresource of a ServiceAccount to obtain a time-bound token for that ServiceAccount.
+You don't need to call this to obtain an API token for use within a container, since
+the kubelet sets this up for you using a 
+projected volume
+.
+If you want to use the TokenRequest API from 
+kubectl
+, see
+
+Manually create an API token for a ServiceAccount
+.
+The Kubernetes control plane (specifically, the ServiceAccount admission controller)
+adds a projected volume to Pods, and the kubelet ensures that this volume contains a token
+that lets containers authenticate as the right ServiceAccount.
+(This mechanism superseded an earlier mechanism that added a volume based on a Secret,
+where the Secret represented the ServiceAccount for the Pod but did not expire.)
+Here's an example of how that looks for a launched Pod:
+...
+
+
+  
+- 
+name
+:
+ 
+kube-api-access-<random-suffix>
+
+
+    
+projected
+:
+
+
+      
+defaultMode
+:
+ 
+420
+ 
+# decimal equivalent of octal 0644
+
+
+      
+sources
+:
+
+
+        
+- 
+serviceAccountToken
+:
+
+
+            
+expirationSeconds
+:
+ 
+3607
+
+
+            
+path
+:
+ 
+token
+
+
+        
+- 
+configMap
+:
+
+
+            
+items
+:
+
+
+              
+- 
+key
+:
+ 
+ca.crt
+
+
+                
+path
+:
+ 
+ca.crt
+
+
+            
+name
+:
+ 
+kube-root-ca.crt
+
+
+        
+- 
+downwardAPI
+:
+
+
+            
+items
+:
+
+
+              
+- 
+fieldRef
+:
+
+
+                  
+apiVersion
+:
+ 
+v1
+
+
+                  
+fieldPath
+:
+ 
+metadata.namespace
+
+
+                
+path
+:
+ 
+namespace
+
+
+That manifest snippet defines a projected volume that combines information from three sources:
+A 
+serviceAccountToken
+ source, that contains a token that the kubelet acquires from kube-apiserver.
+The kubelet fetches time-bound tokens using the TokenRequest API. A token served for a TokenRequest expires
+either when the pod is deleted or after a defined lifespan (by default, that is 1 hour).
+The token is bound to the specific Pod and has the kube-apiserver as its audience.
+A 
+configMap
+ source. The ConfigMap contains a bundle of certificate authority data. Pods can use these
+certificates to make sure that they are connecting to your cluster's kube-apiserver (and not to a middlebox
+or an accidentally misconfigured peer).
+A 
+downwardAPI
+ source. This 
+downwardAPI
+ volume makes the name of the namespace containing the Pod available
+to application code running inside the Pod.
+Any container within the Pod that mounts this volume can access the above information.
+Create additional API tokens
+Caution:
+Only create long-lived API tokens if the 
+token request
+ mechanism
+is not suitable. The token request mechanism provides time-limited tokens; because these
+expire, they represent a lower risk to information security.
+To create a non-expiring, persisted API token for a ServiceAccount, create a
+Secret of type 
+kubernetes.io/service-account-token
+ with an annotation
+referencing the ServiceAccount. The control plane then generates a long-lived token and
+updates that Secret with that generated token data.
+Here is a sample manifest for such a Secret:
+secret/serviceaccount/mysecretname.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Secret
+
+
+type
+:
+ 
+kubernetes.io/service-account-token
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+mysecretname
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/service-account.name
+:
+ 
+myserviceaccount
+
+
+To create a Secret based on this example, run:
+kubectl -n examplens create -f https://k8s.io/examples/secret/serviceaccount/mysecretname.yaml
+
+To see the details for that Secret, run:
+kubectl -n examplens describe secret mysecretname
+
+The output is similar to:
+Name:           mysecretname
+Namespace:      examplens
+Labels:         <none>
+Annotations:    kubernetes.io/service-account.name=myserviceaccount
+                kubernetes.io/service-account.uid=8a85c4c4-8483-11e9-bc42-526af7764f64
+
+Type:   kubernetes.io/service-account-token
+
+Data
+====
+ca.crt:         1362 bytes
+namespace:      9 bytes
+token:          ...
+
+If you launch a new Pod into the 
+examplens
+ namespace, it can use the 
+myserviceaccount
+
+service-account-token Secret that you just created.
+Caution:
+Do not reference manually created Secrets in the 
+secrets
+ field of a
+ServiceAccount. Or the manually created Secrets will be cleaned if it is not used for a long
+time. Please refer to 
+auto-generated legacy ServiceAccount token clean up
+.
+Delete/invalidate a ServiceAccount token
+Delete/invalidate a long-lived/legacy ServiceAccount token
+If you know the name of the Secret that contains the token you want to remove:
+kubectl delete secret name-of-secret
+
+Otherwise, first find the Secret for the ServiceAccount.
+# This assumes that you already have a namespace named 'examplens'
+
+
+kubectl -n examplens get serviceaccount/example-automated-thing -o yaml
+
+The output is similar to:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+ServiceAccount
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+kubectl.kubernetes.io/last-applied-configuration
+:
+ 
+|
+
+
+      {"apiVersion":"v1","kind":"ServiceAccount","metadata":{"annotations":{},"name":"example-automated-thing","namespace":"examplens"}}
+      
+
+  
+creationTimestamp
+:
+ 
+"2019-07-21T07:07:07Z"
+
+
+  
+name
+:
+ 
+example-automated-thing
+
+
+  
+namespace
+:
+ 
+examplens
+
+
+  
+resourceVersion
+:
+ 
+"777"
+
+
+  
+selfLink
+:
+ 
+/api/v1/namespaces/examplens/serviceaccounts/example-automated-thing
+
+
+  
+uid
+:
+ 
+f23fd170-66f2-4697-b049-e1e266b7f835
+
+
+secrets
+:
+
+
+  
+- 
+name
+:
+ 
+example-automated-thing-token-zyxwv
+
+
+Then, delete the Secret you now know the name of:
+kubectl -n examplens delete secret/example-automated-thing-token-zyxwv
+
+Delete/invalidate a short-lived ServiceAccount token
+Short lived ServiceAccount tokens automatically expire after the time-limit
+specified during their creation. There is no central record of tokens issued,
+so there is no way to revoke individual tokens.
+If you have to revoke a short-lived token before its expiration, you
+can delete and re-create the ServiceAccount it is associated to. This will
+change its UID and hence invalidate 
+all
+ ServiceAccount tokens that were
+created for it.
+External ServiceAccount token signing and key management
+FEATURE STATE:
+
+
+Kubernetes v1.36 [stable]
+(enabled by default)
+The kube-apiserver can be configured to use external signer for token signing and token verifying key management.
+This feature enables kubernetes distributions to integrate with key management solutions of their choice
+(for example, HSMs, cloud KMSes) for service account credential signing and verification.
+To configure kube-apiserver to use external-jwt-signer set the 
+--service-account-signing-endpoint
+ flag
+to the location of a Unix domain socket (UDS) on a filesystem, or be prefixed with an @ symbol and name
+a UDS in the abstract socket namespace. At the configured UDS shall be an RPC server which implements
+an 
+ExternalJWTSigner
+ gRPC service.
+The external-jwt-signer must be healthy and be ready to serve supported service account keys for the kube-apiserver to start.
+Note:
+The kube-apiserver flags 
+--service-account-key-file
+ and 
+--service-account-signing-key-file
+ will continue
+to be used for reading from files unless 
+--service-account-signing-endpoint
+ is set; they are mutually
+exclusive ways of supporting JWT signing and authentication.
+An external signer provides a 
+v1.ExternalJWTSigner
+ gRPC service that implements 3 methods:
+Metadata
+Metadata is meant to be called once by 
+kube-apiserver
+ on startup.
+This enables the external signer to share metadata with kube-apiserver, like the max token lifetime that signer supports.
+rpc
+ Metadata(MetadataRequest) 
+returns
+ (MetadataResponse) {}
+
+
+
+
+message
+ 
+MetadataRequest
+ {}
+
+
+
+
+message
+ 
+MetadataResponse
+ {
+
+
+  
+// used by kube-apiserver for defaulting/validation of JWT lifetime while accounting for configuration flag values:
+
+  
+// 1. `--service-account-max-token-expiration`
+
+  
+// 2. `--service-account-extend-token-expiration`
+
+  
+//
+
+  
+// * If `--service-account-max-token-expiration` is greater than `max_token_expiration_seconds`, kube-apiserver treats that as misconfiguration and exits.
+
+  
+// * If `--service-account-max-token-expiration` is not explicitly set, kube-apiserver defaults to `max_token_expiration_seconds`.
+
+  
+// * If `--service-account-extend-token-expiration` is true, the extended expiration is `min(1 year, max_token_expiration_seconds)`.
+
+  
+//
+
+  
+// `max_token_expiration_seconds` must be at least 600s.
+
+  
+int64
+ max_token_expiration_seconds 
+=
+ 
+1
+;
+
+
+}
+
+
+FetchKeys
+FetchKeys returns the set of public keys that are trusted to sign
+Kubernetes service account tokens. Kube-apiserver will call this RPC:
+Every time it tries to validate a JWT from the service account issuer with an unknown key ID, and
+Periodically, so it can serve reasonably-up-to-date keys from the OIDC JWKs endpoint.
+rpc
+ FetchKeys(FetchKeysRequest) 
+returns
+ (FetchKeysResponse) {}
+
+
+
+
+message
+ 
+FetchKeysRequest
+ {}
+
+
+
+
+message
+ 
+FetchKeysResponse
+ {
+
+
+  
+repeated
+ Key keys 
+=
+ 
+1
+;
+
+
+
+
+  
+// The timestamp when this data was pulled from the authoritative source of
+
+  
+// truth for verification keys.
+
+  
+// kube-apiserver can export this from metrics, to enable end-to-end SLOs.
+
+  google.protobuf.Timestamp data_timestamp 
+=
+ 
+2
+;
+
+
+
+
+  
+// refresh interval for verification keys to pick changes if any.
+
+  
+// any value <= 0 is considered a misconfiguration.
+
+  
+int64
+ refresh_hint_seconds 
+=
+ 
+3
+;
+
+
+}
+
+
+
+
+message
+ 
+Key
+ {
+
+
+  
+// A unique identifier for this key.
+
+  
+// Length must be <=1024.
+
+  
+string
+ key_id 
+=
+ 
+1
+;
+
+
+
+
+  
+// The public key, PKIX-serialized.
+
+  
+// must be a public key supported by kube-apiserver (currently RSA 256 or ECDSA 256/384/521)
+
+  
+bytes
+ key 
+=
+ 
+2
+;
+
+
+
+
+  
+// Set only for keys that are not used to sign bound tokens.
+
+  
+// eg: supported keys for legacy tokens.
+
+  
+// If set, key is used for verification but excluded from OIDC discovery docs.
+
+  
+// if set, external signer should not use this key to sign a JWT.
+
+  
+bool
+ exclude_from_oidc_discovery 
+=
+ 
+3
+;
+
+
+}
+
+
+Sign
+Sign takes a serialized JWT payload, and returns the serialized header and
+signature. 
+kube-apiserver
+ then assembles the JWT from the header, payload,
+and signature.
+rpc
+ Sign(SignJWTRequest) 
+returns
+ (SignJWTResponse) {}
+
+
+
+
+message
+ 
+SignJWTRequest
+ {
+
+
+  
+// URL-safe base64 wrapped payload to be signed.
+
+  
+// Exactly as it appears in the second segment of the JWT
+
+  
+string
+ claims 
+=
+ 
+1
+;
+
+
+}
+
+
+
+
+message
+ 
+SignJWTResponse
+ {
+
+
+  
+// header must contain only alg, kid, typ claims.
+
+  
+// typ must be “JWT”.
+
+  
+// kid must be non-empty, <=1024 characters, and its corresponding public key should not be excluded from OIDC discovery.
+
+  
+// alg must be one of the algorithms supported by kube-apiserver (currently RS256, ES256, ES384, ES512).
+
+  
+// header cannot have any additional data that kube-apiserver does not recognize.
+
+  
+// Already wrapped in URL-safe base64, exactly as it appears in the first segment of the JWT.
+
+  
+string
+ header 
+=
+ 
+1
+;
+
+
+
+
+  
+// The signature for the JWT.
+
+  
+// Already wrapped in URL-safe base64, exactly as it appears in the final segment of the JWT.
+
+  
+string
+ signature 
+=
+ 
+2
+;
+
+
+}
+
+
+Clean up
+If you created a namespace 
+examplens
+ to experiment with, you can remove it:
+kubectl delete namespace examplens
+
+What's next
+Read more details about 
+projected volumes
+.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified July 29, 2025 at 2:30 PM PST: 
+KEP-740: move grpc docs into website (c6c320d7d4)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

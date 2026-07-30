@@ -1,0 +1,4125 @@
+Declarative API Validation | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Declarative API Validation
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Disabling DeclarativeValidationBeta
+Considerations for downgrade and rollback
+Declarative validation tag reference
+Tag catalog
+Tag Reference
++k8s:alpha
++k8s:beta
++k8s:eachKey
++k8s:eachVal
++k8s:enum
++k8s:forbidden
++k8s:format
++k8s:ifDisabled
++k8s:ifEnabled
++k8s:isSubresource
++k8s:item
++k8s:listMapKey
++k8s:listType
++k8s:maxItems
++k8s:maxLength
++k8s:minimum
++k8s:neq
++k8s:opaqueType
++k8s:optional
++k8s:required
++k8s:subfield
++k8s:supportsSubresource
++k8s:unionDiscriminator
++k8s:unionMember
++k8s:zeroOrOneOfMember
+Kubernetes Documentation
+Reference
+API Overview
+Declarative API Validation
+Declarative API Validation
+FEATURE STATE:
+
+
+Kubernetes v1.33 [beta]
+Kubernetes 1.36 includes optional 
+declarative validation
+ for APIs. When enabled, the Kubernetes API server can use this mechanism rather than the legacy approach that relies on hand-written Go
+code (
+validation.go
+ files) to ensure that requests against the API are valid.
+Kubernetes developers, and people 
+extending the Kubernetes API
+,
+can define validation rules directly alongside the API type definitions (
+types.go
+ files). Code authors define
+special comment tags (e.g., 
++k8s:minimum=0
+). A code generator (
+validation-gen
+) then uses these tags to produce
+optimized Go code for API validation.
+While primarily a feature impacting Kubernetes contributors and potentially developers of 
+extension API servers
+, cluster administrators should understand its behavior, especially during its rollout phases.
+Declarative validation tags can apply directly to net-new API fields without requiring any lifecycle mechanism (for example, it is possible to use 
++k8s:minimum=1
+). For migrating existing hand-written validations where the declarative validation is shadowing the existing hand-written validation logic, the rollout is controlled by the validation lifecycle tags (
++k8s:alpha
+ and 
++k8s:beta
+) alongside the 
+DeclarativeValidationBeta
+ feature gate:
+DeclarativeValidation
+: (GA in v1.36, Default: 
+true
+, LockToDefault: 
+true
+) The API server runs 
+both
+ the new declarative validation and the old hand-written validation for migrated types/fields in "shadow mode" (Alpha). The results are compared internally.
+DeclarativeValidationBeta
+: (Beta, Default: 
+true
+) Introduced in v1.36. This gate controls the enforcement of beta-stage validation rules. When enabled, rules marked as 
++k8s:beta
+ are authoritative; when disabled, they revert to shadow mode.
+DeclarativeValidationTakeover
+: (Deprecated in v1.36). Previously used to determine whether declarative validation results were authoritative. It is no longer honored but can still be set to prevent "gate not recognized" errors.
+Default Behavior (Kubernetes 1.36):
+With 
+DeclarativeValidationBeta=true
+ (the default), both validation systems run for Alpha and shadowed rules. Beta rules are enforced.
+The results of the 
+hand-written
+ validation are used for Alpha rules.
+ The declarative validation runs in a mismatch mode for comparison.
+Mismatches between the two validation systems are logged by the API server and increment the 
+declarative_validation_mismatch_total
+ metric. This data allows contributors to identify and resolve discrepancies during the shadow phase.
+Administrators can explicitly disable the 
+DeclarativeValidationBeta
+ feature gate to force 
++k8s:beta
+ validation rules back into shadow mode if unexpected validation behavior or regressions are observed.
+Disabling DeclarativeValidationBeta
+As a cluster administrator, you might consider toggling 
+DeclarativeValidationBeta
+=
+false
+ under specific circumstances:
+Unexpected Validation Behavior:
+ If enabling 
+DeclarativeValidationBeta
+ leads to unexpected validation errors or allows objects that were previously invalid.
+Performance Regressions:
+ If monitoring indicates significant latency increases (e.g., in 
+apiserver_request_duration_seconds
+) correlated with the feature's enablement.
+High Mismatch Rate:
+ If the 
+declarative_validation_mismatch_total
+ metric shows frequent mismatches, suggesting potential bugs in the declarative rules affecting the cluster's workloads, even if 
+DeclarativeValidationBeta
+ is false.
+To revert 
++k8s:beta
+ validation rules back to shadow mode, disable the 
+DeclarativeValidationBeta
+ feature gate, for example via command-line arguments: (
+--feature-gates=DeclarativeValidationBeta=false
+).
+Considerations for downgrade and rollback
+Disabling the 
+DeclarativeValidationBeta
+ feature gate acts as a safety mechanism. However, be aware of a potential edge case (considered unlikely due to extensive testing): If a bug in declarative validation (when 
+DeclarativeValidationBeta=true
+) 
+incorrectly allowed
+ an invalid object to be persisted, disabling the feature gate might then cause subsequent updates to that specific object to be blocked by the now-authoritative (and correct) hand-written validation. Resolving this might require manual correction of the stored object, potentially via direct etcd modification in rare cases.
+For details on managing feature gates, see 
+Feature Gates
+.
+Declarative validation tag reference
+This document provides a comprehensive reference for all available declarative validation tags.
+Tag catalog
+Tag
+Description
+Stability
++k8s:alpha
+Puts a validation tag in Shadow mode (Metrics only).
+Stable
++k8s:beta
+Puts a validation tag in Enforced mode (disableable via 
+DeclarativeValidationBeta
+).
+Stable
++k8s:eachKey
+Declares a validation for each key in a map.
+Alpha
++k8s:eachVal
+Declares a validation for each value in a map or list.
+Alpha
++k8s:enum
+Indicates that a string type is an enum.
+Beta
++k8s:forbidden
+Indicates that a field may not be specified.
+Alpha
++k8s:format
+Indicates that a string field has a particular format.
+Stable
++k8s:ifDisabled
+Declares a validation that only applies when an option is disabled.
+Alpha
++k8s:ifEnabled
+Declares a validation that only applies when an option is enabled.
+Alpha
++k8s:isSubresource
+Specifies that validations in a package only apply to a specific subresource.
+Stable
++k8s:item
+Declares a validation for an item of a slice declared as a 
++k8s:listType=map
+.
+Stable
++k8s:listMapKey
+Declares a named sub-field of a list's value-type to be part of the list-map key.
+Stable
++k8s:listType
+Declares a list field's semantic type.
+Stable
++k8s:maxItems
+Indicates that a list field has a limit on its size.
+Stable
++k8s:maxLength
+Indicates that a string field has a limit on its length.
+Stable
++k8s:minimum
+Indicates that a numeric field has a minimum value.
+Stable
++k8s:neq
+Verifies the field's value is not equal to a specific disallowed value.
+Alpha
++k8s:opaqueType
+Indicates that any validations declared on the referenced type will be ignored.
+Alpha
++k8s:optional
+Indicates that a field is optional to clients.
+Stable
++k8s:required
+Indicates that a field must be specified by clients.
+Stable
++k8s:subfield
+Declares a validation for a subfield of a struct.
+Stable
++k8s:supportsSubresource
+Declares a supported subresource for the types within a package.
+Stable
++k8s:unionDiscriminator
+Indicates that this field is the discriminator for a union.
+Stable
++k8s:unionMember
+Indicates that this field is a member of a union group.
+Stable
++k8s:zeroOrOneOfMember
+Indicates that this field is a member of a zero-or-one-of group.
+Stable
+Tag Reference
++k8s:alpha
+Description:
+The 
++k8s:alpha
+ tag enables 
+shadow mode
+ for a validation rule. It represents the first phase of the validation lifecycle for safely migrating existing hand-written validation logic to declarative tags. Do not use this tag for net-new API fields, which should apply declarative validation tags directly.
+When a validation is shadowed with 
++k8s:alpha
+, the validation logic executed includes the original hand-written
+validation logic as it normally would but additionally runs the shadowed declarative validation in a non-blocking way,
+and then verifies the results are matching.
+Any mismatches or panics are recorded via metrics (for example: 
+declarative_validation_mismatch_total
+ and 
+declarative_validation_panic_total
+).
+This shadow mechanism enables contributors and administrators to evaluate declarative validation rules in a live environment without affecting cluster behavior. By monitoring the mismatch metrics, you can verify that the declarative rules behave identically to the existing hand-written logic before promoting the validation to beta.
+Stability Level:
+ Stable
+Arguments:
+since
+ (string, required): The Kubernetes version in which the validation was first shadowed.
+Payload:
+<validation-tag>
+: The standard declarative validation tag to be shadowed (e.g., 
++k8s:minimum=1
+).
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:alpha(since:"1.36")=+k8s:minimum=1
+
+    MyField 
+int
+ 
+`json:"myField"`
+
+
+}
+
++k8s:beta
+Description:
+The 
++k8s:beta
+ tag enables 
+enforced mode
+ for validation rules migrating from hand-written logic, controlled by the 
+DeclarativeValidationBeta
+ feature gate. Do not use this tag for net-new API fields, which should apply declarative validation tags directly.
+After a validation rule has been evaluated in shadow mode (via 
++k8s:alpha
+), it is promoted to beta. When 
+DeclarativeValidationBeta
+ is enabled (the default), 
++k8s:beta
+ rules are enforced and authoritative. Disabling the feature gate reverts 
++k8s:beta
+ rules to shadow mode, providing a rollback mechanism if regressions occur.
+Stability Level:
+ Stable
+Arguments:
+since
+ (string, required): The Kubernetes version in which the validation was promoted to beta.
+Payload:
+<validation-tag>
+: The standard declarative validation tag to be enforced (e.g., 
++k8s:minimum=1
+).
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:beta(since:"1.37")=+k8s:minimum=1
+
+    MyField 
+int
+ 
+`json:"myField"`
+
+
+}
+
++k8s:eachKey
+Description:
+Declares a validation for each key in a map.
+Stability Level:
+ Alpha
+Payload:
+<validation-tag>
+: The tag to evaluate for each key.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:eachKey=+k8s:minimum=1
+
+    MyMap 
+map
+[
+int
+]
+string
+ 
+`json:"myMap"`
+
+
+}
+
+In this example, 
+eachKey
+ is used to specify that the 
++k8s:minimum
+ tag should be applied to each 
+int
+ key in 
+MyMap
+. This means that all keys in the map must be >= 1.
++k8s:eachVal
+Description:
+Declares a validation for each value in a map or list.
+Stability Level:
+ Alpha
+Payload:
+<validation-tag>
+: The tag to evaluate for each value.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:eachVal=+k8s:minimum=1
+
+    MyMap 
+map
+[
+string
+]
+int
+ 
+`json:"myMap"`
+
+
+}
+
+In this example, 
+eachVal
+ is used to specify that the 
++k8s:minimum
+ tag should be applied to each element in 
+MyList
+. This means that all fields in 
+MyStruct
+ must be >= 1.
++k8s:enum
+Description:
+Indicates that a string type is an enum. All const values of this type are considered values in the enum.
+Stability Level:
+ Beta
+Usage Example:
+First, define a new string type and some constants of that type:
+// +k8s:enum
+
+type
+ MyEnum 
+string
+
+
+
+
+const
+ (
+
+    MyEnumA MyEnum = 
+"A"
+
+
+    MyEnumB MyEnum = 
+"B"
+
+
+)
+
+Then, use this type in another struct:
+type
+ MyStruct 
+struct
+ {
+
+    MyField MyEnum 
+`json:"myField"`
+
+
+}
+
+The validation logic will ensure that 
+MyField
+ is one of the defined enum values (
+"A"
+ or 
+"B"
+).
++k8s:forbidden
+Description:
+Indicates that a field may not be specified.
+Stability Level:
+ Alpha
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:forbidden
+
+    MyField 
+string
+ 
+`json:"myField"`
+
+
+}
+
+In this example, 
+MyField
+ cannot be provided (it is forbidden) when creating or updating 
+MyStruct
+.
++k8s:format
+Description:
+Indicates that a string field has a particular format.
+Stability Level:
+ Stable
+Payloads:
+k8s-ip
+: This field holds an IPv4 or IPv6 address value. IPv4 octets may have leading zeros.
+k8s-long-name
+: This field holds a Kubernetes "long name", aka a "DNS subdomain" value.
+k8s-short-name
+: This field holds a Kubernetes "short name", aka a "DNS label" value.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:format=k8s-ip
+
+    IPAddress 
+string
+ 
+`json:"ipAddress"`
+
+
+
+
+    
+// +k8s:format=k8s-long-name
+
+    Subdomain 
+string
+ 
+`json:"subdomain"`
+
+
+
+
+    
+// +k8s:format=k8s-short-name
+
+    Label 
+string
+ 
+`json:"label"`
+
+
+}
+
+In this example:
+IPAddress
+ must be a valid IP address.
+Subdomain
+ must be a valid DNS subdomain.
+Label
+ must be a valid DNS label.
++k8s:ifDisabled
+Description:
+Declares a validation that only applies when an option is disabled.
+Stability Level:
+ Alpha
+Arguments:
+<option>
+ (string, required): The name of the option.
+Payload:
+<validation-tag>
+: This validation tag will be evaluated only if the validation option is disabled.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:ifDisabled("my-feature")=+k8s:required
+
+    MyField 
+string
+ 
+`json:"myField"`
+
+
+}
+
+In this example, 
+MyField
+ is required only if the "my-feature" option is disabled.
++k8s:ifEnabled
+Description:
+Declares a validation that only applies when an option is enabled.
+Stability Level:
+ Alpha
+Arguments:
+<option>
+ (string, required): The name of the option.
+Payload:
+<validation-tag>
+: This validation tag will be evaluated only if the validation option is enabled.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:ifEnabled("my-feature")=+k8s:required
+
+    MyField 
+string
+ 
+`json:"myField"`
+
+
+}
+
+In this example, 
+MyField
+ is required only if the "my-feature" option is enabled.
++k8s:isSubresource
+Stability Level:
+ Stable
+Description:
+The 
++k8s:isSubresource
+ tag is a package-level comment that 
+scopes the validation rules within that package to a specific subresource
+. It essentially tells the code generator, "The validation logic defined here is the specific implementation for this subresource and should not be applied to the root object or any other subresource."
+CRITICAL DEPENDENCY:
+This tag is 
+dependent
+ on a corresponding 
++k8s:supportsSubresource
+ tag being present in the package where the main API type is defined.
++k8s:supportsSubresource
+ opens the door by telling the dispatcher that a subresource is valid.
++k8s:isSubresource
+ provides the specialized validation logic that runs when a request comes through that door.
+If you use 
++k8s:isSubresource
+ without the corresponding 
++k8s:supportsSubresource
+ declaration on the main type, the specialized validation code will be generated but will be 
+unreachable
+. The main dispatcher will not recognize the subresource path and will reject the request before it can be routed to your specific validation logic.
+This dependency allows for powerful organization, such as placing your main API types in one package and defining their subresource-specific validations in separate, dedicated packages.
+Scope:
+ Package
+Payload:
+<subresource-path>
+: The path of the subresource to which the validations in this package should apply (e.g., 
+"/status"
+, 
+"/scale"
+).
+Usage Example:
+This two-part example demonstrates the intended use case of separating concerns.
+1. Declare Support in the Main API Package:
+
+First, declare that the 
+Deployment
+ type supports 
+/scale
+ validation in its primary package.
+File: 
+staging/src/k8s.io/api/apps/v1/doc.go
+// This enables the validation dispatcher to handle requests for "/scale".
+
+// +k8s:supportsSubresource="/scale"
+
+package
+ v1
+
+
+
+// ... includes the definition for the Deployment type
+
+2. Scope Validation Logic in a Separate Package:
+
+Next, create a separate package for the validation rules that are specific 
+only
+ to the 
+/scale
+ subresource.
+File: 
+staging/src/k8s.io/api/apps/v1/validations/scale/doc.go
+// This ensures the rules in this package ONLY run for the "/scale" subresource.
+
+// +k8s:isSubresource="/scale"
+
+package
+ scale
+
+
+
+import
+ 
+"k8s.io/api/apps/v1"
+
+
+
+
+// Validation code in this package would reference types from package v1 (e.g., v1.Scale).
+
+// The generated validation function will only be invoked for requests to the "/scale"
+
+// subresource of a type defined in a package that supports it.
+
++k8s:item
+Description:
+Declares a validation for an item of a slice declared as a 
++k8s:listType=map
+. The item to match is declared by providing field-value pair arguments where the field is a 
+listMapKey
+. All 
+listMapKey
+ key fields must be specified.
+Stability Level:
+ Stable
+Usage:
++k8s:item(<listMapKey-JSON-field-name>: <value>,...)=<validation-tag>
++k8s:item(stringKey: "value", intKey: 42, boolKey: true)=<validation-tag>
+Arguments must be named with the JSON names of the list-map key fields. Values can be strings, integers, or booleans.
+Payload:
+<validation-tag>
+: The tag to evaluate for the matching list item.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+	
+// +k8s:listType=map
+
+	
+// +k8s:listMapKey=type
+
+	
+// +k8s:item(type: "Approved")=+k8s:zeroOrOneOfMember
+
+	
+// +k8s:item(type: "Denied")=+k8s:zeroOrOneOfMember
+
+	MyConditions []MyCondition 
+`json:"conditions"`
+
+
+}
+
+
+
+type
+ MyCondition 
+struct
+ {
+
+    Type 
+string
+ 
+`json:"type"`
+
+
+    Status 
+string
+ 
+`json:"status"`
+
+
+}
+
+In this example:
+The condition with 
+type
+ "Approved" is part of a zero-or-one-of group.
+The condition with 
+type
+ "Denied" is part of a zero-or-one-of group.
++k8s:listMapKey
+Description:
+Declares a named sub-field of a list's value-type to be part of the list-map key. This tag is required when 
++k8s:listType=map
+ is used. Multiple 
++k8s:listMapKey
+ tags can be used on a list-map to specify that it is keyed off of multiple fields.
+Stability Level:
+ Stable
+Payload:
+<field-json-name>
+: The JSON name of the field to be used as the key.
+Usage Example:
+// +k8s:listType=map
+
+// +k8s:listMapKey=keyFieldOne
+
+// +k8s:listMapKey=keyFieldTwo
+
+type
+ MyList []MyStruct
+
+
+
+type
+ MyStruct 
+struct
+ {
+
+    keyFieldOne 
+string
+ 
+`json:"keyFieldOne"`
+
+
+    keyFieldTwo 
+string
+ 
+`json:"keyFieldTwo"`
+
+
+    valueField 
+string
+ 
+`json:"valueField"`
+
+
+}
+
+In this example, 
+listMapKey
+ is used to specify that the 
+keyField
+ of 
+MyStruct
+ should be used as the key for the list-map.
++k8s:listType
+Description:
+Declares a list field's semantic type. This tag is used to specify how a list should be treated, for example, as a map or a set.
+Stability Level:
+ Stable
+Payload:
+atomic
+: The list is treated as a single atomic value.
+map
+: The list is treated as a map, where each element has a unique key. Requires the use of 
++k8s:listMapKey
+.
+set
+: The list is treated as a set, where each element is unique.
+Usage Example:
+// +k8s:listType=map
+
+// +k8s:listMapKey=keyField
+
+type
+ MyList []MyStruct
+
+
+
+type
+ MyStruct 
+struct
+ {
+
+    keyField 
+string
+ 
+`json:"keyField"`
+
+
+    valueField 
+string
+ 
+`json:"valueField"`
+
+
+}
+
+In this example, 
+MyList
+ is declared as a list of type 
+map
+, with 
+keyField
+ as the key. This means that the validation logic will ensure that each element in the list has a unique 
+keyField
+.
++k8s:maxItems
+Description:
+Indicates that a list field has a limit on its size.
+Stability Level:
+ Stable
+Payload:
+<non-negative integer>
+: This field must be no more than X items long.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:maxItems=5
+
+    MyList []
+string
+ 
+`json:"myList"`
+
+
+}
+
+In this example, 
+MyList
+ cannot contain more than 5 items.
++k8s:maxLength
+Description:
+Indicates that a string field has a limit on its length.
+Stability Level:
+ Stable
+Payload:
+<non-negative integer>
+: This field must be no more than X characters long.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:maxLength=10
+
+    MyString 
+string
+ 
+`json:"myString"`
+
+
+}
+
+In this example, 
+MyString
+ cannot be longer than 10 characters.
++k8s:minimum
+Description:
+Indicates that a numeric field has a minimum value.
+Stability Level:
+ Stable
+Payload:
+<integer>
+: This field must be greater than or equal to x.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:minimum=0
+
+    MyInt 
+int
+ 
+`json:"myInt"`
+
+
+}
+
+In this example, 
+MyInt
+ must be greater than or equal to 0.
++k8s:neq
+Description:
+Verifies the field's value is not equal to a specific disallowed value. Supports string, integer, and boolean types.
+Stability Level:
+ Alpha
+Payload:
+<value>
+: The disallowed value. The parser will infer the type (string, int, bool).
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:neq="disallowed"
+
+    MyString 
+string
+ 
+`json:"myString"`
+
+
+
+
+    
+// +k8s:neq=0
+
+    MyInt 
+int
+ 
+`json:"myInt"`
+
+
+
+
+    
+// +k8s:neq=true
+
+    MyBool 
+bool
+ 
+`json:"myBool"`
+
+
+}
+
+In this example:
+MyString
+ cannot be equal to 
+"disallowed"
+.
+MyInt
+ cannot be equal to 
+0
+.
+MyBool
+ cannot be equal to 
+true
+.
++k8s:opaqueType
+Description:
+Indicates that any validations declared on the referenced type will be ignored. If a referenced type's package is not included in the generator's current flags, this tag must be set, or code generation will fail (preventing silent mistakes). If the validations should not be ignored, add the type's package to the generator using the 
+--readonly-pkg
+ flag.
+Stability Level:
+ Alpha
+Usage Example:
+import
+ 
+"some/external/package"
+
+
+
+
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:opaqueType
+
+    ExternalField 
+package
+.ExternalType 
+`json:"externalField"`
+
+
+}
+
+In this example, any validation tags on 
+package.ExternalType
+ will be ignored.
++k8s:optional
+Description:
+Indicates that a field is optional to clients.
+Stability Level:
+ Stable
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:optional
+
+    MyField 
+string
+ 
+`json:"myField"`
+
+
+}
+
+In this example, 
+MyField
+ is not required to be provided when creating or updating 
+MyStruct
+.
++k8s:required
+Description:
+Indicates that a field must be specified by clients.
+Stability Level:
+ Stable
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:required
+
+    MyField 
+string
+ 
+`json:"myField"`
+
+
+}
+
+In this example, 
+MyField
+ must be provided when creating or updating 
+MyStruct
+.
++k8s:subfield
+Description:
+Declares a validation for a subfield of a struct.
+Stability Level:
+ Beta
+Arguments:
+<field-json-name>
+ (string, required): The JSON name of the subfield.
+Payload:
+<validation-tag>
+: The tag to evaluate for the subfield.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+    
+// +k8s:subfield("mySubfield")=+k8s:required
+
+    MyStruct MyStruct 
+`json:"MyStruct"`
+
+
+}
+
+
+
+type
+ MyStruct 
+struct
+ {
+
+    MySubfield 
+string
+ 
+`json:"mySubfield"`
+
+
+}
+
+In this example, 
+MySubfield
+ within 
+MyStruct
+ is required.
++k8s:supportsSubresource
+Stability Level:
+ Stable
+Description:
+The 
++k8s:supportsSubresource
+ tag is a package-level comment tag that 
+declares which subresources are valid targets for validation
+ for the types within that package. Think of this tag as registering an endpoint; it tells the validation framework that a specific subresource path is recognized and should not be immediately rejected.
+When the validation code is generated, this tag adds the specified subresource path to the main dispatch function for a type. This allows incoming requests for that subresource to be routed to a validation implementation.
+Multiple tags can be used to declare support for several subresources. If no 
++k8s:supportsSubresource
+ tags are present in a package, validation is only enabled for the root resource (e.g., 
+.../myresources/myobject
+), and any requests to subresources will fail with a "no validation found" error.
+Standalone Usage:
+If you use 
++k8s:supportsSubresource
+ without a corresponding 
++k8s:isSubresource
+ tag for a specific validation, the validation rules for the root object will be applied to the subresource by default.
+Scope:
+ Package
+Payload:
+<subresource-path>
+: The path of the subresource to support (e.g., 
+"/status"
+, 
+"/scale"
+).
+Usage Example:
+By adding these tags, you are enabling the validation system to handle requests for the 
+/status
+ and 
+/scale
+ subresources for the types defined in package 
+v1
+.
+File: 
+staging/src/k8s.io/api/core/v1/doc.go
+// +k8s:supportsSubresource="/status"
+
+// +k8s:supportsSubresource="/scale"
+
+package
+ v1
+
++k8s:unionDiscriminator
+Description:
+Indicates that this field is the discriminator for a union.
+Stability Level:
+ Stable
+Arguments:
+union
+ (string, optional): The name of the union, if more than one exists.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+	TypeMeta 
+int
+
+
+
+
+	
+// +k8s:unionDiscriminator
+
+	D D 
+`json:"d"`
+
+
+
+
+	
+// +k8s:unionMember
+
+	
+// +k8s:optional
+
+	M1 
+*
+M1 
+`json:"m1"`
+
+
+
+
+	
+// +k8s:unionMember
+
+	
+// +k8s:optional
+
+	M2 
+*
+M2 
+`json:"m2"`
+
+
+}
+
+
+
+type
+ D 
+string
+
+
+
+
+const
+ (
+
+	DM1 D = 
+"M1"
+
+
+	DM2 D = 
+"M2"
+
+
+)
+
+
+
+type
+ M1 
+struct
+{}
+
+
+
+type
+ M2 
+struct
+{}
+
+In this example, the 
+Type
+ field is the discriminator for the union. The value of 
+Type
+ will determine which of the union members (
+M1
+ or 
+M2
+) is expected to be present.
++k8s:unionMember
+Description:
+Indicates that this field is a member of a union.
+Stability Level:
+ Stable
+Arguments:
+union
+ (string, optional): The name of the union, if more than one exists.
+memberName
+ (string, optional): The discriminator value for this member. Defaults to the field's name.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+	
+// +k8s:unionMember(union: "union1")
+
+	
+// +k8s:optional
+
+	M1 
+*
+M1 
+`json:"u1m1"`
+
+
+
+
+	
+// +k8s:unionMember(union: "union1")
+
+	
+// +k8s:optional
+
+	M2 
+*
+M2 
+`json:"u1m2"`
+
+
+}
+
+
+
+type
+ M1 
+struct
+{}
+
+
+
+type
+ M2 
+struct
+{}
+
+In this example, 
+M1
+ and 
+M2
+ are members of the named union 
+union1
+.
++k8s:zeroOrOneOfMember
+Description:
+Indicates that this field is a member of a zero-or-one-of union. A zero-or-one-of union allows at most one member to be set. Unlike regular unions, having no members set is valid.
+Stability Level:
+ Stable
+Arguments:
+union
+ (string, optional): The name of the union, if more than one exists.
+memberName
+ (string, optional): The custom member name for this member. Defaults to the field's name.
+Usage Example:
+type
+ MyStruct 
+struct
+ {
+
+	
+// +k8s:zeroOrOneOfMember
+
+	
+// +k8s:optional
+
+	M1 
+*
+M1 
+`json:"m1"`
+
+
+
+
+	
+// +k8s:zeroOrOneOfMember
+
+	
+// +k8s:optional
+
+	M2 
+*
+M2 
+`json:"m2"`
+
+
+}
+
+
+
+type
+ M1 
+struct
+{}
+
+
+
+type
+ M2 
+struct
+{}
+
+In this example, at most one of 
+A
+ or 
+B
+ can be set. It is also valid for neither to be set.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 01, 2026 at 12:36 PM PST: 
+Update content/en/docs/reference/using-api/declarative-validation.md (1d5c3750fd)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

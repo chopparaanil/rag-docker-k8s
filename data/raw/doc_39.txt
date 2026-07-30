@@ -1,0 +1,4213 @@
+Concepts | Kubernetes
+
+
+Kubernetes
+Documentation
+Blog
+Partenaires
+Communauté
+Études de cas
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+Français (French)
+English
+
+
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Concepts
+Français (French)
+English
+
+
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Documentation
+
+
+Documentation
+
+
+Versions de documentation disponibles
+
+
+Installation
+
+
+Environnement d'apprentissage
+
+
+Installer Kubernetes avec Minikube
+
+
+Télécharger Kubernetes
+
+
+Construire une release
+
+
+Environnement de production
+
+
+Container Runtimes
+ 
+(EN)
+
+
+Installer Kubernetes avec les outils de déploiement
+
+
+Déploiement d'un cluster avec kubeadm
+
+
+Installer kubeadm
+
+
+Création d'un Cluster à master unique avec kubeadm
+
+
+Personnalisation de la configuration du control plane avec kubeadm
+
+
+Options pour la topologie en haute disponibilité
+
+
+Création de clusters hautement disponibles avec kubeadm
+
+
+Configurer un cluster etcd en haute disponibilité avec kubeadm
+
+
+Configuration des kubelet de votre cluster avec kubeadm
+
+
+Dépanner kubeadm
+
+
+Dual-stack support with kubeadm
+ 
+(EN)
+
+
+Solutions Cloud clés en main
+
+
+Turnkey Cloud Solutions
+ 
+(EN)
+
+
+Windows dans Kubernetes
+
+
+Best practices
+ 
+(EN)
+
+
+Considerations for large clusters
+ 
+(EN)
+
+
+Running in multiple zones
+ 
+(EN)
+
+
+Validate node setup
+ 
+(EN)
+
+
+Enforcing Pod Security Standards
+ 
+(EN)
+
+
+PKI certificates and requirements
+ 
+(EN)
+
+
+Solutions Cloud personnalisées
+
+
+CoreOS sur AWS ou GCE
+
+
+Installer Kubernetes avec Kubespray (on-premises et fournisseurs de cloud)
+
+
+Installer Kubernetes sur AWS avec kops
+
+
+Concepts
+
+
+Vue d'ensemble
+
+
+Composants de Kubernetes
+
+
+Objets dans Kubernetes
+
+
+Kubernetes Object Management
+
+
+Noms et identifiants d'objets
+
+
+Labels et sélecteurs
+
+
+Namespaces
+
+
+Annotations
+
+
+Sélecteurs de champs
+
+
+Finalisateurs
+
+
+Propriétaires et dépendants
+
+
+labels recommandées
+
+
+Storage Versions
+ 
+(EN)
+
+
+L'API Kubernetes
+
+
+The kubectl command-line tool
+ 
+(EN)
+
+
+Architecture du cluster
+
+
+Noeuds
+
+
+Communication entre les nœuds et le plan de contrôle
+
+
+Contrôleurs
+
+
+Lease
+
+
+Gestionnaire du contrôleur de cloud
+
+
+À propos de cgroup v2
+
+
+Kubernetes Self-Healing
+ 
+(EN)
+
+
+Interface de Runtime de Conteneur (CRI)
+
+
+Collecte des déchets
+
+
+Proxy de version mixte
+
+
+Les conteneurs
+
+
+Images
+
+
+Classe d'exécution (Runtime Class)
+
+
+L'environnement du conteneur
+
+
+Hooks de cycle de vie de conteneurs
+
+
+Container Runtime Interface (CRI)
+ 
+(EN)
+
+
+Workloads
+
+
+Pods
+
+
+Aperçu du Pod
+
+
+Pods
+
+
+Cycle de vie d'un Pod
+
+
+Pod Conditions
+ 
+(EN)
+
+
+Contraintes de propagation de topologie pour les Pods
+
+
+Init Containers
+
+
+Sidecar Containers
+ 
+(EN)
+
+
+Ephemeral Containers
+ 
+(EN)
+
+
+Disruptions
+ 
+(EN)
+
+
+Pod Hostname
+ 
+(EN)
+
+
+Pod Quality of Service Classes
+ 
+(EN)
+
+
+Scheduling Group
+ 
+(EN)
+
+
+User Namespaces
+ 
+(EN)
+
+
+Downward API
+ 
+(EN)
+
+
+Advanced Pod Configuration
+ 
+(EN)
+
+
+Contrôleurs
+
+
+ReplicaSet
+
+
+Déploiements
+
+
+StatefulSets
+
+
+DaemonSet
+ 
+(EN)
+
+
+Jobs
+ 
+(EN)
+
+
+Automatic Cleanup for Finished Jobs
+ 
+(EN)
+
+
+CronJob
+ 
+(EN)
+
+
+ReplicationController
+ 
+(EN)
+
+
+Workload API
+ 
+(EN)
+
+
+Pod Group Disruption and Priority
+ 
+(EN)
+
+
+PodGroup Scheduling Policies
+ 
+(EN)
+
+
+Topology-Aware Workload Scheduling
+ 
+(EN)
+
+
+PodGroup API
+ 
+(EN)
+
+
+PodGroup Lifecycle
+ 
+(EN)
+
+
+Managing Workloads
+ 
+(EN)
+
+
+Autoscaling Workloads
+ 
+(EN)
+
+
+Horizontal Pod Autoscaling
+ 
+(EN)
+
+
+Resource managers
+ 
+(EN)
+
+
+Vertical Pod Autoscaling
+ 
+(EN)
+
+
+Services, Equilibreur de charge, et Réseau
+
+
+EndpointSlices
+
+
+Service
+
+
+DNS pour les services et les pods
+
+
+Ingress
+
+
+Ingress Controllers
+ 
+(EN)
+
+
+Gateway API
+ 
+(EN)
+
+
+Network Policies
+ 
+(EN)
+
+
+IPv4/IPv6 dual-stack
+ 
+(EN)
+
+
+Topology Aware Routing
+ 
+(EN)
+
+
+Networking on Windows
+ 
+(EN)
+
+
+Service ClusterIP allocation
+ 
+(EN)
+
+
+Service Internal Traffic Policy
+ 
+(EN)
+
+
+Stockage
+
+
+Volumes
+
+
+Volumes persistants
+
+
+Projected Volumes
+ 
+(EN)
+
+
+Ephemeral Volumes
+ 
+(EN)
+
+
+Storage Classes
+ 
+(EN)
+
+
+Volume Attributes Classes
+ 
+(EN)
+
+
+Dynamic Volume Provisioning
+ 
+(EN)
+
+
+Volume Snapshots
+ 
+(EN)
+
+
+Volume Snapshot Classes
+ 
+(EN)
+
+
+CSI Volume Cloning
+ 
+(EN)
+
+
+Storage Capacity
+ 
+(EN)
+
+
+Node-specific Volume Limits
+ 
+(EN)
+
+
+Local ephemeral storage
+ 
+(EN)
+
+
+Volume Health Monitoring
+ 
+(EN)
+
+
+Windows Storage
+ 
+(EN)
+
+
+Configuration
+
+
+ConfigMaps
+ 
+(EN)
+
+
+Liveness, Readiness, and Startup Probes
+ 
+(EN)
+
+
+Resource Management for Pods and Containers
+ 
+(EN)
+
+
+Secrets
+
+
+Organizing Cluster Access Using kubeconfig Files
+ 
+(EN)
+
+
+Resource Management for Windows nodes
+ 
+(EN)
+
+
+Sécurité
+
+
+Cloud Native Security
+ 
+(EN)
+
+
+Pod Security Standards
+ 
+(EN)
+
+
+Pod Security Admission
+ 
+(EN)
+
+
+Service Accounts
+ 
+(EN)
+
+
+Pod Security Policies
+ 
+(EN)
+
+
+Security For Linux Nodes
+ 
+(EN)
+
+
+Security For Windows Nodes
+ 
+(EN)
+
+
+Controlling Access to the Kubernetes API
+ 
+(EN)
+
+
+Role Based Access Control Good Practices
+ 
+(EN)
+
+
+Good practices for Kubernetes Secrets
+ 
+(EN)
+
+
+Multi-tenancy
+ 
+(EN)
+
+
+Hardening Guide - Authentication Mechanisms
+ 
+(EN)
+
+
+Hardening Guide - Dynamic Resource Allocation
+ 
+(EN)
+
+
+Hardening Guide - Scheduler Configuration
+ 
+(EN)
+
+
+Kubernetes API Server Bypass Risks
+ 
+(EN)
+
+
+Linux kernel security constraints for Pods and containers
+ 
+(EN)
+
+
+Security Checklist
+ 
+(EN)
+
+
+Application Security Checklist
+ 
+(EN)
+
+
+Politiques
+
+
+Limit Ranges
+ 
+(EN)
+
+
+Resource Quotas
+ 
+(EN)
+
+
+Process ID Limits And Reservations
+ 
+(EN)
+
+
+Scheduling, Preemption and Eviction
+ 
+(EN)
+
+
+Kubernetes Scheduler
+ 
+(EN)
+
+
+Topology-Aware Workload Scheduling
+ 
+(EN)
+
+
+Assigning Pods to Nodes
+ 
+(EN)
+
+
+Pod Overhead
+ 
+(EN)
+
+
+Pod Scheduling Readiness
+ 
+(EN)
+
+
+Pod Topology Spread Constraints
+ 
+(EN)
+
+
+Taints and Tolerations
+ 
+(EN)
+
+
+Scheduling Framework
+ 
+(EN)
+
+
+Dynamic Resource Allocation
+ 
+(EN)
+
+
+Gang Scheduling
+ 
+(EN)
+
+
+Scheduler Performance Tuning
+ 
+(EN)
+
+
+PodGroup Scheduling
+ 
+(EN)
+
+
+Resource Bin Packing
+ 
+(EN)
+
+
+Workload-Aware Preemption
+ 
+(EN)
+
+
+Pod Priority and Preemption
+ 
+(EN)
+
+
+Node-pressure Eviction
+ 
+(EN)
+
+
+API-initiated Eviction
+ 
+(EN)
+
+
+Node Declared Features
+ 
+(EN)
+
+
+Administration d'un cluster
+
+
+Node Shutdowns
+ 
+(EN)
+
+
+Swap memory management
+ 
+(EN)
+
+
+Vue d'ensemble de l'administration d'un cluster
+
+
+Node Autoscaling
+ 
+(EN)
+
+
+Certificats
+
+
+Cluster Networking
+ 
+(EN)
+
+
+Observability
+ 
+(EN)
+
+
+Admission Webhook Good Practices
+ 
+(EN)
+
+
+Architecture de Journalisation d'évènements (logging)
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+ 
+(EN)
+
+
+Compatibility Version For Kubernetes Control Plane Components
+ 
+(EN)
+
+
+Metrics For Kubernetes System Components
+ 
+(EN)
+
+
+Metrics for Kubernetes Object States
+ 
+(EN)
+
+
+System Logs
+ 
+(EN)
+
+
+Traces For Kubernetes System Components
+ 
+(EN)
+
+
+Proxies in Kubernetes
+ 
+(EN)
+
+
+API Priority and Fairness
+ 
+(EN)
+
+
+Installing Addons
+ 
+(EN)
+
+
+Coordinated Leader Election
+ 
+(EN)
+
+
+Extensions Kubernetes
+
+
+Extensions de l'API Kubernetes
+
+
+Custom Resources
+ 
+(EN)
+
+
+Kubernetes API Aggregation Layer
+ 
+(EN)
+
+
+Extensions compute, stockage et réseau
+
+
+Network Plugins
+ 
+(EN)
+
+
+Device Plugins
+ 
+(EN)
+
+
+Operator pattern
+ 
+(EN)
+
+
+Windows in Kubernetes
+ 
+(EN)
+
+
+Windows containers in Kubernetes
+ 
+(EN)
+
+
+Guide for Running Windows Containers in Kubernetes
+ 
+(EN)
+
+
+Tâches
+
+
+Outils d'installation
+
+
+Install and Set Up kubectl on Linux
+ 
+(EN)
+
+
+Install and Set Up kubectl on macOS
+ 
+(EN)
+
+
+Install and Set Up kubectl on Windows
+ 
+(EN)
+
+
+Installer et configurer kubectl
+
+
+Installer Minikube
+
+
+Administration d'un cluster
+
+
+Administration avec kubeadm
+
+
+Adding Linux worker nodes
+ 
+(EN)
+
+
+Adding Windows worker nodes
+ 
+(EN)
+
+
+Upgrading kubeadm clusters
+ 
+(EN)
+
+
+Upgrading Linux nodes
+ 
+(EN)
+
+
+Upgrading Windows nodes
+ 
+(EN)
+
+
+Configuring a cgroup driver
+ 
+(EN)
+
+
+Certificate Management with kubeadm
+ 
+(EN)
+
+
+Reconfiguring a kubeadm cluster
+ 
+(EN)
+
+
+Changing The Kubernetes Package Repository
+ 
+(EN)
+
+
+Overprovision Node Capacity For A Cluster
+ 
+(EN)
+
+
+Gestion de la mémoire du CPU et des ressources d'API
+
+
+Configure Default Memory Requests and Limits for a Namespace
+ 
+(EN)
+
+
+Configure Default CPU Requests and Limits for a Namespace
+ 
+(EN)
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+ 
+(EN)
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+ 
+(EN)
+
+
+Configure Memory and CPU Quotas for a Namespace
+ 
+(EN)
+
+
+Configure a Pod Quota for a Namespace
+ 
+(EN)
+
+
+Migrating from dockershim
+ 
+(EN)
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+ 
+(EN)
+
+
+Find Out What Container Runtime is Used on a Node
+ 
+(EN)
+
+
+Troubleshooting CNI plugin-related errors
+ 
+(EN)
+
+
+Check whether dockershim removal affects you
+ 
+(EN)
+
+
+Migrating telemetry and security agents from dockershim
+ 
+(EN)
+
+
+Generate Certificates Manually
+ 
+(EN)
+
+
+Installation d'un fournisseur de politiques de réseau
+
+
+Use Antrea for NetworkPolicy
+ 
+(EN)
+
+
+Use Calico for NetworkPolicy
+ 
+(EN)
+
+
+Use Cilium for NetworkPolicy
+ 
+(EN)
+
+
+Use Kube-router for NetworkPolicy
+ 
+(EN)
+
+
+Romana for NetworkPolicy
+ 
+(EN)
+
+
+Weave Net for NetworkPolicy
+ 
+(EN)
+
+
+Access Clusters Using the Kubernetes API
+ 
+(EN)
+
+
+Enable Or Disable Feature Gates
+ 
+(EN)
+
+
+Advertise Extended Resources for a Node
+ 
+(EN)
+
+
+Autoscale the DNS Service in a Cluster
+ 
+(EN)
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+ 
+(EN)
+
+
+Change the default StorageClass
+ 
+(EN)
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+ 
+(EN)
+
+
+Change the Reclaim Policy of a PersistentVolume
+ 
+(EN)
+
+
+Configure a kubelet image credential provider
+ 
+(EN)
+
+
+Configure Quotas for API Objects
+ 
+(EN)
+
+
+Control CPU Management Policies on the Node
+ 
+(EN)
+
+
+Control Memory Management Policies on a Node
+ 
+(EN)
+
+
+Control Topology Management Policies on a node
+ 
+(EN)
+
+
+Customizing DNS Service
+ 
+(EN)
+
+
+Debugging DNS Resolution
+ 
+(EN)
+
+
+Déclarer une politique réseau (NetworkPolicy)
+
+
+Enable Or Disable A Kubernetes API
+ 
+(EN)
+
+
+Encrypting Confidential Data at Rest
+ 
+(EN)
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+ 
+(EN)
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+ 
+(EN)
+
+
+IP Masquerade Agent User Guide
+ 
+(EN)
+
+
+Limit Storage Consumption
+ 
+(EN)
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+ 
+(EN)
+
+
+Operating etcd clusters for Kubernetes
+ 
+(EN)
+
+
+Reserve Compute Resources for System Daemons
+ 
+(EN)
+
+
+Running Kubernetes Node Components as a Non-root User
+ 
+(EN)
+
+
+Safely Drain a Node
+ 
+(EN)
+
+
+Securing a Cluster
+ 
+(EN)
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+ 
+(EN)
+
+
+Set Kubelet Parameters Via A Configuration File
+ 
+(EN)
+
+
+Share a Cluster with Namespaces
+ 
+(EN)
+
+
+Upgrade A Cluster
+ 
+(EN)
+
+
+Use Cascading Deletion in a Cluster
+ 
+(EN)
+
+
+Using a KMS provider for data encryption
+ 
+(EN)
+
+
+Using CoreDNS for Service Discovery
+ 
+(EN)
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+ 
+(EN)
+
+
+Using sysctls in a Kubernetes Cluster
+ 
+(EN)
+
+
+Verify Signed Kubernetes Artifacts
+ 
+(EN)
+
+
+Développer un Cloud Controller Manager
+
+
+Kubernetes cloud-controller-manager
+
+
+Configuration des Pods et des conteneurs
+
+
+Allouer des ressources mémoire aux conteneurs et aux pods
+
+
+Allouer des ressources CPU aux conteneurs et aux pods
+
+
+Assign Devices to Pods and Containers
+ 
+(EN)
+
+
+Set Up DRA in a Cluster
+ 
+(EN)
+
+
+Allocate Devices to Workloads with DRA
+ 
+(EN)
+
+
+Access DRA Device Metadata
+ 
+(EN)
+
+
+Assign Pod-level CPU and memory resources
+ 
+(EN)
+
+
+Configure GMSA for Windows Pods and containers
+ 
+(EN)
+
+
+Configurer la qualité de service pour les pods
+
+
+Resize CPU and Memory Resources assigned to Containers
+ 
+(EN)
+
+
+Resize CPU and Memory Resources assigned to Pods
+ 
+(EN)
+
+
+Affecter des ressources supplémentaires à un conteneur
+
+
+Configure RunAsUserName for Windows pods and containers
+ 
+(EN)
+
+
+Configurer un pod en utilisant un volume pour le stockage
+
+
+Create a Windows HostProcess Pod
+ 
+(EN)
+
+
+Configurer un Pod pour utiliser un stockage de type PersistentVolume
+
+
+Configurer les comptes de service pour les pods
+
+
+Configure a Pod to Use a Projected Volume for Storage
+ 
+(EN)
+
+
+Récupération d'une image d'un registre privé
+
+
+Configure a Security Context for a Pod or Container
+ 
+(EN)
+
+
+Configurer les Liveness, Readiness et Startup Probes
+
+
+Assigner des pods aux nœuds
+
+
+Configurer l'initialisation du pod
+
+
+Configurer un pod pour utiliser une ConfigMap
+
+
+Assign Pods to Nodes using Node Affinity
+ 
+(EN)
+
+
+Partager l'espace de nommage des processus entre les conteneurs d'un Pod
+
+
+Attach Handlers to Container Lifecycle Events
+ 
+(EN)
+
+
+Convertir un fichier Docker Compose en ressources Kubernetes
+
+
+Use a User Namespace With a Pod
+ 
+(EN)
+
+
+Use an Image Volume With a Pod
+ 
+(EN)
+
+
+Create static Pods
+ 
+(EN)
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+ 
+(EN)
+
+
+Enforce Pod Security Standards with Namespace Labels
+ 
+(EN)
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+ 
+(EN)
+
+
+Gérez vos objets Kubernetes
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+ 
+(EN)
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+ 
+(EN)
+
+
+Managing Kubernetes Objects Using Imperative Commands
+ 
+(EN)
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+ 
+(EN)
+
+
+Update API Objects in Place Using kubectl patch
+ 
+(EN)
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+ 
+(EN)
+
+
+Injecter des données dans les applications
+
+
+Définir une commande et ses arguments pour un Container
+
+
+Définir des variables d'environnement dépendantes
+
+
+Définir des variables d'environnement pour un Container
+
+
+Define Environment Variable Values Using An Init Container
+ 
+(EN)
+
+
+Exposer les informations du Pod aux containers via les variables d'environnement
+
+
+Exposer les informations d'un Pod à ses containers à travers des fichiers
+
+
+Distribuer des données sensibles de manière sécurisée avec les Secrets
+
+
+Exécution des applications
+
+
+Exécuter une application stateless avec un Déploiement
+
+
+Horizontal Manual Scaling for a Deployment
+ 
+(EN)
+
+
+Exécutez une application stateful mono-instance
+
+
+Run a Replicated Stateful Application
+ 
+(EN)
+
+
+Scale a StatefulSet
+ 
+(EN)
+
+
+Delete a StatefulSet
+ 
+(EN)
+
+
+Force Delete StatefulSet Pods
+ 
+(EN)
+
+
+Découverte de l'HorizontalPodAutoscaler
+
+
+Specifying a Disruption Budget for your Application
+ 
+(EN)
+
+
+Accéder à l'API de Kubernetes depuis un Pod
+
+
+Monitoring, Logging, and Debugging
+ 
+(EN)
+
+
+Logging in Kubernetes
+ 
+(EN)
+
+
+Monitoring in Kubernetes
+ 
+(EN)
+
+
+Troubleshooting Applications
+ 
+(EN)
+
+
+Debug Pods
+ 
+(EN)
+
+
+Debug Services
+ 
+(EN)
+
+
+Debug a StatefulSet
+ 
+(EN)
+
+
+Determine the Reason for Pod Failure
+ 
+(EN)
+
+
+Debug Init Containers
+ 
+(EN)
+
+
+Debug Running Pods
+ 
+(EN)
+
+
+Get a Shell to a Running Container
+ 
+(EN)
+
+
+Troubleshooting Clusters
+ 
+(EN)
+
+
+Troubleshooting kubectl
+ 
+(EN)
+
+
+Resource metrics pipeline
+ 
+(EN)
+
+
+Tools for Monitoring Resources
+ 
+(EN)
+
+
+Monitor Node Health
+ 
+(EN)
+
+
+Debugging Kubernetes nodes with crictl
+ 
+(EN)
+
+
+Troubleshooting Topology Management
+ 
+(EN)
+
+
+Auditing
+ 
+(EN)
+
+
+Debugging Kubernetes Nodes With Kubectl
+ 
+(EN)
+
+
+Developing and debugging services locally using telepresence
+ 
+(EN)
+
+
+Windows debugging tips
+ 
+(EN)
+
+
+Exécution des jobs
+
+
+Running Automated Tasks with a CronJob
+ 
+(EN)
+
+
+Coarse Parallel Processing Using a Work Queue
+ 
+(EN)
+
+
+Fine Parallel Processing Using a Work Queue
+ 
+(EN)
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+ 
+(EN)
+
+
+Job with Pod-to-Pod Communication
+ 
+(EN)
+
+
+Parallel Processing using Expansions
+ 
+(EN)
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+ 
+(EN)
+
+
+Accès aux applications dans un cluster
+
+
+Tableau de bord (Dashboard)
+
+
+Accessing Clusters
+ 
+(EN)
+
+
+Configurer l'accès à plusieurs clusters
+
+
+Utiliser le Port Forwarding pour accéder à des applications dans un cluster
+
+
+Utiliser un Service pour accéder à une application dans un cluster
+
+
+Connecter un Frontend à un Backend en utilisant les Services
+
+
+Create an External Load Balancer
+ 
+(EN)
+
+
+Lister toutes les images de conteneur exécutées dans un cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+ 
+(EN)
+
+
+Configure DNS for a Cluster
+ 
+(EN)
+
+
+Access Services Running on Clusters
+ 
+(EN)
+
+
+Gestion des Secrets
+
+
+Gestion des secrets avec kubectl
+
+
+Gestion des Secrets avec un fichier de configuration
+
+
+Gestion des secrets avec Kustomize
+
+
+Monitoring, Logging et Debugging
+
+
+Obtenez un shell dans un conteneur en cours d'exécution
+
+
+Extensions de Kubernetes
+
+
+Utilisation des ressources personnalisées
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+ 
+(EN)
+
+
+Configure Certificate Rotation for the Kubelet
+ 
+(EN)
+
+
+Manage TLS Certificates in a Cluster
+ 
+(EN)
+
+
+Manual Rotation of CA Certificates
+ 
+(EN)
+
+
+Extend Kubernetes
+ 
+(EN)
+
+
+Configure the Aggregation Layer
+ 
+(EN)
+
+
+Use Custom Resources
+ 
+(EN)
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+ 
+(EN)
+
+
+Versions in CustomResourceDefinitions
+ 
+(EN)
+
+
+Set up an Extension API Server
+ 
+(EN)
+
+
+Configure Multiple Schedulers
+ 
+(EN)
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+ 
+(EN)
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+ 
+(EN)
+
+
+Set up Konnectivity service
+ 
+(EN)
+
+
+Fédération
+
+
+Administration du Control Plane de la fédération
+
+
+Gestion des démons du cluster
+
+
+Building a Basic DaemonSet
+ 
+(EN)
+
+
+Perform a Rolling Update on a DaemonSet
+ 
+(EN)
+
+
+Perform a Rollback on a DaemonSet
+ 
+(EN)
+
+
+Running Pods on Only Some Nodes
+ 
+(EN)
+
+
+Networking
+ 
+(EN)
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+ 
+(EN)
+
+
+Extend Service IP Ranges
+ 
+(EN)
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+ 
+(EN)
+
+
+Validate IPv4/IPv6 dual-stack
+ 
+(EN)
+
+
+Extend kubectl with plugins
+ 
+(EN)
+
+
+Manage HugePages
+ 
+(EN)
+
+
+Schedule GPUs
+ 
+(EN)
+
+
+Tutoriels
+
+
+Bienvenue sur Minikube
+
+
+Apprendre les bases de Kubernetes
+
+
+Créer un cluster
+
+
+Utiliser Minikube pour créer un cluster
+
+
+Didacticiel interactif - Création d'un cluster
+
+
+Déployer une application
+
+
+Utiliser kubectl pour créer un déploiement
+
+
+Tutoriel interactif - Déploiement d'une application
+
+
+Explorez vos applications
+
+
+Affichage des pods et des nœuds
+
+
+Rendre publique votre application
+
+
+Using a Service to Expose Your App
+ 
+(EN)
+
+
+Mise à l'échelle des applications
+
+
+Running Multiple Instances of Your App
+ 
+(EN)
+
+
+Mise à jour des applications
+
+
+Performing a Rolling Update
+ 
+(EN)
+
+
+Formations en ligne
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+ 
+(EN)
+
+
+Configuring Redis using a ConfigMap
+ 
+(EN)
+
+
+Adopting Sidecar Containers
+ 
+(EN)
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+ 
+(EN)
+
+
+Applications sans états
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+ 
+(EN)
+
+
+Example: Deploying PHP Guestbook application with Redis
+ 
+(EN)
+
+
+Security
+ 
+(EN)
+
+
+Apply Pod Security Standards at the Cluster Level
+ 
+(EN)
+
+
+Apply Pod Security Standards at the Namespace Level
+ 
+(EN)
+
+
+Restrict a Container's Access to Resources with AppArmor
+ 
+(EN)
+
+
+Restrict a Container's Syscalls with seccomp
+ 
+(EN)
+
+
+Applications avec états
+
+
+StatefulSet Basics
+ 
+(EN)
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+ 
+(EN)
+
+
+Example: Deploying Cassandra with a StatefulSet
+ 
+(EN)
+
+
+Running ZooKeeper, A Distributed System Coordinator
+ 
+(EN)
+
+
+Cluster Management
+ 
+(EN)
+
+
+Running Kubelet in Standalone Mode
+ 
+(EN)
+
+
+Configuring swap memory on Kubernetes nodes
+ 
+(EN)
+
+
+Install Drivers and Allocate Devices with DRA
+ 
+(EN)
+
+
+Namespaces Walkthrough
+ 
+(EN)
+
+
+Clusters
+
+
+Services
+
+
+Connecting Applications with Services
+ 
+(EN)
+
+
+Using Source IP
+ 
+(EN)
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+ 
+(EN)
+
+
+Référence
+
+
+Glossaire de termes
+
+
+Problèmes et alertes de sécurité de Kubernetes
+
+
+Kubernetes Issue Tracker
+ 
+(EN)
+
+
+Kubernetes Security and Disclosure Information
+ 
+(EN)
+
+
+CVE feed
+ 
+(EN)
+
+
+Utilisation de l'API Kubernetes
+
+
+Declarative API Validation
+ 
+(EN)
+
+
+Kubernetes API Concepts
+ 
+(EN)
+
+
+Server-Side Apply
+ 
+(EN)
+
+
+Client Libraries
+ 
+(EN)
+
+
+Common Expression Language in Kubernetes
+ 
+(EN)
+
+
+Kubernetes Deprecation Policy
+ 
+(EN)
+
+
+Deprecated API Migration Guide
+ 
+(EN)
+
+
+Kubernetes API health endpoints
+ 
+(EN)
+
+
+Accéder à l'API
+
+
+Authenticating
+ 
+(EN)
+
+
+Authenticating with Bootstrap Tokens
+ 
+(EN)
+
+
+Authorization
+ 
+(EN)
+
+
+Using Node Authorization
+ 
+(EN)
+
+
+Webhook Mode
+ 
+(EN)
+
+
+Using ABAC Authorization
+ 
+(EN)
+
+
+Admission Control
+ 
+(EN)
+
+
+Dynamic Admission Control
+ 
+(EN)
+
+
+Managing Service Accounts
+ 
+(EN)
+
+
+User Impersonation
+ 
+(EN)
+
+
+Certificates and Certificate Signing Requests
+ 
+(EN)
+
+
+Utilisation de l'autorisation RBAC
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+ 
+(EN)
+
+
+Kubelet authentication/authorization
+ 
+(EN)
+
+
+TLS bootstrapping
+ 
+(EN)
+
+
+Manifest-Based Admission Control
+ 
+(EN)
+
+
+Mutating Admission Policy
+ 
+(EN)
+
+
+Validating Admission Policy
+ 
+(EN)
+
+
+Référence de l'API
+
+
+Workload Resources
+ 
+(EN)
+
+
+Pod
+ 
+(EN)
+
+
+Binding
+ 
+(EN)
+
+
+PodTemplate
+ 
+(EN)
+
+
+PodGroup v1alpha2
+ 
+(EN)
+
+
+ReplicationController
+ 
+(EN)
+
+
+ReplicaSet
+ 
+(EN)
+
+
+Deployment
+ 
+(EN)
+
+
+StatefulSet
+ 
+(EN)
+
+
+ControllerRevision
+ 
+(EN)
+
+
+DaemonSet
+ 
+(EN)
+
+
+Job
+ 
+(EN)
+
+
+CronJob
+ 
+(EN)
+
+
+HorizontalPodAutoscaler
+ 
+(EN)
+
+
+HorizontalPodAutoscaler
+ 
+(EN)
+
+
+PriorityClass
+ 
+(EN)
+
+
+DeviceTaintRule v1beta2
+ 
+(EN)
+
+
+ResourceClaim
+ 
+(EN)
+
+
+ResourceClaimTemplate
+ 
+(EN)
+
+
+ResourceSlice
+ 
+(EN)
+
+
+Workload v1alpha2
+ 
+(EN)
+
+
+Service Resources
+ 
+(EN)
+
+
+Service
+ 
+(EN)
+
+
+Endpoints
+ 
+(EN)
+
+
+EndpointSlice
+ 
+(EN)
+
+
+Ingress
+ 
+(EN)
+
+
+IngressClass
+ 
+(EN)
+
+
+Config and Storage Resources
+ 
+(EN)
+
+
+ConfigMap
+ 
+(EN)
+
+
+Secret
+ 
+(EN)
+
+
+CSIDriver
+ 
+(EN)
+
+
+CSINode
+ 
+(EN)
+
+
+CSIStorageCapacity
+ 
+(EN)
+
+
+PersistentVolumeClaim
+ 
+(EN)
+
+
+PersistentVolume
+ 
+(EN)
+
+
+StorageClass
+ 
+(EN)
+
+
+StorageVersionMigration v1beta1
+ 
+(EN)
+
+
+Volume
+ 
+(EN)
+
+
+VolumeAttachment
+ 
+(EN)
+
+
+VolumeAttributesClass
+ 
+(EN)
+
+
+Authentication Resources
+ 
+(EN)
+
+
+ServiceAccount
+ 
+(EN)
+
+
+TokenRequest
+ 
+(EN)
+
+
+TokenReview
+ 
+(EN)
+
+
+CertificateSigningRequest
+ 
+(EN)
+
+
+ClusterTrustBundle v1beta1
+ 
+(EN)
+
+
+SelfSubjectReview
+ 
+(EN)
+
+
+PodCertificateRequest v1beta1
+ 
+(EN)
+
+
+Authorization Resources
+ 
+(EN)
+
+
+LocalSubjectAccessReview
+ 
+(EN)
+
+
+SelfSubjectAccessReview
+ 
+(EN)
+
+
+SelfSubjectRulesReview
+ 
+(EN)
+
+
+SubjectAccessReview
+ 
+(EN)
+
+
+ClusterRole
+ 
+(EN)
+
+
+ClusterRoleBinding
+ 
+(EN)
+
+
+Role
+ 
+(EN)
+
+
+RoleBinding
+ 
+(EN)
+
+
+Policy Resources
+ 
+(EN)
+
+
+FlowSchema
+ 
+(EN)
+
+
+LimitRange
+ 
+(EN)
+
+
+ResourceQuota
+ 
+(EN)
+
+
+NetworkPolicy
+ 
+(EN)
+
+
+PodDisruptionBudget
+ 
+(EN)
+
+
+PriorityLevelConfiguration
+ 
+(EN)
+
+
+ValidatingAdmissionPolicy
+ 
+(EN)
+
+
+ValidatingAdmissionPolicyBinding
+ 
+(EN)
+
+
+MutatingAdmissionPolicy
+ 
+(EN)
+
+
+MutatingAdmissionPolicyBinding
+ 
+(EN)
+
+
+Extend Resources
+ 
+(EN)
+
+
+CustomResourceDefinition
+ 
+(EN)
+
+
+DeviceClass
+ 
+(EN)
+
+
+MutatingWebhookConfiguration
+ 
+(EN)
+
+
+ValidatingWebhookConfiguration
+ 
+(EN)
+
+
+Cluster Resources
+ 
+(EN)
+
+
+APIService
+ 
+(EN)
+
+
+ComponentStatus
+ 
+(EN)
+
+
+Event
+ 
+(EN)
+
+
+IPAddress
+ 
+(EN)
+
+
+Lease
+ 
+(EN)
+
+
+LeaseCandidate v1beta1
+ 
+(EN)
+
+
+Namespace
+ 
+(EN)
+
+
+Node
+ 
+(EN)
+
+
+RuntimeClass
+ 
+(EN)
+
+
+ResourcePoolStatusRequest v1alpha3
+ 
+(EN)
+
+
+ServiceCIDR
+ 
+(EN)
+
+
+Common Definitions
+ 
+(EN)
+
+
+DeleteOptions
+ 
+(EN)
+
+
+LabelSelector
+ 
+(EN)
+
+
+ListMeta
+ 
+(EN)
+
+
+LocalObjectReference
+ 
+(EN)
+
+
+NodeSelectorRequirement
+ 
+(EN)
+
+
+ObjectFieldSelector
+ 
+(EN)
+
+
+ObjectMeta
+ 
+(EN)
+
+
+ObjectReference
+ 
+(EN)
+
+
+Patch
+ 
+(EN)
+
+
+Quantity
+ 
+(EN)
+
+
+ResourceFieldSelector
+ 
+(EN)
+
+
+Status
+ 
+(EN)
+
+
+TypedLocalObjectReference
+ 
+(EN)
+
+
+Common Parameters
+ 
+(EN)
+
+
+Well-Known Labels, Annotations and Taints
+ 
+(EN)
+
+
+Audit Annotations
+ 
+(EN)
+
+
+Référence des outils d'installation
+
+
+Kubeadm
+
+
+Aperçu de kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+ 
+(EN)
+
+
+kubeadm upgrade
+ 
+(EN)
+
+
+kubeadm upgrade phases
+ 
+(EN)
+
+
+kubeadm config
+ 
+(EN)
+
+
+kubeadm reset
+ 
+(EN)
+
+
+kubeadm token
+ 
+(EN)
+
+
+kubeadm version
+ 
+(EN)
+
+
+kubeadm alpha
+ 
+(EN)
+
+
+kubeadm certs
+ 
+(EN)
+
+
+kubeadm init phase
+ 
+(EN)
+
+
+kubeadm join phase
+ 
+(EN)
+
+
+kubeadm kubeconfig
+ 
+(EN)
+
+
+kubeadm reset phase
+ 
+(EN)
+
+
+Implementation details
+ 
+(EN)
+
+
+kubefed
+
+
+CLI kubectl
+
+
+Introduction to kubectl
+ 
+(EN)
+
+
+Aide-mémoire de kubectl
+
+
+kubectl reference
+ 
+(EN)
+
+
+kubectl
+ 
+(EN)
+
+
+kubectl annotate
+ 
+(EN)
+
+
+kubectl api-resources
+ 
+(EN)
+
+
+kubectl api-versions
+ 
+(EN)
+
+
+kubectl apply
+ 
+(EN)
+
+
+kubectl apply edit-last-applied
+ 
+(EN)
+
+
+kubectl apply set-last-applied
+ 
+(EN)
+
+
+kubectl apply view-last-applied
+ 
+(EN)
+
+
+kubectl attach
+ 
+(EN)
+
+
+kubectl auth
+ 
+(EN)
+
+
+kubectl auth can-i
+ 
+(EN)
+
+
+kubectl auth reconcile
+ 
+(EN)
+
+
+kubectl auth whoami
+ 
+(EN)
+
+
+kubectl autoscale
+ 
+(EN)
+
+
+kubectl certificate
+ 
+(EN)
+
+
+kubectl certificate approve
+ 
+(EN)
+
+
+kubectl certificate deny
+ 
+(EN)
+
+
+kubectl cluster-info
+ 
+(EN)
+
+
+kubectl cluster-info dump
+ 
+(EN)
+
+
+kubectl completion
+ 
+(EN)
+
+
+kubectl config
+ 
+(EN)
+
+
+kubectl config current-context
+ 
+(EN)
+
+
+kubectl config delete-cluster
+ 
+(EN)
+
+
+kubectl config delete-context
+ 
+(EN)
+
+
+kubectl config delete-user
+ 
+(EN)
+
+
+kubectl config get-clusters
+ 
+(EN)
+
+
+kubectl config get-contexts
+ 
+(EN)
+
+
+kubectl config get-users
+ 
+(EN)
+
+
+kubectl config rename-context
+ 
+(EN)
+
+
+kubectl config set
+ 
+(EN)
+
+
+kubectl config set-cluster
+ 
+(EN)
+
+
+kubectl config set-context
+ 
+(EN)
+
+
+kubectl config set-credentials
+ 
+(EN)
+
+
+kubectl config unset
+ 
+(EN)
+
+
+kubectl config use-context
+ 
+(EN)
+
+
+kubectl config view
+ 
+(EN)
+
+
+kubectl cordon
+ 
+(EN)
+
+
+kubectl cp
+ 
+(EN)
+
+
+kubectl create
+ 
+(EN)
+
+
+kubectl create clusterrole
+ 
+(EN)
+
+
+kubectl create clusterrolebinding
+ 
+(EN)
+
+
+kubectl create configmap
+ 
+(EN)
+
+
+kubectl create cronjob
+ 
+(EN)
+
+
+kubectl create deployment
+ 
+(EN)
+
+
+kubectl create ingress
+ 
+(EN)
+
+
+kubectl create job
+ 
+(EN)
+
+
+kubectl create namespace
+ 
+(EN)
+
+
+kubectl create poddisruptionbudget
+ 
+(EN)
+
+
+kubectl create priorityclass
+ 
+(EN)
+
+
+kubectl create quota
+ 
+(EN)
+
+
+kubectl create role
+ 
+(EN)
+
+
+kubectl create rolebinding
+ 
+(EN)
+
+
+kubectl create secret
+ 
+(EN)
+
+
+kubectl create secret docker-registry
+ 
+(EN)
+
+
+kubectl create secret generic
+ 
+(EN)
+
+
+kubectl create secret tls
+ 
+(EN)
+
+
+kubectl create service
+ 
+(EN)
+
+
+kubectl create service clusterip
+ 
+(EN)
+
+
+kubectl create service externalname
+ 
+(EN)
+
+
+kubectl create service loadbalancer
+ 
+(EN)
+
+
+kubectl create service nodeport
+ 
+(EN)
+
+
+kubectl create serviceaccount
+ 
+(EN)
+
+
+kubectl create token
+ 
+(EN)
+
+
+kubectl debug
+ 
+(EN)
+
+
+kubectl delete
+ 
+(EN)
+
+
+kubectl describe
+ 
+(EN)
+
+
+kubectl diff
+ 
+(EN)
+
+
+kubectl drain
+ 
+(EN)
+
+
+kubectl edit
+ 
+(EN)
+
+
+kubectl events
+ 
+(EN)
+
+
+kubectl exec
+ 
+(EN)
+
+
+kubectl explain
+ 
+(EN)
+
+
+kubectl expose
+ 
+(EN)
+
+
+kubectl get
+ 
+(EN)
+
+
+kubectl kuberc
+ 
+(EN)
+
+
+kubectl kuberc set
+ 
+(EN)
+
+
+kubectl kuberc view
+ 
+(EN)
+
+
+kubectl kustomize
+ 
+(EN)
+
+
+kubectl label
+ 
+(EN)
+
+
+kubectl logs
+ 
+(EN)
+
+
+kubectl options
+ 
+(EN)
+
+
+kubectl patch
+ 
+(EN)
+
+
+kubectl plugin
+ 
+(EN)
+
+
+kubectl plugin list
+ 
+(EN)
+
+
+kubectl port-forward
+ 
+(EN)
+
+
+kubectl proxy
+ 
+(EN)
+
+
+kubectl replace
+ 
+(EN)
+
+
+kubectl rollout
+ 
+(EN)
+
+
+kubectl rollout history
+ 
+(EN)
+
+
+kubectl rollout pause
+ 
+(EN)
+
+
+kubectl rollout restart
+ 
+(EN)
+
+
+kubectl rollout resume
+ 
+(EN)
+
+
+kubectl rollout status
+ 
+(EN)
+
+
+kubectl rollout undo
+ 
+(EN)
+
+
+kubectl run
+ 
+(EN)
+
+
+kubectl scale
+ 
+(EN)
+
+
+kubectl set
+ 
+(EN)
+
+
+kubectl set env
+ 
+(EN)
+
+
+kubectl set image
+ 
+(EN)
+
+
+kubectl set resources
+ 
+(EN)
+
+
+kubectl set selector
+ 
+(EN)
+
+
+kubectl set serviceaccount
+ 
+(EN)
+
+
+kubectl set subject
+ 
+(EN)
+
+
+kubectl taint
+ 
+(EN)
+
+
+kubectl top
+ 
+(EN)
+
+
+kubectl top node
+ 
+(EN)
+
+
+kubectl top pod
+ 
+(EN)
+
+
+kubectl uncordon
+ 
+(EN)
+
+
+kubectl version
+ 
+(EN)
+
+
+kubectl wait
+ 
+(EN)
+
+
+Aperçu de kubectl
+
+
+Support de JSONPath
+
+
+kubectl
+
+
+kubectl for Docker Users
+ 
+(EN)
+
+
+Kubectl user preferences (kuberc)
+ 
+(EN)
+
+
+Aide-mémoire kubectl
+
+
+Commandes kubectl
+
+
+Conventions d'utilisation de kubectl
+
+
+Instrumentation
+ 
+(EN)
+
+
+Service Level Indicator Metrics
+ 
+(EN)
+
+
+CRI Pod & Container Metrics
+ 
+(EN)
+
+
+Native Histograms
+ 
+(EN)
+
+
+Node metrics data
+ 
+(EN)
+
+
+Understand Pressure Stall Information (PSI) Metrics
+ 
+(EN)
+
+
+Kubernetes z-pages
+ 
+(EN)
+
+
+Kubernetes Metrics Reference
+ 
+(EN)
+
+
+Référence sur les outils en ligne de commande
+
+
+Feature Gates
+ 
+(EN)
+
+
+Feature Gates (removed)
+ 
+(EN)
+
+
+kube-apiserver
+ 
+(EN)
+
+
+kube-controller-manager
+ 
+(EN)
+
+
+kube-proxy
+ 
+(EN)
+
+
+kube-scheduler
+ 
+(EN)
+
+
+kubelet
+ 
+(EN)
+
+
+Node Reference Information
+ 
+(EN)
+
+
+Kubelet Checkpoint API
+ 
+(EN)
+
+
+Linux Kernel Version Requirements
+ 
+(EN)
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+ 
+(EN)
+
+
+Kubelet Pod Info gRPC API
+ 
+(EN)
+
+
+Node Labels Populated By The Kubelet
+ 
+(EN)
+
+
+Kubelet Sync Loop
+ 
+(EN)
+
+
+Local Files And Paths Used By The Kubelet
+ 
+(EN)
+
+
+Kubelet Configuration Directory Merging
+ 
+(EN)
+
+
+Kubelet Device Manager API Versions
+ 
+(EN)
+
+
+Kubelet Systemd Watchdog
+ 
+(EN)
+
+
+Node Status
+ 
+(EN)
+
+
+Seccomp and Kubernetes
+ 
+(EN)
+
+
+Linux Node Swap Behaviors
+ 
+(EN)
+
+
+Networking Reference
+ 
+(EN)
+
+
+Protocols for Services
+ 
+(EN)
+
+
+Ports and Protocols
+ 
+(EN)
+
+
+Virtual IPs and Service Proxies
+ 
+(EN)
+
+
+Encodings
+ 
+(EN)
+
+
+KYAML Reference
+ 
+(EN)
+
+
+Debug cluster
+ 
+(EN)
+
+
+Flow control
+ 
+(EN)
+
+
+Configuration APIs
+ 
+(EN)
+
+
+Client Authentication (v1)
+ 
+(EN)
+
+
+Client Authentication (v1beta1)
+ 
+(EN)
+
+
+Event Rate Limit Configuration (v1alpha1)
+ 
+(EN)
+
+
+Image Policy API (v1alpha1)
+ 
+(EN)
+
+
+kube-apiserver Admission (v1)
+ 
+(EN)
+
+
+kube-apiserver Audit Configuration (v1)
+ 
+(EN)
+
+
+kube-apiserver Configuration (v1)
+ 
+(EN)
+
+
+kube-apiserver Configuration (v1alpha1)
+ 
+(EN)
+
+
+kube-apiserver Configuration (v1beta1)
+ 
+(EN)
+
+
+kube-controller-manager Configuration (v1alpha1)
+ 
+(EN)
+
+
+kube-proxy Configuration (v1alpha1)
+ 
+(EN)
+
+
+kube-scheduler Configuration (v1)
+ 
+(EN)
+
+
+kubeadm Configuration (v1beta3)
+ 
+(EN)
+
+
+kubeadm Configuration (v1beta4)
+ 
+(EN)
+
+
+kubeconfig (v1)
+ 
+(EN)
+
+
+Kubelet Configuration (v1)
+ 
+(EN)
+
+
+Kubelet Configuration (v1alpha1)
+ 
+(EN)
+
+
+Kubelet Configuration (v1beta1)
+ 
+(EN)
+
+
+Kubelet CredentialProvider (v1)
+ 
+(EN)
+
+
+kuberc (v1alpha1)
+ 
+(EN)
+
+
+kuberc (v1beta1)
+ 
+(EN)
+
+
+WebhookAdmission Configuration (v1)
+ 
+(EN)
+
+
+External APIs
+ 
+(EN)
+
+
+Kubernetes Custom Metrics (v1beta2)
+ 
+(EN)
+
+
+Kubernetes External Metrics (v1beta1)
+ 
+(EN)
+
+
+Kubernetes Metrics (v1beta1)
+ 
+(EN)
+
+
+Scheduling
+ 
+(EN)
+
+
+Scheduler Configuration
+ 
+(EN)
+
+
+Scheduling Policies
+ 
+(EN)
+
+
+Other Tools
+ 
+(EN)
+
+
+Contribuer
+
+
+Contribute to Kubernetes Documentation
+ 
+(EN)
+
+
+Commencez à contribuer
+
+
+Contributing to Kubernetes blogs
+ 
+(EN)
+
+
+Submitting articles to Kubernetes blogs
+ 
+(EN)
+
+
+Blog guidelines
+ 
+(EN)
+
+
+Blog article mirroring
+ 
+(EN)
+
+
+Post-release communications
+ 
+(EN)
+
+
+Helping as a blog writing buddy
+ 
+(EN)
+
+
+Suggesting content improvements
+ 
+(EN)
+
+
+Contributing new content
+ 
+(EN)
+
+
+Opening a pull request
+ 
+(EN)
+
+
+Previewing locally
+ 
+(EN)
+
+
+Documenting for a release
+ 
+(EN)
+
+
+Case studies
+ 
+(EN)
+
+
+Contributions avancées
+
+
+Reviewing changes
+ 
+(EN)
+
+
+Reviewing pull requests
+ 
+(EN)
+
+
+For approvers and reviewers
+ 
+(EN)
+
+
+Participating in SIG Docs
+ 
+(EN)
+
+
+Roles and responsibilities
+ 
+(EN)
+
+
+Issue Wranglers
+ 
+(EN)
+
+
+PR wranglers
+ 
+(EN)
+
+
+Aperçu du style de documentation
+
+
+Content guide
+ 
+(EN)
+
+
+Style guide
+
+
+Rédiger une nouveau sujet
+
+
+Utilisation des modèles de page
+
+
+Organisation du contenu
+
+
+Diagram guide
+ 
+(EN)
+
+
+Page content types
+ 
+(EN)
+
+
+Hugo Shortcodes personnalisés
+
+
+Vue d'ensemble des documents de référence
+
+
+Quickstart
+ 
+(EN)
+
+
+Contributing to the Upstream Kubernetes Code
+ 
+(EN)
+
+
+Generating Reference Documentation for kubectl Commands
+ 
+(EN)
+
+
+Generating Reference Documentation for Metrics
+ 
+(EN)
+
+
+ 
+(EN)
+
+
+Génération de documentation de référence pour l'API Kubernetes
+
+
+Génération de la documentation de référence pour l'API de fédération Kubernetes
+
+
+Génération de pages de référence pour les composants et les outils Kubernetes
+
+
+Viewing Site Analytics
+ 
+(EN)
+
+
+Participez au SIG Docs
+
+
+Traduction de la documentation Kubernetes
+
+
+Docs smoke test page
+ 
+(EN)
+ Modifier cette page
+
+
+ Créer une page dans cette section
+
+
+ Signaler un problème dans la documentation
+
+
+ Imprimer la section entière
+Vue d'ensemble
+Objets Kubernetes
+Kubernetes control plane
+Kubernetes master
+Noeuds Kubernetes
+A suivre
+Documentation
+Concepts
+Concepts
+Concepts Kubernetes
+La section Concepts vous aide à mieux comprendre les composants du système Kubernetes et les abstractions que Kubernetes utilise pour représenter votre cluster.
+Elle vous aide également à mieux comprendre le fonctionnement de Kubernetes en général.
+Vue d'ensemble
+Pour utiliser Kubernetes, vous utilisez 
+les objets de l'API Kubernetes
+ pour décrire 
+l'état souhaité
+ de votre cluster: quelles applications ou autres processus que vous souhaitez exécuter, quelles images de conteneur elles utilisent, le nombre de réplicas, les ressources réseau et disque que vous mettez à disposition, et plus encore.
+Vous définissez l'état souhaité en créant des objets à l'aide de l'API Kubernetes, généralement via l'interface en ligne de commande, 
+kubectl
+.
+Vous pouvez également utiliser l'API Kubernetes directement pour interagir avec le cluster et définir ou modifier l'état souhaité.
+Une fois que vous avez défini l'état souhaité, le 
+plan de contrôle Kubernetes
+ (control plane en anglais) permet de faire en sorte que l'état actuel du cluster corresponde à l'état souhaité.
+Pour ce faire, Kubernetes effectue automatiquement diverses tâches, telles que le démarrage ou le redémarrage de conteneurs, la mise à jour du nombre de réplicas d'une application donnée, etc.
+Le control plane Kubernetes comprend un ensemble de processus en cours d'exécution sur votre cluster:
+Le 
+maître Kubernetes
+ (Kubernetes master en anglais) qui est un ensemble de trois processus qui s'exécutent sur un seul nœud de votre cluster, désigné comme nœud maître (master node en anglais). Ces processus sont: 
+kube-apiserver
+, 
+kube-controller-manager
+ et 
+kube-scheduler
+.
+Chaque nœud non maître de votre cluster exécute deux processus:
+kubelet
+, qui communique avec le Kubernetes master.
+kube-proxy
+, un proxy réseau reflétant les services réseau Kubernetes sur chaque nœud.
+Objets Kubernetes
+Kubernetes contient un certain nombre d'abstractions représentant l'état de votre système: applications et processus conteneurisés déployés, leurs ressources réseau et disque associées, ainsi que d'autres informations sur les activités de votre cluster.
+Ces abstractions sont représentées par des objets de l'API Kubernetes; consultez 
+Vue d'ensemble des objets Kubernetes
+ pour plus d'informations.
+Les objets de base de Kubernetes incluent:
+Pod
+Service
+Volume
+Namespace
+En outre, Kubernetes contient un certain nombre d'abstractions de niveau supérieur appelées Contrôleurs.
+Les contrôleurs s'appuient sur les objets de base et fournissent des fonctionnalités supplémentaires.
+Voici quelques exemples:
+ReplicaSet
+Deployment
+StatefulSet
+DaemonSet
+Job
+Kubernetes control plane
+Les différentes parties du control plane Kubernetes, telles que les processus Kubernetes master et kubelet, déterminent la manière dont Kubernetes communique avec votre cluster.
+Le control plane conserve un enregistrement de tous les objets Kubernetes du système et exécute des boucles de contrôle continues pour gérer l'état de ces objets.
+À tout moment, les boucles de contrôle du control plane répondent aux modifications du cluster et permettent de faire en sorte que l'état réel de tous les objets du système corresponde à l'état souhaité que vous avez fourni.
+Par exemple, lorsque vous utilisez l'API Kubernetes pour créer un objet Deployment, vous fournissez un nouvel état souhaité pour le système.
+Le control plane Kubernetes enregistre la création de cet objet et exécute vos instructions en lançant les applications requises et en les planifiant vers des nœuds de cluster, afin que l'état actuel du cluster corresponde à l'état souhaité.
+Kubernetes master
+Le Kubernetes master est responsable du maintien de l'état souhaité pour votre cluster.
+Lorsque vous interagissez avec Kubernetes, par exemple en utilisant l'interface en ligne de commande 
+kubectl
+, vous communiquez avec le master Kubernetes de votre cluster.
+Le "master" fait référence à un ensemble de processus gérant l'état du cluster.
+En règle générale, tous les processus sont exécutés sur un seul nœud du cluster.
+Ce nœud est également appelé master.
+Le master peut également être répliqué pour la disponibilité et la redondance.
+Noeuds Kubernetes
+Les nœuds d’un cluster sont les machines (serveurs physiques, machines virtuelles, etc.) qui exécutent vos applications et vos workflows.
+Le master node Kubernetes contrôle chaque noeud; vous interagirez rarement directement avec les nœuds.
+Metadonnées des objets Kubernetes
+Annotations
+A suivre
+Si vous souhaitez écrire une page de concept, consultez
+
+Utilisation de modèles de page
+
+pour plus d'informations sur le type de page pour la documentation d'un concept.
+Vue d'ensemble
+Kubernetes est une plateforme open source portable et extensible pour gérer les charges de travail et les services conteneurisés, qui facilite à la fois la configuration déclarative et l'automatisation. Il dispose d'un écosystème vaste et en pleine croissance. Les services, le support et les outils Kubernetes sont largement disponibles.
+Architecture du cluster
+Les concepts architecturaux derrière Kubernetes.
+Les conteneurs
+Conteneurs Kubernetes
+Workloads
+Comprendre les Pods, le plus petit objet déployable sur Kubernetes, et les abstractions de haut niveaux vous permettant de les lancer.
+Services, Equilibreur de charge, et Réseau
+Service Reseau Kubernetes
+Stockage
+Configuration
+Sécurité
+Politiques
+Administration d'un cluster
+Administration cluster Kubernetes
+Extensions Kubernetes
+Feedback
+Cette page est elle utile ?
+Oui
+
+
+Non
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Dernière modification September 02, 2024 at 9:30 PM PST: 
+update fr docs concepts overview (db1e142f84)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

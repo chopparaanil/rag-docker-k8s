@@ -1,0 +1,4165 @@
+Certificate Management with kubeadm | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Certificate Management with kubeadm
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+ Third party content advice
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Before you begin
+Using custom certificates
+Choosing an encryption algorithm
+Choosing certificate validity period
+External CA mode
+Manual preparation of component credentials
+Preparation of credentials by signing CSRs generated by kubeadm
+Automated preparation of component credentials by using kubeadm phases
+Certificate expiry and management
+Automatic certificate renewal
+Manual certificate renewal
+Copying the administrator certificate (optional)
+Renew certificates with the Kubernetes certificates API
+Set up a signer
+Create certificate signing requests (CSR)
+Renew certificates with external CA
+Renewal by using certificate signing requests (CSR)
+Certificate authority (CA) rotation
+Enabling signed kubelet serving certificates
+Generating kubeconfig files for additional users
+Signing certificate signing requests (CSR) generated by kubeadm
+Preparing CA and service account files
+Generate CSRs
+Signing CSRs for all certificates
+Embedding certificates in kubeconfig files
+Performing cleanup
+kubeadm node initialization
+Kubernetes Documentation
+Tasks
+Administer a Cluster
+Administration with kubeadm
+Certificate Management with kubeadm
+Certificate Management with kubeadm
+FEATURE STATE:
+
+
+Kubernetes v1.15 [stable]
+Client certificates generated by 
+kubeadm
+ expire after 1 year.
+This page explains how to manage certificate renewals with kubeadm. It also covers other tasks related
+to kubeadm certificate management.
+The Kubernetes project recommends upgrading to the latest patch releases promptly, and
+to ensure that you are running a supported minor release of Kubernetes.
+Following this recommendation helps you to stay secure.
+Before you begin
+You should be familiar with 
+PKI certificates and requirements in Kubernetes
+.
+You should be familiar with how to pass a 
+configuration
+ file to the kubeadm commands.
+This guide covers the usage of the 
+openssl
+ command (used for manual certificate signing,
+if you choose that approach), but you can use your preferred tools.
+Some of the steps here use 
+sudo
+ for administrator access. You can use any equivalent tool.
+Using custom certificates
+By default, kubeadm generates all the certificates needed for a cluster to run.
+You can override this behavior by providing your own certificates.
+To do so, you must place them in whatever directory is specified by the
+
+--cert-dir
+ flag or the 
+certificatesDir
+ field of kubeadm's 
+ClusterConfiguration
+.
+By default this is 
+/etc/kubernetes/pki
+.
+If a given certificate and private key pair exists before running 
+kubeadm init
+,
+kubeadm does not overwrite them. This means you can, for example, copy an existing
+CA into 
+/etc/kubernetes/pki/ca.crt
+ and 
+/etc/kubernetes/pki/ca.key
+,
+and kubeadm will use this CA for signing the rest of the certificates.
+Choosing an encryption algorithm
+kubeadm allows you to choose an encryption algorithm that is used for creating
+public and private keys. That can be done by using the 
+encryptionAlgorithm
+ field of the
+kubeadm configuration:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+encryptionAlgorithm
+:
+ 
+<ALGORITHM>
+
+
+<ALGORITHM>
+ can be one of 
+RSA-2048
+ (default), 
+RSA-3072
+, 
+RSA-4096
+ or 
+ECDSA-P256
+.
+Choosing certificate validity period
+kubeadm allows you to choose the validity period of CA and leaf certificates.
+That can be done by using the 
+certificateValidityPeriod
+ and 
+caCertificateValidityPeriod
+
+fields of the kubeadm configuration:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+certificateValidityPeriod: 8760h # Default
+:
+ 
+365
+ 
+days × 24 hours = 1 year
+
+
+caCertificateValidityPeriod: 87600h # Default
+:
+ 
+365
+ 
+days × 24 hours * 10 = 10 years
+
+
+The values of the fields follow the accepted format for
+
+Go's 
+time.Duration
+ values
+, with the longest supported
+unit being 
+h
+ (hours).
+External CA mode
+It is also possible to provide only the 
+ca.crt
+ file and not the
+
+ca.key
+ file (this is only available for the root CA file, not other cert pairs).
+If all other certificates and kubeconfig files are in place, kubeadm recognizes
+this condition and activates the "External CA" mode. kubeadm will proceed without the
+CA key on disk.
+Instead, run the controller-manager standalone with 
+--controllers=csrsigner
+ and
+point to the CA certificate and key.
+There are various ways to prepare the component credentials when using external CA mode.
+Manual preparation of component credentials
+PKI certificates and requirements
+ includes information
+on how to prepare all the required by kubeadm component credentials manually.
+This guide covers the usage of the 
+openssl
+ command (used for manual certificate signing,
+if you choose that approach), but you can use your preferred tools.
+Preparation of credentials by signing CSRs generated by kubeadm
+kubeadm can 
+generate CSR files
+ that you can sign manually with tools like
+
+openssl
+ and your external CA. These CSR files will include all the specification for credentials
+that components deployed by kubeadm require.
+Automated preparation of component credentials by using kubeadm phases
+Alternatively, it is possible to use kubeadm phase commands to automate this process.
+Go to a host that you want to prepare as a kubeadm control plane node with external CA.
+Copy the external CA files 
+ca.crt
+ and 
+ca.key
+ that you have into 
+/etc/kubernetes/pki
+ on the node.
+Prepare a temporary 
+kubeadm configuration file
+
+called 
+config.yaml
+ that can be used with 
+kubeadm init
+. Make sure that this file includes
+any relevant cluster wide or host-specific information that could be included in certificates, such as,
+
+ClusterConfiguration.controlPlaneEndpoint
+, 
+ClusterConfiguration.certSANs
+ and 
+InitConfiguration.APIEndpoint
+.
+On the same host execute the commands 
+kubeadm init phase kubeconfig all --config config.yaml
+ and
+
+kubeadm init phase certs all --config config.yaml
+. This will generate all required kubeconfig
+files and certificates under 
+/etc/kubernetes/
+ and its 
+pki
+ sub directory.
+Inspect the generated files. Delete 
+/etc/kubernetes/pki/ca.key
+, delete or move to a safe location
+the file 
+/etc/kubernetes/super-admin.conf
+.
+On nodes where 
+kubeadm join
+ will be called also delete 
+/etc/kubernetes/kubelet.conf
+.
+This file is only required on the first node where 
+kubeadm init
+ will be called.
+Note that some files such 
+pki/sa.*
+, 
+pki/front-proxy-ca.*
+ and 
+pki/etc/ca.*
+ are
+shared between control plane nodes, You can generate them once and
+
+distribute them manually
+
+to nodes where 
+kubeadm join
+ will be called, or you can use the
+
+--upload-certs
+
+functionality of 
+kubeadm init
+ and 
+--certificate-key
+ of 
+kubeadm join
+ to automate this distribution.
+Once the credentials are prepared on all nodes, call 
+kubeadm init
+ and 
+kubeadm join
+ for these nodes to
+join the cluster. kubeadm will use the existing kubeconfig and certificate files under 
+/etc/kubernetes/
+
+and its 
+pki
+ sub directory.
+Certificate expiry and management
+Note:
+kubeadm
+ cannot manage certificates signed by an external CA.
+You can use the 
+check-expiration
+ subcommand to check when certificates expire:
+kubeadm certs check-expiration
+
+The output is similar to this:
+CERTIFICATE                EXPIRES                  RESIDUAL TIME   CERTIFICATE AUTHORITY   EXTERNALLY MANAGED
+
+admin.conf                 Dec 30, 2020 23:36 UTC   364d                                    no
+
+apiserver                  Dec 30, 2020 23:36 UTC   364d            ca                      no
+
+apiserver-etcd-client      Dec 30, 2020 23:36 UTC   364d            etcd-ca                 no
+
+apiserver-kubelet-client   Dec 30, 2020 23:36 UTC   364d            ca                      no
+
+controller-manager.conf    Dec 30, 2020 23:36 UTC   364d                                    no
+
+etcd-healthcheck-client    Dec 30, 2020 23:36 UTC   364d            etcd-ca                 no
+
+etcd-peer                  Dec 30, 2020 23:36 UTC   364d            etcd-ca                 no
+
+etcd-server                Dec 30, 2020 23:36 UTC   364d            etcd-ca                 no
+
+front-proxy-client         Dec 30, 2020 23:36 UTC   364d            front-proxy-ca          no
+
+scheduler.conf             Dec 30, 2020 23:36 UTC   364d                                    no
+
+
+
+CERTIFICATE AUTHORITY   EXPIRES                  RESIDUAL TIME   EXTERNALLY MANAGED
+
+ca                      Dec 28, 2029 23:36 UTC   9y              no
+
+etcd-ca                 Dec 28, 2029 23:36 UTC   9y              no
+
+front-proxy-ca          Dec 28, 2029 23:36 UTC   9y              no
+
+The command shows expiration/residual time for the client certificates in the
+
+/etc/kubernetes/pki
+ folder and for the client certificate embedded in the kubeconfig files used
+by kubeadm (
+admin.conf
+, 
+controller-manager.conf
+ and 
+scheduler.conf
+).
+Additionally, kubeadm informs the user if the certificate is externally managed; in this case, the
+user should take care of managing certificate renewal manually/using other tools.
+The 
+kubelet.conf
+ configuration file is not included in the list above because kubeadm
+configures kubelet
+for 
+automatic certificate renewal
+
+with rotatable certificates under 
+/var/lib/kubelet/pki
+.
+To repair an expired kubelet client certificate see
+
+Kubelet client certificate rotation fails
+.
+Note:
+On nodes created with 
+kubeadm init
+ from versions prior to kubeadm version 1.17, there is a
+
+bug
+ where you manually have to modify the
+contents of 
+kubelet.conf
+. After 
+kubeadm init
+ finishes, you should update 
+kubelet.conf
+ to
+point to the rotated kubelet client certificates, by replacing 
+client-certificate-data
+ and
+
+client-key-data
+ with:
+client-certificate
+:
+ 
+/var/lib/kubelet/pki/kubelet-client-current.pem
+
+
+client-key
+:
+ 
+/var/lib/kubelet/pki/kubelet-client-current.pem
+
+
+Automatic certificate renewal
+kubeadm renews all the certificates during control plane
+
+upgrade
+.
+This feature is designed for addressing the simplest use cases;
+if you don't have specific requirements on certificate renewal and perform Kubernetes version
+upgrades regularly (less than 1 year in between each upgrade), kubeadm will take care of keeping
+your cluster up to date and reasonably secure.
+If you have more complex requirements for certificate renewal, you can opt out from the default
+behavior by passing 
+--certificate-renewal=false
+ to 
+kubeadm upgrade apply
+ or to 
+kubeadm upgrade node
+.
+Manual certificate renewal
+You can renew your certificates manually at any time with the 
+kubeadm certs renew
+ command,
+with the appropriate command line options. If you are running cluster with a replicated control
+plane, this command needs to be executed on all the control-plane nodes.
+This command performs the renewal using CA (or front-proxy-CA) certificate and key stored in 
+/etc/kubernetes/pki
+.
+kubeadm certs renew
+ uses the existing certificates as the authoritative source for attributes
+(Common Name, Organization, subject alternative name) and does not rely on the 
+kubeadm-config
+
+ConfigMap.
+Even so, the Kubernetes project recommends keeping the served certificate and the associated
+values in that ConfigMap synchronized, to avoid any risk of confusion.
+After running the command you should restart the control plane Pods. This is required since
+dynamic certificate reload is currently not supported for all components and certificates.
+
+Static Pods
+ are managed by the local kubelet
+and not by the API Server, thus kubectl cannot be used to delete and restart them.
+To restart a static Pod you can temporarily remove its manifest file from 
+/etc/kubernetes/manifests/
+
+and wait for 20 seconds (see the 
+fileCheckFrequency
+ value in 
+KubeletConfiguration struct
+).
+The kubelet will terminate the Pod if it's no longer in the manifest directory.
+You can then move the file back and after another 
+fileCheckFrequency
+ period, the kubelet will recreate
+the Pod and the certificate renewal for the component can complete.
+kubeadm certs renew
+ can renew any specific certificate or, with the subcommand 
+all
+, it can renew all of them:
+# If you are running cluster with a replicated control plane, this command
+
+
+# needs to be executed on all the control-plane nodes.
+
+
+kubeadm certs renew all
+
+Copying the administrator certificate (optional)
+Clusters built with kubeadm often copy the 
+admin.conf
+ certificate into
+
+$HOME/.kube/config
+, as instructed in 
+Creating a cluster with kubeadm
+.
+On such a system, to update the contents of 
+$HOME/.kube/config
+
+after renewing the 
+admin.conf
+, you could run the following commands:
+sudo cp -i /etc/kubernetes/admin.conf 
+$HOME
+/.kube/config
+
+sudo chown 
+$(
+id -u
+)
+:
+$(
+id -g
+)
+ 
+$HOME
+/.kube/config
+
+Renew certificates with the Kubernetes certificates API
+This section provides more details about how to execute manual certificate renewal using the Kubernetes certificates API.
+Caution:
+These are advanced topics for users who need to integrate their organization's certificate
+infrastructure into a kubeadm-built cluster. If the default kubeadm configuration satisfies your
+needs, you should let kubeadm manage certificates instead.
+Set up a signer
+The Kubernetes Certificate Authority does not work out of the box.
+You can configure an external signer such as 
+cert-manager
+,
+or you can use the built-in signer.
+The built-in signer is part of 
+kube-controller-manager
+.
+To activate the built-in signer, you must pass the 
+--cluster-signing-cert-file
+ and
+
+--cluster-signing-key-file
+ flags.
+If you're creating a new cluster, you can use a kubeadm
+
+configuration file
+:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+controllerManager
+:
+
+
+  
+extraArgs
+:
+
+
+  
+- 
+name
+:
+ 
+"cluster-signing-cert-file"
+
+
+    
+value
+:
+ 
+"/etc/kubernetes/pki/ca.crt"
+
+
+  
+- 
+name
+:
+ 
+"cluster-signing-key-file"
+
+
+    
+value
+:
+ 
+"/etc/kubernetes/pki/ca.key"
+
+
+Create certificate signing requests (CSR)
+See 
+Create CertificateSigningRequest
+
+for creating CSRs with the Kubernetes API.
+Renew certificates with external CA
+This section provide more details about how to execute manual certificate renewal using an external CA.
+To better integrate with external CAs, kubeadm can also produce certificate signing requests (CSRs).
+A CSR represents a request to a CA for a signed certificate for a client.
+In kubeadm terms, any certificate that would normally be signed by an on-disk CA can be produced
+as a CSR instead. A CA, however, cannot be produced as a CSR.
+Renewal by using certificate signing requests (CSR)
+Renewal of ceritficates is possible by generating new CSRs and signing them with the external CA.
+For more details about working with CSRs generated by kubeadm see the section
+
+Signing certificate signing requests (CSR) generated by kubeadm
+.
+Certificate authority (CA) rotation
+Kubeadm does not support rotation or replacement of CA certificates out of the box.
+For more information about manual rotation or replacement of CA, see 
+manual rotation of CA certificates
+.
+Enabling signed kubelet serving certificates
+By default the kubelet serving certificate deployed by kubeadm is self-signed.
+This means a connection from external services like the
+
+metrics-server
+ to a
+kubelet cannot be secured with TLS.
+To configure the kubelets in a new kubeadm cluster to obtain properly signed serving
+certificates you must pass the following minimal configuration to 
+kubeadm init
+:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+---
+
+
+apiVersion
+:
+ 
+kubelet.config.k8s.io/v1beta1
+
+
+kind
+:
+ 
+KubeletConfiguration
+
+
+serverTLSBootstrap
+:
+ 
+true
+
+
+If you have already created the cluster you must adapt it by doing the following:
+Find and edit the 
+kubelet-config
+ ConfigMap in the 
+kube-system
+ namespace.
+In that ConfigMap, the 
+kubelet
+ key has a
+
+KubeletConfiguration
+
+document as its value. Edit the KubeletConfiguration document to set 
+serverTLSBootstrap: true
+.
+On each node, add the 
+serverTLSBootstrap: true
+ field in 
+/var/lib/kubelet/config.yaml
+
+and restart the kubelet with 
+systemctl restart kubelet
+The field 
+serverTLSBootstrap: true
+ will enable the bootstrap of kubelet serving
+certificates by requesting them from the 
+certificates.k8s.io
+ API. One known limitation
+is that the CSRs (Certificate Signing Requests) for these certificates cannot be automatically
+approved by the default signer in the kube-controller-manager -
+
+kubernetes.io/kubelet-serving
+.
+This will require action from the user or a third party controller.
+These CSRs can be viewed using:
+kubectl get csr
+
+NAME        AGE     SIGNERNAME                        REQUESTOR                      CONDITION
+
+csr-9wvgt   112s    kubernetes.io/kubelet-serving     system:node:worker-1           Pending
+
+csr-lz97v   1m58s   kubernetes.io/kubelet-serving     system:node:control-plane-1    Pending
+
+To approve them you can do the following:
+kubectl certificate approve <CSR-name>
+
+By default, these serving certificate will expire after one year. Kubeadm sets the
+
+KubeletConfiguration
+ field 
+rotateCertificates
+ to 
+true
+, which means that close
+to expiration a new set of CSRs for the serving certificates will be created and must
+be approved to complete the rotation. To understand more see
+
+Certificate Rotation
+.
+If you are looking for a solution for automatic approval of these CSRs it is recommended
+that you contact your cloud provider and ask if they have a CSR signer that verifies
+the node identity with an out of band mechanism.
+Note:
+ This section links to third party projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for these projects, which are listed alphabetically. To add a project to this list, read the 
+content guide
+ before submitting a change. 
+More information.
+Third party custom controllers can be used:
+kubelet-csr-approver
+Such a controller is not a secure mechanism unless it not only verifies the CommonName
+in the CSR but also verifies the requested IPs and domain names. This would prevent
+a malicious actor that has access to a kubelet client certificate to create
+CSRs requesting serving certificates for any IP or domain name.
+Generating kubeconfig files for additional users
+During cluster creation, 
+kubeadm init
+ signs the certificate in the 
+super-admin.conf
+
+to have 
+Subject: O = system:masters, CN = kubernetes-super-admin
+.
+
+system:masters
+
+is a break-glass, super user group that bypasses the authorization layer (for example,
+
+RBAC
+). The file 
+admin.conf
+ is also created
+by kubeadm on control plane nodes and it contains a certificate with
+
+Subject: O = kubeadm:cluster-admins, CN = kubernetes-admin
+. 
+kubeadm:cluster-admins
+
+is a group logically belonging to kubeadm. If your cluster uses RBAC
+(the kubeadm default), the 
+kubeadm:cluster-admins
+ group is bound to the
+
+cluster-admin
+ ClusterRole.
+Warning:
+Avoid sharing the 
+super-admin.conf
+ or 
+admin.conf
+ files. Instead, create least
+privileged access even for people who work as administrators and use that least
+privilege alternative for anything other than break-glass (emergency) access.
+You can use the 
+kubeadm kubeconfig user
+
+command to generate kubeconfig files for additional users.
+The command accepts a mixture of command line flags and
+
+kubeadm configuration
+ options.
+The generated kubeconfig will be written to stdout and can be piped to a file using
+
+kubeadm kubeconfig user ... > somefile.conf
+.
+Example configuration file that can be used with 
+--config
+:
+# example.yaml
+
+
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+# Will be used as the target "cluster" in the kubeconfig
+
+
+clusterName
+:
+ 
+"kubernetes"
+
+
+# Will be used as the "server" (IP or DNS name) of this cluster in the kubeconfig
+
+
+controlPlaneEndpoint
+:
+ 
+"some-dns-address:6443"
+
+
+# The cluster CA key and certificate will be loaded from this local directory
+
+
+certificatesDir
+:
+ 
+"/etc/kubernetes/pki"
+
+
+Make sure that these settings match the desired target cluster settings.
+To see the settings of an existing cluster use:
+kubectl get cm kubeadm-config -n kube-system -o
+=
+jsonpath
+=
+"{.data.ClusterConfiguration}"
+
+
+The following example will generate a kubeconfig file with credentials valid for 24 hours
+for a new user 
+johndoe
+ that is part of the 
+appdevs
+ group:
+kubeadm kubeconfig user --config example.yaml --org appdevs --client-name johndoe --validity-period 24h
+
+The following example will generate a kubeconfig file with administrator credentials valid for 1 week:
+kubeadm kubeconfig user --config example.yaml --client-name admin --validity-period 168h
+
+Signing certificate signing requests (CSR) generated by kubeadm
+You can create certificate signing requests with 
+kubeadm certs generate-csr
+.
+Calling this command will generate 
+.csr
+ / 
+.key
+ file pairs for regular
+certificates. For certificates embedded in kubeconfig files, the command will
+generate a 
+.csr
+ / 
+.conf
+ pair where the key is already embedded in the 
+.conf
+ file.
+A CSR file contains all relevant information for a CA to sign a certificate.
+kubeadm uses a
+
+well defined specification
+
+for all its certificates and CSRs.
+The default certificate directory is 
+/etc/kubernetes/pki
+, while the default
+directory for kubeconfig files is 
+/etc/kubernetes
+. These defaults can be
+overridden with the flags 
+--cert-dir
+ and 
+--kubeconfig-dir
+, respectively.
+To pass custom options to 
+kubeadm certs generate-csr
+ use the 
+--config
+ flag,
+which accepts a 
+kubeadm configuration
+
+file, similarly to commands such as 
+kubeadm init
+. Any specification such
+as extra SANs and custom IP addresses must be stored in the same configuration
+file and used for all relevant kubeadm commands by passing it as 
+--config
+.
+Note:
+This guide uses the default Kubernetes directory 
+/etc/kubernetes
+, which requires
+a super user. If you are following this guide and are using directories that you can
+write to (typically, this means running 
+kubeadm
+ with 
+--cert-dir
+ and 
+--kubeconfig-dir
+)
+then you can omit the 
+sudo
+ command.
+You must then copy the files that you produced over to within the 
+/etc/kubernetes
+
+directory so that 
+kubeadm init
+ or 
+kubeadm join
+ will find them.
+Preparing CA and service account files
+On the primary control plane node, where 
+kubeadm init
+ will be executed, call the following
+commands:
+sudo kubeadm init phase certs ca
+
+sudo kubeadm init phase certs etcd-ca
+
+sudo kubeadm init phase certs front-proxy-ca
+
+sudo kubeadm init phase certs sa
+
+This will populate the folders 
+/etc/kubernetes/pki
+ and 
+/etc/kubernetes/pki/etcd
+
+with all self-signed CA files (certificates and keys) and service account (public and
+private keys) that kubeadm needs for a control plane node.
+Note:
+If you are using an external CA, you must generate the same files out of band and manually
+copy them to the primary control plane node in 
+/etc/kubernetes
+.
+Once all CSRs are signed, you can delete the root CA key (
+ca.key
+) as noted in the
+
+External CA mode
+ section.
+For secondary control plane nodes (
+kubeadm join --control-plane
+) there is no need to call
+the above commands. Depending on how you setup the
+
+High Availability
+
+cluster, you either have to manually copy the same files from the primary
+control plane node, or use the automated 
+--upload-certs
+ functionality of 
+kubeadm init
+.
+Generate CSRs
+The 
+kubeadm certs generate-csr
+ command generates CSRs for all known certificates
+managed by kubeadm. Once the command is done you must manually delete 
+.csr
+, 
+.conf
+
+or 
+.key
+ files that you don't need.
+Considerations for kubelet.conf
+This section applies to both control plane and worker nodes.
+If you have deleted the 
+ca.key
+ file from control plane nodes
+(
+External CA mode
+), the active kube-controller-manager in
+this cluster will not be able to sign kubelet client certificates. If no external
+method for signing these certificates exists in your setup (such as an
+
+external signer
+), you could manually sign the 
+kubelet.conf.csr
+
+as explained in this guide.
+Note that this also means that the automatic
+
+kubelet client certificate rotation
+
+will be disabled. If so, close to certificate expiration, you must generate
+a new 
+kubelet.conf.csr
+, sign the certificate, embed it in 
+kubelet.conf
+
+and restart the kubelet.
+If this does not apply to your setup, you can skip processing the 
+kubelet.conf.csr
+
+on secondary control plane and on workers nodes (all nodes that call 
+kubeadm join ...
+).
+That is because the active kube-controller-manager will be responsible
+for signing new kubelet client certificates.
+Note:
+You must process the 
+kubelet.conf.csr
+ file on the primary control plane node
+(the host where you originally ran 
+kubeadm init
+). This is because 
+kubeadm
+
+considers that as the node that bootstraps the cluster, and a pre-populated
+
+kubelet.conf
+ is needed.
+Control plane nodes
+Execute the following command on primary (
+kubeadm init
+) and secondary
+(
+kubeadm join --control-plane
+) control plane nodes to generate all CSR files:
+sudo kubeadm certs generate-csr
+
+If external etcd is to be used, follow the
+
+External etcd with kubeadm
+
+guide to understand what CSR files are needed on the kubeadm and etcd nodes. Other
+
+.csr
+ and 
+.key
+ files under 
+/etc/kubernetes/pki/etcd
+ can be removed.
+Based on the explanation in
+
+Considerations for kubelet.conf
+ keep or delete
+the 
+kubelet.conf
+ and 
+kubelet.conf.csr
+ files.
+Worker nodes
+Based on the explanation in
+
+Considerations for kubelet.conf
+, optionally call:
+sudo kubeadm certs generate-csr
+
+and keep only the 
+kubelet.conf
+ and 
+kubelet.conf.csr
+ files. Alternatively skip
+the steps for worker nodes entirely.
+Signing CSRs for all certificates
+Note:
+If you are using external CA and already have CA serial number files (
+.srl
+) for
+
+openssl
+, you can copy such files to a kubeadm node where CSRs will be processed.
+The 
+.srl
+ files to copy are 
+/etc/kubernetes/pki/ca.srl
+,
+
+/etc/kubernetes/pki/front-proxy-ca.srl
+ and 
+/etc/kubernetes/pki/etcd/ca.srl
+.
+The files can be then moved to a new node where CSR files will be processed.
+If a 
+.srl
+ file is missing for a CA on a node, the script below will generate a new SRL file
+with a random starting serial number.
+To read more about 
+.srl
+ files see the
+
+openssl
+
+documentation for the 
+--CAserial
+ flag.
+Repeat this step for all nodes that have CSR files.
+Write the following script in the 
+/etc/kubernetes
+ directory, navigate to the directory
+and execute the script. The script will generate certificates for all CSR files that are
+present in the 
+/etc/kubernetes
+ tree.
+#!/bin/bash
+
+
+
+# Set certificate expiration time in days
+
+
+DAYS
+=
+365
+
+
+
+
+# Process all CSR files except those for front-proxy and etcd
+
+
+find ./ -name 
+"*.csr"
+ | grep -v 
+"pki/etcd"
+ | grep -v 
+"front-proxy"
+ | 
+while
+ 
+read
+ -r FILE;
+
+do
+
+
+    
+echo
+ 
+"* Processing 
+${
+FILE
+}
+ ..."
+
+
+    
+FILE
+=
+${
+FILE
+%.*
+}
+ 
+# Trim the extension
+
+
+    
+if
+ 
+[
+ -f 
+"./pki/ca.srl"
+ 
+]
+; 
+then
+
+
+        
+SERIAL_FLAG
+=
+"-CAserial ./pki/ca.srl"
+
+
+    
+else
+
+
+        
+SERIAL_FLAG
+=
+"-CAcreateserial"
+
+
+    
+fi
+
+
+    openssl x509 -req -days 
+"
+${
+DAYS
+}
+"
+ -CA ./pki/ca.crt -CAkey ./pki/ca.key 
+${
+SERIAL_FLAG
+}
+ 
+\
+
+        -in 
+"
+${
+FILE
+}
+.csr"
+ -out 
+"
+${
+FILE
+}
+.crt"
+
+
+    sleep 
+2
+
+
+done
+
+
+
+
+# Process all etcd CSRs
+
+
+find ./pki/etcd -name 
+"*.csr"
+ | 
+while
+ 
+read
+ -r FILE;
+
+do
+
+
+    
+echo
+ 
+"* Processing 
+${
+FILE
+}
+ ..."
+
+
+    
+FILE
+=
+${
+FILE
+%.*
+}
+ 
+# Trim the extension
+
+
+    
+if
+ 
+[
+ -f 
+"./pki/etcd/ca.srl"
+ 
+]
+; 
+then
+
+
+        
+SERIAL_FLAG
+=
+-CAserial ./pki/etcd/ca.srl
+
+    
+else
+
+
+        
+SERIAL_FLAG
+=
+-CAcreateserial
+
+    
+fi
+
+
+    openssl x509 -req -days 
+"
+${
+DAYS
+}
+"
+ -CA ./pki/etcd/ca.crt -CAkey ./pki/etcd/ca.key 
+${
+SERIAL_FLAG
+}
+ 
+\
+
+        -in 
+"
+${
+FILE
+}
+.csr"
+ -out 
+"
+${
+FILE
+}
+.crt"
+
+
+done
+
+
+
+
+# Process front-proxy CSRs
+
+
+echo
+ 
+"* Processing ./pki/front-proxy-client.csr ..."
+
+
+openssl x509 -req -days 
+"
+${
+DAYS
+}
+"
+ -CA ./pki/front-proxy-ca.crt -CAkey ./pki/front-proxy-ca.key -CAcreateserial 
+\
+
+    -in ./pki/front-proxy-client.csr -out ./pki/front-proxy-client.crt
+
+Embedding certificates in kubeconfig files
+Repeat this step for all nodes that have CSR files.
+Write the following script in the 
+/etc/kubernetes
+ directory, navigate to the directory
+and execute the script. The script will take the 
+.crt
+ files that were signed for
+kubeconfig files from CSRs in the previous step and will embed them in the kubeconfig files.
+#!/bin/bash
+
+
+
+CLUSTER
+=
+kubernetes
+
+find ./ -name 
+"*.conf"
+ | 
+while
+ 
+read
+ -r FILE;
+
+do
+
+
+    
+echo
+ 
+"* Processing 
+${
+FILE
+}
+ ..."
+
+
+    
+KUBECONFIG
+=
+"
+${
+FILE
+}
+"
+ kubectl config set-cluster 
+"
+${
+CLUSTER
+}
+"
+ --certificate-authority ./pki/ca.crt --embed-certs
+
+    
+USER
+=
+$(
+KUBECONFIG
+=
+"
+${
+FILE
+}
+"
+ kubectl config view -o 
+jsonpath
+=
+'{.users[0].name}'
+)
+
+
+    
+KUBECONFIG
+=
+"
+${
+FILE
+}
+"
+ kubectl config set-credentials 
+"
+${
+USER
+}
+"
+ --client-certificate 
+"
+${
+FILE
+}
+.crt"
+ --embed-certs
+
+done
+
+
+Performing cleanup
+Perform this step on all nodes that have CSR files.
+Write the following script in the 
+/etc/kubernetes
+ directory, navigate to the directory
+and execute the script.
+#!/bin/bash
+
+
+
+# Cleanup CSR files
+
+
+rm -f ./*.csr ./pki/*.csr ./pki/etcd/*.csr 
+# Clean all CSR files
+
+
+
+
+# Cleanup CRT files that were already embedded in kubeconfig files
+
+
+rm -f ./*.crt
+
+Optionally, move 
+.srl
+ files to the next node to be processed.
+Optionally, if using external CA remove the 
+/etc/kubernetes/pki/ca.key
+ file,
+as explained in the 
+External CA node
+ section.
+kubeadm node initialization
+Once CSR files have been signed and required certificates are in place on the hosts
+you want to use as nodes, you can use the commands 
+kubeadm init
+ and 
+kubeadm join
+
+to create a Kubernetes cluster from these nodes. During 
+init
+ and 
+join
+, kubeadm
+uses existing certificates, encryption keys and kubeconfig files that it finds in the
+
+/etc/kubernetes
+ tree on the host's local filesystem.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified September 11, 2025 at 8:07 AM PST: 
+Update legacy kubelet configmap name and modify typo in kubeadm-certs.md (#52012) (05cb3dccc7)
+Items on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the 
+CNCF website guidelines
+ for more details.
+You should read the 
+content guide
+ before proposing a change that adds an extra third-party link.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

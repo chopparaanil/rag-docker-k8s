@@ -1,0 +1,3746 @@
+Troubleshooting kubeadm | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Troubleshooting kubeadm
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Not possible to join a v1.18 Node to a v1.17 cluster due to missing RBAC
+ebtables
+ or some similar executable not found during installation
+kubeadm blocks waiting for control plane during installation
+kubeadm blocks when removing managed containers
+Pods in 
+RunContainerError
+, 
+CrashLoopBackOff
+ or 
+Error
+ state
+coredns
+ is stuck in the 
+Pending
+ state
+HostPort
+ services do not work
+Pods are not accessible via their Service IP
+TLS certificate errors
+Kubelet client certificate rotation fails
+Default NIC When using flannel as the pod network in Vagrant
+Non-public IP used for containers
+coredns
+ pods have 
+CrashLoopBackOff
+ or 
+Error
+ state
+etcd pods restart continually
+Not possible to pass a comma separated list of values to arguments inside a 
+--component-extra-args
+ flag
+kube-proxy scheduled before node is initialized by cloud-controller-manager
+/usr
+ is mounted read-only on nodes
+kubeadm upgrade plan
+ prints out 
+context deadline exceeded
+ error message
+kubeadm reset
+ unmounts 
+/var/lib/kubelet
+Cannot use the metrics-server securely in a kubeadm cluster
+Upgrade fails due to etcd hash not changing
+Kubernetes Documentation
+Getting started
+Production environment
+Installing Kubernetes with deployment tools
+Bootstrapping clusters with kubeadm
+Troubleshooting kubeadm
+Troubleshooting kubeadm
+As with any program, you might run into an error installing or running kubeadm.
+This page lists some common failure scenarios and have provided steps that can help you understand and fix the problem.
+If your problem is not listed below, please follow the following steps:
+If you think your problem is a bug with kubeadm:
+Go to 
+github.com/kubernetes/kubeadm
+ and search for existing issues.
+If no issue exists, please 
+open one
+ and follow the issue template.
+If you are unsure about how kubeadm works, you can ask on 
+Slack
+ in 
+#kubeadm
+,
+or open a question on 
+StackOverflow
+. Please include
+relevant tags like 
+#kubernetes
+ and 
+#kubeadm
+ so folks can help you.
+Not possible to join a v1.18 Node to a v1.17 cluster due to missing RBAC
+In v1.18 kubeadm added prevention for joining a Node in the cluster if a Node with the same name already exists.
+This required adding RBAC for the bootstrap-token user to be able to GET a Node object.
+However this causes an issue where 
+kubeadm join
+ from v1.18 cannot join a cluster created by kubeadm v1.17.
+To workaround the issue you have two options:
+Execute 
+kubeadm init phase bootstrap-token
+ on a control-plane node using kubeadm v1.18.
+Note that this enables the rest of the bootstrap-token permissions as well.
+or
+Apply the following RBAC manually using 
+kubectl apply -f ...
+:
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+kubeadm:get-nodes
+
+
+rules
+:
+
+
+  
+- 
+apiGroups
+:
+
+
+      
+- 
+""
+
+
+    
+resources
+:
+
+
+      
+- nodes
+
+
+    
+verbs
+:
+
+
+      
+- get
+
+
+---
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRoleBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+kubeadm:get-nodes
+
+
+roleRef
+:
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+  
+kind
+:
+ 
+ClusterRole
+
+
+  
+name
+:
+ 
+kubeadm:get-nodes
+
+
+subjects
+:
+
+
+  
+- 
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+    
+kind
+:
+ 
+Group
+
+
+    
+name
+:
+ 
+system:bootstrappers:kubeadm:default-node-token
+
+
+ebtables
+ or some similar executable not found during installation
+If you see the following warnings while running 
+kubeadm init
+[preflight] WARNING: ebtables not found in system path
+
+[preflight] WARNING: ethtool not found in system path
+
+Then you may be missing 
+ebtables
+, 
+ethtool
+ or a similar executable on your node.
+You can install them with the following commands:
+For Ubuntu/Debian users, run 
+apt install ebtables ethtool
+.
+For CentOS/Fedora users, run 
+yum install ebtables ethtool
+.
+kubeadm blocks waiting for control plane during installation
+If you notice that 
+kubeadm init
+ hangs after printing out the following line:
+[apiclient] Created API client, waiting for the control plane to become ready
+
+This may be caused by a number of problems. The most common are:
+network connection problems. Check that your machine has full network connectivity before continuing.
+the cgroup driver of the container runtime differs from that of the kubelet. To understand how to
+configure it properly, see 
+Configuring a cgroup driver
+.
+control plane containers are crashlooping or hanging. You can check this by running 
+docker ps
+
+and investigating each container by running 
+docker logs
+. For other container runtime, see
+
+Debugging Kubernetes nodes with crictl
+.
+kubeadm blocks when removing managed containers
+The following could happen if the container runtime halts and does not remove
+any Kubernetes-managed containers:
+sudo kubeadm reset
+
+[preflight] Running pre-flight checks
+
+[reset] Stopping the kubelet service
+
+[reset] Unmounting mounted directories in "/var/lib/kubelet"
+
+[reset] Removing kubernetes-managed containers
+
+(block)
+
+A possible solution is to restart the container runtime and then re-run 
+kubeadm reset
+.
+You can also use 
+crictl
+ to debug the state of the container runtime. See
+
+Debugging Kubernetes nodes with crictl
+.
+Pods in 
+RunContainerError
+, 
+CrashLoopBackOff
+ or 
+Error
+ state
+Right after 
+kubeadm init
+ there should not be any pods in these states.
+If there are pods in one of these states 
+right after
+ 
+kubeadm init
+, please open an
+issue in the kubeadm repo. 
+coredns
+ (or 
+kube-dns
+) should be in the 
+Pending
+ state
+until you have deployed the network add-on.
+If you see Pods in the 
+RunContainerError
+, 
+CrashLoopBackOff
+ or 
+Error
+ state
+after deploying the network add-on and nothing happens to 
+coredns
+ (or 
+kube-dns
+),
+it's very likely that the Pod Network add-on that you installed is somehow broken.
+You might have to grant it more RBAC privileges or use a newer version. Please file
+an issue in the Pod Network providers' issue tracker and get the issue triaged there.
+coredns
+ is stuck in the 
+Pending
+ state
+This is 
+expected
+ and part of the design. kubeadm is network provider-agnostic, so the admin
+should 
+install the pod network add-on
+
+of choice. You have to install a Pod Network
+before CoreDNS may be deployed fully. Hence the 
+Pending
+ state before the network is set up.
+HostPort
+ services do not work
+The 
+HostPort
+ and 
+HostIP
+ functionality is available depending on your Pod Network
+provider. Please contact the author of the Pod Network add-on to find out whether
+
+HostPort
+ and 
+HostIP
+ functionality are available.
+Calico, Canal, and Flannel CNI providers are verified to support HostPort.
+For more information, see the
+
+CNI portmap documentation
+.
+If your network provider does not support the portmap CNI plugin, you may need to use the
+
+NodePort feature of services
+
+or use 
+HostNetwork=true
+.
+Pods are not accessible via their Service IP
+Many network add-ons do not yet enable 
+hairpin mode
+
+which allows pods to access themselves via their Service IP. This is an issue related to
+
+CNI
+. Please contact the network
+add-on provider to get the latest status of their support for hairpin mode.
+If you are using VirtualBox (directly or via Vagrant), you will need to
+ensure that 
+hostname -i
+ returns a routable IP address. By default, the first
+interface is connected to a non-routable host-only network. A work around
+is to modify 
+/etc/hosts
+, see this
+
+Vagrantfile
+
+for an example.
+TLS certificate errors
+The following error indicates a possible certificate mismatch.
+# kubectl get pods
+Unable to connect to the server: x509: certificate signed by unknown authority (possibly because of "crypto/rsa: verification error" while trying to verify candidate authority certificate "kubernetes")
+
+Verify that the 
+$HOME/.kube/config
+ file contains a valid certificate, and
+regenerate a certificate if necessary. The certificates in a kubeconfig file
+are base64 encoded. The 
+base64 --decode
+ command can be used to decode the certificate
+and 
+openssl x509 -text -noout
+ can be used for viewing the certificate information.
+Unset the 
+KUBECONFIG
+ environment variable using:
+unset
+ KUBECONFIG
+
+Or set it to the default 
+KUBECONFIG
+ location:
+export
+ 
+KUBECONFIG
+=
+/etc/kubernetes/admin.conf
+
+Another workaround is to overwrite the existing 
+kubeconfig
+ for the "admin" user:
+mv 
+$HOME
+/.kube 
+$HOME
+/.kube.bak
+
+mkdir 
+$HOME
+/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf 
+$HOME
+/.kube/config
+
+sudo chown 
+$(
+id -u
+)
+:
+$(
+id -g
+)
+ 
+$HOME
+/.kube/config
+
+Kubelet client certificate rotation fails
+By default, kubeadm configures a kubelet with automatic rotation of client certificates by using the
+
+/var/lib/kubelet/pki/kubelet-client-current.pem
+ symlink specified in 
+/etc/kubernetes/kubelet.conf
+.
+If this rotation process fails you might see errors such as 
+x509: certificate has expired or is not yet valid
+
+in kube-apiserver logs. To fix the issue you must follow these steps:
+Backup and delete 
+/etc/kubernetes/kubelet.conf
+ and 
+/var/lib/kubelet/pki/kubelet-client*
+ from the failed node.
+From a working control plane node in the cluster that has 
+/etc/kubernetes/pki/ca.key
+ execute
+
+kubeadm kubeconfig user --org system:nodes --client-name system:node:$NODE > kubelet.conf
+.
+
+$NODE
+ must be set to the name of the existing failed node in the cluster.
+Modify the resulted 
+kubelet.conf
+ manually to adjust the cluster name and server endpoint,
+or pass 
+kubeconfig user --config
+ (see 
+Generating kubeconfig files for additional users
+). If your cluster does not have
+the 
+ca.key
+ you must sign the embedded certificates in the 
+kubelet.conf
+ externally.
+Copy this resulted 
+kubelet.conf
+ to 
+/etc/kubernetes/kubelet.conf
+ on the failed node.
+Restart the kubelet (
+systemctl restart kubelet
+) on the failed node and wait for
+
+/var/lib/kubelet/pki/kubelet-client-current.pem
+ to be recreated.
+Manually edit the 
+kubelet.conf
+ to point to the rotated kubelet client certificates, by replacing
+
+client-certificate-data
+ and 
+client-key-data
+ with:
+client-certificate
+:
+ 
+/var/lib/kubelet/pki/kubelet-client-current.pem
+
+
+client-key
+:
+ 
+/var/lib/kubelet/pki/kubelet-client-current.pem
+
+
+Restart the kubelet.
+Make sure the node becomes 
+Ready
+.
+Default NIC When using flannel as the pod network in Vagrant
+The following error might indicate that something was wrong in the pod network:
+Error from server 
+(
+NotFound
+)
+: the server could not find the requested resource
+
+If you're using flannel as the pod network inside Vagrant, then you will have to
+specify the default interface name for flannel.
+Vagrant typically assigns two interfaces to all VMs. The first, for which all hosts
+are assigned the IP address 
+10.0.2.15
+, is for external traffic that gets NATed.
+This may lead to problems with flannel, which defaults to the first interface on a host.
+This leads to all hosts thinking they have the same public IP address. To prevent this,
+pass the 
+--iface eth1
+ flag to flannel so that the second interface is chosen.
+Non-public IP used for containers
+In some situations 
+kubectl logs
+ and 
+kubectl run
+ commands may return with the
+following errors in an otherwise functional cluster:
+Error from server: Get https://10.19.0.41:10250/containerLogs/default/mysql-ddc65b868-glc5m/mysql: dial tcp 10.19.0.41:10250: getsockopt: no route to host
+
+This may be due to Kubernetes using an IP that can not communicate with other IPs on
+the seemingly same subnet, possibly by policy of the machine provider.
+DigitalOcean assigns a public IP to 
+eth0
+ as well as a private one to be used internally
+as anchor for their floating IP feature, yet 
+kubelet
+ will pick the latter as the node's
+
+InternalIP
+ instead of the public one.
+Use 
+ip addr show
+ to check for this scenario instead of 
+ifconfig
+ because 
+ifconfig
+ will
+not display the offending alias IP address. Alternatively an API endpoint specific to
+DigitalOcean allows to query for the anchor IP from the droplet:
+curl http://169.254.169.254/metadata/v1/interfaces/public/0/anchor_ipv4/address
+
+The workaround is to tell 
+kubelet
+ which IP to use using 
+--node-ip
+.
+When using DigitalOcean, it can be the public one (assigned to 
+eth0
+) or
+the private one (assigned to 
+eth1
+) should you want to use the optional
+private network. The 
+kubeletExtraArgs
+ section of the kubeadm
+
+NodeRegistrationOptions
+ structure
+
+can be used for this.
+Then restart 
+kubelet
+:
+systemctl daemon-reload
+
+systemctl restart kubelet
+
+coredns
+ pods have 
+CrashLoopBackOff
+ or 
+Error
+ state
+If you have nodes that are running SELinux with an older version of Docker, you might experience a scenario
+where the 
+coredns
+ pods are not starting. To solve that, you can try one of the following options:
+Upgrade to a 
+newer version of Docker
+.
+Disable SELinux
+.
+Modify the 
+coredns
+ deployment to set 
+allowPrivilegeEscalation
+ to 
+true
+:
+kubectl -n kube-system get deployment coredns -o yaml | 
+\
+
+  sed 
+'s/allowPrivilegeEscalation: false/allowPrivilegeEscalation: true/g'
+ | 
+\
+
+  kubectl apply -f -
+
+Another cause for CoreDNS to have 
+CrashLoopBackOff
+ is when a CoreDNS Pod deployed in Kubernetes detects a loop.
+
+A number of workarounds
+
+are available to avoid Kubernetes trying to restart the CoreDNS Pod every time CoreDNS detects the loop and exits.
+Warning:
+Disabling SELinux or setting 
+allowPrivilegeEscalation
+ to 
+true
+ can compromise
+the security of your cluster.
+etcd pods restart continually
+If you encounter the following error:
+rpc error: code = 2 desc = oci runtime error: exec failed: container_linux.go:247: starting container process caused "process_linux.go:110: decoding init error from pipe caused \"read parent: connection reset by peer\""
+
+This issue appears if you run CentOS 7 with Docker 1.13.1.84.
+This version of Docker can prevent the kubelet from executing into the etcd container.
+To work around the issue, choose one of these options:
+Roll back to an earlier version of Docker, such as 1.13.1-75
+yum downgrade docker-1.13.1-75.git8633870.el7.centos.x86_64 docker-client-1.13.1-75.git8633870.el7.centos.x86_64 docker-common-1.13.1-75.git8633870.el7.centos.x86_64
+
+Install one of the more recent recommended versions, such as 18.06:
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+yum install docker-ce-18.06.1.ce-3.el7.x86_64
+
+Not possible to pass a comma separated list of values to arguments inside a 
+--component-extra-args
+ flag
+kubeadm init
+ flags such as 
+--component-extra-args
+ allow you to pass custom arguments to a control-plane
+component like the kube-apiserver. However, this mechanism is limited due to the underlying type used for parsing
+the values (
+mapStringString
+).
+If you decide to pass an argument that supports multiple, comma-separated values such as
+
+--apiserver-extra-args "enable-admission-plugins=LimitRanger,NamespaceExists"
+ this flag will fail with
+
+flag: malformed pair, expect string=string
+. This happens because the list of arguments for
+
+--apiserver-extra-args
+ expects 
+key=value
+ pairs and in this case 
+NamespacesExists
+ is considered
+as a key that is missing a value.
+Alternatively, you can try separating the 
+key=value
+ pairs like so:
+
+--apiserver-extra-args "enable-admission-plugins=LimitRanger,enable-admission-plugins=NamespaceExists"
+
+but this will result in the key 
+enable-admission-plugins
+ only having the value of 
+NamespaceExists
+.
+A known workaround is to use the kubeadm 
+configuration file
+.
+kube-proxy scheduled before node is initialized by cloud-controller-manager
+In cloud provider scenarios, kube-proxy can end up being scheduled on new worker nodes before
+the cloud-controller-manager has initialized the node addresses. This causes kube-proxy to fail
+to pick up the node's IP address properly and has knock-on effects to the proxy function managing
+load balancers.
+The following error can be seen in kube-proxy Pods:
+server.go:610] Failed to retrieve node IP: host IP unknown; known addresses: []
+proxier.go:340] invalid nodeIP, initializing kube-proxy with 127.0.0.1 as nodeIP
+
+A known solution is to patch the kube-proxy DaemonSet to allow scheduling it on control-plane
+nodes regardless of their conditions, keeping it off of other nodes until their initial guarding
+conditions abate:
+kubectl -n kube-system patch ds kube-proxy -p='{
+  "spec": {
+    "template": {
+      "spec": {
+        "tolerations": [
+          {
+            "key": "CriticalAddonsOnly",
+            "operator": "Exists"
+          },
+          {
+            "effect": "NoSchedule",
+            "key": "node-role.kubernetes.io/control-plane"
+          }
+        ]
+      }
+    }
+  }
+}'
+
+The tracking issue for this problem is 
+here
+.
+/usr
+ is mounted read-only on nodes
+On Linux distributions such as Fedora CoreOS or Flatcar Container Linux, the directory 
+/usr
+ is mounted as a read-only filesystem.
+For 
+flex-volume support
+,
+Kubernetes components like the kubelet and kube-controller-manager use the default path of
+
+/usr/libexec/kubernetes/kubelet-plugins/volume/exec/
+, yet the flex-volume directory 
+must be writeable
+
+for the feature to work.
+Note:
+FlexVolume was deprecated in the Kubernetes v1.23 release.
+To workaround this issue, you can configure the flex-volume directory using the kubeadm
+
+configuration file
+.
+On the primary control-plane Node (created using 
+kubeadm init
+), pass the following
+file using 
+--config
+:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+InitConfiguration
+
+
+nodeRegistration
+:
+
+
+  
+kubeletExtraArgs
+:
+
+
+  
+- 
+name
+:
+ 
+"volume-plugin-dir"
+
+
+    
+value
+:
+ 
+"/opt/libexec/kubernetes/kubelet-plugins/volume/exec/"
+
+
+---
+
+
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+ClusterConfiguration
+
+
+controllerManager
+:
+
+
+  
+extraArgs
+:
+
+
+  
+- 
+name
+:
+ 
+"flex-volume-plugin-dir"
+
+
+    
+value
+:
+ 
+"/opt/libexec/kubernetes/kubelet-plugins/volume/exec/"
+
+
+On joining Nodes:
+apiVersion
+:
+ 
+kubeadm.k8s.io/v1beta4
+
+
+kind
+:
+ 
+JoinConfiguration
+
+
+nodeRegistration
+:
+
+
+  
+kubeletExtraArgs
+:
+
+
+  
+- 
+name
+:
+ 
+"volume-plugin-dir"
+
+
+    
+value
+:
+ 
+"/opt/libexec/kubernetes/kubelet-plugins/volume/exec/"
+
+
+Alternatively, you can modify 
+/etc/fstab
+ to make the 
+/usr
+ mount writeable, but please
+be advised that this is modifying a design principle of the Linux distribution.
+kubeadm upgrade plan
+ prints out 
+context deadline exceeded
+ error message
+This error message is shown when upgrading a Kubernetes cluster with 
+kubeadm
+ in
+the case of running an external etcd. This is not a critical bug and happens because
+older versions of kubeadm perform a version check on the external etcd cluster.
+You can proceed with 
+kubeadm upgrade apply ...
+.
+This issue is fixed as of version 1.19.
+kubeadm reset
+ unmounts 
+/var/lib/kubelet
+If 
+/var/lib/kubelet
+ is being mounted, performing a 
+kubeadm reset
+ will effectively unmount it.
+To workaround the issue, re-mount the 
+/var/lib/kubelet
+ directory after performing the 
+kubeadm reset
+ operation.
+This is a regression introduced in kubeadm 1.15. The issue is fixed in 1.20.
+Cannot use the metrics-server securely in a kubeadm cluster
+In a kubeadm cluster, the 
+metrics-server
+
+can be used insecurely by passing the 
+--kubelet-insecure-tls
+ to it. This is not recommended for production clusters.
+If you want to use TLS between the metrics-server and the kubelet there is a problem,
+since kubeadm deploys a self-signed serving certificate for the kubelet. This can cause the following errors
+on the side of the metrics-server:
+x509: certificate signed by unknown authority
+x509: certificate is valid for IP-foo not IP-bar
+
+See 
+Enabling signed kubelet serving certificates
+
+to understand how to configure the kubelets in a kubeadm cluster to have properly signed serving certificates.
+Also see 
+How to run the metrics-server securely
+.
+Upgrade fails due to etcd hash not changing
+Only applicable to upgrading a control plane node with a kubeadm binary v1.28.3 or later,
+where the node is currently managed by kubeadm versions v1.28.0, v1.28.1 or v1.28.2.
+Here is the error message you may encounter:
+[upgrade/etcd] Failed to upgrade etcd: couldn't upgrade control plane. kubeadm has tried to recover everything into the earlier state. Errors faced: static Pod hash for component etcd on Node kinder-upgrade-control-plane-1 did not change after 5m0s: timed out waiting for the condition
+[upgrade/etcd] Waiting for previous etcd to become available
+I0907 10:10:09.109104    3704 etcd.go:588] [etcd] attempting to see if all cluster endpoints ([https://172.17.0.6:2379/ https://172.17.0.4:2379/ https://172.17.0.3:2379/]) are available 1/10
+[upgrade/etcd] Etcd was rolled back and is now available
+static Pod hash for component etcd on Node kinder-upgrade-control-plane-1 did not change after 5m0s: timed out waiting for the condition
+couldn't upgrade control plane. kubeadm has tried to recover everything into the earlier state. Errors faced
+k8s.io/kubernetes/cmd/kubeadm/app/phases/upgrade.rollbackOldManifests
+	cmd/kubeadm/app/phases/upgrade/staticpods.go:525
+k8s.io/kubernetes/cmd/kubeadm/app/phases/upgrade.upgradeComponent
+	cmd/kubeadm/app/phases/upgrade/staticpods.go:254
+k8s.io/kubernetes/cmd/kubeadm/app/phases/upgrade.performEtcdStaticPodUpgrade
+	cmd/kubeadm/app/phases/upgrade/staticpods.go:338
+...
+
+The reason for this failure is that the affected versions generate an etcd manifest file with
+unwanted defaults in the PodSpec. This will result in a diff from the manifest comparison,
+and kubeadm will expect a change in the Pod hash, but the kubelet will never update the hash.
+There are two way to workaround this issue if you see it in your cluster:
+The etcd upgrade can be skipped between the affected versions and v1.28.3 (or later) by using:
+kubeadm upgrade 
+{
+apply|node
+}
+ 
+[
+version
+]
+ --etcd-upgrade
+=
+false
+
+
+This is not recommended in case a new etcd version was introduced by a later v1.28 patch version.
+Before upgrade, patch the manifest for the etcd static pod, to remove the problematic defaulted attributes:
+diff --git a/etc/kubernetes/manifests/etcd_defaults.yaml b/etc/kubernetes/manifests/etcd_origin.yaml
+
+index d807ccbe0aa..46b35f00e15 100644
+
+--- a/etc/kubernetes/manifests/etcd_defaults.yaml
+
++++ b/etc/kubernetes/manifests/etcd_origin.yaml
+
+@@ -43,7 +43,6 @@ spec:
+
+        scheme: HTTP
+
+      initialDelaySeconds: 10
+
+      periodSeconds: 10
+
+-      successThreshold: 1
+
+      timeoutSeconds: 15
+
+    name: etcd
+
+    resources:
+
+@@ -59,26 +58,18 @@ spec:
+
+        scheme: HTTP
+
+      initialDelaySeconds: 10
+
+      periodSeconds: 10
+
+-      successThreshold: 1
+
+      timeoutSeconds: 15
+
+-    terminationMessagePath: /dev/termination-log
+
+-    terminationMessagePolicy: File
+
+    volumeMounts:
+
+    - mountPath: /var/lib/etcd
+
+      name: etcd-data
+
+    - mountPath: /etc/kubernetes/pki/etcd
+
+      name: etcd-certs
+
+-  dnsPolicy: ClusterFirst
+
+-  enableServiceLinks: true
+
+  hostNetwork: true
+
+  priority: 2000001000
+
+  priorityClassName: system-node-critical
+
+-  restartPolicy: Always
+
+-  schedulerName: default-scheduler
+
+  securityContext:
+
+    seccompProfile:
+
+      type: RuntimeDefault
+
+-  terminationGracePeriodSeconds: 30
+
+  volumes:
+
+  - hostPath:
+
+      path: /etc/kubernetes/pki/etcd
+
+More information can be found in the
+
+tracking issue
+ for this bug.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified July 05, 2024 at 4:06 PM PST: 
+kubeadm: use v1beta4 in all docs examples (efc1133fa4)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

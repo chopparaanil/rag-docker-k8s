@@ -1,0 +1,5865 @@
+Using RBAC Authorization | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+日本語 (Japanese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Using RBAC Authorization
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+API objects
+Role and ClusterRole
+RoleBinding and ClusterRoleBinding
+Referring to resources
+Aggregated ClusterRoles
+Referring to subjects
+Default roles and role bindings
+Auto-reconciliation
+API discovery roles
+User-facing roles
+Core component roles
+Other component roles
+Roles for built-in controllers
+Privilege escalation prevention and bootstrapping
+Restrictions on role creation or update
+Restrictions on role binding creation or update
+Command-line utilities
+kubectl create role
+kubectl create clusterrole
+kubectl create rolebinding
+kubectl create clusterrolebinding
+kubectl auth reconcile
+ServiceAccount permissions
+Write access for EndpointSlices
+Upgrading from ABAC
+Parallel authorizers
+Permissive RBAC permissions
+Kubernetes Documentation
+Reference
+API Access Control
+Using RBAC Authorization
+Using RBAC Authorization
+Role-based access control (RBAC) is a method of regulating access to computer or
+network resources based on the roles of individual users within your organization.
+RBAC authorization uses the 
+rbac.authorization.k8s.io
+
+
+API group
+ to drive authorization
+decisions, allowing you to dynamically configure policies through the Kubernetes API.
+To enable RBAC, start the 
+API server
+
+with the 
+--authorization-config
+ flag set to a file that includes the 
+RBAC
+ authorizer; for example:
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+kind
+:
+ 
+AuthorizationConfiguration
+
+
+authorizers
+:
+
+
+  
+...
+
+
+  
+- 
+type
+:
+ 
+RBAC
+
+
+  
+...
+
+
+Or, start the 
+API server
+ with
+the 
+--authorization-mode
+ flag set to a comma-separated list that includes 
+RBAC
+;
+for example:
+kube-apiserver --authorization-mode
+=
+...,RBAC --other-options --more-options
+
+API objects
+The RBAC API declares four kinds of Kubernetes object: 
+Role
+, 
+ClusterRole
+,
+
+RoleBinding
+ and 
+ClusterRoleBinding
+. You can describe or amend the RBAC
+
+objects
+
+using tools such as 
+kubectl
+, just like any other Kubernetes object.
+Caution:
+These objects, by design, impose access restrictions. If you are making changes
+to a cluster as you learn, see
+
+privilege escalation prevention and bootstrapping
+
+to understand how those restrictions can prevent you making some changes.
+Role and ClusterRole
+An RBAC 
+Role
+ or 
+ClusterRole
+ contains rules that represent a set of permissions.
+Permissions are purely additive (there are no "deny" rules).
+A Role always sets permissions within a particular 
+namespace
+;
+when you create a Role, you have to specify the namespace it belongs in.
+ClusterRole, by contrast, is a non-namespaced resource. The resources have different names (Role
+and ClusterRole) because a Kubernetes object always has to be either namespaced or not namespaced;
+it can't be both.
+ClusterRoles have several uses. You can use a ClusterRole to:
+define permissions on namespaced resources and be granted access within individual namespace(s)
+define permissions on namespaced resources and be granted access across all namespaces
+define permissions on cluster-scoped resources
+If you want to define a role within a namespace, use a Role; if you want to define
+a role cluster-wide, use a ClusterRole.
+Role example
+Here's an example Role in the "default" namespace that can be used to grant read access to
+
+pods
+:
+access/simple-role.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+Role
+
+
+metadata
+:
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+name
+:
+ 
+pod-reader
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+ 
+# "" indicates the core API group
+
+
+  
+resources
+:
+ 
+[
+"pods"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"watch"
+,
+ 
+"list"
+]
+
+
+ClusterRole example
+A ClusterRole can be used to grant the same permissions as a Role.
+Because ClusterRoles are cluster-scoped, you can also use them to grant access to:
+cluster-scoped resources (like 
+nodes
+)
+non-resource endpoints (like 
+/healthz
+)
+namespaced resources (like Pods), across all namespaces
+For example: you can use a ClusterRole to allow a particular user to run
+
+kubectl get pods --all-namespaces
+Here is an example of a ClusterRole that can be used to grant read access to
+
+secrets
+ in any particular namespace,
+or across all namespaces (depending on how it is 
+bound
+):
+access/simple-clusterrole.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+# "namespace" omitted since ClusterRoles are not namespaced
+
+
+  
+name
+:
+ 
+secret-reader
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Secret
+
+
+  
+# objects is "secrets"
+
+
+  
+resources
+:
+ 
+[
+"secrets"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"watch"
+,
+ 
+"list"
+]
+
+
+The name of a Role or a ClusterRole object must be a valid
+
+path segment name
+.
+RoleBinding and ClusterRoleBinding
+A role binding grants the permissions defined in a role to a user or set of users.
+It holds a list of 
+subjects
+ (users, groups, or service accounts), and a reference to the
+role being granted.
+A RoleBinding grants permissions within a specific namespace whereas a ClusterRoleBinding
+grants that access cluster-wide.
+A RoleBinding may reference any Role in the same namespace. Alternatively, a RoleBinding
+can reference a ClusterRole and bind that ClusterRole to the namespace of the RoleBinding.
+If you want to bind a ClusterRole to all the namespaces in your cluster, you use a
+ClusterRoleBinding.
+The name of a RoleBinding or ClusterRoleBinding object must be a valid
+
+path segment name
+.
+RoleBinding examples
+Here is an example of a RoleBinding that grants the "pod-reader" Role to the user "jane"
+within the "default" namespace.
+This allows "jane" to read pods in the "default" namespace.
+access/simple-rolebinding-with-role.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+# This role binding allows "jane" to read pods in the "default" namespace.
+
+
+# You need to already have a Role named "pod-reader" in that namespace.
+
+
+kind
+:
+ 
+RoleBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+read-pods
+
+
+  
+namespace
+:
+ 
+default
+
+
+subjects
+:
+
+
+# You can specify more than one "subject"
+
+
+- 
+kind
+:
+ 
+User
+
+
+  
+name
+:
+ 
+jane
+ 
+# "name" is case sensitive
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+roleRef
+:
+
+
+  
+# "roleRef" specifies the binding to a Role / ClusterRole
+
+
+  
+kind
+:
+ 
+Role
+ 
+#this must be Role or ClusterRole
+
+
+  
+name
+:
+ 
+pod-reader
+ 
+# this must match the name of the Role or ClusterRole you wish to bind to
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+A RoleBinding can also reference a ClusterRole to grant the permissions defined in that
+ClusterRole to resources inside the RoleBinding's namespace. This kind of reference
+lets you define a set of common roles across your cluster, then reuse them within
+multiple namespaces.
+For instance, even though the following RoleBinding refers to a ClusterRole,
+"dave" (the subject, case sensitive) will only be able to read Secrets in the "development"
+namespace, because the RoleBinding's namespace (in its metadata) is "development".
+access/simple-rolebinding-with-clusterrole.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+# This role binding allows "dave" to read secrets in the "development" namespace.
+
+
+# You need to already have a ClusterRole named "secret-reader".
+
+
+kind
+:
+ 
+RoleBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+read-secrets
+
+
+  
+#
+
+
+  
+# The namespace of the RoleBinding determines where the permissions are granted.
+
+
+  
+# This only grants permissions within the "development" namespace.
+
+
+  
+namespace
+:
+ 
+development
+
+
+subjects
+:
+
+
+- 
+kind
+:
+ 
+User
+
+
+  
+name
+:
+ 
+dave
+ 
+# Name is case sensitive
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+roleRef
+:
+
+
+  
+kind
+:
+ 
+ClusterRole
+
+
+  
+name
+:
+ 
+secret-reader
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+ClusterRoleBinding example
+To grant permissions across a whole cluster, you can use a ClusterRoleBinding.
+The following ClusterRoleBinding allows any user in the group "manager" to read
+secrets in any namespace.
+access/simple-clusterrolebinding.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+# This cluster role binding allows anyone in the "manager" group to read secrets in any namespace.
+
+
+kind
+:
+ 
+ClusterRoleBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+read-secrets-global
+
+
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+manager
+ 
+# Name is case sensitive
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+roleRef
+:
+
+
+  
+kind
+:
+ 
+ClusterRole
+
+
+  
+name
+:
+ 
+secret-reader
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+After you create a binding, you cannot change the Role or ClusterRole that it refers to.
+If you try to change a binding's 
+roleRef
+, you get a validation error. If you do want
+to change the 
+roleRef
+ for a binding, you need to remove the binding object and create
+a replacement.
+There are two reasons for this restriction:
+Making 
+roleRef
+ immutable allows granting someone 
+update
+ permission on an existing binding
+object, so that they can manage the list of subjects, without being able to change
+the role that is granted to those subjects.
+A binding to a different role is a fundamentally different binding.
+Requiring a binding to be deleted/recreated in order to change the 
+roleRef
+
+ensures the full list of subjects in the binding is intended to be granted
+the new role (as opposed to enabling or accidentally modifying only the roleRef
+without verifying all of the existing subjects should be given the new role's
+permissions).
+The 
+kubectl auth reconcile
+ command-line utility creates or updates a manifest file containing RBAC objects,
+and handles deleting and recreating binding objects if required to change the role they refer to.
+See 
+command usage and examples
+ for more information.
+Referring to resources
+In the Kubernetes API, most resources are represented and accessed using a string representation of
+their object name, such as 
+pods
+ for a Pod. RBAC refers to resources using exactly the same
+name that appears in the URL for the relevant API endpoint.
+Some Kubernetes APIs involve a
+
+subresource
+, such as the logs for a Pod. A request for a Pod's logs looks like:
+GET /api/v1/namespaces/{namespace}/pods/{name}/log
+
+In this case, 
+pods
+ is the namespaced resource for Pod resources, and 
+log
+ is a
+subresource of 
+pods
+. To represent this in an RBAC role, use a slash (
+/
+) to
+delimit the resource and subresource. To allow a subject to read 
+pods
+ and
+also access the 
+log
+ subresource for each of those Pods, you write:
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+Role
+
+
+metadata
+:
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+name
+:
+ 
+pod-and-pod-logs-reader
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+resources
+:
+ 
+[
+"pods"
+,
+ 
+"pods/log"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+]
+
+
+You can also refer to resources by name for certain requests through the 
+resourceNames
+ list.
+When specified, requests can be restricted to individual instances of a resource.
+Here is an example that restricts its subject to only 
+get
+ or 
+update
+ a
+
+ConfigMap
+ named 
+my-configmap
+:
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+Role
+
+
+metadata
+:
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+name
+:
+ 
+configmap-updater
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing ConfigMap
+
+
+  
+# objects is "configmaps"
+
+
+  
+resources
+:
+ 
+[
+"configmaps"
+]
+
+
+  
+resourceNames
+:
+ 
+[
+"my-configmap"
+]
+
+
+  
+verbs
+:
+ 
+[
+"update"
+,
+ 
+"get"
+]
+
+
+Note:
+You cannot restrict 
+deletecollection
+ or top-level 
+create
+ requests by resource name.
+For 
+create
+, this limitation is because the name of the new object may not be known at authorization time. However, the 
+create
+ limitation applies only to top-level resources, not subresources. For example, you can use the 
+resourceNames
+ field with 
+pods/exec
+.
+If you restrict 
+list
+ or 
+watch
+ by 
+resourceName
+, clients must include a 
+metadata.name
+ field selector in their 
+list
+ or 
+watch
+ request (that matches the specified 
+resourceName
+)
+in order to be authorized.
+For example: 
+kubectl get configmaps --field-selector=metadata.name=my-configmap
+Rather than referring to individual 
+resources
+, 
+apiGroups
+, and 
+verbs
+,
+you can use the wildcard 
+*
+ symbol to refer to all such objects.
+For 
+nonResourceURLs
+, you can use the wildcard 
+*
+ as a suffix glob match.
+For 
+resourceNames
+, an empty set means that everything is allowed.
+Here is an example that allows access to perform any current and future action on
+all current and future resources in the 
+example.com
+ API group.
+This is similar to the built-in 
+cluster-admin
+ role.
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+Role
+
+
+metadata
+:
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+name
+:
+ 
+example.com-superuser
+ 
+# DO NOT USE THIS ROLE, IT IS JUST AN EXAMPLE
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+"example.com"
+]
+
+
+  
+resources
+:
+ 
+[
+"*"
+]
+
+
+  
+verbs
+:
+ 
+[
+"*"
+]
+
+
+Caution:
+Using wildcards in resource and verb entries could result in overly permissive access being granted
+to sensitive resources.
+For instance, if a new resource type is added, or a new subresource is added,
+or a new custom verb is checked, the wildcard entry automatically grants access, which may be undesirable.
+The 
+principle of least privilege
+
+should be employed, using specific resources and verbs to ensure only the permissions required for the
+workload to function correctly are applied.
+Aggregated ClusterRoles
+You can 
+aggregate
+ several ClusterRoles into one combined ClusterRole.
+A controller, running as part of the cluster control plane, watches for ClusterRole
+objects with an 
+aggregationRule
+ set. The 
+aggregationRule
+ defines a label
+
+selector
+ that the controller
+uses to match other ClusterRole objects that should be combined into the 
+rules
+
+field of this one.
+Caution:
+The control plane overwrites any values that you manually specify in the 
+rules
+ field of an
+aggregate ClusterRole. If you want to change or add rules, do so in the 
+ClusterRole
+ objects
+that are selected by the 
+aggregationRule
+.
+Here is an example aggregated ClusterRole:
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+monitoring
+
+
+aggregationRule
+:
+
+
+  
+clusterRoleSelectors
+:
+
+
+  
+- 
+matchLabels
+:
+
+
+      
+rbac.example.com/aggregate-to-monitoring
+:
+ 
+"true"
+
+
+rules
+:
+ 
+[]
+ 
+# The control plane automatically fills in the rules
+
+
+If you create a new ClusterRole that matches the label selector of an existing aggregated ClusterRole,
+that change triggers adding the new rules into the aggregated ClusterRole.
+Here is an example that adds rules to the "monitoring" ClusterRole, by creating another
+ClusterRole labeled 
+rbac.example.com/aggregate-to-monitoring: true
+.
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+monitoring-endpointslices
+
+
+  
+labels
+:
+
+
+    
+rbac.example.com/aggregate-to-monitoring
+:
+ 
+"true"
+
+
+# When you create the "monitoring-endpointslices" ClusterRole,
+
+
+# the rules below will be added to the "monitoring" ClusterRole.
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+resources
+:
+ 
+[
+"services"
+,
+ 
+"pods"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+- 
+apiGroups
+:
+ 
+[
+"discovery.k8s.io"
+]
+
+
+  
+resources
+:
+ 
+[
+"endpointslices"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+The 
+default user-facing roles
+ use ClusterRole aggregation. This lets you,
+as a cluster administrator, include rules for custom resources, such as those served by
+
+CustomResourceDefinitions
+
+or aggregated API servers, to extend the default roles.
+For example: the following ClusterRoles let the "admin" and "edit" default roles manage the custom resource
+named CronTab, whereas the "view" role can perform only read actions on CronTab resources.
+You can assume that CronTab objects are named 
+"crontabs"
+ in URLs as seen by the API server.
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+aggregate-cron-tabs-edit
+
+
+  
+labels
+:
+
+
+    
+# Add these permissions to the "admin" and "edit" default roles.
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-admin
+:
+ 
+"true"
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-edit
+:
+ 
+"true"
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+"stable.example.com"
+]
+
+
+  
+resources
+:
+ 
+[
+"crontabs"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+,
+ 
+"create"
+,
+ 
+"update"
+,
+ 
+"patch"
+,
+ 
+"delete"
+]
+
+
+---
+
+
+kind
+:
+ 
+ClusterRole
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+aggregate-cron-tabs-view
+
+
+  
+labels
+:
+
+
+    
+# Add these permissions to the "view" default role.
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-view
+:
+ 
+"true"
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+"stable.example.com"
+]
+
+
+  
+resources
+:
+ 
+[
+"crontabs"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+Role examples
+The following examples are excerpts from Role or ClusterRole objects, showing only
+the 
+rules
+ section.
+Allow reading 
+"pods"
+ resources in the core
+
+API Group
+:
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Pod
+
+
+  
+# objects is "pods"
+
+
+  
+resources
+:
+ 
+[
+"pods"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+Allow reading/writing Deployments (at the HTTP level: objects with 
+"deployments"
+
+in the resource part of their URL) in the 
+"apps"
+ API groups:
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+"apps"
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Deployment
+
+
+  
+# objects is "deployments"
+
+
+  
+resources
+:
+ 
+[
+"deployments"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+,
+ 
+"create"
+,
+ 
+"update"
+,
+ 
+"patch"
+,
+ 
+"delete"
+]
+
+
+Allow reading Pods in the core API group, as well as reading or writing Job
+resources in the 
+"batch"
+ API group:
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Pod
+
+
+  
+# objects is "pods"
+
+
+  
+resources
+:
+ 
+[
+"pods"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+- 
+apiGroups
+:
+ 
+[
+"batch"
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Job
+
+
+  
+# objects is "jobs"
+
+
+  
+resources
+:
+ 
+[
+"jobs"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+,
+ 
+"create"
+,
+ 
+"update"
+,
+ 
+"patch"
+,
+ 
+"delete"
+]
+
+
+Allow reading a ConfigMap named "my-config" (must be bound with a
+RoleBinding to limit to a single ConfigMap in a single namespace):
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing ConfigMap
+
+
+  
+# objects is "configmaps"
+
+
+  
+resources
+:
+ 
+[
+"configmaps"
+]
+
+
+  
+resourceNames
+:
+ 
+[
+"my-config"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+]
+
+
+Allow reading the resource 
+"nodes"
+ in the core group (because a
+Node is cluster-scoped, this must be in a ClusterRole bound with a
+ClusterRoleBinding to be effective):
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+  
+#
+
+
+  
+# at the HTTP level, the name of the resource for accessing Node
+
+
+  
+# objects is "nodes"
+
+
+  
+resources
+:
+ 
+[
+"nodes"
+]
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"list"
+,
+ 
+"watch"
+]
+
+
+Allow GET and POST requests to the non-resource endpoint 
+/healthz
+ and
+all subpaths (must be in a ClusterRole bound with a ClusterRoleBinding
+to be effective):
+rules
+:
+
+
+- 
+nonResourceURLs
+:
+ 
+[
+"/healthz"
+,
+ 
+"/healthz/*"
+]
+ 
+# '*' in a nonResourceURL is a suffix glob match
+
+
+  
+verbs
+:
+ 
+[
+"get"
+,
+ 
+"post"
+]
+
+
+Referring to subjects
+A RoleBinding or ClusterRoleBinding binds a role to subjects.
+Subjects can be groups, users or
+
+ServiceAccounts
+.
+Kubernetes represents usernames as strings.
+These can be: plain names, such as "alice"; email-style names, like "bob@example.com";
+or numeric user IDs represented as a string. It is up to you as a cluster administrator
+to configure the 
+authentication modules
+
+so that authentication produces usernames in the format you want.
+Caution:
+The prefix 
+system:
+ is reserved for Kubernetes system use, so you should ensure
+that you don't have users or groups with names that start with 
+system:
+ by
+accident.
+Other than this special prefix, the RBAC authorization system does not require any format
+for usernames.
+In Kubernetes, Authenticator modules provide group information.
+Groups, like users, are represented as strings, and that string has no format requirements,
+other than that the prefix 
+system:
+ is reserved.
+ServiceAccounts
+ have names prefixed
+with 
+system:serviceaccount:
+, and belong to groups that have names prefixed with 
+system:serviceaccounts:
+.
+Note:
+system:serviceaccount:
+ (singular) is the prefix for service account usernames.
+system:serviceaccounts:
+ (plural) is the prefix for service account groups.
+RoleBinding examples
+The following examples are 
+RoleBinding
+ excerpts that only
+show the 
+subjects
+ section.
+For a user named 
+alice@example.com
+:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+User
+
+
+  
+name
+:
+ 
+"alice@example.com"
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For a group named 
+frontend-admins
+:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+"frontend-admins"
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For the default service account in the "kube-system" namespace:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+ServiceAccount
+
+
+  
+name
+:
+ 
+default
+
+
+  
+namespace
+:
+ 
+kube-system
+
+
+For all service accounts in the "qa" namespace:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:serviceaccounts:qa
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For all service accounts in any namespace:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:serviceaccounts
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For all authenticated users:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:authenticated
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For all unauthenticated users:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:unauthenticated
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+For all users:
+subjects
+:
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:authenticated
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+- 
+kind
+:
+ 
+Group
+
+
+  
+name
+:
+ 
+system:unauthenticated
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+Default roles and role bindings
+API servers create a set of default ClusterRole and ClusterRoleBinding objects.
+Many of these are 
+system:
+ prefixed, which indicates that the resource is directly
+managed by the cluster control plane.
+All of the default ClusterRoles and ClusterRoleBindings are labeled with 
+kubernetes.io/bootstrapping=rbac-defaults
+.
+Caution:
+Take care when modifying ClusterRoles and ClusterRoleBindings with names
+that have a 
+system:
+ prefix.
+Modifications to these resources can result in non-functional clusters.
+Auto-reconciliation
+At each start-up, the API server updates default cluster roles with any missing permissions,
+and updates default cluster role bindings with any missing subjects.
+This allows the cluster to repair accidental modifications, and helps to keep roles and role bindings
+up-to-date as permissions and subjects change in new Kubernetes releases.
+To opt out of this reconciliation, set the 
+rbac.authorization.kubernetes.io/autoupdate
+
+annotation on a default cluster role or default cluster RoleBinding to 
+false
+.
+Be aware that missing default permissions and subjects can result in non-functional clusters.
+Auto-reconciliation is enabled by default if the RBAC authorizer is active.
+API discovery roles
+Default cluster role bindings authorize unauthenticated and authenticated users to read API information
+that is deemed safe to be publicly accessible (including CustomResourceDefinitions).
+To disable anonymous unauthenticated access, add 
+--anonymous-auth=false
+ flag to
+the API server configuration.
+To view the configuration of these roles via 
+kubectl
+ run:
+kubectl get clusterroles system:discovery -o yaml
+
+Note:
+If you edit that ClusterRole, your changes will be overwritten on API server restart
+via 
+auto-reconciliation
+. To avoid that overwriting,
+either do not manually edit the role, or disable auto-reconciliation.
+Kubernetes RBAC API discovery roles
+Default ClusterRole
+Default ClusterRoleBinding
+Description
+system:basic-user
+system:authenticated
+ group
+Allows a user read-only access to basic information about themselves. Prior to v1.14, this role was also bound to 
+system:unauthenticated
+ by default.
+system:discovery
+system:authenticated
+ group
+Allows read-only access to API discovery endpoints needed to discover and negotiate an API level. Prior to v1.14, this role was also bound to 
+system:unauthenticated
+ by default.
+system:public-info-viewer
+system:authenticated
+ and 
+system:unauthenticated
+ groups
+Allows read-only access to non-sensitive information about the cluster. Introduced in Kubernetes v1.14.
+User-facing roles
+Some of the default ClusterRoles are not 
+system:
+ prefixed. These are intended to be user-facing roles.
+They include super-user roles (
+cluster-admin
+), roles intended to be granted cluster-wide
+using ClusterRoleBindings, and roles intended to be granted within particular
+namespaces using RoleBindings (
+admin
+, 
+edit
+, 
+view
+).
+User-facing ClusterRoles use 
+ClusterRole aggregation
+ to allow admins to include
+rules for custom resources on these ClusterRoles. To add rules to the 
+admin
+, 
+edit
+, or 
+view
+ roles, create
+a ClusterRole with one or more of the following labels:
+metadata
+:
+
+
+  
+labels
+:
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-admin
+:
+ 
+"true"
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-edit
+:
+ 
+"true"
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-view
+:
+ 
+"true"
+
+
+Default ClusterRole
+Default ClusterRoleBinding
+Description
+cluster-admin
+system:masters
+ group
+Allows super-user access to perform any action on any resource.
+When used in a 
+ClusterRoleBinding
+, it gives full control over every resource in the cluster and in all namespaces.
+When used in a 
+RoleBinding
+, it gives full control over every resource in the role binding's namespace, including the namespace itself.
+admin
+None
+Allows admin access, intended to be granted within a namespace using a 
+RoleBinding
+.
+If used in a 
+RoleBinding
+, allows read/write access to most resources in a namespace,
+including the ability to create roles and role bindings within the namespace.
+This role does not allow write access to resource quota or to the namespace itself.
+This role also does not allow write access to EndpointSlices in clusters created
+using Kubernetes v1.22+. More information is available in the
+
+"Write Access for EndpointSlices" section
+.
+edit
+None
+Allows read/write access to most objects in a namespace.
+This role does not allow viewing or modifying roles or role bindings.
+However, this role allows accessing Secrets and running Pods as any ServiceAccount in
+the namespace, so it can be used to gain the API access levels of any ServiceAccount in
+the namespace. This role also does not allow write access to EndpointSlices in
+clusters created using Kubernetes v1.22+. More information is available in the
+
+"Write Access for EndpointSlices" section
+.
+view
+None
+Allows read-only access to see most objects in a namespace.
+It does not allow viewing roles or role bindings.
+This role does not allow viewing Secrets, since reading
+the contents of Secrets enables access to ServiceAccount credentials
+in the namespace, which would allow API access as any ServiceAccount
+in the namespace (a form of privilege escalation).
+Core component roles
+Default ClusterRole
+Default ClusterRoleBinding
+Description
+system:kube-scheduler
+system:kube-scheduler
+ user
+Allows access to the resources required by the 
+scheduler
+ component.
+system:volume-scheduler
+system:kube-scheduler
+ user
+Allows access to the volume resources required by the kube-scheduler component.
+system:kube-controller-manager
+system:kube-controller-manager
+ user
+Allows access to the resources required by the 
+controller manager
+ component.
+The permissions required by individual controllers are detailed in the 
+controller roles
+.
+system:node
+None
+Allows access to resources required by the kubelet, 
+including read access to all secrets, and write access to all pod status objects
+.
+You should use the 
+Node authorizer
+ and 
+NodeRestriction admission plugin
+ instead of the 
+system:node
+ role, and allow granting API access to kubelets based on the Pods scheduled to run on them.
+The 
+system:node
+ role only exists for compatibility with Kubernetes clusters upgraded from versions prior to v1.8.
+system:node-proxier
+system:kube-proxy
+ user
+Allows access to the resources required by the 
+kube-proxy
+ component.
+Other component roles
+Default ClusterRole
+Default ClusterRoleBinding
+Description
+system:auth-delegator
+None
+Allows delegated authentication and authorization checks.
+This is commonly used by add-on API servers for unified authentication and authorization.
+system:heapster
+None
+Role for the 
+Heapster
+ component (deprecated).
+system:kube-aggregator
+None
+Role for the 
+kube-aggregator
+ component.
+system:kube-dns
+kube-dns
+ service account in the 
+kube-system
+ namespace
+Role for the 
+kube-dns
+ component.
+system:kubelet-api-admin
+None
+Allows full access to the kubelet API.
+system:node-bootstrapper
+None
+Allows access to the resources required to perform
+
+kubelet TLS bootstrapping
+.
+system:node-problem-detector
+None
+Role for the 
+node-problem-detector
+ component.
+system:persistent-volume-provisioner
+None
+Allows access to the resources required by most 
+dynamic volume provisioners
+.
+system:monitoring
+system:monitoring
+ group
+Allows read access to control-plane monitoring endpoints (i.e. 
+kube-apiserver
+ liveness and readiness endpoints (
+/healthz
+, 
+/livez
+, 
+/readyz
+), the individual health-check endpoints (
+/healthz/*
+, 
+/livez/*
+, 
+/readyz/*
+), 
+/metrics
+), and causes the kube-apiserver to respect the traceparent header provided with requests for tracing. Note that individual health check endpoints and the metric endpoint may expose sensitive information.
+Roles for built-in controllers
+The Kubernetes 
+controller manager
+ runs
+
+controllers
+ that are built in to the Kubernetes
+control plane.
+When invoked with 
+--use-service-account-credentials
+, kube-controller-manager starts each controller
+using a separate service account.
+Corresponding roles exist for each built-in controller, prefixed with 
+system:controller:
+.
+If the controller manager is not started with 
+--use-service-account-credentials
+, it runs all control loops
+using its own credential, which must be granted all the relevant roles.
+These roles include:
+system:controller:attachdetach-controller
+system:controller:certificate-controller
+system:controller:clusterrole-aggregation-controller
+system:controller:cronjob-controller
+system:controller:daemon-set-controller
+system:controller:deployment-controller
+system:controller:disruption-controller
+system:controller:endpoint-controller
+system:controller:expand-controller
+system:controller:generic-garbage-collector
+system:controller:horizontal-pod-autoscaler
+system:controller:job-controller
+system:controller:namespace-controller
+system:controller:node-controller
+system:controller:persistent-volume-binder
+system:controller:pod-garbage-collector
+system:controller:pv-protection-controller
+system:controller:pvc-protection-controller
+system:controller:replicaset-controller
+system:controller:replication-controller
+system:controller:resourcequota-controller
+system:controller:root-ca-cert-publisher
+system:controller:route-controller
+system:controller:service-account-controller
+system:controller:service-controller
+system:controller:statefulset-controller
+system:controller:ttl-controller
+Privilege escalation prevention and bootstrapping
+The RBAC API prevents users from escalating privileges by editing roles or role bindings.
+Because this is enforced at the API level, it applies even when the RBAC authorizer is not in use.
+Restrictions on role creation or update
+You can only create/update a role if at least one of the following things is true:
+You already have all the permissions contained in the role, at the same scope as the object being modified
+(cluster-wide for a ClusterRole, within the same namespace or cluster-wide for a Role).
+You are granted explicit permission to perform the 
+escalate
+ verb on the 
+roles
+ or
+
+clusterroles
+ resource in the 
+rbac.authorization.k8s.io
+ API group.
+For example, if 
+user-1
+ does not have the ability to list Secrets cluster-wide, they cannot create a ClusterRole
+containing that permission. To allow a user to create/update roles:
+Grant them a role that allows them to create/update Role or ClusterRole objects, as desired.
+Grant them permission to include specific permissions in the roles they create/update:
+implicitly, by giving them those permissions (if they attempt to create or modify a Role or
+ClusterRole with permissions they themselves have not been granted, the API request will be forbidden)
+or explicitly allow specifying any permission in a 
+Role
+ or 
+ClusterRole
+ by giving them
+permission to perform the 
+escalate
+ verb on 
+roles
+ or 
+clusterroles
+ resources in the
+
+rbac.authorization.k8s.io
+ API group
+Restrictions on role binding creation or update
+You can only create/update a role binding if you already have all the permissions contained in the referenced role
+(at the same scope as the role binding) 
+or
+ if you have been authorized to perform the 
+bind
+ verb on the referenced role.
+For example, if 
+user-1
+ does not have the ability to list Secrets cluster-wide, they cannot create a ClusterRoleBinding
+to a role that grants that permission. To allow a user to create/update role bindings:
+Grant them a role that allows them to create/update RoleBinding or ClusterRoleBinding objects, as desired.
+Grant them permissions needed to bind a particular role:
+implicitly, by giving them the permissions contained in the role.
+explicitly, by giving them permission to perform the 
+bind
+ verb on the particular Role (or ClusterRole).
+For example, this ClusterRole and RoleBinding would allow 
+user-1
+ to grant other users the 
+admin
+, 
+edit
+, and 
+view
+ roles in the namespace 
+user-1-namespace
+:
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+role-grantor
+
+
+rules
+:
+
+
+- 
+apiGroups
+:
+ 
+[
+"rbac.authorization.k8s.io"
+]
+
+
+  
+resources
+:
+ 
+[
+"rolebindings"
+]
+
+
+  
+verbs
+:
+ 
+[
+"create"
+]
+
+
+- 
+apiGroups
+:
+ 
+[
+"rbac.authorization.k8s.io"
+]
+
+
+  
+resources
+:
+ 
+[
+"clusterroles"
+]
+
+
+  
+verbs
+:
+ 
+[
+"bind"
+]
+
+
+  
+# omit resourceNames to allow binding any ClusterRole
+
+
+  
+resourceNames
+:
+ 
+[
+"admin"
+,
+"edit"
+,
+"view"
+]
+
+
+---
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+RoleBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+role-grantor-binding
+
+
+  
+namespace
+:
+ 
+user-1-namespace
+
+
+roleRef
+:
+
+
+  
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+  
+kind
+:
+ 
+ClusterRole
+
+
+  
+name
+:
+ 
+role-grantor
+
+
+subjects
+:
+
+
+- 
+apiGroup
+:
+ 
+rbac.authorization.k8s.io
+
+
+  
+kind
+:
+ 
+User
+
+
+  
+name
+:
+ 
+user-1
+
+
+When bootstrapping the first roles and role bindings, it is necessary for the initial user to grant permissions they do not yet have.
+To bootstrap initial roles and role bindings:
+Use a credential with the "system:masters" group, which is bound to the "cluster-admin" super-user role by the default bindings.
+Command-line utilities
+kubectl create role
+Creates a Role object defining permissions within a single namespace. Examples:
+Create a Role named "pod-reader" that allows users to perform 
+get
+, 
+watch
+ and 
+list
+ on pods:
+kubectl create role pod-reader --verb
+=
+get --verb
+=
+list --verb
+=
+watch --resource
+=
+pods
+
+Create a Role named "pod-reader" with resourceNames specified:
+kubectl create role pod-reader --verb
+=
+get --resource
+=
+pods --resource-name
+=
+readablepod --resource-name
+=
+anotherpod
+
+Create a Role named "foo" with apiGroups specified:
+kubectl create role foo --verb
+=
+get,list,watch --resource
+=
+replicasets.apps
+
+Create a Role named "foo" with subresource permissions:
+kubectl create role foo --verb
+=
+get,list,watch --resource
+=
+pods,pods/status
+
+Create a Role named "my-component-lease-holder" with permissions to get/update a resource with a specific name:
+kubectl create role my-component-lease-holder --verb
+=
+get,list,watch,update --resource
+=
+lease --resource-name
+=
+my-component
+
+kubectl create clusterrole
+Creates a ClusterRole. Examples:
+Create a ClusterRole named "pod-reader" that allows user to perform 
+get
+, 
+watch
+ and 
+list
+ on pods:
+kubectl create clusterrole pod-reader --verb
+=
+get,list,watch --resource
+=
+pods
+
+Create a ClusterRole named "pod-reader" with resourceNames specified:
+kubectl create clusterrole pod-reader --verb
+=
+get --resource
+=
+pods --resource-name
+=
+readablepod --resource-name
+=
+anotherpod
+
+Create a ClusterRole named "foo" with apiGroups specified:
+kubectl create clusterrole foo --verb
+=
+get,list,watch --resource
+=
+replicasets.apps
+
+Create a ClusterRole named "foo" with subresource permissions:
+kubectl create clusterrole foo --verb
+=
+get,list,watch --resource
+=
+pods,pods/status
+
+Create a ClusterRole named "foo" with nonResourceURL specified:
+kubectl create clusterrole 
+"foo"
+ --verb
+=
+get --non-resource-url
+=
+/logs/*
+
+Create a ClusterRole named "monitoring" with an aggregationRule specified:
+kubectl create clusterrole monitoring --aggregation-rule
+=
+"rbac.example.com/aggregate-to-monitoring=true"
+
+
+kubectl create rolebinding
+Grants a Role or ClusterRole within a specific namespace. Examples:
+Within the namespace "acme", grant the permissions in the "admin" ClusterRole to a user named "bob":
+kubectl create rolebinding bob-admin-binding --clusterrole
+=
+admin --user
+=
+bob --namespace
+=
+acme
+
+Within the namespace "acme", grant the permissions in the "view" ClusterRole to the service account in the namespace "acme" named "myapp":
+kubectl create rolebinding myapp-view-binding --clusterrole
+=
+view --serviceaccount
+=
+acme:myapp --namespace
+=
+acme
+
+Within the namespace "acme", grant the permissions in the "view" ClusterRole to a service account in the namespace "myappnamespace" named "myapp":
+kubectl create rolebinding myappnamespace-myapp-view-binding --clusterrole
+=
+view --serviceaccount
+=
+myappnamespace:myapp --namespace
+=
+acme
+
+kubectl create clusterrolebinding
+Grants a ClusterRole across the entire cluster (all namespaces). Examples:
+Across the entire cluster, grant the permissions in the "cluster-admin" ClusterRole to a user named "root":
+kubectl create clusterrolebinding root-cluster-admin-binding --clusterrole
+=
+cluster-admin --user
+=
+root
+
+Across the entire cluster, grant the permissions in the "system:node-proxier" ClusterRole to a user named "system:kube-proxy":
+kubectl create clusterrolebinding kube-proxy-binding --clusterrole
+=
+system:node-proxier --user
+=
+system:kube-proxy
+
+Across the entire cluster, grant the permissions in the "view" ClusterRole to a service account named "myapp" in the namespace "acme":
+kubectl create clusterrolebinding myapp-view-binding --clusterrole
+=
+view --serviceaccount
+=
+acme:myapp
+
+kubectl auth reconcile
+Creates or updates 
+rbac.authorization.k8s.io/v1
+ API objects from a manifest file.
+Missing objects are created, and the containing namespace is created for namespaced objects, if required.
+Existing roles are updated to include the permissions in the input objects,
+and remove extra permissions if 
+--remove-extra-permissions
+ is specified.
+Existing bindings are updated to include the subjects in the input objects,
+and remove extra subjects if 
+--remove-extra-subjects
+ is specified.
+Examples:
+Test applying a manifest file of RBAC objects, displaying changes that would be made:
+kubectl auth reconcile -f my-rbac-rules.yaml --dry-run
+=
+client
+
+Apply a manifest file of RBAC objects, preserving any extra permissions (in roles) and any extra subjects (in bindings):
+kubectl auth reconcile -f my-rbac-rules.yaml
+
+Apply a manifest file of RBAC objects, removing any extra permissions (in roles) and any extra subjects (in bindings):
+kubectl auth reconcile -f my-rbac-rules.yaml --remove-extra-subjects --remove-extra-permissions
+
+ServiceAccount permissions
+Default RBAC policies grant scoped permissions to control-plane components, nodes,
+and controllers, but grant 
+no permissions
+ to service accounts outside the 
+kube-system
+ namespace
+(beyond the permissions given by 
+API discovery roles
+).
+This allows you to grant particular roles to particular ServiceAccounts as needed.
+Fine-grained role bindings provide greater security, but require more effort to administrate.
+Broader grants can give unnecessary (and potentially escalating) API access to
+ServiceAccounts, but are easier to administrate.
+In order from most secure to least secure, the approaches are:
+Grant a role to an application-specific service account (best practice)
+This requires the application to specify a 
+serviceAccountName
+ in its pod spec,
+and for the service account to be created (via the API, application manifest, 
+kubectl create serviceaccount
+, etc.).
+For example, grant read-only permission within "my-namespace" to the "my-sa" service account:
+kubectl create rolebinding my-sa-view 
+\
+
+  --clusterrole
+=
+view 
+\
+
+  --serviceaccount
+=
+my-namespace:my-sa 
+\
+
+  --namespace
+=
+my-namespace
+
+Grant a role to the "default" service account in a namespace
+If an application does not specify a 
+serviceAccountName
+, it uses the "default" service account.
+Note:
+Permissions given to the "default" service account are available to any pod
+in the namespace that does not specify a 
+serviceAccountName
+.
+For example, grant read-only permission within "my-namespace" to the "default" service account:
+kubectl create rolebinding default-view 
+\
+
+  --clusterrole
+=
+view 
+\
+
+  --serviceaccount
+=
+my-namespace:default 
+\
+
+  --namespace
+=
+my-namespace
+
+Many 
+add-ons
+ run as the
+"default" service account in the 
+kube-system
+ namespace.
+To allow those add-ons to run with super-user access, grant cluster-admin
+permissions to the "default" service account in the 
+kube-system
+ namespace.
+Caution:
+Enabling this means the 
+kube-system
+ namespace contains Secrets
+that grant super-user access to your cluster's API.
+kubectl create clusterrolebinding add-on-cluster-admin 
+\
+
+  --clusterrole
+=
+cluster-admin 
+\
+
+  --serviceaccount
+=
+kube-system:default
+
+Grant a role to all service accounts in a namespace
+If you want all applications in a namespace to have a role, no matter what service account they use,
+you can grant a role to the service account group for that namespace.
+For example, grant read-only permission within "my-namespace" to all service accounts in that namespace:
+kubectl create rolebinding serviceaccounts-view 
+\
+
+  --clusterrole
+=
+view 
+\
+
+  --group
+=
+system:serviceaccounts:my-namespace 
+\
+
+  --namespace
+=
+my-namespace
+
+Grant a limited role to all service accounts cluster-wide (discouraged)
+If you don't want to manage permissions per-namespace, you can grant a cluster-wide role to all service accounts.
+For example, grant read-only permission across all namespaces to all service accounts in the cluster:
+kubectl create clusterrolebinding serviceaccounts-view 
+\
+
+  --clusterrole
+=
+view 
+\
+
+ --group
+=
+system:serviceaccounts
+
+Grant super-user access to all service accounts cluster-wide (strongly discouraged)
+If you don't care about partitioning permissions at all, you can grant super-user access to all service accounts.
+Warning:
+This allows any application full access to your cluster, and also grants
+any user with read access to Secrets (or the ability to create any pod)
+full access to your cluster.
+kubectl create clusterrolebinding serviceaccounts-cluster-admin 
+\
+
+  --clusterrole
+=
+cluster-admin 
+\
+
+  --group
+=
+system:serviceaccounts
+
+Write access for EndpointSlices
+Kubernetes clusters created before Kubernetes v1.22 include write access to
+EndpointSlices (and the now-deprecated Endpoints API) in the aggregated "edit" and "admin" roles.
+As a mitigation for 
+CVE-2021-25740
+,
+this access is not part of the aggregated roles in clusters that you create using
+Kubernetes v1.22 or later.
+Existing clusters that have been upgraded to Kubernetes v1.22 will not be
+subject to this change. The 
+CVE
+announcement
+ includes
+guidance for restricting this access in existing clusters.
+If you want new clusters to retain this level of access in the aggregated roles,
+you can create the following ClusterRole:
+access/endpoints-aggregated.yaml
+
+
+apiVersion
+:
+ 
+rbac.authorization.k8s.io/v1
+
+
+kind
+:
+ 
+ClusterRole
+
+
+metadata
+:
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+|-
+
+
+      Add endpoints write permissions to the edit and admin roles. This was
+
+      removed by default in 1.22 because of CVE-2021-25740. See
+
+      https://issue.k8s.io/103675. This can allow writers to direct LoadBalancer
+
+      or Ingress implementations to expose backend IPs that would not otherwise
+
+      be accessible, and can circumvent network policies or security controls
+
+      intended to prevent/isolate access to those backends.
+
+      EndpointSlices were never included in the edit or admin roles, so there
+
+      is nothing to restore for the EndpointSlice API.
+      
+
+  
+labels
+:
+
+
+    
+rbac.authorization.k8s.io/aggregate-to-edit
+:
+ 
+"true"
+
+
+  
+name
+:
+ 
+custom:aggregate-to-edit:endpoints
+ 
+# you can change this if you wish
+
+
+rules
+:
+
+
+  
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+    
+resources
+:
+ 
+[
+"endpoints"
+]
+
+
+    
+verbs
+:
+ 
+[
+"create"
+,
+ 
+"delete"
+,
+ 
+"deletecollection"
+,
+ 
+"patch"
+,
+ 
+"update"
+]
+
+
+Upgrading from ABAC
+Clusters that originally ran older Kubernetes versions often used
+permissive ABAC policies, including granting full API access to all
+service accounts.
+Default RBAC policies grant scoped permissions to control-plane components, nodes,
+and controllers, but grant 
+no permissions
+ to service accounts outside the 
+kube-system
+ namespace
+(beyond the permissions given by 
+API discovery roles
+).
+While far more secure, this can be disruptive to existing workloads expecting to automatically receive API permissions.
+Here are two approaches for managing this transition:
+Parallel authorizers
+Run both the RBAC and ABAC authorizers, and specify a policy file that contains
+the 
+legacy ABAC policy
+:
+--authorization-mode
+=
+...,RBAC,ABAC --authorization-policy-file
+=
+mypolicy.json
+
+To explain that first command line option in detail: if earlier authorizers, such as Node,
+deny a request, then the RBAC authorizer attempts to authorize the API request. If RBAC
+also denies that API request, the ABAC authorizer is then run. This means that any request
+allowed by 
+either
+ the RBAC or ABAC policies is allowed.
+When the kube-apiserver is run with a log level of 5 or higher for the RBAC component
+(
+--vmodule=rbac*=5
+ or 
+--v=5
+), you can see RBAC denials in the API server log
+(prefixed with 
+RBAC
+).
+You can use that information to determine which roles need to be granted to which users, groups, or service accounts.
+Once you have 
+granted roles to service accounts
+ and workloads
+are running with no RBAC denial messages in the server logs, you can remove the ABAC authorizer.
+Permissive RBAC permissions
+You can replicate a permissive ABAC policy using RBAC role bindings.
+Warning:
+The following policy allows 
+ALL
+ service accounts to act as cluster administrators.
+Any application running in a container receives service account credentials automatically,
+and could perform any action against the API, including viewing secrets and modifying permissions.
+This is not a recommended policy.
+kubectl create clusterrolebinding permissive-binding 
+\
+
+  --clusterrole
+=
+cluster-admin 
+\
+
+  --user
+=
+admin 
+\
+
+  --user
+=
+kubelet 
+\
+
+  --group
+=
+system:serviceaccounts
+
+After you have transitioned to use RBAC, you should adjust the access controls
+for your cluster to ensure that these meet your information security needs.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified January 16, 2026 at 12:49 AM PST: 
+Clarified RBAC doc about resourceNames field and create verb (#50455) (a14451f9ad)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

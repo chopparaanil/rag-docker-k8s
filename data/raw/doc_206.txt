@@ -1,0 +1,4271 @@
+Pod Topology Spread Constraints | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Pod Topology Spread Constraints
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Motivation
+topologySpreadConstraints
+ field
+Spread constraint definition
+Node labels
+Consistency
+Topology spread constraint examples
+Example: one topology spread constraint
+Example: multiple topology spread constraints
+Example: conflicting topology spread constraints
+Example: topology spread constraints with node affinity
+Implicit conventions
+Cluster-level default constraints
+Built-in default constraints
+Comparison with podAffinity and podAntiAffinity
+Known limitations
+What's next
+Kubernetes Documentation
+Concepts
+Scheduling, Preemption and Eviction
+Pod Topology Spread Constraints
+Pod Topology Spread Constraints
+You can use 
+topology spread constraints
+ to control how
+
+Pods
+ are spread across your cluster
+among failure-domains such as regions, zones, nodes, and other user-defined topology
+domains. This can help to achieve high availability as well as efficient resource
+utilization.
+You can set 
+cluster-level constraints
+ as a default,
+or configure topology spread constraints for individual workloads.
+Motivation
+Imagine that you have a cluster of up to twenty nodes, and you want to run a
+
+workload
+
+that automatically scales how many replicas it uses. There could be as few as
+two Pods or as many as fifteen.
+When there are only two Pods, you'd prefer not to have both of those Pods run on the
+same node: you would run the risk that a single node failure takes your workload
+offline.
+In addition to this basic usage, there are some advanced usage examples that
+enable your workloads to benefit on high availability and cluster utilization.
+As you scale up and run more Pods, a different concern becomes important. Imagine
+that you have three nodes running five Pods each. The nodes have enough capacity
+to run that many replicas; however, the clients that interact with this workload
+are split across three different datacenters (or infrastructure zones). Now you
+have less concern about a single node failure, but you notice that latency is
+higher than you'd like, and you are paying for network costs associated with
+sending network traffic between the different zones.
+You decide that under normal operation you'd prefer to have a similar number of replicas
+
+scheduled
+ into each infrastructure zone,
+and you'd like the cluster to self-heal in the case that there is a problem.
+Pod topology spread constraints offer you a declarative way to configure that.
+topologySpreadConstraints
+ field
+The Pod API includes a field, 
+spec.topologySpreadConstraints
+. The usage of this field looks like
+the following:
+---
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+example-pod
+
+
+spec
+:
+
+
+  
+# Configure a topology spread constraint
+
+
+  
+topologySpreadConstraints
+:
+
+
+    
+- 
+maxSkew
+:
+ 
+<integer>
+
+
+      
+minDomains
+:
+ 
+<integer>
+ 
+# optional
+
+
+      
+topologyKey
+:
+ 
+<string>
+
+
+      
+whenUnsatisfiable
+:
+ 
+<string>
+
+
+      
+labelSelector
+:
+ 
+<object>
+
+
+      
+matchLabelKeys
+:
+ 
+<list>
+ 
+# optional; beta since v1.27
+
+
+      
+nodeAffinityPolicy
+:
+ 
+[Honor|Ignore]
+ 
+# optional; beta since v1.26
+
+
+      
+nodeTaintsPolicy
+:
+ 
+[Honor|Ignore]
+ 
+# optional; beta since v1.26
+
+
+  
+### other Pod fields go here
+
+
+Note:
+There can only be one 
+topologySpreadConstraint
+ for a given 
+topologyKey
+ and 
+whenUnsatisfiable
+ value. For example, if you have defined a 
+topologySpreadConstraint
+ that uses the 
+topologyKey
+ "kubernetes.io/hostname" and 
+whenUnsatisfiable
+ value "DoNotSchedule", you can only add another 
+topologySpreadConstraint
+ for the 
+topologyKey
+ "kubernetes.io/hostname" if you use a different 
+whenUnsatisfiable
+ value.
+You can read more about this field by running 
+kubectl explain Pod.spec.topologySpreadConstraints
+ or
+refer to the 
+scheduling
+ section of the API reference for Pod.
+Spread constraint definition
+You can define one or multiple 
+topologySpreadConstraints
+ entries to instruct the
+kube-scheduler how to place each incoming Pod in relation to the existing Pods across
+your cluster. Those fields are:
+maxSkew
+ describes the degree to which Pods may be unevenly distributed. You must
+specify this field and the number must be greater than zero. Its semantics differ
+according to the value of 
+whenUnsatisfiable
+:
+if you select 
+whenUnsatisfiable: DoNotSchedule
+, then 
+maxSkew
+ defines the
+maximum permitted difference between the number of matching pods in the target
+topology and the 
+global minimum
+
+(the minimum number of matching pods in an eligible domain or zero if the number of eligible domains is less than MinDomains).
+For example, if you have 3 zones with 2, 2 and 1 matching pods respectively,
+
+MaxSkew
+ is set to 1 then the global minimum is 1.
+if you select 
+whenUnsatisfiable: ScheduleAnyway
+, the scheduler gives higher
+precedence to topologies that would help reduce the skew.
+minDomains
+ indicates a minimum number of eligible domains. This field is optional.
+A domain is a particular instance of a topology. An eligible domain is a domain whose
+nodes match the node selector.
+Note:
+Before Kubernetes v1.30, the 
+minDomains
+ field was only available if the
+
+MinDomainsInPodTopologySpread
+ 
+feature gate
+
+was enabled (default since v1.28). In older Kubernetes clusters it might be explicitly
+disabled or the field might not be available.
+The value of 
+minDomains
+ must be greater than 0, when specified.
+You can only specify 
+minDomains
+ in conjunction with 
+whenUnsatisfiable: DoNotSchedule
+.
+When the number of eligible domains with match topology keys is less than 
+minDomains
+,
+Pod topology spread treats global minimum as 0, and then the calculation of 
+skew
+ is performed.
+The global minimum is the minimum number of matching Pods in an eligible domain,
+or zero if the number of eligible domains is less than 
+minDomains
+.
+When the number of eligible domains with matching topology keys equals or is greater than
+
+minDomains
+, this value has no effect on scheduling.
+If you do not specify 
+minDomains
+, the constraint behaves as if 
+minDomains
+ is 1.
+topologyKey
+ is the key of 
+node labels
+. Nodes that have a label with this key
+and identical values are considered to be in the same topology.
+We call each instance of a topology (in other words, a <key, value> pair) a domain. The scheduler
+will try to put a balanced number of pods into each domain.
+Also, we define an eligible domain as a domain whose nodes meet the requirements of
+nodeAffinityPolicy and nodeTaintsPolicy.
+whenUnsatisfiable
+ indicates how to deal with a Pod if it doesn't satisfy the spread constraint:
+DoNotSchedule
+ (default) tells the scheduler not to schedule it.
+ScheduleAnyway
+ tells the scheduler to still schedule it while prioritizing nodes that minimize the skew.
+labelSelector
+ is used to find matching Pods. Pods
+that match this label selector are counted to determine the
+number of Pods in their corresponding topology domain.
+See 
+Label Selectors
+
+for more details.
+matchLabelKeys
+ is a list of pod label keys to select the group of pods over which
+the spreading skew will be calculated. At a pod creation,
+the kube-apiserver uses those keys to lookup values from the incoming pod labels,
+and those key-value labels will be merged with any existing 
+labelSelector
+.
+The same key is forbidden to exist in both 
+matchLabelKeys
+ and 
+labelSelector
+.
+
+matchLabelKeys
+ cannot be set when 
+labelSelector
+ isn't set.
+Keys that don't exist in the pod labels will be ignored.
+A null or empty list means only match against the 
+labelSelector
+.
+Caution:
+It's not recommended to use 
+matchLabelKeys
+ with labels that might be updated directly on pods.
+Even if you edit the pod's label that is specified at 
+matchLabelKeys
+ 
+directly
+,
+(that is, you edit the Pod and not a Deployment),
+kube-apiserver doesn't reflect the label update onto the merged 
+labelSelector
+.
+With 
+matchLabelKeys
+, you don't need to update the 
+pod.spec
+ between different revisions.
+The controller/operator just needs to set different values to the same label key for different
+revisions. For example, if you are configuring a Deployment, you can use the label keyed with
+
+pod-template-hash
+, which
+is added automatically by the Deployment controller, to distinguish between different revisions
+in a single Deployment.
+    
+topologySpreadConstraints
+:
+
+
+        
+- 
+maxSkew
+:
+ 
+1
+
+
+          
+topologyKey
+:
+ 
+kubernetes.io/hostname
+
+
+          
+whenUnsatisfiable
+:
+ 
+DoNotSchedule
+
+
+          
+labelSelector
+:
+
+
+            
+matchLabels
+:
+
+
+              
+app
+:
+ 
+foo
+
+
+          
+matchLabelKeys
+:
+
+
+            
+- pod-template-hash
+
+
+Note:
+The 
+matchLabelKeys
+ field is a beta-level field and enabled by default in 1.27. You can disable it by disabling the
+
+MatchLabelKeysInPodTopologySpread
+ 
+feature gate
+.
+Before v1.34, 
+matchLabelKeys
+ was handled implicitly.
+Since v1.34, key-value labels corresponding to 
+matchLabelKeys
+ are explicitly merged into 
+labelSelector
+.
+You can disable it and revert to the previous behavior by disabling the 
+MatchLabelKeysInPodTopologySpreadSelectorMerge
+
+
+feature gate
+ of kube-apiserver.
+nodeAffinityPolicy
+ indicates how we will treat Pod's nodeAffinity/nodeSelector
+when calculating pod topology spread skew. Options are:
+Honor: only nodes matching nodeAffinity/nodeSelector are included in the calculations.
+Ignore: nodeAffinity/nodeSelector are ignored. All nodes are included in the calculations.
+If this value is null, the behavior is equivalent to the Honor policy.
+Note:
+The 
+nodeAffinityPolicy
+ became beta in 1.26 and graduated to GA in 1.33.
+It's enabled by default in beta, you can disable it by disabling the
+
+NodeInclusionPolicyInPodTopologySpread
+ 
+feature gate
+.
+nodeTaintsPolicy
+ indicates how we will treat node taints when calculating
+pod topology spread skew. Options are:
+Honor: nodes without taints, along with tainted nodes for which the incoming pod
+has a toleration, are included.
+Ignore: node taints are ignored. All nodes are included.
+If this value is null, the behavior is equivalent to the Ignore policy.
+Note:
+The 
+nodeTaintsPolicy
+ became beta in 1.26 and graduated to GA in 1.33.
+It's enabled by default in beta, you can disable it by disabling the
+
+NodeInclusionPolicyInPodTopologySpread
+ 
+feature gate
+.
+When a Pod defines more than one 
+topologySpreadConstraint
+, those constraints are
+combined using a logical AND operation: the kube-scheduler looks for a node for the incoming Pod
+that satisfies all the configured constraints.
+Node labels
+Topology spread constraints rely on node labels to identify the topology
+domain(s) that each 
+node
+ is in.
+For example, a node might have labels:
+  
+region
+:
+ 
+us-east-1
+
+
+  
+zone
+:
+ 
+us-east-1a
+
+
+Note:
+For brevity, this example doesn't use the
+
+well-known
+ label keys
+
+topology.kubernetes.io/zone
+ and 
+topology.kubernetes.io/region
+. However,
+those registered label keys are nonetheless recommended rather than the private
+(unqualified) label keys 
+region
+ and 
+zone
+ that are used here.
+You can't make a reliable assumption about the meaning of a private label key
+between different contexts.
+Suppose you have a 4-node cluster with the following labels:
+NAME    STATUS   ROLES    AGE     VERSION   LABELS
+node1   Ready    <none>   4m26s   v1.16.0   node=node1,zone=zoneA
+node2   Ready    <none>   3m58s   v1.16.0   node=node2,zone=zoneA
+node3   Ready    <none>   3m17s   v1.16.0   node=node3,zone=zoneB
+node4   Ready    <none>   2m43s   v1.16.0   node=node4,zone=zoneB
+
+Then the cluster is logically viewed as below:
+graph TB
+subgraph "zoneB"
+n3(Node3)
+n4(Node4)
+end
+subgraph "zoneA"
+n1(Node1)
+n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4 k8s;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+Consistency
+You should set the same Pod topology spread constraints on all pods in a group.
+Usually, if you are using a workload controller such as a Deployment, the pod template
+takes care of this for you. If you mix different spread constraints then Kubernetes
+follows the API definition of the field; however, the behavior is more likely to become
+confusing and troubleshooting is less straightforward.
+You need a mechanism to ensure that all the nodes in a topology domain (such as a
+cloud provider region) are labeled consistently.
+To avoid you needing to manually label nodes, most clusters automatically
+populate well-known labels such as 
+kubernetes.io/hostname
+. Check whether
+your cluster supports this.
+Topology spread constraint examples
+Example: one topology spread constraint
+Suppose you have a 4-node cluster where 3 Pods labeled 
+foo: bar
+ are located in
+node1, node2 and node3 respectively:
+graph BT
+subgraph "zoneB"
+p3(Pod) --> n3(Node3)
+n4(Node4)
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3 k8s;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+If you want an incoming Pod to be evenly spread with existing Pods across zones, you
+can use a manifest similar to:
+pods/topology-spread-constraints/one-constraint.yaml
+
+
+kind
+:
+ 
+Pod
+
+
+apiVersion
+:
+ 
+v1
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+mypod
+
+
+  
+labels
+:
+
+
+    
+foo
+:
+ 
+bar
+
+
+spec
+:
+
+
+  
+topologySpreadConstraints
+:
+
+
+  
+- 
+maxSkew
+:
+ 
+1
+
+
+    
+topologyKey
+:
+ 
+zone
+
+
+    
+whenUnsatisfiable
+:
+ 
+DoNotSchedule
+
+
+    
+labelSelector
+:
+
+
+      
+matchLabels
+:
+
+
+        
+foo
+:
+ 
+bar
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+pause
+
+
+    
+image
+:
+ 
+registry.k8s.io/pause:3.1
+From that manifest, 
+topologyKey: zone
+ implies the even distribution will only be applied
+to nodes that are labeled 
+zone: <any value>
+ (nodes that don't have a 
+zone
+ label
+are skipped). The field 
+whenUnsatisfiable: DoNotSchedule
+ tells the scheduler to let the
+incoming Pod stay pending if the scheduler can't find a way to satisfy the constraint.
+If the scheduler placed this incoming Pod into zone 
+A
+, the distribution of Pods would
+become 
+[3, 1]
+. That means the actual skew is then 2 (calculated as 
+3 - 1
+), which
+violates 
+maxSkew: 1
+. To satisfy the constraints and context for this example, the
+incoming Pod can only be placed onto a node in zone 
+B
+:
+graph BT
+subgraph "zoneB"
+p3(Pod) --> n3(Node3)
+p4(mypod) --> n4(Node4)
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3 k8s;
+class p4 plain;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+OR
+graph BT
+subgraph "zoneB"
+p3(Pod) --> n3(Node3)
+p4(mypod) --> n3
+n4(Node4)
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3 k8s;
+class p4 plain;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+You can tweak the Pod spec to meet various kinds of requirements:
+Change 
+maxSkew
+ to a bigger value - such as 
+2
+ - so that the incoming Pod can
+be placed into zone 
+A
+ as well.
+Change 
+topologyKey
+ to 
+node
+ so as to distribute the Pods evenly across nodes
+instead of zones. In the above example, if 
+maxSkew
+ remains 
+1
+, the incoming
+Pod can only be placed onto the node 
+node4
+.
+Change 
+whenUnsatisfiable: DoNotSchedule
+ to 
+whenUnsatisfiable: ScheduleAnyway
+
+to ensure the incoming Pod to be always schedulable (suppose other scheduling APIs
+are satisfied). However, it's preferred to be placed into the topology domain which
+has fewer matching Pods. (Be aware that this preference is jointly normalized
+with other internal scheduling priorities such as resource usage ratio).
+Example: multiple topology spread constraints
+This builds upon the previous example. Suppose you have a 4-node cluster where 3
+existing Pods labeled 
+foo: bar
+ are located on node1, node2 and node3 respectively:
+graph BT
+subgraph "zoneB"
+p3(Pod) --> n3(Node3)
+n4(Node4)
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3 k8s;
+class p4 plain;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+You can combine two topology spread constraints to control the spread of Pods both
+by node and by zone:
+pods/topology-spread-constraints/two-constraints.yaml
+
+
+kind
+:
+ 
+Pod
+
+
+apiVersion
+:
+ 
+v1
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+mypod
+
+
+  
+labels
+:
+
+
+    
+foo
+:
+ 
+bar
+
+
+spec
+:
+
+
+  
+topologySpreadConstraints
+:
+
+
+  
+- 
+maxSkew
+:
+ 
+1
+
+
+    
+topologyKey
+:
+ 
+zone
+
+
+    
+whenUnsatisfiable
+:
+ 
+DoNotSchedule
+
+
+    
+labelSelector
+:
+
+
+      
+matchLabels
+:
+
+
+        
+foo
+:
+ 
+bar
+
+
+  
+- 
+maxSkew
+:
+ 
+1
+
+
+    
+topologyKey
+:
+ 
+node
+
+
+    
+whenUnsatisfiable
+:
+ 
+DoNotSchedule
+
+
+    
+labelSelector
+:
+
+
+      
+matchLabels
+:
+
+
+        
+foo
+:
+ 
+bar
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+pause
+
+
+    
+image
+:
+ 
+registry.k8s.io/pause:3.1
+In this case, to match the first constraint, the incoming Pod can only be placed onto
+nodes in zone 
+B
+; while in terms of the second constraint, the incoming Pod can only be
+scheduled to the node 
+node4
+. The scheduler only considers options that satisfy all
+defined constraints, so the only valid placement is onto node 
+node4
+.
+Example: conflicting topology spread constraints
+Multiple constraints can lead to conflicts. Suppose you have a 3-node cluster across 2 zones:
+graph BT
+subgraph "zoneB"
+p4(Pod) --> n3(Node3)
+p5(Pod) --> n3
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n1
+p3(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3,p4,p5 k8s;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+If you were to apply
+
+two-constraints.yaml
+
+(the manifest from the previous example)
+to 
+this
+ cluster, you would see that the Pod 
+mypod
+ stays in the 
+Pending
+ state.
+This happens because: to satisfy the first constraint, the Pod 
+mypod
+ can only
+be placed into zone 
+B
+; while in terms of the second constraint, the Pod 
+mypod
+
+can only schedule to node 
+node2
+. The intersection of the two constraints returns
+an empty set, and the scheduler cannot place the Pod.
+To overcome this situation, you can either increase the value of 
+maxSkew
+ or modify
+one of the constraints to use 
+whenUnsatisfiable: ScheduleAnyway
+. Depending on
+circumstances, you might also decide to delete an existing Pod manually - for example,
+if you are troubleshooting why a bug-fix rollout is not making progress.
+Interaction with node affinity and node selectors
+The scheduler will skip the non-matching nodes from the skew calculations if the
+incoming Pod has 
+spec.nodeSelector
+ or 
+spec.affinity.nodeAffinity
+ defined.
+Example: topology spread constraints with node affinity
+Suppose you have a 5-node cluster ranging across zones A to C:
+graph BT
+subgraph "zoneB"
+p3(Pod) --> n3(Node3)
+n4(Node4)
+end
+subgraph "zoneA"
+p1(Pod) --> n1(Node1)
+p2(Pod) --> n2(Node2)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n1,n2,n3,n4,p1,p2,p3 k8s;
+class p4 plain;
+class zoneA,zoneB cluster;
+JavaScript must be 
+enabled
+ to view this content
+graph BT
+subgraph "zoneC"
+n5(Node5)
+end
+classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
+classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;
+classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;
+class n5 k8s;
+class zoneC cluster;
+JavaScript must be 
+enabled
+ to view this content
+and you know that zone 
+C
+ must be excluded. In this case, you can compose a manifest
+as below, so that Pod 
+mypod
+ will be placed into zone 
+B
+ instead of zone 
+C
+.
+Similarly, Kubernetes also respects 
+spec.nodeSelector
+.
+pods/topology-spread-constraints/one-constraint-with-nodeaffinity.yaml
+
+
+kind
+:
+ 
+Pod
+
+
+apiVersion
+:
+ 
+v1
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+mypod
+
+
+  
+labels
+:
+
+
+    
+foo
+:
+ 
+bar
+
+
+spec
+:
+
+
+  
+topologySpreadConstraints
+:
+
+
+  
+- 
+maxSkew
+:
+ 
+1
+
+
+    
+topologyKey
+:
+ 
+zone
+
+
+    
+whenUnsatisfiable
+:
+ 
+DoNotSchedule
+
+
+    
+labelSelector
+:
+
+
+      
+matchLabels
+:
+
+
+        
+foo
+:
+ 
+bar
+
+
+  
+affinity
+:
+
+
+    
+nodeAffinity
+:
+
+
+      
+requiredDuringSchedulingIgnoredDuringExecution
+:
+
+
+        
+nodeSelectorTerms
+:
+
+
+        
+- 
+matchExpressions
+:
+
+
+          
+- 
+key
+:
+ 
+zone
+
+
+            
+operator
+:
+ 
+NotIn
+
+
+            
+values
+:
+
+
+            
+- zoneC
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+pause
+
+
+    
+image
+:
+ 
+registry.k8s.io/pause:3.1
+Implicit conventions
+There are some implicit conventions worth noting here:
+Only the Pods holding the same namespace as the incoming Pod can be matching candidates.
+The scheduler only considers nodes that have all 
+topologySpreadConstraints[*].topologyKey
+ present at the same time.
+Nodes missing any of these 
+topologyKeys
+ are bypassed. This implies that:
+any Pods located on those bypassed nodes do not impact 
+maxSkew
+ calculation - in the
+above 
+example
+, suppose the node 
+node1
+
+does not have a label "zone", then the 2 Pods will
+be disregarded, hence the incoming Pod will be scheduled into zone 
+A
+.
+the incoming Pod has no chances to be scheduled onto this kind of nodes -
+in the above example, suppose a node 
+node5
+ has the 
+mistyped
+ label 
+zone-typo: zoneC
+
+(and no 
+zone
+ label set). After node 
+node5
+ joins the cluster, it will be bypassed and
+Pods for this workload aren't scheduled there.
+Be aware of what will happen if the incoming Pod's
+
+topologySpreadConstraints[*].labelSelector
+ doesn't match its own labels. In the
+above example, if you remove the incoming Pod's labels, it can still be placed onto
+nodes in zone 
+B
+, since the constraints are still satisfied. However, after that
+placement, the degree of imbalance of the cluster remains unchanged - it's still zone 
+A
+
+having 2 Pods labeled as 
+foo: bar
+, and zone 
+B
+ having 1 Pod labeled as
+
+foo: bar
+. If this is not what you expect, update the workload's
+
+topologySpreadConstraints[*].labelSelector
+ to match the labels in the pod template.
+Cluster-level default constraints
+It is possible to set default topology spread constraints for a cluster. Default
+topology spread constraints are applied to a Pod if, and only if:
+It doesn't define any constraints in its 
+.spec.topologySpreadConstraints
+.
+It belongs to a Service, ReplicaSet, StatefulSet or ReplicationController.
+Default constraints can be set as part of the 
+PodTopologySpread
+ plugin
+arguments in a 
+scheduling profile
+.
+The constraints are specified with the same 
+API above
+, except that
+
+labelSelector
+ must be empty. The selectors are calculated from the Services,
+ReplicaSets, StatefulSets or ReplicationControllers that the Pod belongs to.
+An example configuration might look like follows:
+apiVersion
+:
+ 
+kubescheduler.config.k8s.io/v1
+
+
+kind
+:
+ 
+KubeSchedulerConfiguration
+
+
+
+
+profiles
+:
+
+
+  
+- 
+schedulerName
+:
+ 
+default-scheduler
+
+
+    
+pluginConfig
+:
+
+
+      
+- 
+name
+:
+ 
+PodTopologySpread
+
+
+        
+args
+:
+
+
+          
+defaultConstraints
+:
+
+
+            
+- 
+maxSkew
+:
+ 
+1
+
+
+              
+topologyKey
+:
+ 
+topology.kubernetes.io/zone
+
+
+              
+whenUnsatisfiable
+:
+ 
+ScheduleAnyway
+
+
+          
+defaultingType
+:
+ 
+List
+
+
+Built-in default constraints
+FEATURE STATE:
+
+
+Kubernetes v1.24 [stable]
+If you don't configure any cluster-level default constraints for pod topology spreading,
+then kube-scheduler acts as if you specified the following default topology constraints:
+defaultConstraints
+:
+
+
+  
+- 
+maxSkew
+:
+ 
+3
+
+
+    
+topologyKey
+:
+ 
+"kubernetes.io/hostname"
+
+
+    
+whenUnsatisfiable
+:
+ 
+ScheduleAnyway
+
+
+  
+- 
+maxSkew
+:
+ 
+5
+
+
+    
+topologyKey
+:
+ 
+"topology.kubernetes.io/zone"
+
+
+    
+whenUnsatisfiable
+:
+ 
+ScheduleAnyway
+
+
+Also, the legacy 
+SelectorSpread
+ plugin, which provides an equivalent behavior,
+is disabled by default.
+Note:
+The 
+PodTopologySpread
+ plugin does not score the nodes that don't have
+the topology keys specified in the spreading constraints. This might result
+in a different default behavior compared to the legacy 
+SelectorSpread
+ plugin when
+using the default topology constraints.
+If your nodes are not expected to have 
+both
+ 
+kubernetes.io/hostname
+ and
+
+topology.kubernetes.io/zone
+ labels set, define your own constraints
+instead of using the Kubernetes defaults.
+If you don't want to use the default Pod spreading constraints for your cluster,
+you can disable those defaults by setting 
+defaultingType
+ to 
+List
+ and leaving
+empty 
+defaultConstraints
+ in the 
+PodTopologySpread
+ plugin configuration:
+apiVersion
+:
+ 
+kubescheduler.config.k8s.io/v1
+
+
+kind
+:
+ 
+KubeSchedulerConfiguration
+
+
+
+
+profiles
+:
+
+
+  
+- 
+schedulerName
+:
+ 
+default-scheduler
+
+
+    
+pluginConfig
+:
+
+
+      
+- 
+name
+:
+ 
+PodTopologySpread
+
+
+        
+args
+:
+
+
+          
+defaultConstraints
+:
+ 
+[]
+
+
+          
+defaultingType
+:
+ 
+List
+
+
+Comparison with podAffinity and podAntiAffinity
+In Kubernetes, 
+inter-Pod affinity and anti-affinity
+
+control how Pods are scheduled in relation to one another - either more packed
+or more scattered.
+podAffinity
+attracts Pods; you can try to pack any number of Pods into qualifying
+topology domain(s).
+podAntiAffinity
+repels Pods. If you set this to 
+requiredDuringSchedulingIgnoredDuringExecution
+ mode then
+only a single Pod can be scheduled into a single topology domain; if you choose
+
+preferredDuringSchedulingIgnoredDuringExecution
+ then you lose the ability to enforce the
+constraint.
+For finer control, you can specify topology spread constraints to distribute
+Pods across different topology domains - to achieve either high availability or
+cost-saving. This can also help on rolling update workloads and scaling out
+replicas smoothly.
+For more context, see the
+
+Motivation
+
+section of the enhancement proposal about Pod topology spread constraints.
+Known limitations
+There's no guarantee that the constraints remain satisfied when Pods are removed. For
+example, scaling down a Deployment may result in imbalanced Pods distribution.
+You can use a tool such as the 
+Descheduler
+
+to rebalance the Pods distribution.
+Pods matched on tainted nodes are respected.
+See 
+Issue 80921
+.
+The scheduler doesn't have prior knowledge of all the zones or other topology
+domains that a cluster has. They are determined from the existing nodes in the
+cluster. This could lead to a problem in autoscaled clusters, when a node pool (or
+node group) is scaled to zero nodes, and you're expecting the cluster to scale up,
+because, in this case, those topology domains won't be considered until there is
+at least one node in them.
+You can work around this by using a Node autoscaler that is aware of
+Pod topology spread constraints and is also aware of the overall set of topology
+domains.
+Pods that don't match their own labelSelector create "ghost pods". If a pod's
+labels don't match the 
+labelSelector
+ in its topology spread constraint, the pod
+won't count itself in spread calculations. This means:
+Multiple such pods can just accumulate on the same topology (until matching pods are newly created/deleted) because those pod's schedule don't change a spreading calculation result.
+The spreading constraint works in an unintended way, most likely not matching your expectations
+Ensure your pod's labels match the 
+labelSelector
+ in your spread constraints.
+Typically, a pod should match its own topology spread constraint selector.
+What's next
+The blog article 
+Introducing PodTopologySpread
+
+explains 
+maxSkew
+ in some detail, as well as covering some advanced usage examples.
+Read the 
+scheduling
+ section of
+the API reference for Pod.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified October 27, 2025 at 8:39 AM PST: 
+Remove node label typo section per reviewer feedback (7b58d3c8b5)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

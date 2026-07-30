@@ -1,0 +1,4276 @@
+Server-Side Apply | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Server-Side Apply
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Field management
+Example
+Conflicts
+Field managers
+Serialization
+Operations in scope for field management
+Merge strategy
+Custom resources and Server-Side Apply
+Compatibility across topology changes
+Using Server-Side Apply in a controller
+Transferring ownership
+Transferring ownership between managers
+Comparison with Client-Side Apply
+Migration between client-side and server-side apply
+Upgrading from client-side apply to server-side apply
+Downgrading from server-side apply to client-side apply
+API implementation
+Access control and permissions
+Clearing 
+managedFields
+What's next
+Kubernetes Documentation
+Reference
+API Overview
+Server-Side Apply
+Server-Side Apply
+FEATURE STATE:
+
+
+Kubernetes v1.22 [stable]
+(enabled by default)
+Kubernetes supports multiple appliers collaborating to manage the fields
+of a single 
+object
+.
+Server-Side Apply provides an optional mechanism for your cluster's control plane to track
+changes to an object's fields. At the level of a specific resource, Server-Side
+Apply records and tracks information about control over the fields of that object.
+Server-Side Apply helps users and 
+controllers
+
+manage their resources through declarative configuration. Clients can create and modify
+
+objects
+
+declaratively by submitting their 
+fully specified intent
+.
+A fully specified intent is a partial object that only includes the fields and
+values for which the user has an opinion. That intent either creates a new
+object (using default values for unspecified fields), or is
+
+combined
+, by the API server, with the existing object.
+Comparison with Client-Side Apply
+ explains
+how Server-Side Apply differs from the original, client-side 
+kubectl apply
+
+implementation.
+Field management
+The Kubernetes API server tracks 
+managed fields
+ for all newly created objects.
+When trying to apply an object, fields that have a different value and are owned by
+another 
+manager
+ will result in a 
+conflict
+. This is done
+in order to signal that the operation might undo another collaborator's changes.
+Writes to objects with managed fields can be forced, in which case the value of any
+conflicted field will be overridden, and the ownership will be transferred.
+Whenever a field's value does change, ownership moves from its current manager to the
+manager making the change.
+For a user to manage a field, in the Server-Side Apply sense, means that the
+user relies on and expects the value of the field not to change. The user who
+last made an assertion about the value of a field will be recorded as the
+current field manager. This can be done by changing the field manager
+details explicitly using HTTP 
+POST
+ (
+create
+), 
+PUT
+ (
+update
+), or non-apply
+
+PATCH
+ (
+patch
+). You can also declare and record a field manager
+by including a value for that field in a Server-Side Apply operation.
+A Server-Side Apply 
+patch
+ request requires the client to provide its identity
+as a 
+field manager
+. When using Server-Side Apply, trying to change a
+field that is controlled by a different manager results in a rejected
+request unless the client forces an override.
+For details of overrides, see 
+Conflicts
+.
+When two or more appliers set a field to the same value, they share ownership of
+that field. Any subsequent attempt to change the value of the shared field, by any of
+the appliers, results in a conflict. Shared field owners may give up ownership
+of a field by making a Server-Side Apply 
+patch
+ request that doesn't include
+that field.
+Field management details are stored in a 
+managedFields
+ field that is part of an
+object's 
+metadata
+.
+If you remove a field from a manifest and apply that manifest, Server-Side
+Apply checks if there are any other field managers that also own the field.
+If the field is not owned by any other field managers, it is either deleted
+from the live object or reset to its default value, if it has one.
+The same rule applies to associative list or map items.
+Compared to the (legacy)
+
+kubectl.kubernetes.io/last-applied-configuration
+
+annotation managed by 
+kubectl
+, Server-Side Apply uses a more declarative
+approach, that tracks a user's (or client's) field management, rather than
+a user's last applied state. As a side effect of using Server-Side Apply,
+information about which field manager manages each field in an object also
+becomes available.
+Example
+A simple example of an object created using Server-Side Apply could look like this:
+Note:
+kubectl get
+ omits managed fields by default.
+Add 
+--show-managed-fields
+ to show 
+managedFields
+ when the output format is either 
+json
+ or 
+yaml
+.
+---
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+ConfigMap
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-cm
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+labels
+:
+
+
+    
+test-label
+:
+ 
+test
+
+
+  
+managedFields
+:
+
+
+  
+- 
+manager
+:
+ 
+kubectl
+
+
+    
+operation: Apply # note capitalization
+:
+ 
+"Apply"
+ 
+(or "Update")
+
+
+    
+apiVersion
+:
+ 
+v1
+
+
+    
+time
+:
+ 
+"2010-10-10T0:00:00Z"
+
+
+    
+fieldsType
+:
+ 
+FieldsV1
+
+
+    
+fieldsV1
+:
+
+
+      
+f:metadata
+:
+
+
+        
+f:labels
+:
+
+
+          
+f:test-label
+:
+ 
+{}
+
+
+      
+f:data
+:
+
+
+        
+f:key
+:
+ 
+{}
+
+
+data
+:
+
+
+  
+key
+:
+ 
+some value
+
+
+That example ConfigMap object contains a single field management record in
+
+.metadata.managedFields
+. The field management record consists of basic information
+about the managing entity itself, plus details about the fields being managed and
+the relevant operation (
+Apply
+ or 
+Update
+). If the request that last changed that
+field was a Server-Side Apply 
+patch
+ then the value of 
+operation
+ is 
+Apply
+;
+otherwise, it is 
+Update
+.
+There is another possible outcome. A client could submit an invalid request
+body. If the fully specified intent does not produce a valid object, the
+request fails.
+It is however possible to change 
+.metadata.managedFields
+ through an
+
+update
+, or through a 
+patch
+ operation that does not use Server-Side Apply.
+Doing so is highly discouraged, but might be a reasonable option to try if,
+for example, the 
+.metadata.managedFields
+ get into an inconsistent state
+(which should not happen in normal operations).
+The format of 
+managedFields
+ is 
+described
+
+in the Kubernetes API reference.
+Caution:
+The 
+.metadata.managedFields
+ field is managed by the API server.
+You should avoid updating it manually.
+Conflicts
+A 
+conflict
+ is a special status error that occurs when an 
+Apply
+ operation tries
+to change a field that another manager also claims to manage. This prevents an
+applier from unintentionally overwriting the value set by another user. When
+this occurs, the applier has 3 options to resolve the conflicts:
+Overwrite value, become sole manager:
+ If overwriting the value was
+intentional (or if the applier is an automated process like a controller) the
+applier should set the 
+force
+ query parameter to true (for 
+kubectl apply
+,
+you use the 
+--force-conflicts
+ command line parameter), and make the request
+again. This forces the operation to succeed, changes the value of the field,
+and removes the field from all other managers' entries in 
+managedFields
+.
+Don't overwrite value, give up management claim:
+ If the applier doesn't
+care about the value of the field any more, the applier can remove it from their
+local model of the resource, and make a new request with that particular field
+omitted. This leaves the value unchanged, and causes the field to be removed
+from the applier's entry in 
+managedFields
+.
+Don't overwrite value, become shared manager:
+ If the applier still cares
+about the value of a field, but doesn't want to overwrite it, they can
+change the value of that field in their local model of the resource so as to
+match the value of the object on the server, and then make a new request that
+takes into account that local update. Doing so leaves the value unchanged,
+and causes that field's management to be shared by the applier along with all
+other field managers that already claimed to manage it.
+Field managers
+Managers identify distinct workflows that are modifying the object (especially
+useful on conflicts!), and can be specified through the
+
+fieldManager
+
+query parameter as part of a modifying request. When you Apply to a resource,
+the 
+fieldManager
+ parameter is required.
+For other updates, the API server infers a field manager identity from the
+"User-Agent:" HTTP header (if present).
+When you use the 
+kubectl
+ tool to perform a Server-Side Apply operation, 
+kubectl
+
+sets the manager identity to 
+"kubectl"
+ by default.
+Serialization
+At the protocol level, Kubernetes represents Server-Side Apply message bodies
+as 
+YAML
+, with the media type 
+application/apply-patch+yaml
+.
+Note:
+Whether you are submitting JSON data or YAML data, use
+
+application/apply-patch+yaml
+ as the 
+Content-Type
+ header value.
+All JSON documents are valid YAML. However, Kubernetes has a bug where it uses a YAML
+parser that does not fully implement the YAML specification. Some JSON escapes may
+not be recognized.
+The serialization is the same as for Kubernetes objects, with the exception that
+clients are not required to send a complete object.
+Here's an example of a Server-Side Apply message body (fully specified intent):
+{
+
+
+  
+"apiVersion": 
+"v1"
+,
+
+
+  
+"kind": 
+"ConfigMap"
+
+
+}
+
+
+(this would make a no-change update, provided that it was sent as the body
+of a 
+patch
+ request to a valid 
+v1/configmaps
+ resource, and with the
+appropriate request 
+Content-Type
+).
+Operations in scope for field management
+The Kubernetes API operations where field management is considered are:
+Server-Side Apply (HTTP 
+PATCH
+, with content type 
+application/apply-patch+yaml
+)
+Replacing an existing object (
+update
+ to Kubernetes; 
+PUT
+ at the HTTP level)
+Both operations update 
+.metadata.managedFields
+, but behave a little differently.
+Unless you specify a forced override, an apply operation that encounters field-level
+conflicts always fails; by contrast, if you make a change using 
+update
+ that would
+affect a managed field, a conflict never provokes failure of the operation.
+All Server-Side Apply 
+patch
+ requests are required to identify themselves by providing a
+
+fieldManager
+ query parameter, while the query parameter is optional for 
+update
+
+operations. Finally, when using the 
+Apply
+ operation you cannot define 
+managedFields
+ in
+the body of the request that you submit.
+An example object with multiple managers could look like this:
+---
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+ConfigMap
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+test-cm
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+labels
+:
+
+
+    
+test-label
+:
+ 
+test
+
+
+  
+managedFields
+:
+
+
+  
+- 
+manager
+:
+ 
+kubectl
+
+
+    
+operation
+:
+ 
+Apply
+
+
+    
+time
+:
+ 
+'2019-03-30T15:00:00.000Z'
+
+
+    
+apiVersion
+:
+ 
+v1
+
+
+    
+fieldsType
+:
+ 
+FieldsV1
+
+
+    
+fieldsV1
+:
+
+
+      
+f:metadata
+:
+
+
+        
+f:labels
+:
+
+
+          
+f:test-label
+:
+ 
+{}
+
+
+  
+- 
+manager
+:
+ 
+kube-controller-manager
+
+
+    
+operation
+:
+ 
+Update
+
+
+    
+apiVersion
+:
+ 
+v1
+
+
+    
+time
+:
+ 
+'2019-03-30T16:00:00.000Z'
+
+
+    
+fieldsType
+:
+ 
+FieldsV1
+
+
+    
+fieldsV1
+:
+
+
+      
+f:data
+:
+
+
+        
+f:key
+:
+ 
+{}
+
+
+data
+:
+
+
+  
+key
+:
+ 
+new value
+
+
+In this example, a second operation was run as an 
+update
+ by the manager called
+
+kube-controller-manager
+. The update request succeeded and changed a value in the data
+field, which caused that field's management to change to the 
+kube-controller-manager
+.
+If this update has instead been attempted using Server-Side Apply, the request
+would have failed due to conflicting ownership.
+Merge strategy
+The merging strategy, implemented with Server-Side Apply, provides a generally
+more stable object lifecycle. Server-Side Apply tries to merge fields based on
+the actor who manages them instead of overruling based on values. This way
+multiple actors can update the same object without causing unexpected interference.
+When a user sends a 
+fully-specified intent
+ object to the Server-Side Apply
+endpoint, the server merges it with the live object favoring the value from the
+request body if it is specified in both places. If the set of items present in
+the applied config is not a superset of the items applied by the same user last
+time, each missing item not managed by any other appliers is removed. For
+more information about how an object's schema is used to make decisions when
+merging, see
+
+sigs.k8s.io/structured-merge-diff
+.
+The Kubernetes API (and the Go code that implements that API for Kubernetes) allows
+defining 
+merge strategy markers
+. These markers describe the merge strategy supported
+for fields within Kubernetes objects.
+For a 
+CustomResourceDefinition
+,
+you can set these markers when you define the custom resource.
+Golang marker
+OpenAPI extension
+Possible values
+Description
+//+listType
+x-kubernetes-list-type
+atomic
+/
+set
+/
+map
+Applicable to lists. 
+set
+ applies to lists that include only scalar elements. These elements must be unique. 
+map
+ applies to lists of nested types only. The key values (see 
+listMapKey
+) must be unique in the list. 
+atomic
+ can apply to any list. If configured as 
+atomic
+, the entire list is replaced during merge. At any point in time, a single manager owns the list. If 
+set
+ or 
+map
+, different managers can manage entries separately.
+//+listMapKey
+x-kubernetes-list-map-keys
+List of field names, e.g. 
+["port", "protocol"]
+Only applicable when 
++listType=map
+. A list of field names whose values uniquely identify entries in the list. While there can be multiple keys, 
+listMapKey
+ is singular because keys need to be specified individually in the Go type. The key fields must be scalars.
+//+mapType
+x-kubernetes-map-type
+atomic
+/
+granular
+Applicable to maps. 
+atomic
+ means that the map can only be entirely replaced by a single manager. 
+granular
+ means that the map supports separate managers updating individual fields.
+//+structType
+x-kubernetes-map-type
+atomic
+/
+granular
+Applicable to structs; otherwise same usage and OpenAPI annotation as 
+//+mapType
+.
+If 
+listType
+ is missing, the API server interprets a
+
+patchStrategy=merge
+ marker as a 
+listType=map
+ and the
+corresponding 
+patchMergeKey
+ marker as a 
+listMapKey
+.
+The 
+atomic
+ list type is recursive.
+(In the 
+Go
+ code for Kubernetes, these markers are specified as
+comments and code authors need not repeat them as field tags).
+Custom resources and Server-Side Apply
+By default, Server-Side Apply treats custom resources as unstructured data. All
+keys are treated the same as struct fields, and all lists are considered atomic.
+If the CustomResourceDefinition defines a
+
+schema
+
+that contains annotations as defined in the previous 
+Merge Strategy
+
+section, these annotations will be used when merging objects of this
+type.
+Compatibility across topology changes
+On rare occurrences, the author for a CustomResourceDefinition (CRD) or built-in
+may want to change the specific topology of a field in their resource,
+without incrementing its API version. Changing the topology of types,
+by upgrading the cluster or updating the CRD, has different consequences when
+updating existing objects. There are two categories of changes: when a field goes from
+
+map
+/
+set
+/
+granular
+ to 
+atomic
+, and the other way around.
+When the 
+listType
+, 
+mapType
+, or 
+structType
+ changes from
+
+map
+/
+set
+/
+granular
+ to 
+atomic
+, the whole list, map, or struct of
+existing objects will end-up being owned by actors who owned an element
+of these types. This means that any further change to these objects
+would cause a conflict.
+When a 
+listType
+, 
+mapType
+, or 
+structType
+ changes from 
+atomic
+ to
+
+map
+/
+set
+/
+granular
+, the API server is unable to infer the new
+ownership of these fields. Because of that, no conflict will be produced
+when objects have these fields updated. For that reason, it is not
+recommended to change a type from 
+atomic
+ to 
+map
+/
+set
+/
+granular
+.
+Take for example, the custom resource:
+---
+
+
+apiVersion
+:
+ 
+example.com/v1
+
+
+kind
+:
+ 
+Foo
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+foo-sample
+
+
+  
+managedFields
+:
+
+
+  
+- 
+manager
+:
+ 
+"manager-one"
+
+
+    
+operation
+:
+ 
+Apply
+
+
+    
+apiVersion
+:
+ 
+example.com/v1
+
+
+    
+fieldsType
+:
+ 
+FieldsV1
+
+
+    
+fieldsV1
+:
+
+
+      
+f:spec
+:
+
+
+        
+f:data
+:
+ 
+{}
+
+
+spec
+:
+
+
+  
+data
+:
+
+
+    
+key1
+:
+ 
+val1
+
+
+    
+key2
+:
+ 
+val2
+
+
+Before 
+spec.data
+ gets changed from 
+atomic
+ to 
+granular
+,
+
+manager-one
+ owns the field 
+spec.data
+, and all the fields within it
+(
+key1
+ and 
+key2
+). When the CRD gets changed to make 
+spec.data
+
+
+granular
+, 
+manager-one
+ continues to own the top-level field
+
+spec.data
+ (meaning no other managers can delete the map called 
+data
+
+without a conflict), but it no longer owns 
+key1
+ and 
+key2
+, so another
+manager can then modify or delete those fields without conflict.
+Using Server-Side Apply in a controller
+As a developer of a controller, you can use Server-Side Apply as a way to
+simplify the update logic of your controller. The main differences with a
+read-modify-write and/or patch are the following:
+the applied object must contain all the fields that the controller cares about.
+there is no way to remove fields that haven't been applied by the controller
+before (controller can still send a 
+patch
+ or 
+update
+ for these use-cases).
+the object doesn't have to be read beforehand; 
+resourceVersion
+ doesn't have
+to be specified.
+It is strongly recommended for controllers to always force conflicts on objects that
+they own and manage, since they might not be able to resolve or act on these conflicts.
+Transferring ownership
+In addition to the concurrency controls provided by 
+conflict resolution
+,
+Server-Side Apply provides ways to perform coordinated
+field ownership transfers from users to controllers.
+This is best explained by example. Let's look at how to safely transfer
+ownership of the 
+replicas
+ field from a user to a controller while enabling
+automatic horizontal scaling for a Deployment, using the HorizontalPodAutoscaler
+resource and its accompanying controller.
+Say a user has defined Deployment with 
+replicas
+ set to the desired value:
+application/ssa/nginx-deployment.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+  
+labels
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+spec
+:
+
+
+  
+replicas
+:
+ 
+3
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+And the user has created the Deployment using Server-Side Apply, like so:
+kubectl apply -f https://k8s.io/examples/application/ssa/nginx-deployment.yaml --server-side
+
+Then later, automatic scaling is enabled for the Deployment; for example:
+kubectl autoscale deployment nginx-deployment --cpu
+=
+50% --min
+=
+1
+ --max
+=
+10
+
+
+Now, the user would like to remove 
+replicas
+ from their configuration, so they
+don't accidentally fight with the HorizontalPodAutoscaler (HPA) and its controller.
+However, there is a race: it might take some time before the HPA feels the need
+to adjust 
+.spec.replicas
+; if the user removes 
+.spec.replicas
+ before the HPA writes
+to the field and becomes its owner, then the API server would set 
+.spec.replicas
+ to
+1 (the default replica count for Deployment).
+This is not what the user wants to happen, even temporarily - it might well degrade
+a running workload.
+There are two solutions:
+(basic) Leave 
+replicas
+ in the configuration; when the HPA eventually writes to that
+field, the system gives the user a conflict over it. At that point, it is safe
+to remove from the configuration.
+(more advanced) If, however, the user doesn't want to wait, for example
+because they want to keep the cluster legible to their colleagues, then they
+can take the following steps to make it safe to remove 
+replicas
+ from their
+configuration:
+First, the user defines a new manifest containing only the 
+replicas
+ field:
+# Save this file as 'nginx-deployment-replicas-only.yaml'.
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+spec
+:
+
+
+  
+replicas
+:
+ 
+3
+
+
+Note:
+The YAML file for SSA in this case only contains the fields you want to change.
+You are not supposed to provide a fully compliant Deployment manifest if you only
+want to modify the 
+spec.replicas
+ field using SSA.
+The user applies that manifest using a private field manager name. In this example,
+the user picked 
+handover-to-hpa
+:
+kubectl apply -f nginx-deployment-replicas-only.yaml 
+\
+
+  --server-side --field-manager
+=
+handover-to-hpa 
+\
+
+  --validate
+=
+false
+
+
+If the apply results in a conflict with the HPA controller, then do nothing. The
+conflict indicates the controller has claimed the field earlier in the
+process than it sometimes does.
+At this point the user may remove the 
+replicas
+ field from their manifest:
+application/ssa/nginx-deployment-no-replicas.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+Deployment
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx-deployment
+
+
+  
+labels
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+spec
+:
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+nginx:1.14.2
+
+
+Note that whenever the HPA controller sets the 
+replicas
+ field to a new value,
+the temporary field manager will no longer own any fields and will be
+automatically deleted. No further clean up is required.
+Transferring ownership between managers
+Field managers can transfer ownership of a field between each other by setting the field
+to the same value in both of their applied configurations, causing them to share
+ownership of the field. Once the managers share ownership of the field, one of them
+can remove the field from their applied configuration to give up ownership and
+complete the transfer to the other field manager.
+Comparison with Client-Side Apply
+Server-Side Apply is meant both as a replacement for the original client-side
+implementation of the 
+kubectl apply
+ subcommand, and as simple and effective
+mechanism for 
+controllers
+
+to enact their changes.
+Compared to the 
+last-applied
+ annotation managed by 
+kubectl
+, Server-Side
+Apply uses a more declarative approach, which tracks an object's field management,
+rather than a user's last applied state. This means that as a side effect of
+using Server-Side Apply, information about which field manager manages each
+field in an object also becomes available.
+A consequence of the conflict detection and resolution implemented by Server-Side
+Apply is that an applier always has up to date field values in their local
+state. If they don't, they get a conflict the next time they apply. Any of the
+three options to resolve conflicts results in the applied configuration being an
+up to date subset of the object on the server's fields.
+This is different from Client-Side Apply, where outdated values which have been
+overwritten by other users are left in an applier's local config. These values
+only become accurate when the user updates that specific field, if ever, and an
+applier has no way of knowing whether their next apply will overwrite other
+users' changes.
+Another difference is that an applier using Client-Side Apply is unable to
+change the API version they are using, but Server-Side Apply supports this use
+case.
+Migration between client-side and server-side apply
+Upgrading from client-side apply to server-side apply
+Client-side apply users who manage a resource with 
+kubectl apply
+ can start
+using server-side apply with the following flag.
+kubectl apply --server-side 
+[
+--dry-run
+=
+server
+]
+
+
+By default, field management of the object transfers from client-side apply to
+kubectl server-side apply, without encountering conflicts.
+Caution:
+Keep the 
+last-applied-configuration
+ annotation up to date.
+The annotation infers client-side applies managed fields.
+Any fields not managed by client-side apply raise conflicts.
+For example, if you used 
+kubectl scale
+ to update the replicas field after
+client-side apply, then this field is not owned by client-side apply and
+creates conflicts on 
+kubectl apply --server-side
+.
+This behavior applies to server-side apply with the 
+kubectl
+ field manager.
+As an exception, you can opt-out of this behavior by specifying a different,
+non-default field manager, as seen in the following example. The default field
+manager for kubectl server-side apply is 
+kubectl
+.
+kubectl apply --server-side --field-manager
+=
+my-manager 
+[
+--dry-run
+=
+server
+]
+
+
+Downgrading from server-side apply to client-side apply
+If you manage a resource with 
+kubectl apply --server-side
+,
+you can downgrade to client-side apply directly with 
+kubectl apply
+.
+Downgrading works because kubectl Server-Side Apply keeps the
+
+last-applied-configuration
+ annotation up-to-date if you use
+
+kubectl apply
+.
+This behavior applies to Server-Side Apply with the 
+kubectl
+ field manager.
+As an exception, you can opt-out of this behavior by specifying a different,
+non-default field manager, as seen in the following example. The default field
+manager for kubectl server-side apply is 
+kubectl
+.
+kubectl apply --server-side --field-manager
+=
+my-manager 
+[
+--dry-run
+=
+server
+]
+
+
+API implementation
+The 
+PATCH
+ verb (for an object that supports Server-Side Apply) accepts the
+unofficial 
+application/apply-patch+yaml
+ content type. Users of Server-Side
+Apply can send partially specified objects as YAML as the body of a 
+PATCH
+ request
+to the URI of a resource. When applying a configuration, you should always include all the
+fields that are important to the outcome (such as a desired state) that you want to define.
+All JSON messages are valid YAML. Therefore, in addition to using YAML request bodies for Server-Side Apply requests, you can also use JSON request bodies, as they are also valid YAML.
+In either case, use the media type 
+application/apply-patch+yaml
+ for the HTTP request.
+Access control and permissions
+Since Server-Side Apply is a type of 
+PATCH
+, a principal (such as a Role for Kubernetes
+
+RBAC
+) requires the 
+patch
+ permission to
+edit existing resources, and also needs the 
+create
+ verb permission in order to create
+new resources with Server-Side Apply.
+Clearing 
+managedFields
+It is possible to strip all 
+managedFields
+ from an object by overwriting them
+using a 
+patch
+ (JSON Merge Patch, Strategic Merge Patch, JSON Patch), or
+through an 
+update
+ (HTTP 
+PUT
+); in other words, through every write operation
+other than 
+apply
+. This can be done by overwriting the 
+managedFields
+ field
+with an empty entry. Two examples are:
+PATCH /api/v1/namespaces/default/configmaps/example-cm
+
+Accept: application/json
+
+Content-Type: application/merge-patch+json
+
+
+
+{
+
+  "metadata": {
+
+    "managedFields": [
+
+      {}
+
+    ]
+
+  }
+
+}
+
+PATCH /api/v1/namespaces/default/configmaps/example-cm
+
+Accept: application/json
+
+Content-Type: application/json-patch+json
+
+If-Match: 1234567890123456789
+
+
+
+[{"op": "replace", "path": "/metadata/managedFields", "value": [{}]}]
+
+This will overwrite the 
+managedFields
+ with a list containing a single empty
+entry that then results in the 
+managedFields
+ being stripped entirely from the
+object. Note that setting the 
+managedFields
+ to an empty list will not
+reset the field. This is on purpose, so 
+managedFields
+ never get stripped by
+clients not aware of the field.
+In cases where the reset operation is combined with changes to other fields
+than the 
+managedFields
+, this will result in the 
+managedFields
+ being reset
+first and the other changes being processed afterwards. As a result the
+applier takes ownership of any fields updated in the same request.
+Note:
+Server-Side Apply does not correctly track ownership on
+sub-resources that don't receive the resource object type. If you are
+using Server-Side Apply with such a sub-resource, the changed fields
+may not be tracked.
+What's next
+You can read about 
+managedFields
+ within the Kubernetes API reference for the
+
+metadata
+
+top level field.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified March 15, 2026 at 3:21 PM PST: 
+fix: replace deprecated argument `--cpu-percent` with `--cpu` (af93a0a732)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

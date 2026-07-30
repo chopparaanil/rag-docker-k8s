@@ -1,0 +1,3871 @@
+Authorization | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+한국어 (Korean)
+
+
+Português (Portuguese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Authorization
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Authorization verdicts
+Request attributes used in authorization
+Request verbs and authorization
+Authorization context
+Authorization modes
+The system:masters group
+Authorization mode configuration
+Configuring the API Server using an authorization config file
+Command line authorization mode configuration
+Privilege escalation via workload creation or edits
+Escalation paths
+Checking API access
+What's next
+Kubernetes Documentation
+Reference
+API Access Control
+Authorization
+Authorization
+Details of Kubernetes authorization mechanisms and supported authorization modes.
+Kubernetes authorization takes place following
+
+authentication
+.
+Usually, a client making a request must be authenticated (logged in) before its
+request can be allowed; however, Kubernetes also allows anonymous requests in
+some circumstances.
+For an overview of how authorization fits into the wider context of API access
+control, read
+
+Controlling Access to the Kubernetes API
+.
+Authorization verdicts
+Kubernetes authorization of API requests takes place within the API server.
+The API server evaluates all of the request attributes against all policies,
+potentially also consulting external services, and then allows or denies the
+request.
+All parts of an API request must be allowed by some authorization
+mechanism in order to proceed. In other words: access is denied by default.
+Note:
+Access controls and policies that
+depend on specific fields of specific kinds of objects are handled by
+
+admission controllers
+.
+Kubernetes admission control happens after authorization has completed (and,
+therefore, only when the authorization decision was to allow the request).
+When multiple 
+authorization modules
+ are configured,
+each is checked in sequence.
+If any authorizer 
+approves
+ or 
+denies
+ a request, that decision is immediately
+returned and no other authorizer is consulted. If all modules have 
+no opinion
+
+on the request, then the request is denied. An overall deny verdict means that
+the API server rejects the request and responds with an HTTP 403 (Forbidden)
+status.
+Request attributes used in authorization
+Kubernetes reviews only the following API request attributes:
+user
+ - The 
+user
+ string provided during authentication.
+group
+ - The list of group names to which the authenticated user belongs.
+extra
+ - A map of arbitrary string keys to string values, provided by the authentication layer.
+API
+ - Indicates whether the request is for an API resource.
+Request path
+ - Path to miscellaneous non-resource endpoints like 
+/api
+ or 
+/healthz
+.
+API request verb
+ - API verbs like 
+get
+, 
+list
+, 
+create
+, 
+update
+, 
+patch
+, 
+watch
+, 
+delete
+, and 
+deletecollection
+ are used for resource requests. To determine the request verb for a resource API endpoint, see 
+request verbs and authorization
+.
+HTTP request verb
+ - Lowercased HTTP methods like 
+get
+, 
+post
+, 
+put
+, and 
+delete
+ are used for non-resource requests.
+Resource
+ - The ID or name of the resource that is being accessed (for resource requests only) -- For resource requests using 
+get
+, 
+update
+, 
+patch
+, and 
+delete
+ verbs, you must provide the resource name.
+Subresource
+ - The subresource that is being accessed (for resource requests only). This can be a standard subresource (for example, 
+status
+ or 
+scale
+) or a synthetic subresource used for fine-grained authorization.
+Namespace
+ - The namespace of the object that is being accessed (for namespaced resource requests only).
+API group
+ - The 
+API Group
+ being accessed (for resource requests only). An empty string designates the 
+core
+ 
+API group
+.
+Request verbs and authorization
+Non-resource requests
+Requests to endpoints other than 
+/api/v1/...
+ or 
+/apis/<group>/<version>/...
+
+are considered 
+non-resource requests
+, and use the lower-cased HTTP method of the request as the verb.
+For example, making a 
+GET
+ request using HTTP to endpoints such as 
+/api
+ or 
+/healthz
+ would use 
+get
+ as the verb.
+Resource requests
+To determine the request verb for a resource API endpoint, Kubernetes maps the HTTP verb
+used and considers whether or not the request acts on an individual resource or on a
+collection of resources:
+HTTP verb
+request verb
+POST
+create
+GET
+, 
+HEAD
+get
+ (for individual resources), 
+list
+ (for collections, including full object content), 
+watch
+ (for watching an individual resource or collection of resources)
+PUT
+update
+PATCH
+patch
+DELETE
+delete
+ (for individual resources), 
+deletecollection
+ (for collections)
+Caution:
++The 
+get
+, 
+list
+ and 
+watch
+ verbs can all return the full details of a resource. In
+terms of access to the returned data they are equivalent. For example, 
+list
+ on 
+secrets
+
+will reveal the 
+data
+ attributes of any returned resources.
+Kubernetes sometimes checks authorization for additional permissions using specialized verbs. For example:
+Special cases of 
+authentication
+impersonate
+ verb on 
+users
+, 
+groups
+, and 
+serviceaccounts
+ in the core API group, and the 
+userextras
+ in the 
+authentication.k8s.io
+ API group.
+Authorization of CertificateSigningRequests
+approve
+ verb for CertificateSigningRequests, and 
+update
+ for revisions to existing approvals
+RBAC
+bind
+ and 
+escalate
+ verbs on 
+roles
+ and 
+clusterroles
+ resources in the 
+rbac.authorization.k8s.io
+ API group.
+Dynamic Resource Allocation (DRA)
+Synthetic subresources such as 
+resourceclaims/binding
+ and 
+resourceclaims/driver
+ in the 
+resource.k8s.io
+ API group.
+Node-aware verbs such as 
+associated-node:update
+, 
+associated-node:patch
+, 
+arbitrary-node:update
+, and 
+arbitrary-node:patch
+ for DRA driver 
+resourceclaims/status
+ updates.
+Authorization context
+Kubernetes expects attributes that are common to REST API requests. This means
+that Kubernetes authorization works with existing organization-wide or
+cloud-provider-wide access control systems which may handle other APIs besides
+the Kubernetes API.
+Authorization modes
+The Kubernetes API server may authorize a request using one of several authorization modes:
+AlwaysAllow
+This mode allows all requests, which brings 
+security risks
+. Use this authorization mode only if you do not require authorization for your API requests (for example, for testing).
+AlwaysDeny
+This mode blocks all requests. Use this authorization mode only for testing.
+ABAC
+ (
+attribute-based access control
+)
+Kubernetes ABAC mode defines an access control paradigm whereby access rights are granted to users through the use of policies which combine attributes together. The policies can use any type of attributes (user attributes, resource attributes, object, environment attributes, etc).
+RBAC
+ (
+role-based access control
+)
+Kubernetes RBAC is a method of regulating access to computer or network resources based on the roles of individual users within an enterprise. In this context, access is the ability of an individual user to perform a specific task, such as view, create, or modify a file.
+In this mode, Kubernetes uses the 
+rbac.authorization.k8s.io
+ API group to drive authorization decisions, allowing you to dynamically configure permission policies through the Kubernetes API.
+Node
+A special-purpose authorization mode that grants permissions to kubelets based on the pods they are scheduled to run. To learn more about the Node authorization mode, see 
+Node Authorization
+.
+Webhook
+Kubernetes 
+webhook mode
+ for authorization makes a synchronous HTTP callout, blocking the request until the remote HTTP service responds to the query.You can write your own software to handle the callout, or use solutions from the ecosystem.
+Warning:
+Enabling the 
+AlwaysAllow
+ mode bypasses authorization; do not use this on a cluster where
+you do not trust 
+all
+ potential API clients, including the workloads that you run.
+Authorization mechanisms typically return either a 
+deny
+ or 
+no opinion
+ result; see
+
+authorization verdicts
+ for more on this.
+Activating the 
+AlwaysAllow
+ means that if all other authorizers return “no opinion”,
+the request is allowed. For example, 
+--authorization-mode=AlwaysAllow,RBAC
+ has the
+same effect as 
+--authorization-mode=AlwaysAllow
+ because Kubernetes RBAC does not
+provide negative (deny) access rules.
+You should not use the 
+AlwaysAllow
+ mode on a Kubernetes cluster where the API server
+is reachable from the public internet.
+The system:masters group
+The 
+system:masters
+ group is a built-in Kubernetes group that grants unrestricted
+access to the API server. Any user assigned to this group has full cluster administrator
+privileges, bypassing any authorization restrictions imposed by the RBAC or Webhook mechanisms.
+
+Avoid adding users
+
+to this group. If you do need to grant a user cluster-admin rights, you can create a
+
+ClusterRoleBinding
+
+to the built-in 
+cluster-admin
+ ClusterRole.
+Authorization mode configuration
+You can configure the Kubernetes API server's authorizer chain using either
+a 
+configuration file
+ only or
+
+command line arguments
+.
+You have to pick one of the two configuration approaches; setting both 
+--authorization-config
+
+path and configuring an authorization webhook using the 
+--authorization-mode
+ and
+
+--authorization-webhook-*
+ command line arguments is not allowed.
+If you try this, the API server reports an error message during startup, then exits immediately.
+Configuring the API Server using an authorization config file
+FEATURE STATE:
+
+
+Kubernetes v1.32 [stable]
+(enabled by default)
+Kubernetes lets you configure authorization chains that can include multiple
+webhooks. The authorization items in that chain can have well-defined parameters that validate
+requests in a particular order, offering you fine-grained control, such as explicit Deny on failures.
+The configuration file approach even allows you to specify
+
+CEL
+ rules to pre-filter requests before they are dispatched
+to webhooks, helping you to prevent unnecessary invocations. The API server also automatically
+reloads the authorizer chain when the configuration file is modified.
+You specify the path to the authorization configuration using the
+
+--authorization-config
+ command line argument.
+If you want to use command line arguments instead of a configuration file, that's also a valid and supported approach.
+Some authorization capabilities (for example: multiple webhooks, webhook failure policy, and pre-filter rules)
+are only available if you use an authorization configuration file.
+Example configuration
+---
+
+
+#
+
+
+# DO NOT USE THE CONFIG AS IS. THIS IS AN EXAMPLE.
+
+
+#
+
+
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+kind
+:
+ 
+AuthorizationConfiguration
+
+
+authorizers
+:
+
+
+  
+- 
+type
+:
+ 
+Webhook
+
+
+    
+# Name used to describe the authorizer
+
+
+    
+# This is explicitly used in monitoring machinery for metrics
+
+
+    
+# Note:
+
+
+    
+#   - Validation for this field is similar to how K8s labels are validated today.
+
+
+    
+# Required, with no default
+
+
+    
+name
+:
+ 
+webhook
+
+
+    
+webhook
+:
+
+
+      
+# The duration to cache 'authorized' responses from the webhook
+
+
+      
+# authorizer.
+
+
+      
+# Same as setting `--authorization-webhook-cache-authorized-ttl` flag
+
+
+      
+# Default: 5m0s
+
+
+      
+authorizedTTL
+:
+ 
+30s
+
+
+      
+# If set to false, 'authorized' responses from the webhook are not cached
+
+
+      
+# and the specified authorizedTTL is ignored/has no effect.
+
+
+      
+# Same as setting `--authorization-webhook-cache-authorized-ttl` flag to `0`.
+
+
+      
+# Note: Setting authorizedTTL to `0` results in its default value being used.
+
+
+      
+# Default: true
+
+
+      
+cacheAuthorizedRequests
+:
+ 
+true
+
+
+      
+# The duration to cache 'unauthorized' responses from the webhook
+
+
+      
+# authorizer.
+
+
+      
+# Same as setting `--authorization-webhook-cache-unauthorized-ttl` flag
+
+
+      
+# Default: 30s
+
+
+      
+unauthorizedTTL
+:
+ 
+30s
+
+
+      
+# If set to false, 'unauthorized' responses from the webhook are not cached
+
+
+      
+# and the specified unauthorizedTTL is ignored/has no effect.
+
+
+      
+# Same as setting `--authorization-webhook-cache-unauthorized-ttl` flag to `0`.
+
+
+      
+# Note: Setting unauthorizedTTL to `0` results in its default value being used.
+
+
+      
+# Default: true
+
+
+      
+cacheUnauthorizedRequests
+:
+ 
+true
+
+
+      
+# Timeout for the webhook request
+
+
+      
+# Maximum allowed is 30s.
+
+
+      
+# Required, with no default.
+
+
+      
+timeout
+:
+ 
+3s
+
+
+      
+# The API version of the authorization.k8s.io SubjectAccessReview to
+
+
+      
+# send to and expect from the webhook.
+
+
+      
+# Same as setting `--authorization-webhook-version` flag
+
+
+      
+# Required, with no default
+
+
+      
+# Valid values: v1beta1, v1
+
+
+      
+subjectAccessReviewVersion
+:
+ 
+v1
+
+
+      
+# MatchConditionSubjectAccessReviewVersion specifies the SubjectAccessReview
+
+
+      
+# version the CEL expressions are evaluated against
+
+
+      
+# Valid values: v1
+
+
+      
+# Required, no default value
+
+
+      
+matchConditionSubjectAccessReviewVersion
+:
+ 
+v1
+
+
+      
+# Controls the authorization decision when a webhook request fails to
+
+
+      
+# complete or returns a malformed response or errors evaluating
+
+
+      
+# matchConditions.
+
+
+      
+# Valid values:
+
+
+      
+#   - NoOpinion: continue to subsequent authorizers to see if one of
+
+
+      
+#     them allows the request
+
+
+      
+#   - Deny: reject the request without consulting subsequent authorizers
+
+
+      
+# Required, with no default.
+
+
+      
+failurePolicy
+:
+ 
+Deny
+
+
+      
+connectionInfo
+:
+
+
+        
+# Controls how the webhook should communicate with the server.
+
+
+        
+# Valid values:
+
+
+        
+# - KubeConfigFile: use the file specified in kubeConfigFile to locate the
+
+
+        
+#   server.
+
+
+        
+# - InClusterConfig: use the in-cluster configuration to call the
+
+
+        
+#   SubjectAccessReview API hosted by kube-apiserver. This mode is not
+
+
+        
+#   allowed for kube-apiserver.
+
+
+        
+type
+:
+ 
+KubeConfigFile
+
+
+        
+# Path to KubeConfigFile for connection info
+
+
+        
+# Required, if connectionInfo.Type is KubeConfigFile
+
+
+        
+kubeConfigFile
+:
+ 
+/kube-system-authz-webhook.yaml
+
+
+        
+# matchConditions is a list of conditions that must be met for a request to be sent to this
+
+
+        
+# webhook. An empty list of matchConditions matches all requests.
+
+
+        
+# There are a maximum of 64 match conditions allowed.
+
+
+        
+#
+
+
+        
+# The exact matching logic is (in order):
+
+
+        
+#   1. If at least one matchCondition evaluates to FALSE, then the webhook is skipped.
+
+
+        
+#   2. If ALL matchConditions evaluate to TRUE, then the webhook is called.
+
+
+        
+#   3. If at least one matchCondition evaluates to an error (but none are FALSE):
+
+
+        
+#      - If failurePolicy=Deny, then the webhook rejects the request
+
+
+        
+#      - If failurePolicy=NoOpinion, then the error is ignored and the webhook is skipped
+
+
+      
+matchConditions
+:
+
+
+      
+# expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+
+
+      
+# CEL expressions have access to the contents of the SubjectAccessReview in v1 version.
+
+
+      
+# If version specified by subjectAccessReviewVersion in the request variable is v1beta1,
+
+
+      
+# the contents would be converted to the v1 version before evaluating the CEL expression.
+
+
+      
+#
+
+
+      
+# Documentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/
+
+
+      
+#
+
+
+      
+# only send resource requests to the webhook
+
+
+      
+- 
+expression
+:
+ 
+has(request.resourceAttributes)
+
+
+      
+# only intercept requests to kube-system
+
+
+      
+- 
+expression
+:
+ 
+request.resourceAttributes.namespace == 'kube-system'
+
+
+      
+# don't intercept requests from kube-system service accounts
+
+
+      
+- 
+expression
+:
+ 
+"!('system:serviceaccounts:kube-system' in request.groups)"
+
+
+  
+- 
+type
+:
+ 
+Node
+
+
+    
+name
+:
+ 
+node
+
+
+  
+- 
+type
+:
+ 
+RBAC
+
+
+    
+name
+:
+ 
+rbac
+
+
+  
+- 
+type
+:
+ 
+Webhook
+
+
+    
+name
+:
+ 
+in-cluster-authorizer
+
+
+    
+webhook
+:
+
+
+      
+authorizedTTL
+:
+ 
+5m
+
+
+      
+unauthorizedTTL
+:
+ 
+30s
+
+
+      
+timeout
+:
+ 
+3s
+
+
+      
+subjectAccessReviewVersion
+:
+ 
+v1
+
+
+      
+failurePolicy
+:
+ 
+NoOpinion
+
+
+      
+connectionInfo
+:
+
+
+        
+type
+:
+ 
+InClusterConfig
+When configuring the authorizer chain using a configuration file, make sure all the
+control plane nodes have the same file contents. Take a note of the API server
+configuration when upgrading / downgrading your clusters. For example, if upgrading
+from Kubernetes 1.35 to Kubernetes 1.36,
+you would need to make sure the config file is in a format that Kubernetes 1.36
+can understand, before you upgrade the cluster. If you downgrade to 1.35,
+you would need to set the configuration appropriately.
+Authorization configuration and reloads
+Kubernetes reloads the authorization configuration file when the API server observes a change
+to the file, and also on a 60 second schedule if no change events were observed.
+Note:
+You must ensure that all non-webhook authorizer types remain unchanged in the file on reload.
+A reload 
+must not
+ add or remove Node or RBAC authorizers (they can be reordered,
+but cannot be added or removed).
+Command line authorization mode configuration
+You can use the following modes:
+--authorization-mode=ABAC
+ (Attribute-based access control mode)
+--authorization-mode=RBAC
+ (Role-based access control mode)
+--authorization-mode=Node
+ (Node authorizer)
+--authorization-mode=Webhook
+ (Webhook authorization mode)
+--authorization-mode=AlwaysAllow
+ (always allows requests; carries 
+security risks
+)
+--authorization-mode=AlwaysDeny
+ (always denies requests)
+You can choose more than one authorization mode; for example:
+
+--authorization-mode=Node,RBAC,Webhook
+Kubernetes checks authorization modules based on the order that you specify them
+on the API server's command line, so an earlier module has higher priority to allow
+or deny a request.
+You cannot combine the 
+--authorization-mode
+ command line argument with the
+
+--authorization-config
+ command line argument used for
+
+configuring authorization using a local file
+.
+For more information on command line arguments to the API server, read the
+
+kube-apiserver
+ reference
+.
+Privilege escalation via workload creation or edits
+Users who can create/edit pods in a namespace, either directly or through an object that
+enables indirect 
+workload management
+, may be
+able to escalate their privileges in that namespace. The potential routes to privilege
+escalation include Kubernetes 
+API extensions
+
+and their associated 
+controllers
+.
+Caution:
+As a cluster administrator, use caution when granting access to create or edit workloads.
+Some details of how these can be misused are documented in
+
+escalation paths
+.
+Escalation paths
+There are different ways that an attacker or untrustworthy user could gain additional
+privilege within a namespace, if you allow them to run arbitrary Pods in that namespace:
+Mounting arbitrary Secrets in that namespace
+Can be used to access confidential information meant for other workloads
+Can be used to obtain a more privileged ServiceAccount's service account token
+Using arbitrary ServiceAccounts in that namespace
+Can perform Kubernetes API actions as another workload (impersonation)
+Can perform any privileged actions that ServiceAccount has
+Mounting or using ConfigMaps meant for other workloads in that namespace
+Can be used to obtain information meant for other workloads, such as database host names.
+Mounting volumes meant for other workloads in that namespace
+Can be used to obtain information meant for other workloads, and change it.
+Caution:
+As a system administrator, you should be cautious when deploying CustomResourceDefinitions
+that let users make changes to the above areas. These may open privilege escalations paths.
+Consider the consequences of this kind of change when deciding on your authorization controls.
+Checking API access
+kubectl
+ provides the 
+auth can-i
+ subcommand for quickly querying the API authorization layer.
+The command uses the 
+SelfSubjectAccessReview
+ API to determine if the current user can perform
+a given action, and works regardless of the authorization mode used.
+kubectl auth can-i create deployments --namespace dev
+
+The output is similar to this:
+yes
+
+kubectl auth can-i create deployments --namespace prod
+
+The output is similar to this:
+no
+
+Administrators can combine this with 
+user impersonation
+
+to determine what action other users can perform.
+kubectl auth can-i list secrets --namespace dev --as dave
+
+The output is similar to this:
+no
+
+Similarly, to check whether a ServiceAccount named 
+dev-sa
+ in Namespace 
+dev
+
+can list Pods in the Namespace 
+target
+:
+kubectl auth can-i list pods 
+\
+
+    --namespace target 
+\
+
+    --as system:serviceaccount:dev:dev-sa
+
+The output is similar to this:
+yes
+
+SelfSubjectAccessReview is part of the 
+authorization.k8s.io
+ API group, which
+exposes the API server authorization to external services. Other resources in
+this group include:
+SubjectAccessReview
+Access review for any user, not only the current one. Useful for delegating authorization decisions to the API server. For example, the kubelet and extension API servers use this to determine user access to their own APIs.
+LocalSubjectAccessReview
+Like SubjectAccessReview but restricted to a specific namespace.
+SelfSubjectRulesReview
+A review which returns the set of actions a user can perform within a namespace. Useful for users to quickly summarize their own access, or for UIs to hide/show actions.
+These APIs can be queried by creating normal Kubernetes resources, where the response 
+status
+
+field of the returned object is the result of the query. For example:
+kubectl create -f - -o yaml 
+<< EOF
+
+apiVersion: authorization.k8s.io/v1
+
+kind: SelfSubjectAccessReview
+
+spec:
+
+  resourceAttributes:
+
+    group: apps
+
+    resource: deployments
+
+    verb: create
+
+    namespace: dev
+
+EOF
+
+
+The generated SelfSubjectAccessReview is similar to:
+apiVersion
+:
+ 
+authorization.k8s.io/v1
+
+
+kind
+:
+ 
+SelfSubjectAccessReview
+
+
+metadata
+:
+
+
+  
+creationTimestamp
+:
+ 
+null
+
+
+spec
+:
+
+
+  
+resourceAttributes
+:
+
+
+    
+group
+:
+ 
+apps
+
+
+    
+resource
+:
+ 
+deployments
+
+
+    
+namespace
+:
+ 
+dev
+
+
+    
+verb
+:
+ 
+create
+
+
+status
+:
+
+
+  
+allowed
+:
+ 
+true
+
+
+  
+denied
+:
+ 
+false
+What's next
+To learn more about Authentication, see 
+Authentication
+.
+For an overview, read 
+Controlling Access to the Kubernetes API
+.
+To learn more about Admission Control, see 
+Using Admission Controllers
+.
+Read more about 
+Common Expression Language in Kubernetes
+.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 07, 2026 at 4:30 PM PST: 
+update with tim suggestions (8df4df1ffa)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

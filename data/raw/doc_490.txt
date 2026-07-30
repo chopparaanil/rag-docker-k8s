@@ -1,0 +1,4943 @@
+StatefulSet Basics | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+StatefulSet Basics
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Before you begin
+Objectives
+Creating a StatefulSet
+Ordered Pod creation
+Pods in a StatefulSet
+Examining the Pod's ordinal index
+Using stable network identities
+Writing to stable storage
+Scaling a StatefulSet
+Scaling up
+Scaling down
+Ordered Pod termination
+Updating StatefulSets
+RollingUpdate
+OnDelete
+Deleting StatefulSets
+Non-cascading delete
+Cascading delete
+Pod management policy
+OrderedReady Pod management
+Parallel Pod management
+Cleaning up
+Kubernetes Documentation
+Tutorials
+Stateful Applications
+StatefulSet Basics
+StatefulSet Basics
+This tutorial provides an introduction to managing applications with
+
+StatefulSets
+.
+It demonstrates how to create, delete, scale, and update the Pods of StatefulSets.
+Before you begin
+Before you begin this tutorial, you should familiarize yourself with the
+following Kubernetes concepts:
+Pods
+Cluster DNS
+Headless Services
+PersistentVolumes
+PersistentVolumes Provisioning
+The 
+kubectl
+ command line tool
+You need to have a Kubernetes cluster, and the kubectl command-line tool must
+be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a
+cluster, you can create one by using
+
+minikube
+
+or you can use one of these Kubernetes playgrounds:
+iximiuz Labs
+Killercoda
+KodeKloud
+You should configure 
+kubectl
+ to use a context that uses the 
+default
+
+namespace.
+If you are using an existing cluster, make sure that it's OK to use that
+cluster's default namespace to practice. Ideally, practice in a cluster
+that doesn't run any real workloads.
+It's also useful to read the concept page about 
+StatefulSets
+.
+Note:
+This tutorial assumes that your cluster is configured to dynamically provision
+PersistentVolumes. You'll also need to have a 
+default StorageClass
+.
+If your cluster is not configured to provision storage dynamically, you
+will have to manually provision two 1 GiB volumes prior to starting this
+tutorial and
+set up your cluster so that those PersistentVolumes map to the
+PersistentVolumeClaim templates that the StatefulSet defines.
+Objectives
+StatefulSets are intended to be used with stateful applications and distributed
+systems. However, the administration of stateful applications and
+distributed systems on Kubernetes is a broad, complex topic. In order to
+demonstrate the basic features of a StatefulSet, and not to conflate the former
+topic with the latter, you will deploy a simple web application using a StatefulSet.
+After this tutorial, you will be familiar with the following.
+How to create a StatefulSet
+How a StatefulSet manages its Pods
+How to delete a StatefulSet
+How to scale a StatefulSet
+How to update a StatefulSet's Pods
+Creating a StatefulSet
+Begin by creating a StatefulSet (and the Service that it relies upon) using
+the example below. It is similar to the example presented in the
+
+StatefulSets
+ concept.
+It creates a 
+headless Service
+,
+
+nginx
+, to publish the IP addresses of Pods in the StatefulSet, 
+web
+.
+application/web/web.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Service
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx
+
+
+  
+labels
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+spec
+:
+
+
+  
+ports
+:
+
+
+  
+- 
+port
+:
+ 
+80
+
+
+    
+name
+:
+ 
+web
+
+
+  
+clusterIP
+:
+ 
+None
+
+
+  
+selector
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+---
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+StatefulSet
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+web
+
+
+spec
+:
+
+
+  
+serviceName
+:
+ 
+"nginx"
+
+
+  
+replicas
+:
+ 
+2
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+registry.k8s.io/nginx-slim:0.21
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+          
+name
+:
+ 
+web
+
+
+        
+volumeMounts
+:
+
+
+        
+- 
+name
+:
+ 
+www
+
+
+          
+mountPath
+:
+ 
+/usr/share/nginx/html
+
+
+  
+volumeClaimTemplates
+:
+
+
+  
+- 
+metadata
+:
+
+
+      
+name
+:
+ 
+www
+
+
+    
+spec
+:
+
+
+      
+accessModes
+:
+ 
+[
+ 
+"ReadWriteOnce"
+ 
+]
+
+
+      
+resources
+:
+
+
+        
+requests
+:
+
+
+          
+storage
+:
+ 
+1Gi
+
+
+
+
+You will need to use at least two terminal windows. In the first terminal, use
+
+kubectl get
+ to 
+watch
+ the creation
+of the StatefulSet's Pods.
+# use this terminal to run commands that specify --watch
+
+
+# end this watch when you are asked to start a new watch
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+In the second terminal, use
+
+kubectl apply
+ to create the
+headless Service and StatefulSet:
+kubectl apply -f https://k8s.io/examples/application/web/web.yaml
+
+service/nginx created
+statefulset.apps/web created
+
+The command above creates two Pods, each running an
+
+NGINX
+ webserver. Get the 
+nginx
+ Service...
+kubectl get service nginx
+
+NAME      TYPE         CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+nginx     ClusterIP    None         <none>        80/TCP    12s
+
+...then get the 
+web
+ StatefulSet, to verify that both were created successfully:
+kubectl get statefulset web
+
+NAME   READY   AGE
+web    2/2     37s
+
+Ordered Pod creation
+A StatefulSet defaults to creating its Pods in a strict order.
+For a StatefulSet with 
+n
+ replicas, when Pods are being deployed, they are
+created sequentially, ordered from 
+{0..n-1}
+. Examine the output of the
+
+kubectl get
+ command in the first terminal. Eventually, the output will
+look like the example below.
+# Do not start a new watch;
+
+
+# this should already be running
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     0/1       Pending   0          0s
+web-0     0/1       Pending   0         0s
+web-0     0/1       ContainerCreating   0         0s
+web-0     1/1       Running   0         19s
+web-1     0/1       Pending   0         0s
+web-1     0/1       Pending   0         0s
+web-1     0/1       ContainerCreating   0         0s
+web-1     1/1       Running   0         18s
+
+Notice that the 
+web-1
+ Pod is not launched until the 
+web-0
+ Pod is
+
+Running
+ (see 
+Pod Phase
+)
+and 
+Ready
+ (see 
+type
+ in 
+Pod Conditions
+).
+Later in this tutorial you will practice 
+parallel startup
+.
+Note:
+To configure the integer ordinal assigned to each Pod in a StatefulSet, see
+
+Start ordinal
+.
+Pods in a StatefulSet
+Pods in a StatefulSet have a unique ordinal index and a stable network identity.
+Examining the Pod's ordinal index
+Get the StatefulSet's Pods:
+kubectl get pods -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          1m
+web-1     1/1       Running   0          1m
+
+As mentioned in the 
+StatefulSets
+
+concept, the Pods in a StatefulSet have a sticky, unique identity. This identity
+is based on a unique ordinal index that is assigned to each Pod by the
+StatefulSet 
+controller
+.
+The Pods' names take the form 
+<statefulset name>-<ordinal index>
+.
+Since the 
+web
+ StatefulSet has two replicas, it creates two Pods, 
+web-0
+ and 
+web-1
+.
+Using stable network identities
+Each Pod has a stable hostname based on its ordinal index. Use
+
+kubectl exec
+ to execute the
+
+hostname
+ command in each Pod:
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ 
+"web-
+$i
+"
+ -- sh -c 
+'hostname'
+; 
+done
+
+
+web-0
+web-1
+
+Use 
+kubectl run
+ to execute
+a container that provides the 
+nslookup
+ command from the 
+dnsutils
+ package.
+Using 
+nslookup
+ on the Pods' hostnames, you can examine their in-cluster DNS
+addresses:
+kubectl run -i --tty --image busybox:1.28 dns-test --restart
+=
+Never --rm
+
+which starts a new shell. In that new shell, run:
+# Run this in the dns-test container shell
+
+
+nslookup web-0.nginx
+
+The output is similar to:
+Server:    10.0.0.10
+Address 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local
+
+Name:      web-0.nginx
+Address 1: 10.244.1.6
+
+nslookup web-1.nginx
+Server:    10.0.0.10
+Address 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local
+
+Name:      web-1.nginx
+Address 1: 10.244.2.6
+
+(and now exit the container shell: 
+exit
+)
+The CNAME of the headless service points to SRV records (one for each Pod that
+is Running and Ready). The SRV records point to A record entries that
+contain the Pods' IP addresses.
+In one terminal, watch the StatefulSet's Pods:
+# Start a new watch
+
+
+# End this watch when you've seen that the delete is finished
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+In a second terminal, use
+
+kubectl delete
+ to delete all
+the Pods in the StatefulSet:
+kubectl delete pod -l 
+app
+=
+nginx
+
+pod "web-0" deleted
+pod "web-1" deleted
+
+Wait for the StatefulSet to restart them, and for both Pods to transition to
+Running and Ready:
+# This should already be running
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     0/1       ContainerCreating   0          0s
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          2s
+web-1     0/1       Pending   0         0s
+web-1     0/1       Pending   0         0s
+web-1     0/1       ContainerCreating   0         0s
+web-1     1/1       Running   0         34s
+
+Use 
+kubectl exec
+ and 
+kubectl run
+ to view the Pods' hostnames and in-cluster
+DNS entries. First, view the Pods' hostnames:
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ web-
+$i
+ -- sh -c 
+'hostname'
+; 
+done
+
+
+web-0
+web-1
+
+then, run:
+kubectl run -i --tty --image busybox:1.28 dns-test --restart
+=
+Never --rm
+
+which starts a new shell.
+In that new shell, run:
+# Run this in the dns-test container shell
+
+
+nslookup web-0.nginx
+
+The output is similar to:
+Server:    10.0.0.10
+Address 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local
+
+Name:      web-0.nginx
+Address 1: 10.244.1.7
+
+nslookup web-1.nginx
+Server:    10.0.0.10
+Address 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local
+
+Name:      web-1.nginx
+Address 1: 10.244.2.8
+
+(and now exit the container shell: 
+exit
+)
+The Pods' ordinals, hostnames, SRV records, and A record names have not changed,
+but the IP addresses associated with the Pods may have changed. In the cluster
+used for this tutorial, they have. This is why it is important not to configure
+other applications to connect to Pods in a StatefulSet by the IP address
+of a particular Pod (it is OK to connect to Pods by resolving their hostname).
+Discovery for specific Pods in a StatefulSet
+If you need to find and connect to the active members of a StatefulSet, you
+should query the CNAME of the headless Service
+(
+nginx.default.svc.cluster.local
+). The SRV records associated with the
+CNAME will contain only the Pods in the StatefulSet that are Running and
+Ready.
+If your application already implements connection logic that tests for
+liveness and readiness, you can use the SRV records of the Pods (
+
+web-0.nginx.default.svc.cluster.local
+,
+
+web-1.nginx.default.svc.cluster.local
+), as they are stable, and your
+application will be able to discover the Pods' addresses when they transition
+to Running and Ready.
+If your application wants to find any healthy Pod in a StatefulSet,
+and therefore does not need to track each specific Pod,
+you could also connect to the IP address of a 
+type: ClusterIP
+ Service,
+backed by the Pods in that StatefulSet. You can use the same Service that
+tracks the StatefulSet (specified in the 
+serviceName
+ of the StatefulSet)
+or a separate Service that selects the right set of Pods.
+Writing to stable storage
+Get the PersistentVolumeClaims for 
+web-0
+ and 
+web-1
+:
+kubectl get pvc -l 
+app
+=
+nginx
+
+The output is similar to:
+NAME        STATUS    VOLUME                                     CAPACITY   ACCESSMODES   AGE
+www-web-0   Bound     pvc-15c268c7-b507-11e6-932f-42010a800002   1Gi        RWO           48s
+www-web-1   Bound     pvc-15c79307-b507-11e6-932f-42010a800002   1Gi        RWO           48s
+
+The StatefulSet controller created two
+
+PersistentVolumeClaims
+
+that are bound to two
+
+PersistentVolumes
+.
+As the cluster used in this tutorial is configured to dynamically provision PersistentVolumes,
+the PersistentVolumes were created and bound automatically.
+The NGINX webserver, by default, serves an index file from
+
+/usr/share/nginx/html/index.html
+. The 
+volumeMounts
+ field in the
+StatefulSet's 
+spec
+ ensures that the 
+/usr/share/nginx/html
+ directory is
+backed by a PersistentVolume.
+Write the Pods' hostnames to their 
+index.html
+ files and verify that the NGINX
+webservers serve the hostnames:
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ 
+"web-
+$i
+"
+ -- sh -c 
+'echo "$(hostname)" > /usr/share/nginx/html/index.html'
+; 
+done
+
+
+
+
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ -i -t 
+"web-
+$i
+"
+ -- curl http://localhost/; 
+done
+
+
+web-0
+web-1
+
+Note:
+If you instead see 
+403 Forbidden
+ responses for the above curl command,
+you will need to fix the permissions of the directory mounted by the 
+volumeMounts
+
+(due to a 
+bug when using hostPath volumes
+),
+by running:
+for i in 0 1; do kubectl exec web-$i -- chmod 755 /usr/share/nginx/html; done
+before retrying the 
+curl
+ command above.
+In one terminal, watch the StatefulSet's Pods:
+# End this watch when you've reached the end of the section.
+
+
+# At the start of "Scaling a StatefulSet" you'll start a new watch.
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+In a second terminal, delete all of the StatefulSet's Pods:
+kubectl delete pod -l 
+app
+=
+nginx
+
+pod "web-0" deleted
+pod "web-1" deleted
+
+Examine the output of the 
+kubectl get
+ command in the first terminal, and wait
+for all of the Pods to transition to Running and Ready.
+# This should already be running
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     0/1       ContainerCreating   0          0s
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          2s
+web-1     0/1       Pending   0         0s
+web-1     0/1       Pending   0         0s
+web-1     0/1       ContainerCreating   0         0s
+web-1     1/1       Running   0         34s
+
+Verify the web servers continue to serve their hostnames:
+for i in 0 1; do kubectl exec -i -t "web-$i" -- curl http://localhost/; done
+
+web-0
+web-1
+
+Even though 
+web-0
+ and 
+web-1
+ were rescheduled, they continue to serve their
+hostnames because the PersistentVolumes associated with their
+PersistentVolumeClaims are remounted to their 
+volumeMounts
+. No matter what
+node 
+web-0
+and 
+web-1
+ are scheduled on, their PersistentVolumes will be
+mounted to the appropriate mount points.
+Scaling a StatefulSet
+Scaling a StatefulSet refers to increasing or decreasing the number of replicas
+(horizontal scaling).
+This is accomplished by updating the 
+replicas
+ field. You can use either
+
+kubectl scale
+ or
+
+kubectl patch
+ to scale a StatefulSet.
+Scaling up
+Scaling up means adding more replicas.
+Provided that your app is able to distribute work across the StatefulSet, the new
+larger set of Pods can perform more of that work.
+In one terminal window, watch the Pods in the StatefulSet:
+# If you already have a watch running, you can continue using that.
+
+
+# Otherwise, start one.
+
+
+# End this watch when there are 5 healthy Pods for the StatefulSet
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+In another terminal window, use 
+kubectl scale
+ to scale the number of replicas
+to 5:
+kubectl scale sts web --replicas
+=
+5
+
+
+statefulset.apps/web scaled
+
+Examine the output of the 
+kubectl get
+ command in the first terminal, and wait
+for the three additional Pods to transition to Running and Ready.
+# This should already be running
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          2h
+web-1     1/1       Running   0          2h
+NAME      READY     STATUS    RESTARTS   AGE
+web-2     0/1       Pending   0          0s
+web-2     0/1       Pending   0         0s
+web-2     0/1       ContainerCreating   0         0s
+web-2     1/1       Running   0         19s
+web-3     0/1       Pending   0         0s
+web-3     0/1       Pending   0         0s
+web-3     0/1       ContainerCreating   0         0s
+web-3     1/1       Running   0         18s
+web-4     0/1       Pending   0         0s
+web-4     0/1       Pending   0         0s
+web-4     0/1       ContainerCreating   0         0s
+web-4     1/1       Running   0         19s
+
+The StatefulSet controller scaled the number of replicas. As with
+
+StatefulSet creation
+, the StatefulSet controller
+created each Pod sequentially with respect to its ordinal index, and it
+waited for each Pod's predecessor to be Running and Ready before launching the
+subsequent Pod.
+Scaling down
+Scaling down means reducing the number of replicas. For example, you
+might do this because the level of traffic to a service has decreased,
+and at the current scale there are idle resources.
+In one terminal, watch the StatefulSet's Pods:
+# End this watch when there are only 3 Pods for the StatefulSet
+
+
+kubectl get pod --watch -l 
+app
+=
+nginx
+
+In another terminal, use 
+kubectl patch
+ to scale the StatefulSet back down to
+three replicas:
+kubectl patch sts web -p 
+'{"spec":{"replicas":3}}'
+
+
+statefulset.apps/web patched
+
+Wait for 
+web-4
+ and 
+web-3
+ to transition to Terminating.
+# This should already be running
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     1/1       Running             0          3h
+web-1     1/1       Running             0          3h
+web-2     1/1       Running             0          55s
+web-3     1/1       Running             0          36s
+web-4     0/1       ContainerCreating   0          18s
+NAME      READY     STATUS    RESTARTS   AGE
+web-4     1/1       Running   0          19s
+web-4     1/1       Terminating   0         24s
+web-4     1/1       Terminating   0         24s
+web-3     1/1       Terminating   0         42s
+web-3     1/1       Terminating   0         42s
+
+Ordered Pod termination
+The control plane deleted one Pod at a time, in reverse order with respect
+to its ordinal index, and it waited for each Pod to be completely shut down
+before deleting the next one.
+Get the StatefulSet's PersistentVolumeClaims:
+kubectl get pvc -l 
+app
+=
+nginx
+
+NAME        STATUS    VOLUME                                     CAPACITY   ACCESSMODES   AGE
+www-web-0   Bound     pvc-15c268c7-b507-11e6-932f-42010a800002   1Gi        RWO           13h
+www-web-1   Bound     pvc-15c79307-b507-11e6-932f-42010a800002   1Gi        RWO           13h
+www-web-2   Bound     pvc-e1125b27-b508-11e6-932f-42010a800002   1Gi        RWO           13h
+www-web-3   Bound     pvc-e1176df6-b508-11e6-932f-42010a800002   1Gi        RWO           13h
+www-web-4   Bound     pvc-e11bb5f8-b508-11e6-932f-42010a800002   1Gi        RWO           13h
+
+There are still five PersistentVolumeClaims and five PersistentVolumes.
+When exploring a Pod's 
+stable storage
+, you saw that
+the PersistentVolumes mounted to the Pods of a StatefulSet are not deleted when the
+StatefulSet's Pods are deleted. This is still true when Pod deletion is caused by
+scaling the StatefulSet down.
+Updating StatefulSets
+The StatefulSet controller supports automated updates. The
+strategy used is determined by the 
+spec.updateStrategy
+ field of the
+StatefulSet API object. This feature can be used to upgrade the container
+images, resource requests and/or limits, labels, and annotations of the Pods in a
+StatefulSet.
+There are two valid update strategies, 
+RollingUpdate
+ (the default) and
+
+OnDelete
+.
+RollingUpdate
+The 
+RollingUpdate
+ update strategy will update all Pods in a StatefulSet, in
+reverse ordinal order, while respecting the StatefulSet guarantees.
+You can split updates to a StatefulSet that uses the 
+RollingUpdate
+ strategy
+into 
+partitions
+, by specifying 
+.spec.updateStrategy.rollingUpdate.partition
+.
+You'll practice that later in this tutorial.
+First, try a simple rolling update.
+In one terminal window, patch the 
+web
+ StatefulSet to change the container
+image again:
+kubectl patch statefulset web --type
+=
+'json'
+ -p
+=
+'[{"op": "replace", "path": "/spec/template/spec/containers/0/image", "value":"registry.k8s.io/nginx-slim:0.24"}]'
+
+
+statefulset.apps/web patched
+
+In another terminal, watch the Pods in the StatefulSet:
+# End this watch when the rollout is complete
+
+
+#
+
+
+# If you're not sure, leave it running one more minute
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+The output is similar to:
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          7m
+web-1     1/1       Running   0          7m
+web-2     1/1       Running   0          8m
+web-2     1/1       Terminating   0         8m
+web-2     1/1       Terminating   0         8m
+web-2     0/1       Terminating   0         8m
+web-2     0/1       Terminating   0         8m
+web-2     0/1       Terminating   0         8m
+web-2     0/1       Terminating   0         8m
+web-2     0/1       Pending   0         0s
+web-2     0/1       Pending   0         0s
+web-2     0/1       ContainerCreating   0         0s
+web-2     1/1       Running   0         19s
+web-1     1/1       Terminating   0         8m
+web-1     0/1       Terminating   0         8m
+web-1     0/1       Terminating   0         8m
+web-1     0/1       Terminating   0         8m
+web-1     0/1       Pending   0         0s
+web-1     0/1       Pending   0         0s
+web-1     0/1       ContainerCreating   0         0s
+web-1     1/1       Running   0         6s
+web-0     1/1       Terminating   0         7m
+web-0     1/1       Terminating   0         7m
+web-0     0/1       Terminating   0         7m
+web-0     0/1       Terminating   0         7m
+web-0     0/1       Terminating   0         7m
+web-0     0/1       Terminating   0         7m
+web-0     0/1       Pending   0         0s
+web-0     0/1       Pending   0         0s
+web-0     0/1       ContainerCreating   0         0s
+web-0     1/1       Running   0         10s
+
+The Pods in the StatefulSet are updated in reverse ordinal order. The
+StatefulSet controller terminates each Pod, and waits for it to transition to Running and
+Ready prior to updating the next Pod. Note that, even though the StatefulSet
+controller will not proceed to update the next Pod until its ordinal successor
+is Running and Ready, it will restore any Pod that fails during the update to
+that Pod's existing version.
+Pods that have already received the update will be restored to the updated version,
+and Pods that have not yet received the update will be restored to the previous
+version. In this way, the controller attempts to continue to keep the application
+healthy and the update consistent in the presence of intermittent failures.
+Get the Pods to view their container images:
+for
+ p in 
+0
+ 
+1
+ 2; 
+do
+ kubectl get pod 
+"web-
+$p
+"
+ --template 
+'{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
+; echo; 
+done
+
+
+registry.k8s.io/nginx-slim:0.24
+registry.k8s.io/nginx-slim:0.24
+registry.k8s.io/nginx-slim:0.24
+
+All the Pods in the StatefulSet are now running the previous container image.
+Note:
+You can also use 
+kubectl rollout status sts/<name>
+ to view
+the status of a rolling update to a StatefulSet
+Staging an update
+You can split updates to a StatefulSet that uses the 
+RollingUpdate
+ strategy
+into 
+partitions
+, by specifying 
+.spec.updateStrategy.rollingUpdate.partition
+.
+For more context, you can read 
+Partitioned rolling updates
+
+in the StatefulSet concept page.
+You can stage an update to a StatefulSet by using the 
+partition
+ field within
+
+.spec.updateStrategy.rollingUpdate
+.
+For this update, you will keep the existing Pods in the StatefulSet
+unchanged whilst you change the pod template for the StatefulSet.
+Then you - or, outside of a tutorial, some external automation - can
+trigger that prepared update.
+First, patch the 
+web
+ StatefulSet to add a partition to the 
+updateStrategy
+ field:
+# The value of "partition" determines which ordinals a change applies to
+
+
+# Make sure to use a number bigger than the last ordinal for the
+
+
+# StatefulSet
+
+
+kubectl patch statefulset web -p 
+'{"spec":{"updateStrategy":{"type":"RollingUpdate","rollingUpdate":{"partition":3}}}}'
+
+
+statefulset.apps/web patched
+
+Patch the StatefulSet again to change the container image that this
+StatefulSet uses:
+kubectl patch statefulset web --type
+=
+'json'
+ -p
+=
+'[{"op": "replace", "path": "/spec/template/spec/containers/0/image", "value":"registry.k8s.io/nginx-slim:0.21"}]'
+
+
+statefulset.apps/web patched
+
+Delete a Pod in the StatefulSet:
+kubectl delete pod web-2
+
+pod "web-2" deleted
+
+Wait for the replacement 
+web-2
+ Pod to be Running and Ready:
+# End the watch when you see that web-2 is healthy
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     1/1       Running             0          4m
+web-1     1/1       Running             0          4m
+web-2     0/1       ContainerCreating   0          11s
+web-2     1/1       Running   0         18s
+
+Get the Pod's container image:
+kubectl get pod web-2 --template 
+'{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
+
+
+registry.k8s.io/nginx-slim:0.24
+
+Notice that, even though the update strategy is 
+RollingUpdate
+ the StatefulSet
+restored the Pod with the original container image. This is because the
+ordinal of the Pod is less than the 
+partition
+ specified by the
+
+updateStrategy
+.
+Rolling out a canary
+You're now going to try a 
+canary rollout
+
+of that staged change.
+You can roll out a canary (to test the modified template) by decrementing the 
+partition
+
+you specified 
+above
+.
+Patch the StatefulSet to decrement the partition:
+# The value of "partition" should match the highest existing ordinal for
+
+
+# the StatefulSet
+
+
+kubectl patch statefulset web -p 
+'{"spec":{"updateStrategy":{"type":"RollingUpdate","rollingUpdate":{"partition":2}}}}'
+
+
+statefulset.apps/web patched
+
+The control plane triggers replacement for 
+web-2
+ (implemented by
+a graceful 
+delete
+ followed by creating a new Pod once the deletion
+is complete).
+Wait for the new 
+web-2
+ Pod to be Running and Ready.
+# This should already be running
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     1/1       Running             0          4m
+web-1     1/1       Running             0          4m
+web-2     0/1       ContainerCreating   0          11s
+web-2     1/1       Running   0         18s
+
+Get the Pod's container:
+kubectl get pod web-2 --template 
+'{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
+
+
+registry.k8s.io/nginx-slim:0.21
+
+When you changed the 
+partition
+, the StatefulSet controller automatically
+updated the 
+web-2
+ Pod because the Pod's ordinal was greater than or equal to
+the 
+partition
+.
+Delete the 
+web-1
+ Pod:
+kubectl delete pod web-1
+
+pod "web-1" deleted
+
+Wait for the 
+web-1
+ Pod to be Running and Ready.
+# This should already be running
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+The output is similar to:
+NAME      READY     STATUS        RESTARTS   AGE
+web-0     1/1       Running       0          6m
+web-1     0/1       Terminating   0          6m
+web-2     1/1       Running       0          2m
+web-1     0/1       Terminating   0         6m
+web-1     0/1       Terminating   0         6m
+web-1     0/1       Terminating   0         6m
+web-1     0/1       Pending   0         0s
+web-1     0/1       Pending   0         0s
+web-1     0/1       ContainerCreating   0         0s
+web-1     1/1       Running   0         18s
+
+Get the 
+web-1
+ Pod's container image:
+kubectl get pod web-1 --template 
+'{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
+
+
+registry.k8s.io/nginx-slim:0.24
+
+web-1
+ was restored to its original configuration because the Pod's ordinal
+was less than the partition. When a partition is specified, all Pods with an
+ordinal that is greater than or equal to the partition will be updated when the
+StatefulSet's 
+.spec.template
+ is updated. If a Pod that has an ordinal less
+than the partition is deleted or otherwise terminated, it will be restored to
+its original configuration.
+Phased roll outs
+You can perform a phased roll out (e.g. a linear, geometric, or exponential
+roll out) using a partitioned rolling update in a similar manner to how you
+rolled out a 
+canary
+. To perform a phased roll out, set
+the 
+partition
+ to the ordinal at which you want the controller to pause the
+update.
+The partition is currently set to 
+2
+. Set the partition to 
+0
+:
+kubectl patch statefulset web -p 
+'{"spec":{"updateStrategy":{"type":"RollingUpdate","rollingUpdate":{"partition":0}}}}'
+
+
+statefulset.apps/web patched
+
+Wait for all of the Pods in the StatefulSet to become Running and Ready.
+# This should already be running
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+The output is similar to:
+NAME      READY     STATUS              RESTARTS   AGE
+web-0     1/1       Running             0          3m
+web-1     0/1       ContainerCreating   0          11s
+web-2     1/1       Running             0          2m
+web-1     1/1       Running   0         18s
+web-0     1/1       Terminating   0         3m
+web-0     1/1       Terminating   0         3m
+web-0     0/1       Terminating   0         3m
+web-0     0/1       Terminating   0         3m
+web-0     0/1       Terminating   0         3m
+web-0     0/1       Terminating   0         3m
+web-0     0/1       Pending   0         0s
+web-0     0/1       Pending   0         0s
+web-0     0/1       ContainerCreating   0         0s
+web-0     1/1       Running   0         3s
+
+Get the container image details for the Pods in the StatefulSet:
+for
+ p in 
+0
+ 
+1
+ 2; 
+do
+ kubectl get pod 
+"web-
+$p
+"
+ --template 
+'{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'
+; echo; 
+done
+
+
+registry.k8s.io/nginx-slim:0.21
+registry.k8s.io/nginx-slim:0.21
+registry.k8s.io/nginx-slim:0.21
+
+By moving the 
+partition
+ to 
+0
+, you allowed the StatefulSet to
+continue the update process.
+OnDelete
+You select this update strategy for a StatefulSet by setting the
+
+.spec.updateStrategy.type
+ to 
+OnDelete
+.
+Patch the 
+web
+ StatefulSet to use the 
+OnDelete
+ update strategy:
+kubectl patch statefulset web -p 
+'{"spec":{"updateStrategy":{"type":"OnDelete", "rollingUpdate": null}}}'
+
+
+statefulset.apps/web patched
+
+When you select this update strategy, the StatefulSet controller does not
+automatically update Pods when a modification is made to the StatefulSet's
+
+.spec.template
+ field. You need to manage the rollout yourself - either
+manually, or using separate automation.
+Deleting StatefulSets
+StatefulSet supports both 
+non-cascading
+ and 
+cascading
+ deletion. In a
+non-cascading 
+delete
+, the StatefulSet's Pods are not deleted when the
+StatefulSet is deleted. In a cascading 
+delete
+, both the StatefulSet and
+its Pods are deleted.
+Read 
+Use Cascading Deletion in a Cluster
+
+to learn about cascading deletion generally.
+Non-cascading delete
+In one terminal window, watch the Pods in the StatefulSet.
+# End this watch when there are no Pods for the StatefulSet
+kubectl get pods --watch -l app=nginx
+
+Use 
+kubectl delete
+ to delete the
+StatefulSet. Make sure to supply the 
+--cascade=orphan
+ parameter to the
+command. This parameter tells Kubernetes to only delete the StatefulSet, and to
+
+not
+ delete any of its Pods.
+kubectl delete statefulset web --cascade
+=
+orphan
+
+statefulset.apps "web" deleted
+
+Get the Pods, to examine their status:
+kubectl get pods -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          6m
+web-1     1/1       Running   0          7m
+web-2     1/1       Running   0          5m
+
+Even though 
+web
+ has been deleted, all of the Pods are still Running and Ready.
+Delete 
+web-0
+:
+kubectl delete pod web-0
+
+pod "web-0" deleted
+
+Get the StatefulSet's Pods:
+kubectl get pods -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-1     1/1       Running   0          10m
+web-2     1/1       Running   0          7m
+
+As the 
+web
+ StatefulSet has been deleted, 
+web-0
+ has not been relaunched.
+In one terminal, watch the StatefulSet's Pods.
+# Leave this watch running until the next time you start a watch
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+In a second terminal, recreate the StatefulSet. Note that, unless
+you deleted the 
+nginx
+ Service (which you should not have), you will see
+an error indicating that the Service already exists.
+kubectl apply -f https://k8s.io/examples/application/web/web.yaml
+
+statefulset.apps/web created
+service/nginx unchanged
+
+Ignore the error. It only indicates that an attempt was made to create the 
+nginx
+
+headless Service even though that Service already exists.
+Examine the output of the 
+kubectl get
+ command running in the first terminal.
+# This should already be running
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-1     1/1       Running   0          16m
+web-2     1/1       Running   0          2m
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     0/1       Pending   0          0s
+web-0     0/1       Pending   0         0s
+web-0     0/1       ContainerCreating   0         0s
+web-0     1/1       Running   0         18s
+web-2     1/1       Terminating   0         3m
+web-2     0/1       Terminating   0         3m
+web-2     0/1       Terminating   0         3m
+web-2     0/1       Terminating   0         3m
+
+When the 
+web
+ StatefulSet was recreated, it first relaunched 
+web-0
+.
+Since 
+web-1
+ was already Running and Ready, when 
+web-0
+ transitioned to
+Running and Ready, it adopted this Pod. Since you recreated the StatefulSet
+with 
+replicas
+ equal to 2, once 
+web-0
+ had been recreated, and once
+
+web-1
+ had been determined to already be Running and Ready, 
+web-2
+ was
+terminated.
+Now take another look at the contents of the 
+index.html
+ file served by the
+Pods' webservers:
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ -i -t 
+"web-
+$i
+"
+ -- curl http://localhost/; 
+done
+
+
+web-0
+web-1
+
+Even though you deleted both the StatefulSet and the 
+web-0
+ Pod, it still
+serves the hostname originally entered into its 
+index.html
+ file. This is
+because the StatefulSet never deletes the PersistentVolumes associated with a
+Pod. When you recreated the StatefulSet and it relaunched 
+web-0
+, its original
+PersistentVolume was remounted.
+Cascading delete
+In one terminal window, watch the Pods in the StatefulSet.
+# Leave this running until the next page section
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+In another terminal, delete the StatefulSet again. This time, omit the
+
+--cascade=orphan
+ parameter.
+kubectl delete statefulset web
+
+statefulset.apps "web" deleted
+
+Examine the output of the 
+kubectl get
+ command running in the first terminal,
+and wait for all of the Pods to transition to Terminating.
+# This should already be running
+
+
+kubectl get pods --watch -l 
+app
+=
+nginx
+
+NAME      READY     STATUS    RESTARTS   AGE
+web-0     1/1       Running   0          11m
+web-1     1/1       Running   0          27m
+NAME      READY     STATUS        RESTARTS   AGE
+web-0     1/1       Terminating   0          12m
+web-1     1/1       Terminating   0         29m
+web-0     0/1       Terminating   0         12m
+web-0     0/1       Terminating   0         12m
+web-0     0/1       Terminating   0         12m
+web-1     0/1       Terminating   0         29m
+web-1     0/1       Terminating   0         29m
+web-1     0/1       Terminating   0         29m
+
+As you saw in the 
+Scaling Down
+ section, the Pods
+are terminated one at a time, with respect to the reverse order of their ordinal
+indices. Before terminating a Pod, the StatefulSet controller waits for
+the Pod's successor to be completely terminated.
+Note:
+Although a cascading delete removes a StatefulSet together with its Pods,
+the cascade does 
+not
+ delete the headless Service associated with the StatefulSet.
+You must delete the 
+nginx
+ Service manually.
+kubectl delete service nginx
+
+service "nginx" deleted
+
+Recreate the StatefulSet and headless Service one more time:
+kubectl apply -f https://k8s.io/examples/application/web/web.yaml
+
+service/nginx created
+statefulset.apps/web created
+
+When all of the StatefulSet's Pods transition to Running and Ready, retrieve
+the contents of their 
+index.html
+ files:
+for
+ i in 
+0
+ 1; 
+do
+ kubectl 
+exec
+ -i -t 
+"web-
+$i
+"
+ -- curl http://localhost/; 
+done
+
+
+web-0
+web-1
+
+Even though you completely deleted the StatefulSet, and all of its Pods, the
+Pods are recreated with their PersistentVolumes mounted, and 
+web-0
+ and
+
+web-1
+ continue to serve their hostnames.
+Finally, delete the 
+nginx
+ Service...
+kubectl delete service nginx
+
+service "nginx" deleted
+
+...and the 
+web
+ StatefulSet:
+kubectl delete statefulset web
+
+statefulset "web" deleted
+
+Pod management policy
+For some distributed systems, the StatefulSet ordering guarantees are
+unnecessary and/or undesirable. These systems require only uniqueness and
+identity.
+You can specify a 
+Pod management policy
+
+to avoid this strict ordering; either 
+OrderedReady
+ (the default), or 
+Parallel
+.
+OrderedReady Pod management
+OrderedReady
+ pod management is the default for StatefulSets. It tells the
+StatefulSet controller to respect the ordering guarantees demonstrated
+above.
+Use this when your application requires or expects that changes, such as rolling out a new
+version of your application, happen in the strict order of the ordinal (pod number) that the StatefulSet provides.
+In other words, if you have Pods 
+app-0
+, 
+app-1
+ and 
+app-2
+, Kubernetes will update 
+app-0
+ first and check it.
+Once the checks are good, Kubernetes updates 
+app-1
+ and finally 
+app-2
+.
+If you added two more Pods, Kubernetes would set up 
+app-3
+ and wait for that to become healthy before deploying
+
+app-4
+.
+Because this is the default setting, you've already practised using it.
+Parallel Pod management
+The alternative, 
+Parallel
+ pod management, tells the StatefulSet controller to launch or
+terminate all Pods in parallel, and not to wait for Pods to become 
+Running
+
+and 
+Ready
+ or completely terminated prior to launching or terminating another
+Pod.
+The 
+Parallel
+ pod management option only affects the behavior for scaling operations. Updates are not affected;
+Kubernetes still rolls out changes in order. For this tutorial, the application is very simple: a webserver that
+tells you its hostname (because this is a StatefulSet, the hostname for each Pod is different and predictable).
+application/web/web-parallel.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Service
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+nginx
+
+
+  
+labels
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+spec
+:
+
+
+  
+ports
+:
+
+
+  
+- 
+port
+:
+ 
+80
+
+
+    
+name
+:
+ 
+web
+
+
+  
+clusterIP
+:
+ 
+None
+
+
+  
+selector
+:
+
+
+    
+app
+:
+ 
+nginx
+
+
+---
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+StatefulSet
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+web
+
+
+spec
+:
+
+
+  
+serviceName
+:
+ 
+"nginx"
+
+
+  
+podManagementPolicy
+:
+ 
+"Parallel"
+
+
+  
+replicas
+:
+ 
+2
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+app
+:
+ 
+nginx
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+app
+:
+ 
+nginx
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+nginx
+
+
+        
+image
+:
+ 
+registry.k8s.io/nginx-slim:0.24
+
+
+        
+ports
+:
+
+
+        
+- 
+containerPort
+:
+ 
+80
+
+
+          
+name
+:
+ 
+web
+
+
+        
+volumeMounts
+:
+
+
+        
+- 
+name
+:
+ 
+www
+
+
+          
+mountPath
+:
+ 
+/usr/share/nginx/html
+
+
+  
+volumeClaimTemplates
+:
+
+
+  
+- 
+metadata
+:
+
+
+      
+name
+:
+ 
+www
+
+
+    
+spec
+:
+
+
+      
+accessModes
+:
+ 
+[
+ 
+"ReadWriteOnce"
+ 
+]
+
+
+      
+resources
+:
+
+
+        
+requests
+:
+
+
+          
+storage
+:
+ 
+1Gi
+
+
+This manifest is identical to the one you downloaded above except that the 
+.spec.podManagementPolicy
+
+of the 
+web
+ StatefulSet is set to 
+Parallel
+.
+In one terminal, watch the Pods in the StatefulSet.
+# Leave this watch running until the end of the section
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+In another terminal, reconfigure the StatefulSet for 
+Parallel
+ Pod management:
+kubectl apply -f https://k8s.io/examples/application/web/web-parallel.yaml
+
+service/nginx updated
+statefulset.apps/web updated
+
+Keep the terminal open where you're running the watch. In another terminal window, scale the
+StatefulSet:
+kubectl scale statefulset/web --replicas
+=
+5
+
+
+statefulset.apps/web scaled
+
+Examine the output of the terminal where the 
+kubectl get
+ command is running. It may look something like
+web-3     0/1       Pending   0         0s
+web-3     0/1       Pending   0         0s
+web-3     0/1       Pending   0         7s
+web-3     0/1       ContainerCreating   0         7s
+web-2     0/1       Pending   0         0s
+web-4     0/1       Pending   0         0s
+web-2     1/1       Running   0         8s
+web-4     0/1       ContainerCreating   0         4s
+web-3     1/1       Running   0         26s
+web-4     1/1       Running   0         2s
+
+The StatefulSet launched three new Pods, and it did not wait for
+the first to become Running and Ready prior to launching the second and third Pods.
+This approach is useful if your workload has a stateful element, or needs Pods to be able to identify each other
+with predictable naming, and especially if you sometimes need to provide a lot more capacity quickly. If this
+simple web service for the tutorial suddenly got an extra 1,000,000 requests per minute then you would want to run
+some more Pods - but you also would not want to wait for each new Pod to launch. Starting the extra Pods in parallel
+cuts the time between requesting the extra capacity and having it available for use.
+Cleaning up
+You should have two terminals open, ready for you to run 
+kubectl
+ commands as
+part of cleanup.
+kubectl delete sts web
+
+# sts is an abbreviation for statefulset
+
+
+You can watch 
+kubectl get
+ to see those Pods being deleted.
+# end the watch when you've seen what you need to
+
+
+kubectl get pod -l 
+app
+=
+nginx --watch
+
+web-3     1/1       Terminating   0         9m
+web-2     1/1       Terminating   0         9m
+web-3     1/1       Terminating   0         9m
+web-2     1/1       Terminating   0         9m
+web-1     1/1       Terminating   0         44m
+web-0     1/1       Terminating   0         44m
+web-0     0/1       Terminating   0         44m
+web-3     0/1       Terminating   0         9m
+web-2     0/1       Terminating   0         9m
+web-1     0/1       Terminating   0         44m
+web-0     0/1       Terminating   0         44m
+web-2     0/1       Terminating   0         9m
+web-2     0/1       Terminating   0         9m
+web-2     0/1       Terminating   0         9m
+web-1     0/1       Terminating   0         44m
+web-1     0/1       Terminating   0         44m
+web-1     0/1       Terminating   0         44m
+web-0     0/1       Terminating   0         44m
+web-0     0/1       Terminating   0         44m
+web-0     0/1       Terminating   0         44m
+web-3     0/1       Terminating   0         9m
+web-3     0/1       Terminating   0         9m
+web-3     0/1       Terminating   0         9m
+
+During deletion, a StatefulSet removes all Pods concurrently; it does not wait for
+a Pod's ordinal successor to terminate prior to deleting that Pod.
+Close the terminal where the 
+kubectl get
+ command is running and delete the 
+nginx
+
+Service:
+kubectl delete svc nginx
+
+Delete the persistent storage media for the PersistentVolumes used in this tutorial.
+kubectl get pvc
+
+NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+www-web-0   Bound    pvc-2bf00408-d366-4a12-bad0-1869c65d0bee   1Gi        RWO            standard       25m
+www-web-1   Bound    pvc-ba3bfe9c-413e-4b95-a2c0-3ea8a54dbab4   1Gi        RWO            standard       24m
+www-web-2   Bound    pvc-cba6cfa6-3a47-486b-a138-db5930207eaf   1Gi        RWO            standard       15m
+www-web-3   Bound    pvc-0c04d7f0-787a-4977-8da3-d9d3a6d8d752   1Gi        RWO            standard       15m
+www-web-4   Bound    pvc-b2c73489-e70b-4a4e-9ec1-9eab439aa43e   1Gi        RWO            standard       14m
+
+kubectl get pv
+
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM               STORAGECLASS   REASON   AGE
+pvc-0c04d7f0-787a-4977-8da3-d9d3a6d8d752   1Gi        RWO            Delete           Bound    default/www-web-3   standard                15m
+pvc-2bf00408-d366-4a12-bad0-1869c65d0bee   1Gi        RWO            Delete           Bound    default/www-web-0   standard                25m
+pvc-b2c73489-e70b-4a4e-9ec1-9eab439aa43e   1Gi        RWO            Delete           Bound    default/www-web-4   standard                14m
+pvc-ba3bfe9c-413e-4b95-a2c0-3ea8a54dbab4   1Gi        RWO            Delete           Bound    default/www-web-1   standard                24m
+pvc-cba6cfa6-3a47-486b-a138-db5930207eaf   1Gi        RWO            Delete           Bound    default/www-web-2   standard                15m
+
+kubectl delete pvc www-web-0 www-web-1 www-web-2 www-web-3 www-web-4
+
+persistentvolumeclaim "www-web-0" deleted
+persistentvolumeclaim "www-web-1" deleted
+persistentvolumeclaim "www-web-2" deleted
+persistentvolumeclaim "www-web-3" deleted
+persistentvolumeclaim "www-web-4" deleted
+
+kubectl get pvc
+
+No resources found in default namespace.
+
+Note:
+You also need to delete the persistent storage media for the PersistentVolumes
+used in this tutorial.
+Follow the necessary steps, based on your environment, storage configuration,
+and provisioning method, to ensure that all storage is reclaimed.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified January 13, 2026 at 9:06 AM PST: 
+Add persistentvolume provisioning link in statefulset basics (8d3295b46e)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

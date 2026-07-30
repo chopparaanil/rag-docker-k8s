@@ -1,0 +1,3475 @@
+Localizing Kubernetes documentation | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Русский (Russian)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Localizing Kubernetes documentation
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Contribute to an existing localization
+Find your two-letter language code
+Fork and clone the repo
+Suggest changes
+Start a new localization
+Find community
+Join the Kubernetes GitHub organization
+Add your localization team in GitHub
+Configure the workflow
+Modify the site configuration
+Add a new localization directory
+Localize the community code of conduct
+Set up the OWNERS files
+Open a pull request
+Add a localized README file
+Launch your new localization
+Localize content
+Minimum required content
+Localize SVG images
+Source files
+Site strings in i18n
+Language-specific localization guide
+Language-specific Zoom meetings
+Branch strategy
+Upstream contributions
+Kubernetes Documentation
+Contribute
+Localizing Kubernetes documentation
+Localizing Kubernetes documentation
+This page shows you how to
+
+localize
+
+the docs for a different language.
+Contribute to an existing localization
+You can help add or improve the content of an existing localization. In
+
+Kubernetes Slack
+, you can find a channel for each
+localization. There is also a general
+
+SIG Docs Localizations Slack channel
+
+where you can say hello.
+Note:
+For extra details on how to contribute to a specific localization,
+look for a localized version of this page.
+Find your two-letter language code
+First, consult the
+
+ISO 639-1 standard
+
+to find your localization's two-letter language code. For example, the two-letter code for
+Korean is 
+ko
+.
+Some languages use a lowercase version of the country code as defined by the
+ISO-3166 along with their language codes. For example, the Brazilian Portuguese
+language code is 
+pt-br
+.
+Fork and clone the repo
+First, 
+create your own fork
+ of the
+
+kubernetes/website
+ repository.
+Then, clone your fork and 
+cd
+ into it:
+git clone https://github.com/<username>/website
+
+cd
+ website
+
+The website content directory includes subdirectories for each language. The
+localization you want to help out with is inside 
+content/<two-letter-code>
+.
+Suggest changes
+Create or update your chosen localized page based on the English original. See
+
+localize content
+ for more details.
+If you notice a technical inaccuracy or other problem with the upstream
+(English) documentation, you should fix the upstream documentation first and
+then repeat the equivalent fix by updating the localization you're working on.
+Limit changes in a pull requests to a single localization. Reviewing pull
+requests that change content in multiple localizations is problematic.
+Follow 
+Suggesting Content Improvements
+
+to propose changes to that localization. The process is similar to proposing
+changes to the upstream (English) content.
+Start a new localization
+If you want the Kubernetes documentation localized into a new language, here's
+what you need to do.
+Because contributors can't approve their own pull requests, you need 
+at least
+two contributors
+ to begin a localization.
+All localization teams must be self-sufficient. The Kubernetes website is happy
+to host your work, but it's up to you to translate it and keep existing
+localized content current.
+You'll need to know the two-letter language code for your language. Consult the
+
+ISO 639-1 standard
+
+to find your localization's two-letter language code. For example, the
+two-letter code for Korean is 
+ko
+.
+If the language you are starting a localization for is spoken in various places
+with significant differences between the variants, it might make sense to
+combine the lowercased ISO-3166 country code with the language two-letter code.
+For example, Brazilian Portuguese is localized as 
+pt-br
+.
+When you start a new localization, you must localize all the
+
+minimum required content
+ before
+the Kubernetes project can publish your changes to the live
+website.
+SIG Docs can help you work on a separate branch so that you
+can incrementally work towards that goal.
+Find community
+Let Kubernetes SIG Docs know you're interested in creating a localization! Join
+the 
+SIG Docs Slack channel
+ and
+the 
+SIG Docs Localizations Slack channel
+.
+Other localization teams are happy to help you get started and answer your
+questions.
+Please also consider participating in the
+
+SIG Docs Localization Subgroup meeting
+.
+The mission of the SIG Docs localization subgroup is to work across the SIG Docs
+localization teams to collaborate on defining and documenting the processes for
+creating localized contribution guides. In addition, the SIG Docs localization
+subgroup looks for opportunities to create and share common tools across
+localization teams and identify new requirements for the SIG Docs Leadership
+team. If you have questions about this meeting, please inquire on the
+
+SIG Docs Localizations Slack channel
+.
+You can also create a Slack channel for your localization in the
+
+kubernetes/community
+ repository. For an example of adding a Slack channel, see
+the PR for 
+adding a channel for Persian
+.
+Join the Kubernetes GitHub organization
+When you've opened a localization PR, you can become members of the Kubernetes
+GitHub organization. Each person on the team needs to create their own
+
+Organization Membership Request
+
+in the 
+kubernetes/org
+ repository.
+Add your localization team in GitHub
+Next, add your Kubernetes localization team to
+
+sig-docs/teams.yaml
+.
+For an example of adding a localization team, see the PR to add the
+
+Spanish localization team
+.
+Members of 
+@kubernetes/sig-docs-**-owners
+ can approve PRs that change content
+within (and only within) your localization directory: 
+/content/**/
+. For each
+localization, The 
+@kubernetes/sig-docs-**-reviews
+ team automates review
+assignments for new PRs. Members of 
+@kubernetes/website-maintainers
+ can create
+new localization branches to coordinate translation efforts. Members of
+
+@kubernetes/website-milestone-maintainers
+ can use the 
+/milestone
+
+
+Prow command
+ to assign a milestone to issues or PRs.
+Configure the workflow
+Next, add a GitHub label for your localization in the 
+kubernetes/test-infra
+
+repository. A label lets you filter issues and pull requests for your specific
+language.
+For an example of adding a label, see the PR for adding the
+
+Italian language label
+.
+Modify the site configuration
+The Kubernetes website uses Hugo as its web framework. The website's Hugo
+configuration resides in the
+
+hugo.toml
+
+file. You'll need to modify 
+hugo.toml
+ to support a new localization.
+Add a configuration block for the new language to 
+hugo.toml
+ under the
+existing 
+[languages]
+ block. The German block, for example, looks like:
+[languages.de]
+
+title = 
+"Kubernetes"
+
+
+languageName = 
+"Deutsch (German)"
+
+
+weight = 
+5
+
+
+contentDir = 
+"content/de"
+
+
+languagedirection = 
+"ltr"
+
+
+
+
+[languages.de.params]
+
+time_format_blog = 
+"02.01.2006"
+
+
+language_alternatives = [
+"en"
+]
+
+description = 
+"Produktionsreife Container-Orchestrierung"
+
+
+languageNameLatinScript = 
+"Deutsch"
+
+
+The language selection bar lists the value for 
+languageName
+. Assign "language
+name in native script and language (English language name in Latin script)" to
+
+languageName
+. For example, 
+languageName = "한국어 (Korean)"
+ or 
+languageName = "Deutsch (German)"
+.
+languageNameLatinScript
+ can be used to access the language name in Latin
+script and use it in the theme. Assign "language name in latin script" to
+
+languageNameLatinScript
+. For example, 
+languageNameLatinScript ="Korean"
+ or
+
+languageNameLatinScript = "Deutsch"
+.
+The 
+weight
+ parameter determines the order of languages in the language selection bar.
+A lower weight takes precedence, resulting in the language appearing first.
+When assigning the 
+weight
+ parameter, it is important to examine the existing languages
+block and adjust their weights to ensure they are in a sorted order relative to all languages,
+including any newly added language.
+For more information about Hugo's multilingual support, see
+"
+Multilingual Mode
+".
+Add a new localization directory
+Add a language-specific subdirectory to the
+
+content
+ folder in
+the repository. For example, the two-letter code for German is 
+de
+:
+mkdir content/de
+
+You also need to create a directory inside 
+i18n
+ for
+
+localized strings
+; look at existing localizations
+for an example.
+For example, for German the strings live in 
+i18n/de/de.toml
+.
+Localize the community code of conduct
+Open a PR against the
+
+cncf/foundation
+
+repository to add the code of conduct in your language.
+Set up the OWNERS files
+To set the roles of each user contributing to the localization, create an
+
+OWNERS
+ file inside the language-specific subdirectory with:
+reviewers
+: A list of kubernetes teams with reviewer roles, in this case,
+the 
+sig-docs-**-reviews
+ team created in 
+Add your localization team in GitHub
+.
+approvers
+: A list of kubernetes teams with approvers roles, in this case,
+the 
+sig-docs-**-owners
+ team created in 
+Add your localization team in GitHub
+.
+labels
+: A list of GitHub labels to automatically apply to a PR, in this
+case, the language label created in 
+Configure the workflow
+.
+More information about the 
+OWNERS
+ file can be found at
+
+go.k8s.io/owners
+.
+The 
+Spanish OWNERS file
+, with
+language code 
+es
+, looks like this:
+# See the OWNERS docs at https://go.k8s.io/owners
+
+
+
+
+# This is the localization project for Spanish.
+
+
+# Teams and members are visible at https://github.com/orgs/kubernetes/teams.
+
+
+
+
+reviewers
+:
+
+
+- sig-docs-es-reviews
+
+
+
+
+approvers
+:
+
+
+- sig-docs-es-owners
+
+
+
+
+labels
+:
+
+
+- area/localization
+
+
+- language/es
+
+
+After adding the language-specific 
+OWNERS
+ file, update the 
+root
+
+OWNERS_ALIASES
+ file with the new
+Kubernetes teams for the localization, 
+sig-docs-**-owners
+ and
+
+sig-docs-**-reviews
+.
+For each team, add the list of GitHub users requested in
+
+Add your localization team in GitHub
+,
+in alphabetical order.
+--- a/OWNERS_ALIASES
+
++++ b/OWNERS_ALIASES
+
+@@ -48,6 +48,14 @@ aliases:
+
+     - stewart-yu
+
+     - xiangpengzhao
+
+     - zhangxiaoyu-zidif
+
++  sig-docs-es-owners: # Admins for Spanish content
+
++    - alexbrand
+
++    - raelga
+
++  sig-docs-es-reviews: # PR reviews for Spanish content
+
++    - alexbrand
+
++    - electrocucaracha
+
++    - glo-pena
+
++    - raelga
+
+   sig-docs-fr-owners: # Admins for French content
+
+     - perriea
+
+     - remyleone
+
+Open a pull request
+Next, 
+open a pull request
+
+(PR) to add a localization to the 
+kubernetes/website
+ repository. The PR must
+include all the 
+minimum required content
+ before it
+can be approved.
+For an example of adding a new localization, see the PR to enable
+
+docs in French
+.
+Add a localized README file
+To guide other localization contributors, add a new
+
+README-**.md
+ to the top
+level of 
+kubernetes/website
+, where
+
+**
+ is the two-letter language code. For example, a German README file would be
+
+README-de.md
+.
+Guide localization contributors in the localized 
+README-**.md
+ file.
+Include the same information contained in 
+README.md
+ as well as:
+A point of contact for the localization project
+Any information specific to the localization
+After you create the localized README, add a link to the file from the main
+English 
+README.md
+, and include contact information in English. You can provide
+a GitHub ID, email address, 
+Slack channel
+, or another
+method of contact. You must also provide a link to your localized Community Code
+of Conduct.
+Launch your new localization
+When a localization meets the requirements for workflow and minimum output, SIG
+Docs does the following:
+Enables language selection on the website.
+Publicizes the localization's availability through
+
+Cloud Native Computing Foundation
+(CNCF)
+channels, including the 
+Kubernetes blog
+.
+Localize content
+Localizing 
+all
+ the Kubernetes documentation is an enormous task. It's okay to
+start small and expand over time.
+Minimum required content
+At a minimum, all localizations must include:
+Description
+URLs
+Home
+All heading and subheading URLs
+Setup
+All heading and subheading URLs
+Tutorials
+Kubernetes Basics
+, 
+Hello Minikube
+Site strings
+All site strings
+ in a new localized TOML file
+Releases
+All heading and subheading URLs
+Translated documents must reside in their own 
+content/**/
+ subdirectory, but otherwise, follow the
+same URL path as the English source. For example, to prepare the
+
+Kubernetes Basics
+ tutorial for translation into German,
+create a subdirectory under the 
+content/de/
+ directory and copy the English source or directory:
+mkdir -p content/de/docs/tutorials
+
+cp -ra content/en/docs/tutorials/kubernetes-basics/ content/de/docs/tutorials/
+
+Translation tools can speed up the translation process. For example, some
+editors offer plugins to quickly translate text.
+Caution:
+Machine-generated translation is insufficient on its own. Localization requires
+extensive human review to meet minimum standards of quality.
+To ensure accuracy in grammar and meaning, members of your localization team
+should carefully review all machine-generated translations before publishing.
+Localize SVG images
+The Kubernetes project recommends using vector (SVG) images where possible, as
+these are much easier for a localization team to edit. If you find a raster
+image that needs localizing, consider first redrawing the English version as
+a vector image, and then localize that.
+When translating text within SVG (Scalable Vector Graphics) images, it's
+essential to follow certain guidelines to ensure accuracy and maintain
+consistency across different language versions. SVG images are commonly
+used in the Kubernetes documentation to illustrate concepts, workflows,
+and diagrams.
+Identifying translatable text
+: Start by identifying the text elements
+within the SVG image that need to be translated. These elements typically
+include labels, captions, annotations, or any text that conveys information.
+Editing SVG files
+: SVG files are XML-based, which means they can be
+edited using a text editor. However, it's important to note that most of the
+documentation images in Kubernetes already convert text to curves to avoid font
+compatibility issues. In such cases, it is recommended to use specialized SVG
+editing software, such as Inkscape, for editing, open the SVG file and locate
+the text elements that require translation.
+Translating the text
+: Replace the original text with the translated
+version in the desired language. Ensure the translated text accurately conveys
+the intended meaning and fits within the available space in the image. The Open
+Sans font family should be used when working with languages that use the Latin
+alphabet. You can download the Open Sans typeface from here:
+
+Open Sans Typeface
+.
+Converting text to curves
+: As already mentioned, to address font
+compatibility issues, it is recommended to convert the translated text to
+curves or paths. Converting text to curves ensures that the final image
+displays the translated text correctly, even if the user's system does not
+have the exact font used in the original SVG.
+Reviewing and testing
+: After making the necessary translations and
+converting text to curves, save and review the updated SVG image to ensure
+the text is properly displayed and aligned. Check
+
+Preview your changes locally
+.
+Source files
+Localizations must be based on the English files from a specific release
+targeted by the localization team. Each localization team can decide which
+release to target, referred to as the 
+target version
+ below.
+To find source files for your target version:
+Navigate to the Kubernetes website repository at
+
+https://github.com/kubernetes/website
+.
+Select a branch for your target version from the following table:
+Target version
+Branch
+Latest version
+main
+Previous version
+release-1.35
+Next version
+dev-1.37
+The 
+main
+ branch holds content for the current release 
+v1.36
+.
+The release team creates a 
+release-1.36
+ branch before the next
+release: v1.37.
+Site strings in i18n
+Localizations must include the contents of
+
+i18n/en/en.toml
+
+in a new language-specific file. Using German as an example:
+
+i18n/de/de.toml
+.
+Add a new localization directory and file to 
+i18n/
+. For example, with
+German (
+de
+):
+mkdir -p i18n/de
+
+cp i18n/en/en.toml i18n/de/de.toml
+
+Revise the comments at the top of the file to suit your localization, then
+translate the value of each string. For example, this is the German-language
+placeholder text for the search form:
+[ui_search]
+
+other = 
+"Suchen"
+
+
+Localizing site strings lets you customize site-wide text and features: for
+example, the legal copyright text in the footer on each page.
+Language-specific localization guide
+As a localization team, you can formalize the best practices your team follows
+by creating a language-specific localization guide.
+For example, see the
+
+Korean Localization Guide
+, which
+includes content on the following subjects:
+Sprint cadence and releases
+Branch strategy
+Pull request workflow
+Style guide
+Glossary of localized and non-localized terms
+Markdown conventions
+Kubernetes API object terminology
+Language-specific Zoom meetings
+If the localization project needs a separate meeting time, contact a SIG Docs
+Co-Chair or Tech Lead to create a new reoccurring Zoom meeting and calendar
+invite. This is only needed when the team is large enough to sustain and require
+a separate meeting.
+Per CNCF policy, the localization teams must upload their meetings to the SIG
+Docs YouTube playlist. A SIG Docs Co-Chair or Tech Lead can help with the
+process until SIG Docs automates it.
+Branch strategy
+Because localization projects are highly collaborative efforts, we
+encourage teams to work in shared localization branches - especially
+when starting out and the localization is not yet live.
+To collaborate on a localization branch:
+A team member of
+
+@kubernetes/website-maintainers
+
+opens a localization branch from a source branch on
+
+https://github.com/kubernetes/website
+.
+Your team approvers joined the 
+@kubernetes/website-maintainers
+ team when
+you 
+added your localization team
+ to
+the 
+kubernetes/org
+ repository.
+We recommend the following branch naming scheme:
+dev-<source version>-<language code>.<team milestone>
+For example, an approver on a German localization team opens the localization
+branch 
+dev-1.12-de.1
+ directly against the 
+kubernetes/website
+ repository,
+based on the source branch for Kubernetes v1.12.
+Individual contributors open feature branches based on the localization
+branch.
+For example, a German contributor opens a pull request with changes to
+
+kubernetes:dev-1.12-de.1
+ from 
+username:local-branch-name
+.
+Approvers review and merge feature branches into the localization branch.
+Periodically, an approver merges the localization branch with its source
+branch by opening and approving a new pull request. Be sure to squash the
+commits before approving the pull request.
+Repeat steps 1-4 as needed until the localization is complete. For example,
+subsequent German localization branches would be: 
+dev-1.12-de.2
+,
+
+dev-1.12-de.3
+, etc.
+Teams must merge localized content into the same branch from which the content
+was sourced. For example:
+A localization branch sourced from 
+main
+ must be merged into 
+main
+.
+A localization branch sourced from 
+release-1.35
+
+must be merged into 
+release-1.35
+.
+Note:
+If your localization branch was created from 
+main
+ branch, but it is not merged
+into 
+main
+ before the new release branch 
+release-1.36
+ created,
+merge it into both 
+main
+ and new release branch 
+release-1.36
+. To
+merge your localization branch into the new release branch
+
+release-1.36
+, you need to switch the upstream branch of your
+localization branch to 
+release-1.36
+.
+At the beginning of every team milestone, it's helpful to open an issue
+comparing upstream changes between the previous localization branch and the
+current localization branch. There are two scripts for comparing upstream
+changes.
+upstream_changes.py
+
+is useful for checking the changes made to a specific file. And
+diff_l10n_branches.py
+
+is useful for creating a list of outdated files for a specific localization
+branch.
+While only approvers can open a new localization branch and merge pull requests,
+anyone can open a pull request for a new localization branch. No special
+permissions are required.
+For more information about working from forks or directly from the repository,
+see 
+"fork and clone the repo"
+.
+Upstream contributions
+SIG Docs welcomes upstream contributions and corrections to the English source.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 14, 2026 at 1:15 AM PST: 
+fix(links): update kubernetes/community links from master to main (03c191bcc4)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

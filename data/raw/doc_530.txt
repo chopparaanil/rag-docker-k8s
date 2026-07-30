@@ -1,0 +1,4201 @@
+Manifest-Based Admission Control | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Manifest-Based Admission Control
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Why use manifest-based admission control?
+Supported resource types
+Configuring manifest-based admission control
+AdmissionConfiguration
+Configuration types
+Writing manifest files
+Naming convention
+Restrictions
+Examples
+Protecting API-based admission resources
+Enforcing a ValidatingAdmissionPolicy from disk
+Configuring a ValidatingWebhookConfiguration from disk
+Using the List format
+Evaluation order
+File watching and dynamic reloading
+Observability
+Metrics
+Audit annotations
+High availability considerations
+Upgrade and downgrade
+Troubleshooting
+What's next
+Kubernetes Documentation
+Reference
+API Access Control
+Manifest-Based Admission Control
+Manifest-Based Admission Control
+FEATURE STATE:
+
+
+Kubernetes v1.36 [alpha]
+(disabled by default)
+This page provides an overview of manifest-based admission control configuration.
+Manifest-based admission control lets you load
+
+admission webhooks
+
+and CEL-based admission policies from static files on disk, rather than from the
+Kubernetes API. These policies are active from API server startup, operate
+independently of 
+etcd
+, and can
+protect API-based admission resources from modification.
+To use the feature, enable the 
+ManifestBasedAdmissionControlConfig
+
+
+feature gate
+ and
+configure the 
+staticManifestsDir
+ field in the
+
+AdmissionConfiguration
+
+file passed to the kube-apiserver via 
+--admission-control-config-file
+.
+Why use manifest-based admission control?
+Admission policies and webhooks registered through the Kubernetes API (such as
+ValidatingAdmissionPolicy, MutatingAdmissionPolicy,
+ValidatingWebhookConfiguration, and MutatingWebhookConfiguration) have several
+inherent limitations:
+Bootstrap gap
+: REST-based policy enforcement requires the API objects to be
+created and loaded by the dynamic admission controller. Until that happens,
+policies are not enforced.
+Self-protection gap
+: Admission configuration resources (such as
+ValidatingWebhookConfiguration) are not themselves subject to webhook
+admission, to prevent circular dependencies. A user with sufficient privileges
+can delete or modify critical admission policies.
+etcd dependency
+: REST-based admission configurations depend on etcd
+availability. If etcd is unavailable or corrupted, admission policies may not
+load correctly.
+Manifest-based admission control addresses these limitations by loading
+configurations from files on disk. These configurations are:
+Active as soon as the API server is ready to serve requests
+Not visible or changeable through the Kubernetes API
+Independent of etcd availability
+Able to intercept operations on API-based admission resources themselves
+Supported resource types
+You can include the following resource types in manifest files. Only the
+
+admissionregistration.k8s.io/v1
+ API version is supported.
+Supported resource types for manifest-based admission control
+Plugin name
+Supported resource types
+ValidatingAdmissionWebhook
+ValidatingWebhookConfiguration
+MutatingAdmissionWebhook
+MutatingWebhookConfiguration
+ValidatingAdmissionPolicy
+ValidatingAdmissionPolicy, ValidatingAdmissionPolicyBinding
+MutatingAdmissionPolicy
+MutatingAdmissionPolicy, MutatingAdmissionPolicyBinding
+You can also use 
+v1.List
+ to wrap multiple resources of the same plugin type
+in a single document.
+Each admission plugin's 
+staticManifestsDir
+ must only contain resource types
+allowed for that plugin. For example, a directory configured for the
+
+ValidatingAdmissionPolicy
+ plugin can only contain ValidatingAdmissionPolicy
+and ValidatingAdmissionPolicyBinding resources.
+Configuring manifest-based admission control
+To enable manifest-based admission control, you need:
+The 
+ManifestBasedAdmissionControlConfig
+ feature gate enabled on the
+kube-apiserver.
+An 
+AdmissionConfiguration
+ file with 
+staticManifestsDir
+ fields pointing
+to directories containing your manifest files.
+The manifest files themselves on disk, accessible to the kube-apiserver
+process.
+AdmissionConfiguration
+Add 
+staticManifestsDir
+ to the plugin configuration for each admission plugin
+that should load manifests from disk. Each plugin requires its own directory.
+access/manifest-admission-control/admission-configuration.yaml
+
+
+# This is an example AdmissionConfiguration that configures all four admission
+
+
+# plugins to load manifest-based admission control from static files on disk.
+
+
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+kind
+:
+ 
+AdmissionConfiguration
+
+
+plugins
+:
+
+
+- 
+name
+:
+ 
+ValidatingAdmissionWebhook
+
+
+  
+configuration
+:
+
+
+    
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+    
+kind
+:
+ 
+WebhookAdmissionConfiguration
+
+
+    
+kubeConfigFile
+:
+ 
+"<path-to-kubeconfig>"
+
+
+    
+staticManifestsDir
+:
+ 
+"/etc/kubernetes/admission/validating-webhooks/"
+
+
+- 
+name
+:
+ 
+MutatingAdmissionWebhook
+
+
+  
+configuration
+:
+
+
+    
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+    
+kind
+:
+ 
+WebhookAdmissionConfiguration
+
+
+    
+kubeConfigFile
+:
+ 
+"<path-to-kubeconfig>"
+
+
+    
+staticManifestsDir
+:
+ 
+"/etc/kubernetes/admission/mutating-webhooks/"
+
+
+- 
+name
+:
+ 
+ValidatingAdmissionPolicy
+
+
+  
+configuration
+:
+
+
+    
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+    
+kind
+:
+ 
+ValidatingAdmissionPolicyConfiguration
+
+
+    
+staticManifestsDir
+:
+ 
+"/etc/kubernetes/admission/validating-policies/"
+
+
+- 
+name
+:
+ 
+MutatingAdmissionPolicy
+
+
+  
+configuration
+:
+
+
+    
+apiVersion
+:
+ 
+apiserver.config.k8s.io/v1
+
+
+    
+kind
+:
+ 
+MutatingAdmissionPolicyConfiguration
+
+
+    
+staticManifestsDir
+:
+ 
+"/etc/kubernetes/admission/mutating-policies/"
+
+
+The 
+staticManifestsDir
+ field accepts an absolute path to a directory. All
+direct-children files with 
+.yaml
+, 
+.yml
+, or 
+.json
+ extensions in the
+directory are loaded. Subdirectories and files with other extensions are ignored.
+Glob patterns and relative paths are not supported.
+Pass this file to the kube-apiserver with the 
+--admission-control-config-file
+
+flag.
+Configuration types
+Each admission plugin uses a specific configuration kind:
+Configuration types for each admission plugin
+Plugin
+apiVersion
+kind
+ValidatingAdmissionWebhook
+apiserver.config.k8s.io/v1
+WebhookAdmissionConfiguration
+MutatingAdmissionWebhook
+apiserver.config.k8s.io/v1
+WebhookAdmissionConfiguration
+ValidatingAdmissionPolicy
+apiserver.config.k8s.io/v1
+ValidatingAdmissionPolicyConfiguration
+MutatingAdmissionPolicy
+apiserver.config.k8s.io/v1
+MutatingAdmissionPolicyConfiguration
+Writing manifest files
+Manifest files contain standard Kubernetes resource definitions. You can include
+multiple resources in a single file using YAML document separators (
+---
+).
+Naming convention
+All objects in manifest files must have names ending with the 
+.static.k8s.io
+
+suffix. For example: 
+deny-privileged.static.k8s.io
+.
+When the 
+ManifestBasedAdmissionControlConfig
+ feature gate is enabled, creation
+of API-based admission objects with names ending in 
+.static.k8s.io
+ is blocked.
+When the feature gate is disabled, a warning is returned instead.
+Note:
+If two manifest files define objects of the same type with the same name, the
+API server fails to start, displaying a descriptive error.
+Restrictions
+Manifest-based admission configurations exist in isolation and cannot
+reference API resources. The following restrictions apply:
+Webhooks
+: Must use 
+clientConfig.url
+. The 
+clientConfig.service
+ field is
+not allowed because the service network may not be available at API server
+startup.
+Policies
+: The 
+spec.paramKind
+ field is not allowed. Policies cannot
+reference ConfigMaps or other cluster objects for parameters.
+Bindings
+: The 
+spec.paramRef
+ field is not allowed. The 
+spec.policyName
+
+must reference a policy defined in the same manifest file set and must end
+with 
+.static.k8s.io
+.
+Manifest files are decoded using the strict decoder, which rejects files
+containing duplicate fields or unknown fields. Each object undergoes the same
+defaulting and validation that the REST API applies.
+Examples
+Protecting API-based admission resources
+A key capability of manifest-based admission control is the ability to intercept
+operations on admission configuration resources themselves
+(ValidatingAdmissionPolicy, MutatingAdmissionPolicy,
+ValidatingWebhookConfiguration, MutatingWebhookConfiguration, and their
+bindings). REST-based admission webhooks and policies are not invoked on these
+resource types to prevent circular dependencies, but manifest-based policies
+can enforce rules on them because they do not have that circular dependency.
+The following example prevents deletion or modification of admission resources
+that carry the 
+platform.example.com/protected: "true"
+ label:
+access/manifest-admission-control/protect-admission-resources.yaml
+
+
+# This is an example ValidatingAdmissionPolicy that prevents deletion or
+
+
+# modification of API-based admission resources with the
+
+
+# "platform.example.com/protected: true" label.
+
+
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+kind
+:
+ 
+ValidatingAdmissionPolicy
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+"example-protect-admission-resources.static.k8s.io"
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+"Prevent modification or deletion of protected admission resources"
+
+
+spec
+:
+
+
+  
+failurePolicy
+:
+ 
+Fail
+
+
+  
+matchConstraints
+:
+
+
+    
+resourceRules
+:
+
+
+    
+- 
+apiGroups
+:
+ 
+[
+"admissionregistration.k8s.io"
+]
+
+
+      
+apiVersions
+:
+ 
+[
+"*"
+]
+
+
+      
+operations
+:
+ 
+[
+"DELETE"
+,
+ 
+"UPDATE"
+]
+
+
+      
+resources
+:
+
+
+      
+- 
+"validatingadmissionpolicies"
+
+
+      
+- 
+"validatingadmissionpolicybindings"
+
+
+      
+- 
+"mutatingadmissionpolicies"
+
+
+      
+- 
+"mutatingadmissionpolicybindings"
+
+
+      
+- 
+"validatingwebhookconfigurations"
+
+
+      
+- 
+"mutatingwebhookconfigurations"
+
+
+  
+validations
+:
+
+
+  
+- 
+expression
+:
+ 
+>-
+
+
+      !has(oldObject.metadata.labels) ||
+
+      !('platform.example.com/protected' in oldObject.metadata.labels) ||
+
+      oldObject.metadata.labels['platform.example.com/protected'] != 'true'
+      
+
+    
+message
+:
+ 
+"Protected admission resources cannot be modified or deleted"
+
+
+---
+
+
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+kind
+:
+ 
+ValidatingAdmissionPolicyBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+"example-protect-admission-resources-binding.static.k8s.io"
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+"Bind protect-admission-resources policy to all admission resources"
+
+
+spec
+:
+
+
+  
+policyName
+:
+ 
+"example-protect-admission-resources.static.k8s.io"
+
+
+  
+validationActions
+:
+
+
+  
+- Deny
+
+
+Enforcing a ValidatingAdmissionPolicy from disk
+The following example defines a policy that denies privileged containers in all
+namespaces except 
+kube-system
+:
+access/manifest-admission-control/deny-privileged-policy.yaml
+
+
+# This is an example ValidatingAdmissionPolicy that denies privileged containers
+
+
+# in all namespaces except kube-system.
+
+
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+kind
+:
+ 
+ValidatingAdmissionPolicy
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+"example-deny-privileged.static.k8s.io"
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+"Deny privileged containers outside kube-system"
+
+
+spec
+:
+
+
+  
+failurePolicy
+:
+ 
+Fail
+
+
+  
+matchConstraints
+:
+
+
+    
+resourceRules
+:
+
+
+    
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+      
+apiVersions
+:
+ 
+[
+"v1"
+]
+
+
+      
+operations
+:
+ 
+[
+"CREATE"
+,
+ 
+"UPDATE"
+]
+
+
+      
+resources
+:
+ 
+[
+"pods"
+]
+
+
+  
+variables
+:
+
+
+  
+- 
+name
+:
+ 
+allContainers
+
+
+    
+expression
+:
+ 
+>-
+
+
+      object.spec.containers +
+
+      (has(object.spec.initContainers) ? object.spec.initContainers : []) +
+
+      (has(object.spec.ephemeralContainers) ? object.spec.ephemeralContainers : [])
+      
+
+  
+validations
+:
+
+
+  
+- 
+expression
+:
+ 
+>-
+
+
+      !variables.allContainers.exists(c,
+
+      has(c.securityContext) && has(c.securityContext.privileged) &&
+
+      c.securityContext.privileged == true)
+      
+
+    
+message
+:
+ 
+"Privileged containers are not allowed"
+
+
+---
+
+
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+kind
+:
+ 
+ValidatingAdmissionPolicyBinding
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+"example-deny-privileged-binding.static.k8s.io"
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+"Bind deny-privileged policy to all namespaces except kube-system"
+
+
+spec
+:
+
+
+  
+policyName
+:
+ 
+"example-deny-privileged.static.k8s.io"
+
+
+  
+validationActions
+:
+
+
+  
+- Deny
+
+
+  
+matchResources
+:
+
+
+    
+namespaceSelector
+:
+
+
+      
+matchExpressions
+:
+
+
+      
+- 
+key
+:
+ 
+"kubernetes.io/metadata.name"
+
+
+        
+operator
+:
+ 
+NotIn
+
+
+        
+values
+:
+ 
+[
+"kube-system"
+]
+
+
+Place this file in the directory configured as 
+staticManifestsDir
+ for the
+
+ValidatingAdmissionPolicy
+ plugin. The policy and its binding are loaded
+together atomically.
+Configuring a ValidatingWebhookConfiguration from disk
+The following example configures a validating webhook that calls an external URL:
+access/manifest-admission-control/validating-webhook.yaml
+
+
+# This is an example ValidatingWebhookConfiguration that calls an external
+
+
+# URL-based webhook endpoint to validate pod creation and updates.
+
+
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+kind
+:
+ 
+ValidatingWebhookConfiguration
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+"example-security-webhook.static.k8s.io"
+
+
+  
+annotations
+:
+
+
+    
+kubernetes.io/description
+:
+ 
+"Validate pod creation and updates via external webhook"
+
+
+webhooks
+:
+
+
+- 
+name
+:
+ 
+"security.platform.example.com"
+
+
+  
+clientConfig
+:
+
+
+    
+url
+:
+ 
+"https://security-webhook.platform.example.com:443/validate"
+
+
+    
+caBundle
+:
+ 
+"<base64-encoded-CA-bundle>"
+
+
+  
+rules
+:
+
+
+  
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+    
+apiVersions
+:
+ 
+[
+"v1"
+]
+
+
+    
+operations
+:
+ 
+[
+"CREATE"
+,
+ 
+"UPDATE"
+]
+
+
+    
+resources
+:
+ 
+[
+"pods"
+]
+
+
+  
+admissionReviewVersions
+:
+ 
+[
+"v1"
+]
+
+
+  
+sideEffects
+:
+ 
+None
+
+
+  
+failurePolicy
+:
+ 
+Fail
+
+
+Note:
+Webhook URLs must be reachable from the kube-apiserver at startup. Only
+URL-based endpoints are supported; service references are not allowed in
+manifest-based webhook configurations.
+Using the List format
+You can use 
+v1.List
+ to group related resources together in a single document:
+access/manifest-admission-control/list-format-policy.yaml
+
+
+# This is an example of using the v1.List format to group a
+
+
+# ValidatingAdmissionPolicy and its binding in a single document.
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+List
+
+
+items
+:
+
+
+- 
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+  
+kind
+:
+ 
+ValidatingAdmissionPolicy
+
+
+  
+metadata
+:
+
+
+    
+name
+:
+ 
+"example-require-labels.static.k8s.io"
+
+
+    
+annotations
+:
+
+
+      
+kubernetes.io/description
+:
+ 
+"Require app.kubernetes.io/name label on all pods"
+
+
+  
+spec
+:
+
+
+    
+failurePolicy
+:
+ 
+Fail
+
+
+    
+matchConstraints
+:
+
+
+      
+resourceRules
+:
+
+
+      
+- 
+apiGroups
+:
+ 
+[
+""
+]
+
+
+        
+apiVersions
+:
+ 
+[
+"v1"
+]
+
+
+        
+operations
+:
+ 
+[
+"CREATE"
+]
+
+
+        
+resources
+:
+ 
+[
+"pods"
+]
+
+
+    
+validations
+:
+
+
+    
+- 
+expression
+:
+ 
+>-
+
+
+        has(object.metadata.labels) &&
+
+        'app.kubernetes.io/name' in object.metadata.labels
+        
+
+      
+message
+:
+ 
+"All pods must have the 'app.kubernetes.io/name' label"
+
+
+- 
+apiVersion
+:
+ 
+admissionregistration.k8s.io/v1
+
+
+  
+kind
+:
+ 
+ValidatingAdmissionPolicyBinding
+
+
+  
+metadata
+:
+
+
+    
+name
+:
+ 
+"example-require-labels-binding.static.k8s.io"
+
+
+    
+annotations
+:
+
+
+      
+kubernetes.io/description
+:
+ 
+"Bind require-labels policy to all namespaces except kube-system"
+
+
+  
+spec
+:
+
+
+    
+policyName
+:
+ 
+"example-require-labels.static.k8s.io"
+
+
+    
+validationActions
+:
+
+
+    
+- Deny
+
+
+    
+matchResources
+:
+
+
+      
+namespaceSelector
+:
+
+
+        
+matchExpressions
+:
+
+
+        
+- 
+key
+:
+ 
+"kubernetes.io/metadata.name"
+
+
+          
+operator
+:
+ 
+NotIn
+
+
+          
+values
+:
+ 
+[
+"kube-system"
+]
+
+
+Evaluation order
+Manifest-based configurations are evaluated before API-based configurations.
+This ensures that platform-level policies enforced via static configuration take
+precedence over API-based policies.
+For admission configuration resources themselves (ValidatingAdmissionPolicy,
+MutatingAdmissionPolicy, ValidatingAdmissionPolicyBinding,
+MutatingAdmissionPolicyBinding, ValidatingWebhookConfiguration,
+MutatingWebhookConfiguration), only manifest-based admission hooks are
+evaluated. API-based hooks are skipped for these resource types to prevent
+circular dependencies.
+File watching and dynamic reloading
+The kube-apiserver watches the configured directories for changes:
+Initial load
+: At startup, all configured paths are read and validated.
+The API server does not become ready until all manifests are loaded
+successfully. Invalid manifests cause startup failure.
+Runtime reloading
+: Changes to manifest files trigger a reload cycle:
+File modifications are detected using
+
+fsnotify
+ with a polling fallback
+(default 1 minute interval), similar to other config file reloading in
+kube-apiserver.
+A content hash of all manifest files is computed on each check. If the hash
+is unchanged, no reload occurs.
+New configurations are validated before being applied.
+If validation fails, the error is logged, metrics are updated, and the
+previous valid configuration is retained.
+Successful reloads atomically replace the previous configuration.
+Atomic file updates
+: To avoid partial reads during file writes, make
+changes atomically (for example, write to a temporary file and rename it).
+This is especially important when updating mounted ConfigMaps or Secrets in
+containerized environments.
+Caution:
+If an invalid manifest file is present at startup, the API server does not
+start. At runtime, if a reload fails due to validation errors, the previous
+valid configuration is retained and the error is logged.
+Observability
+Metrics
+Manifest-based admission control provides the following metrics for monitoring
+reload health:
+Metrics for manifest-based admission control
+Type
+Description
+Metric
+Counter
+Total number of reload attempts, with 
+status
+ (
+success
+ or 
+failure
+), 
+plugin
+, and 
+apiserver_id_hash
+ labels.
+apiserver_manifest_admission_config_controller_automatic_reloads_total
+Gauge
+Timestamp of the last reload attempt, with 
+status
+, 
+plugin
+, and 
+apiserver_id_hash
+ labels.
+apiserver_manifest_admission_config_controller_automatic_reload_last_timestamp_seconds
+Gauge
+Current configuration information (value is always 1), with 
+plugin
+, 
+apiserver_id_hash
+, and 
+hash
+ labels. Use the 
+hash
+ label to detect configuration drift across API servers.
+apiserver_manifest_admission_config_controller_last_config_info
+The 
+plugin
+ label identifies which admission plugin the metric applies to:
+
+ValidatingAdmissionWebhook
+, 
+MutatingAdmissionWebhook
+,
+
+ValidatingAdmissionPolicy
+, or 
+MutatingAdmissionPolicy
+.
+Since manifest-based objects have names ending in 
+.static.k8s.io
+, existing
+admission metrics (such as 
+apiserver_admission_webhook_rejection_count
+) can
+identify manifest-based decisions by filtering on the 
+name
+ label.
+Audit annotations
+Existing audit annotations (such as
+
+validation.policy.admission.k8s.io/validation_failure
+ and
+
+mutation.webhook.admission.k8s.io/round_0_index_0
+) include the object name.
+You can identify manifest-based admission decisions by filtering for names
+ending in 
+.static.k8s.io
+.
+High availability considerations
+Each kube-apiserver instance loads its own manifest files independently. In
+high availability setups with multiple API server instances:
+Each API server must be configured individually. There is no cross-apiserver
+synchronization of manifest-based configurations.
+Use external configuration management tools (such as Ansible, Puppet, or
+shared storage mounts) to keep manifest files consistent across instances.
+The 
+apiserver_manifest_admission_config_controller_last_config_info
+ metric
+exposes a 
+hash
+ label that you can use to detect configuration drift across
+API server instances.
+This behavior is similar to other file-based kube-apiserver configurations such as
+
+encryption at rest
+ and
+
+authentication
+.
+Upgrade and downgrade
+Upgrade
+: Enabling the feature and providing manifest configuration is
+opt-in. Existing clusters without manifest configuration see no behavioral
+change.
+Downgrade
+: Before downgrading to a version without this feature:
+Remove 
+staticManifestsDir
+ entries from the 
+AdmissionConfiguration
+ file.
+If relying on manifest-based policies, recreate them as API objects where
+possible.
+Restart the kube-apiserver.
+Warning:
+Downgrading without removing the 
+staticManifestsDir
+ configuration causes the
+API server to fail to start due to unknown configuration fields.
+Troubleshooting
+Common issues and their resolution
+Symptom
+Possible cause
+Resolution
+API server fails to start
+Invalid manifest file at startup
+Check API server logs for validation errors. Fix the manifest file and restart.
+API server fails to start
+Duplicate object names across manifest files
+Ensure all object names within a plugin's 
+staticManifestsDir
+ are unique.
+Policies not enforced after file update
+Reload validation failure
+Check 
+automatic_reloads_total{status="failure"}
+ metric and API server logs. Fix the manifest and wait for the next reload cycle.
+Webhook requests failing
+Webhook URL not reachable
+Verify that the URL specified in 
+clientConfig.url
+ is accessible from the kube-apiserver.
+Cannot create API objects with 
+.static.k8s.io
+ suffix
+Name suffix reserved by feature gate
+The 
+.static.k8s.io
+ suffix is reserved for manifest-based configurations when the feature gate is enabled. Use a different name for API-based objects.
+What's next
+Learn about 
+ValidatingAdmissionPolicy
+
+for CEL-based validation policies.
+Learn about 
+MutatingAdmissionPolicy
+
+for CEL-based mutation policies.
+Learn about 
+Dynamic Admission Control
+
+for webhook-based admission control.
+Read the 
+KEP-5793
+
+design document.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 08, 2026 at 9:37 AM PST: 
+docs(kep-5793): address review nits on admission control docs (99775be699)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

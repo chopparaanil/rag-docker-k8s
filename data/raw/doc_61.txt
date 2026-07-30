@@ -1,0 +1,3497 @@
+Creating a cluster with kubeadm | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Creating a cluster with kubeadm
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Before you begin
+Objectives
+Instructions
+Preparing the hosts
+Preparing the required container images
+Initializing your control-plane node
+Considerations about apiserver-advertise-address and ControlPlaneEndpoint
+More information
+Installing a Pod network add-on
+Managed node labels
+Control plane node isolation
+Adding more control plane nodes
+Adding worker nodes
+(Optional) Controlling your cluster from machines other than the control-plane node
+(Optional) Proxying API Server to localhost
+Clean up
+Remove the node
+Clean up the control plane
+Version skew policy
+kubeadm's skew against the Kubernetes version
+kubeadm's skew against the kubelet
+kubeadm's skew against kubeadm
+Limitations
+Cluster resilience
+Platform compatibility
+Troubleshooting
+What's next
+Feedback
+Kubernetes Documentation
+Getting started
+Production environment
+Installing Kubernetes with deployment tools
+Bootstrapping clusters with kubeadm
+Creating a cluster with kubeadm
+Creating a cluster with kubeadm
+
+Using 
+kubeadm
+, you can create a minimum viable Kubernetes cluster that conforms to best practices.
+In fact, you can use 
+kubeadm
+ to set up a cluster that will pass the
+
+Kubernetes Conformance tests
+.
+
+kubeadm
+ also supports other cluster lifecycle functions, such as
+
+bootstrap tokens
+ and cluster upgrades.
+The 
+kubeadm
+ tool is good if you need:
+A simple way for you to try out Kubernetes, possibly for the first time.
+A way for existing users to automate setting up a cluster and test their application.
+A building block in other ecosystem and/or installer tools with a larger
+scope.
+You can install and use 
+kubeadm
+ on various machines: your laptop, a set
+of cloud servers, a Raspberry Pi, and more. Whether you're deploying into the
+cloud or on-premises, you can integrate 
+kubeadm
+ into provisioning systems such
+as Ansible or Terraform.
+Before you begin
+To follow this guide, you need:
+One or more machines running a deb/rpm-compatible Linux OS; for example: Ubuntu or CentOS.
+2 GiB or more of RAM per machine--any less leaves little room for your apps.
+At least 2 CPUs on the machine that you use as a control-plane node.
+Full network connectivity among all machines in the cluster. You can use either a
+public or a private network.
+You also need to use a version of 
+kubeadm
+ that can deploy the version
+of Kubernetes that you want to use in your new cluster.
+Kubernetes' version and version skew support policy
+
+applies to 
+kubeadm
+ as well as to Kubernetes overall.
+Check that policy to learn about what versions of Kubernetes and 
+kubeadm
+
+are supported. This page is written for Kubernetes v1.36.
+The 
+kubeadm
+ tool's overall feature state is General Availability (GA). Some sub-features are
+still under active development. The implementation of creating the cluster may change
+slightly as the tool evolves, but the overall implementation should be pretty stable.
+Note:
+Any commands under 
+kubeadm alpha
+ are, by definition, supported on an alpha level.
+Objectives
+Install a single control-plane Kubernetes cluster
+Install a Pod network on the cluster so that your Pods can
+talk to each other
+Instructions
+Preparing the hosts
+Component installation
+Install a 
+container runtime
+
+and kubeadm on all the hosts. For detailed instructions and other prerequisites, see
+
+Installing kubeadm
+.
+Note:
+If you have already installed kubeadm, see the first two steps of the
+
+Upgrading Linux nodes
+
+document for instructions on how to upgrade kubeadm.
+When you upgrade, the kubelet restarts every few seconds as it waits in a crashloop for
+kubeadm to tell it what to do. This crashloop is expected and normal.
+After you initialize your control-plane, the kubelet runs normally.
+Network setup
+kubeadm similarly to other Kubernetes components tries to find a usable IP on
+the network interfaces associated with a default gateway on a host. Such
+an IP is then used for the advertising and/or listening performed by a component.
+To find out what this IP is on a Linux host you can use:
+ip route show 
+# Look for a line starting with "default via"
+
+
+Note:
+If two or more default gateways are present on the host, a Kubernetes component will
+try to use the first one it encounters that has a suitable global unicast IP address.
+While making this choice, the exact ordering of gateways might vary between different
+operating systems and kernel versions.
+Kubernetes components do not accept custom network interface as an option,
+therefore a custom IP address must be passed as a flag to all components instances
+that need such a custom configuration.
+Note:
+If the host does not have a default gateway and if a custom IP address is not passed
+to a Kubernetes component, the component may exit with an error.
+To configure the API server advertise address for control plane nodes created with both
+
+init
+ and 
+join
+, the flag 
+--apiserver-advertise-address
+ can be used.
+Preferably, this option can be set in the 
+kubeadm API
+
+as 
+InitConfiguration.localAPIEndpoint
+ and 
+JoinConfiguration.controlPlane.localAPIEndpoint
+.
+For kubelets on all nodes, the 
+--node-ip
+ option can be passed in
+
+.nodeRegistration.kubeletExtraArgs
+ inside a kubeadm configuration file
+(
+InitConfiguration
+ or 
+JoinConfiguration
+).
+For dual-stack see
+
+Dual-stack support with kubeadm
+.
+The IP addresses that you assign to control plane components become part of their X.509 certificates'
+subject alternative name fields. Changing these IP addresses would require
+signing new certificates and restarting the affected components, so that the change in
+certificate files is reflected. See
+
+Manual certificate renewal
+
+for more details on this topic.
+Warning:
+The Kubernetes project recommends against this approach (configuring all component instances
+with custom IP addresses). Instead, the Kubernetes maintainers recommend to setup the host network,
+so that the default gateway IP is the one that Kubernetes components auto-detect and use.
+On Linux nodes, you can use commands such as 
+ip route
+ to configure networking; your operating
+system might also provide higher level network management tools. If your node's default gateway
+is a public IP address, you should configure packet filtering or other security measures that
+protect the nodes and your cluster.
+Preparing the required container images
+This step is optional and only applies in case you wish 
+kubeadm init
+ and 
+kubeadm join
+
+to not download the default container images which are hosted at 
+registry.k8s.io
+.
+Kubeadm has commands that can help you pre-pull the required images
+when creating a cluster without an internet connection on its nodes.
+See 
+Running kubeadm without an internet connection
+
+for more details.
+Kubeadm allows you to use a custom image repository for the required images.
+See 
+Using custom images
+
+for more details.
+Initializing your control-plane node
+The control-plane node is the machine where the control plane components run, including
+
+etcd
+ (the cluster database) and the
+
+API Server
+
+(which the 
+kubectl
+ command line tool
+communicates with).
+(Recommended) If you have plans to upgrade this single control-plane 
+kubeadm
+ cluster
+to 
+high availability
+
+you should specify the 
+--control-plane-endpoint
+ to set the shared endpoint for all control-plane nodes.
+Such an endpoint can be either a DNS name or an IP address of a load-balancer.
+Choose a Pod network add-on, and verify whether it requires any arguments to
+be passed to 
+kubeadm init
+. Depending on which
+third-party provider you choose, you might need to set the 
+--pod-network-cidr
+ to
+a provider-specific value. See 
+Installing a Pod network add-on
+.
+(Optional) 
+kubeadm
+ tries to detect the container runtime by using a list of well
+known endpoints. To use different container runtime or if there are more than one installed
+on the provisioned node, specify the 
+--cri-socket
+ argument to 
+kubeadm
+. See
+
+Installing a runtime
+.
+To initialize the control-plane node run:
+kubeadm init <args>
+
+Considerations about apiserver-advertise-address and ControlPlaneEndpoint
+While 
+--apiserver-advertise-address
+ can be used to set the advertised address for this particular
+control-plane node's API server, 
+--control-plane-endpoint
+ can be used to set the shared endpoint
+for all control-plane nodes.
+--control-plane-endpoint
+ allows both IP addresses and DNS names that can map to IP addresses.
+Please contact your network administrator to evaluate possible solutions with respect to such mapping.
+Here is an example mapping:
+192.168.0.102 cluster-endpoint
+
+Where 
+192.168.0.102
+ is the IP address of this node and 
+cluster-endpoint
+ is a custom DNS name that maps to this IP.
+This will allow you to pass 
+--control-plane-endpoint=cluster-endpoint
+ to 
+kubeadm init
+ and pass the same DNS name to
+
+kubeadm join
+. Later you can modify 
+cluster-endpoint
+ to point to the address of your load-balancer in a
+high availability scenario.
+Turning a single control plane cluster created without 
+--control-plane-endpoint
+ into a highly available cluster
+is not supported by kubeadm.
+More information
+For more information about 
+kubeadm init
+ arguments, see the 
+kubeadm reference guide
+.
+To configure 
+kubeadm init
+ with a configuration file see
+
+Using kubeadm init with a configuration file
+.
+To customize control plane components, including optional IPv6 assignment to liveness probe
+for control plane components and etcd server, provide extra arguments to each component as documented in
+
+custom arguments
+.
+To reconfigure a cluster that has already been created see
+
+Reconfiguring a kubeadm cluster
+.
+To run 
+kubeadm init
+ again, you must first 
+tear down the cluster
+.
+If you join a node with a different architecture to your cluster, make sure that your deployed DaemonSets
+have container image support for this architecture.
+kubeadm init
+ first runs a series of prechecks to ensure that the machine
+is ready to run Kubernetes. These prechecks expose warnings and exit on errors. 
+kubeadm init
+
+then downloads and installs the cluster control plane components. This may take several minutes.
+After it finishes you should see:
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a Pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  /docs/concepts/cluster-administration/addons/
+
+You can now join any number of machines by running the following on each node
+as root:
+
+  kubeadm join <control-plane-host>:<control-plane-port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>
+
+To make kubectl work for your non-root user, run these commands, which are
+also part of the 
+kubeadm init
+ output:
+mkdir -p 
+$HOME
+/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf 
+$HOME
+/.kube/config
+
+sudo chown 
+$(
+id -u
+)
+:
+$(
+id -g
+)
+ 
+$HOME
+/.kube/config
+
+Alternatively, if you are the 
+root
+ user, you can run:
+export
+ 
+KUBECONFIG
+=
+/etc/kubernetes/admin.conf
+
+Warning:
+The kubeconfig file 
+admin.conf
+ that 
+kubeadm init
+ generates contains a certificate with
+
+Subject: O = kubeadm:cluster-admins, CN = kubernetes-admin
+. The group 
+kubeadm:cluster-admins
+
+is bound to the built-in 
+cluster-admin
+ ClusterRole.
+Do not share the 
+admin.conf
+ file with anyone.
+kubeadm init
+ generates another kubeconfig file 
+super-admin.conf
+ that contains a certificate with
+
+Subject: O = system:masters, CN = kubernetes-super-admin
+.
+
+system:masters
+ is a break-glass, super user group that bypasses the authorization layer (for example RBAC).
+Do not share the 
+super-admin.conf
+ file with anyone. It is recommended to move the file to a safe location.
+See
+
+Generating kubeconfig files for additional users
+
+on how to use 
+kubeadm kubeconfig user
+ to generate kubeconfig files for additional users.
+Make a record of the 
+kubeadm join
+ command that 
+kubeadm init
+ outputs. You
+need this command to 
+join nodes to your cluster
+.
+The token is used for mutual authentication between the control-plane node and the joining
+nodes. The token included here is secret. Keep it safe, because anyone with this
+token can add authenticated nodes to your cluster. These tokens can be listed,
+created, and deleted with the 
+kubeadm token
+ command. See the
+
+kubeadm reference guide
+.
+Installing a Pod network add-on
+Caution:
+This section contains important information about networking setup and
+deployment order.
+Read all of this advice carefully before proceeding.
+You must deploy a
+
+Container Network Interface
+
+(CNI) based Pod network add-on so that your Pods can communicate with each other.
+Cluster DNS (CoreDNS) will not start up before a network is installed.
+Take care that your Pod network must not overlap with any of the host
+networks: you are likely to see problems if there is any overlap.
+(If you find a collision between your network plugin's preferred Pod
+network and some of your host networks, you should think of a suitable
+CIDR block to use instead, then use that during 
+kubeadm init
+ with
+
+--pod-network-cidr
+ and as a replacement in your network plugin's YAML).
+By default, 
+kubeadm
+ sets up your cluster to use and enforce use of
+
+RBAC
+ (role based access
+control).
+Make sure that your Pod network plugin supports RBAC, and so do any manifests
+that you use to deploy it.
+If you want to use IPv6--either dual-stack, or single-stack IPv6 only
+networking--for your cluster, make sure that your Pod network plugin
+supports IPv6.
+IPv6 support was added to CNI in 
+v0.6.0
+.
+Note:
+Kubeadm should be CNI agnostic and the validation of CNI providers is out of the scope of our current e2e testing.
+If you find an issue related to a CNI plugin you should log a ticket in its respective issue
+tracker instead of the kubeadm or kubernetes issue trackers.
+Several external projects provide Kubernetes Pod networks using CNI, some of which also
+support 
+Network Policy
+.
+See a list of add-ons that implement the
+
+Kubernetes networking model
+.
+Please refer to the 
+Installing Addons
+
+page for a non-exhaustive list of networking addons supported by Kubernetes.
+You can install a Pod network add-on with the following command on the
+control-plane node or a node that has the kubeconfig credentials:
+kubectl apply -f <add-on.yaml>
+
+Note:
+Only a few CNI plugins support Windows. More details and setup instructions can be found
+in 
+Adding Windows worker nodes
+.
+You can install only one Pod network per cluster.
+Once a Pod network has been installed, you can confirm that it is working by
+checking that the CoreDNS Pod is 
+Running
+ in the output of 
+kubectl get pods --all-namespaces
+.
+And once the CoreDNS Pod is up and running, you can continue by joining your nodes.
+If your network is not working or CoreDNS is not in the 
+Running
+ state, check out the
+
+troubleshooting guide
+
+for 
+kubeadm
+.
+Managed node labels
+By default, kubeadm enables the 
+NodeRestriction
+
+admission controller that restricts what labels can be self-applied by kubelets on node registration.
+The admission controller documentation covers what labels are permitted to be used with the kubelet 
+--node-labels
+ option.
+The 
+node-role.kubernetes.io/control-plane
+ label is such a restricted label and kubeadm manually applies it using
+a privileged client after a node has been created. To do that manually you can do the same by using 
+kubectl label
+
+and ensure it is using a privileged kubeconfig such as the kubeadm managed 
+/etc/kubernetes/admin.conf
+.
+Control plane node isolation
+By default, your cluster will not schedule Pods on the control plane nodes for security
+reasons. If you want to be able to schedule Pods on the control plane nodes,
+for example for a single machine Kubernetes cluster, run:
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
+The output will look something like:
+node "test-01" untainted
+...
+
+This will remove the 
+node-role.kubernetes.io/control-plane:NoSchedule
+ taint
+from any nodes that have it, including the control plane nodes, meaning that the
+scheduler will then be able to schedule Pods everywhere.
+Additionally, you can execute the following command to remove the
+
+node.kubernetes.io/exclude-from-external-load-balancers
+ label
+from the control plane node, which excludes it from the list of backend servers:
+kubectl label nodes --all node.kubernetes.io/exclude-from-external-load-balancers-
+
+Adding more control plane nodes
+See 
+Creating Highly Available Clusters with kubeadm
+
+for steps on creating a high availability kubeadm cluster by adding more control plane nodes.
+Adding worker nodes
+The worker nodes are where your workloads run.
+The following pages show how to add Linux and Windows worker nodes to the cluster by using
+the 
+kubeadm join
+ command:
+Adding Linux worker nodes
+Adding Windows worker nodes
+(Optional) Controlling your cluster from machines other than the control-plane node
+In order to get a kubectl on some other computer (e.g. laptop) to talk to your
+cluster, you need to copy the administrator kubeconfig file from your control-plane node
+to your workstation like this:
+scp root@<control-plane-host>:/etc/kubernetes/admin.conf .
+
+kubectl --kubeconfig ./admin.conf get nodes
+
+Note:
+The example above assumes SSH access is enabled for root. If that is not the
+case, you can copy the 
+admin.conf
+ file to be accessible by some other user
+and 
+scp
+ using that other user instead.
+The 
+admin.conf
+ file gives the user 
+superuser
+ privileges over the cluster.
+This file should be used sparingly. For normal users, it's recommended to
+generate an unique credential to which you grant privileges. You can do
+this with the 
+kubeadm kubeconfig user --client-name <CN>
+
+command. That command will print out a KubeConfig file to STDOUT which you
+should save to a file and distribute to your user. After that, grant
+privileges by using 
+kubectl create (cluster)rolebinding
+.
+(Optional) Proxying API Server to localhost
+If you want to connect to the API Server from outside the cluster, you can use
+
+kubectl proxy
+:
+scp root@<control-plane-host>:/etc/kubernetes/admin.conf .
+
+kubectl --kubeconfig ./admin.conf proxy
+
+You can now access the API Server locally at 
+http://localhost:8001/api/v1
+Clean up
+If you used disposable servers for your cluster, for testing, you can
+switch those off and do no further clean up. You can use
+
+kubectl config delete-cluster
+ to delete your local references to the
+cluster.
+However, if you want to deprovision your cluster more cleanly, you should
+first 
+drain the node
+
+and make sure that the node is empty, then deconfigure the node.
+Remove the node
+Talking to the control-plane node with the appropriate credentials, run:
+kubectl drain <node name> --delete-emptydir-data --force --ignore-daemonsets
+
+Before removing the node, reset the state installed by 
+kubeadm
+:
+kubeadm reset
+
+The reset process does not reset or clean up iptables rules or IPVS tables.
+If you wish to reset iptables, you must do so manually:
+iptables -F 
+&&
+ iptables -t nat -F 
+&&
+ iptables -t mangle -F 
+&&
+ iptables -X
+
+If you want to reset the IPVS tables, you must run the following command:
+ipvsadm -C
+
+Now remove the node:
+kubectl delete node <node name>
+
+If you wish to start over, run 
+kubeadm init
+ or 
+kubeadm join
+ with the
+appropriate arguments.
+Clean up the control plane
+You can use 
+kubeadm reset
+ on the control plane host to trigger a best-effort
+clean up.
+See the 
+kubeadm reset
+
+reference documentation for more information about this subcommand and its
+options.
+Version skew policy
+While kubeadm allows version skew against some components that it manages, it is recommended that you
+match the kubeadm version with the versions of the control plane components, kube-proxy and kubelet.
+kubeadm's skew against the Kubernetes version
+kubeadm can be used with Kubernetes components that are the same version as kubeadm
+or one version older. The Kubernetes version can be specified to kubeadm by using the
+
+--kubernetes-version
+ flag of 
+kubeadm init
+ or the
+
+ClusterConfiguration.kubernetesVersion
+
+field when using 
+--config
+. This option will control the versions
+of kube-apiserver, kube-controller-manager, kube-scheduler and kube-proxy.
+Example:
+kubeadm is at 1.36
+kubernetesVersion
+ must be at 1.36 or 1.35
+kubeadm's skew against the kubelet
+Similarly to the Kubernetes version, kubeadm can be used with a kubelet version that is
+the same version as kubeadm or three versions older.
+Example:
+kubeadm is at 1.36
+kubelet on the host must be at 1.36, 1.35,
+1.34 or 1.33
+kubeadm's skew against kubeadm
+There are certain limitations on how kubeadm commands can operate on existing nodes or whole clusters
+managed by kubeadm.
+If new nodes are joined to the cluster, the kubeadm binary used for 
+kubeadm join
+ must match
+the last version of kubeadm used to either create the cluster with 
+kubeadm init
+ or to upgrade
+the same node with 
+kubeadm upgrade
+. Similar rules apply to the rest of the kubeadm commands
+with the exception of 
+kubeadm upgrade
+.
+Example for 
+kubeadm join
+:
+kubeadm version 1.36 was used to create a cluster with 
+kubeadm init
+Joining nodes must use a kubeadm binary that is at version 1.36
+Nodes that are being upgraded must use a version of kubeadm that is the same MINOR
+version or one MINOR version newer than the version of kubeadm used for managing the
+node.
+Example for 
+kubeadm upgrade
+:
+kubeadm version 1.35 was used to create or upgrade the node
+The version of kubeadm used for upgrading the node must be at 1.35
+or 1.36
+To learn more about the version skew between the different Kubernetes component see
+the 
+Version Skew Policy
+.
+Limitations
+Cluster resilience
+The cluster created here has a single control-plane node, with a single etcd database
+running on it. This means that if the control-plane node fails, your cluster may lose
+data and may need to be recreated from scratch.
+Workarounds:
+Regularly 
+back up etcd
+. The
+etcd data directory configured by kubeadm is at 
+/var/lib/etcd
+ on the control-plane node.
+Use multiple control-plane nodes. You can read
+
+Options for Highly Available topology
+ to pick a cluster
+topology that provides 
+high-availability
+.
+Platform compatibility
+kubeadm deb/rpm packages and binaries are built for amd64, arm (32-bit), arm64, ppc64le, and s390x
+following the 
+multi-platform proposal
+.
+Multiplatform container images for the control plane and addons are also supported since v1.12.
+Only some of the network providers offer solutions for all platforms. Please consult the list of
+network providers above or the documentation from each provider to figure out whether the provider
+supports your chosen platform.
+Troubleshooting
+If you are running into difficulties with kubeadm, please consult our
+
+troubleshooting docs
+.
+What's next
+Verify that your cluster is running properly with 
+Sonobuoy
+See 
+Upgrading kubeadm clusters
+
+for details about upgrading your cluster using 
+kubeadm
+.
+Learn about advanced 
+kubeadm
+ usage in the 
+kubeadm reference documentation
+Learn more about Kubernetes 
+concepts
+ and 
+kubectl
+.
+See the 
+Cluster Networking
+ page for a bigger list
+of Pod network add-ons.
+See the 
+list of add-ons
+ to
+explore other add-ons, including tools for logging, monitoring, network policy, visualization &
+control of your Kubernetes cluster.
+Configure how your cluster handles logs for cluster events and from
+applications running in Pods.
+See 
+Logging Architecture
+ for
+an overview of what is involved.
+Feedback
+For bugs, visit the 
+kubeadm GitHub issue tracker
+For support, visit the
+
+#kubeadm
+ Slack channel
+General SIG Cluster Lifecycle development Slack channel:
+
+#sig-cluster-lifecycle
+SIG Cluster Lifecycle 
+SIG information
+SIG Cluster Lifecycle mailing list:
+
+kubernetes-sig-cluster-lifecycle
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 14, 2026 at 1:15 AM PST: 
+fix(links): update kubernetes/community links from master to main (03c191bcc4)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

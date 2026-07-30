@@ -1,0 +1,3403 @@
+Admission Webhook Good Practices | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Admission Webhook Good Practices
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+ Third party content advice
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Importance of good webhook design
+Identify whether you use admission webhooks
+Choose an admission control mechanism
+Use built-in validation and defaulting for CustomResourceDefinitions
+Performance and latency
+Design admission webhooks for low latency
+Prevent loops caused by competing controllers
+Set a small timeout value
+Use a load balancer to ensure webhook availability
+Use a high-availability deployment model
+Request filtering
+Limit the scope of each webhook
+Filter for specific requests by using match conditions
+Match all versions of an API
+Mutation scope and field considerations
+Patch only required fields
+Don't overwrite array values
+Avoid side effects
+Avoid self-mutations
+Avoid dependency loops
+Fail open and validate the final state
+Plan for future updates to fields
+Prevent your webhook from triggering itself
+Don't change immutable objects
+Mutating webhook ordering and idempotence
+Don't rely on mutating webhook invocation order
+Ensure that the mutating webhooks in your cluster are idempotent
+Mutation testing and validation
+Test webhooks in staging environments
+Ensure that mutations don't violate validations
+Test minor version upgrades to ensure consistent behavior
+Validate mutations before admission
+Mutating webhook deployment
+Install and enable a mutating webhook
+Limit edit access to mutating webhooks
+Examples of good implementations
+What's next
+Kubernetes Documentation
+Concepts
+Cluster Administration
+Admission Webhook Good Practices
+Admission Webhook Good Practices
+Recommendations for designing and deploying admission webhooks in Kubernetes.
+This page provides good practices and considerations when designing
+
+admission webhooks
+ in Kubernetes. This information is intended for
+cluster operators who run admission webhook servers or third-party applications
+that modify or validate your API requests.
+Before reading this page, ensure that you're familiar with the following
+concepts:
+Admission controllers
+Admission webhooks
+Importance of good webhook design
+Admission control occurs when any create, update, or delete request
+is sent to the Kubernetes API. Admission controllers intercept requests that
+match specific criteria that you define. These requests are then sent to
+mutating admission webhooks or validating admission webhooks. These webhooks are
+often written to ensure that specific fields in object specifications exist or
+have specific allowed values.
+Webhooks are a powerful mechanism to extend the Kubernetes API. Badly-designed
+webhooks often result in workload disruptions because of how much control
+the webhooks have over objects in the cluster. Like other API extension
+mechanisms, webhooks are challenging to test at scale for compatibility with
+all of your workloads, other webhooks, add-ons, and plugins.
+Additionally, with every release, Kubernetes adds or modifies the API with new
+features, feature promotions to beta or stable status, and deprecations. Even
+stable Kubernetes APIs are likely to change. For example, the 
+Pod
+ API changed
+in v1.29 to add the
+
+Sidecar containers
+ feature.
+While it's rare for a Kubernetes object to enter a broken state because of a new
+Kubernetes API, webhooks that worked as expected with earlier versions of an API
+might not be able to reconcile more recent changes to that API. This can result
+in unexpected behavior after you upgrade your clusters to newer versions.
+This page describes common webhook failure scenarios and how to avoid them by
+cautiously and thoughtfully designing and implementing your webhooks.
+Identify whether you use admission webhooks
+Even if you don't run your own admission webhooks, some third-party applications
+that you run in your clusters might use mutating or validating admission
+webhooks.
+To check whether your cluster has any mutating admission webhooks, run the
+following command:
+kubectl get mutatingwebhookconfigurations
+
+The output lists any mutating admission controllers in the cluster.
+To check whether your cluster has any validating admission webhooks, run the
+following command:
+kubectl get validatingwebhookconfigurations
+
+The output lists any validating admission controllers in the cluster.
+Choose an admission control mechanism
+Kubernetes includes multiple admission control and policy enforcement options.
+Knowing when to use a specific option can help you to improve latency and
+performance, reduce management overhead, and avoid issues during version
+upgrades. The following table describes the mechanisms that let you mutate or
+validate resources during admission:
+Mutating and validating admission control in Kubernetes
+Mechanism
+Description
+Use cases
+Mutating admission webhook
+Intercept API requests before admission and modify as needed using
+custom logic.
+Make critical modifications that must happen before resource
+admission.
+Make complex modifications that require advanced logic, like calling
+external APIs.
+Mutating admission policy
+Intercept API requests before admission and modify as needed using
+Common Expression Language (CEL) expressions.
+Make critical modifications that must happen before resource
+admission.
+Make simple modifications, such as adjusting labels or replica
+counts.
+Validating admission webhook
+Intercept API requests before admission and validate against complex
+policy declarations.
+Validate critical configurations before resource admission.
+Enforce complex policy logic before admission.
+Validating admission policy
+Intercept API requests before admission and validate against CEL
+expressions.
+Validate critical configurations before resource admission.
+Enforce policy logic using CEL expressions.
+In general, use 
+webhook
+ admission control when you want an extensible way to
+declare or configure the logic. Use built-in CEL-based admission control when
+you want to declare simpler logic without the overhead of running a webhook
+server. The Kubernetes project recommends that you use CEL-based admission
+control when possible.
+Use built-in validation and defaulting for CustomResourceDefinitions
+If you use
+
+CustomResourceDefinitions
+,
+don't use admission webhooks to validate values in CustomResource specifications
+or to set default values for fields. Kubernetes lets you define validation rules
+and default field values when you create CustomResourceDefinitions.
+To learn more, see the following resources:
+Validation rules
+Defaulting
+Performance and latency
+This section describes recommendations for improving performance and reducing
+latency. In summary, these are as follows:
+Consolidate webhooks and limit the number of API calls per webhook.
+Use audit logs to check for webhooks that repeatedly do the same action.
+Use load balancing for webhook availability.
+Set a small timeout value for each webhook.
+Consider cluster availability needs during webhook design.
+Design admission webhooks for low latency
+Mutating admission webhooks are called in sequence. Depending on the mutating
+webhook setup, some webhooks might be called multiple times. Every mutating
+webhook call adds latency to the admission process. This is unlike validating
+webhooks, which get called in parallel.
+When designing your mutating webhooks, consider your latency requirements and
+tolerance. The more mutating webhooks there are in your cluster, the greater the
+chance of latency increases.
+Consider the following to reduce latency:
+Consolidate webhooks that perform a similar mutation on different objects.
+Reduce the number of API calls made in the mutating webhook server logic.
+Limit the match conditions of each mutating webhook to reduce how many
+webhooks are triggered by a specific API request.
+Consolidate small webhooks into one server and configuration to help with
+ordering and organization.
+Prevent loops caused by competing controllers
+Consider any other components that run in your cluster that might conflict with
+the mutations that your webhook makes. For example, if your webhook adds a label
+that a different controller removes, your webhook gets called again. This leads
+to a loop.
+To detect these loops, try the following:
+Update your cluster audit policy to log audit events. Use the following
+parameters:
+level
+: 
+RequestResponse
+verbs
+: 
+["patch"]
+omitStages
+: 
+RequestReceived
+Set the audit rule to create events for the specific resources that your
+webhook mutates.
+Check your audit events for webhooks being reinvoked multiple times with the
+same patch being applied to the same object, or for an object having
+a field updated and reverted multiple times.
+Set a small timeout value
+Admission webhooks should evaluate as quickly as possible (typically in
+milliseconds), since they add to API request latency. Use a small timeout for
+webhooks.
+For details, see
+
+Timeouts
+.
+Use a load balancer to ensure webhook availability
+Admission webhooks should leverage some form of load-balancing to provide high
+availability and performance benefits. If a webhook is running within the
+cluster, you can run multiple webhook backends behind a Service of type
+
+ClusterIP
+.
+Use a high-availability deployment model
+Consider your cluster's availability requirements when designing your webhook.
+For example, during node downtime or zonal outages, Kubernetes marks Pods as
+
+NotReady
+ to allow load balancers to reroute traffic to available zones and
+nodes. These updates to Pods might trigger your mutating webhooks. Depending on
+the number of affected Pods, the mutating webhook server has a risk of timing
+out or causing delays in Pod processing. As a result, traffic won't get
+rerouted as quickly as you need.
+Consider situations like the preceding example when writing your webhooks.
+Exclude operations that are a result of Kubernetes responding to unavoidable
+incidents.
+Request filtering
+This section provides recommendations for filtering which requests trigger
+specific webhooks. In summary, these are as follows:
+Limit the webhook scope to avoid system components and read-only requests.
+Limit webhooks to specific namespaces.
+Use match conditions to perform fine-grained request filtering.
+Match all versions of an object.
+Limit the scope of each webhook
+Admission webhooks are only called when an API request matches the corresponding
+webhook configuration. Limit the scope of each webhook to reduce unnecessary
+calls to the webhook server. Consider the following scope limitations:
+Avoid matching objects in the 
+kube-system
+ namespace. If you run your own
+Pods in the 
+kube-system
+ namespace, use an
+
+objectSelector
+
+to avoid mutating a critical workload.
+Don't mutate node leases, which exist as Lease objects in the
+
+kube-node-lease
+ system namespace. Mutating node leases might result in
+failed node upgrades. Only apply validation controls to Lease objects in this
+namespace if you're confident that the controls won't put your cluster at
+risk.
+Don't mutate TokenReview or SubjectAccessReview objects. These are always
+read-only requests. Modifying these objects might break your cluster.
+Limit each webhook to a specific namespace by using a
+
+namespaceSelector
+.
+Filter for specific requests by using match conditions
+Admission controllers support multiple fields that you can use to match requests
+that meet specific criteria. For example, you can use a 
+namespaceSelector
+ to
+filter for requests that target a specific namespace.
+For more fine-grained request filtering, use the 
+matchConditions
+ field in your
+webhook configuration. This field lets you write multiple CEL expressions that
+must evaluate to 
+true
+ for a request to trigger your admission webhook. Using
+
+matchConditions
+ might significantly reduce the number of calls to your webhook
+server.
+For details, see
+
+Matching requests: 
+matchConditions
+.
+Match all versions of an API
+By default, admission webhooks run on any API versions that affect a specified
+resource. The 
+matchPolicy
+ field in the webhook configuration controls this
+behavior. Specify a value of 
+Equivalent
+ in the 
+matchPolicy
+ field or omit
+the field to allow the webhook to run on any API version.
+For details, see
+
+Matching requests: 
+matchPolicy
+.
+Mutation scope and field considerations
+This section provides recommendations for the scope of mutations and any special
+considerations for object fields. In summary, these are as follows:
+Patch only the fields that you need to patch.
+Don't overwrite array values.
+Avoid side effects in mutations when possible.
+Avoid self-mutations.
+Fail open and validate the final state.
+Plan for future field updates in later versions.
+Prevent webhooks from self-triggering.
+Don't change immutable objects.
+Patch only required fields
+Admission webhook servers send HTTP responses to indicate what to do with a
+specific Kubernetes API request. This response is an AdmissionReview object.
+A mutating webhook can add specific fields to mutate before allowing admission
+by using the 
+patchType
+ field and the 
+patch
+ field in the response. Ensure
+that you only modify the fields that require a change.
+For example, consider a mutating webhook that's configured to ensure that
+
+web-server
+ Deployments have at least three replicas. When a request to
+create a Deployment object matches your webhook configuration, the webhook
+should only update the value in the 
+spec.replicas
+ field.
+Don't overwrite array values
+Fields in Kubernetes object specifications might include arrays. Some arrays
+contain key:value pairs (like the 
+envVar
+ field in a container specification),
+while other arrays are unkeyed (like the 
+readinessGates
+ field in a Pod
+specification). The order of values in an array field might matter in some
+situations. For example, the order of arguments in the 
+args
+ field of a
+container specification might affect the container.
+Consider the following when modifying arrays:
+Whenever possible, use the 
+add
+ JSONPatch operation instead of 
+replace
+ to
+avoid accidentally replacing a required value.
+Treat arrays that don't use key:value pairs as sets.
+Ensure that the values in the field that you modify aren't required to be
+in a specific order.
+Don't overwrite existing key:value pairs unless absolutely necessary.
+Use caution when modifying label fields. An accidental modification might
+cause label selectors to break, resulting in unintended behavior.
+Avoid side effects
+Ensure that your webhooks operate only on the content of the AdmissionReview
+that's sent to them, and do not make out-of-band changes. These additional
+changes, called 
+side effects
+, might cause conflicts during admission if they
+aren't reconciled properly. The 
+.webhooks[].sideEffects
+ field should
+be set to 
+None
+ if a webhook doesn't have any side effect.
+If side effects are required during the admission evaluation, they must be
+suppressed when processing an AdmissionReview object with 
+dryRun
+ set to
+
+true
+, and the 
+.webhooks[].sideEffects
+ field should be set to 
+NoneOnDryRun
+.
+For details, see
+
+Side effects
+.
+Avoid self-mutations
+A webhook running inside the cluster might cause deadlocks for its own
+deployment if it is configured to intercept resources required to start its own
+Pods.
+For example, a mutating admission webhook is configured to admit 
+create
+ Pod
+requests only if a certain label is set in the Pod (such as 
+env: prod
+).
+The webhook server runs in a Deployment that doesn't set the 
+env
+ label.
+When a node that runs the webhook server Pods becomes unhealthy, the webhook
+Deployment tries to reschedule the Pods to another node. However, the existing
+webhook server rejects the requests since the 
+env
+ label is unset. As a
+result, the migration cannot happen.
+Exclude the namespace where your webhook is running with a
+
+namespaceSelector
+.
+Avoid dependency loops
+Dependency loops can occur in scenarios like the following:
+Two webhooks check each other's Pods. If both webhooks become unavailable
+at the same time, neither webhook can start.
+Your webhook intercepts cluster add-on components, such as networking plugins
+or storage plugins, that your webhook depends on. If both the webhook and the
+dependent add-on become unavailable, neither component can function.
+To avoid these dependency loops, try the following:
+Use
+
+ValidatingAdmissionPolicies
+
+to avoid introducing dependencies.
+Prevent webhooks from validating or mutating other webhooks. Consider
+
+excluding specific namespaces
+
+from triggering your webhook.
+Prevent your webhooks from acting on dependent add-ons by using an
+
+objectSelector
+.
+Fail open and validate the final state
+Mutating admission webhooks support the 
+failurePolicy
+ configuration field.
+This field indicates whether the API server should admit or reject the request
+if the webhook fails. Webhook failures might occur because of timeouts or errors
+in the server logic.
+By default, admission webhooks set the 
+failurePolicy
+ field to Fail. The API
+server rejects a request if the webhook fails. However, rejecting requests by
+default might result in compliant requests being rejected during webhook
+downtime.
+Let your mutating webhooks "fail open" by setting the 
+failurePolicy
+ field to
+Ignore. Use a validating controller to check the state of requests to ensure
+that they comply with your policies.
+This approach has the following benefits:
+Mutating webhook downtime doesn't affect compliant resources from deploying.
+Policy enforcement occurs during validating admission control.
+Mutating webhooks don't interfere with other controllers in the cluster.
+Plan for future updates to fields
+In general, design your webhooks under the assumption that Kubernetes APIs might
+change in a later version. Don't write a server that takes the stability of an
+API for granted. For example, the release of sidecar containers in Kubernetes
+added a 
+restartPolicy
+ field to the Pod API.
+Prevent your webhook from triggering itself
+Mutating webhooks that respond to a broad range of API requests might
+unintentionally trigger themselves. For example, consider a webhook that
+responds to all requests in the cluster. If you configure the webhook to create
+Event objects for every mutation, it'll respond to its own Event object
+creation requests.
+To avoid this, consider setting a unique label in any resources that your
+webhook creates. Exclude this label from your webhook match conditions.
+Don't change immutable objects
+Some Kubernetes objects in the API server can't change. For example, when you
+deploy a 
+static Pod
+, the
+kubelet on the node creates a
+
+mirror Pod
+ in the API
+server to track the static Pod. However, changes to the mirror Pod don't
+propagate to the static Pod.
+Don't attempt to mutate these objects during admission. All mirror Pods have the
+
+kubernetes.io/config.mirror
+ annotation. To exclude mirror Pods while reducing
+the security risk of ignoring an annotation, allow static Pods to only run in
+specific namespaces.
+Mutating webhook ordering and idempotence
+This section provides recommendations for webhook order and designing idempotent
+webhooks. In summary, these are as follows:
+Don't rely on a specific order of execution.
+Validate mutations before admission.
+Check for mutations being overwritten by other controllers.
+Ensure that the set of mutating webhooks is idempotent, not just the
+individual webhooks.
+Don't rely on mutating webhook invocation order
+Mutating admission webhooks don't run in a consistent order. Various factors
+might change when a specific webhook is called. Don't rely on your webhook
+running at a specific point in the admission process. Other webhooks could still
+mutate your modified object.
+The following recommendations might help to minimize the risk of unintended
+changes:
+Validate mutations before admission
+Use a reinvocation policy to observe changes to an object by other plugins
+and re-run the webhook as needed. For details, see
+
+Reinvocation policy
+.
+Ensure that the mutating webhooks in your cluster are idempotent
+Every mutating admission webhook should be 
+idempotent
+. The webhook should be
+able to run on an object that it already modified without making additional
+changes beyond the original change.
+Additionally, all of the mutating webhooks in your cluster should, as a
+collection, be idempotent. After the mutation phase of admission control ends,
+every individual mutating webhook should be able to run on an object without
+making additional changes to the object.
+Depending on your environment, ensuring idempotence at scale might be
+challenging. The following recommendations might help:
+Use validating admission controllers to verify the final state of
+critical workloads.
+Test your deployments in a staging cluster to see if any objects get modified
+multiple times by the same webhook.
+Ensure that the scope of each mutating webhook is specific and limited.
+The following examples show idempotent mutation logic:
+For a 
+create
+ Pod request, set the field
+
+.spec.securityContext.runAsNonRoot
+ of the Pod to true.
+For a 
+create
+ Pod request, if the field
+
+.spec.containers[].resources.limits
+ of a container is not set, set default
+resource limits.
+For a 
+create
+ Pod request, inject a sidecar container with name
+
+foo-sidecar
+ if no container with the name 
+foo-sidecar
+ already exists.
+In these cases, the webhook can be safely reinvoked, or admit an object that
+already has the fields set.
+The following examples show non-idempotent mutation logic:
+For a 
+create
+ Pod request, inject a sidecar container with name
+
+foo-sidecar
+ suffixed with the current timestamp (such as
+
+foo-sidecar-19700101-000000
+).
+Reinvoking the webhook can result in the same sidecar being injected multiple
+times to a Pod, each time with a different container name. Similarly, the
+webhook can inject duplicated containers if the sidecar already exists in
+a user-provided pod.
+For a 
+create
+/
+update
+ Pod request, reject if the Pod has label 
+env
+
+set, otherwise add an 
+env: prod
+ label to the Pod.
+Reinvoking the webhook will result in the webhook failing on its own output.
+For a 
+create
+ Pod request, append a sidecar container named 
+foo-sidecar
+
+without checking whether a 
+foo-sidecar
+ container exists.
+Reinvoking the webhook will result in duplicated containers in the Pod, which
+makes the request invalid and rejected by the API server.
+Mutation testing and validation
+This section provides recommendations for testing your mutating webhooks and
+validating mutated objects. In summary, these are as follows:
+Test webhooks in staging environments.
+Avoid mutations that violate validations.
+Test minor version upgrades for regressions and conflicts.
+Validate mutated objects before admission.
+Test webhooks in staging environments
+Robust testing should be a core part of your release cycle for new or updated
+webhooks. If possible, test any changes to your cluster webhooks in a staging
+environment that closely resembles your production clusters. At the very least,
+consider using a tool like 
+minikube
+ or
+
+kind
+ to create a small test cluster for webhook
+changes.
+Ensure that mutations don't violate validations
+Your mutating webhooks shouldn't break any of the validations that apply to an
+object before admission. For example, consider a mutating webhook that sets the
+default CPU request of a Pod to a specific value. If the CPU limit of that Pod
+is set to a lower value than the mutated request, the Pod fails admission.
+Test every mutating webhook against the validations that run in your cluster.
+Test minor version upgrades to ensure consistent behavior
+Before upgrading your production clusters to a new minor version, test your
+webhooks and workloads in a staging environment. Compare the results to ensure
+that your webhooks continue to function as expected after the upgrade.
+Additionally, use the following resources to stay informed about API changes:
+Kubernetes release notes
+Kubernetes blog
+Validate mutations before admission
+Mutating webhooks run to completion before any validating webhooks run. There is
+no stable order in which mutations are applied to objects. As a result, your
+mutations could get overwritten by a mutating webhook that runs at a later time.
+Add a validating admission controller like a ValidatingAdmissionWebhook or a
+ValidatingAdmissionPolicy to your cluster to ensure that your mutations
+are still present. For example, consider a mutating webhook that inserts the
+
+restartPolicy: Always
+ field to specific init containers to make them run as
+sidecar containers. You could run a validating webhook to ensure that those
+init containers retained the 
+restartPolicy: Always
+ configuration after all
+mutations were completed.
+For details, see the following resources:
+Validating Admission Policy
+ValidatingAdmissionWebhooks
+Mutating webhook deployment
+This section provides recommendations for deploying your mutating admission
+webhooks. In summary, these are as follows:
+Gradually roll out the webhook configuration and monitor for issues by
+namespace.
+Limit access to edit the webhook configuration resources.
+Limit access to the namespace that runs the webhook server, if the server is
+in-cluster.
+Install and enable a mutating webhook
+When you're ready to deploy your mutating webhook to a cluster, use the
+following order of operations:
+Install the webhook server and start it.
+Set the 
+failurePolicy
+ field in the MutatingWebhookConfiguration manifest
+to Ignore. This lets you avoid disruptions caused by misconfigured webhooks.
+Set the 
+namespaceSelector
+ field in the MutatingWebhookConfiguration
+manifest to a test namespace.
+Deploy the MutatingWebhookConfiguration to your cluster.
+Monitor the webhook in the test namespace to check for any issues, then roll the
+webhook out to other namespaces. If the webhook intercepts an API request that
+it wasn't meant to intercept, pause the rollout and adjust the scope of the
+webhook configuration.
+Limit edit access to mutating webhooks
+Mutating webhooks are powerful Kubernetes controllers. Use RBAC or another
+authorization mechanism to limit access to your webhook configurations and
+servers. For RBAC, ensure that the following access is only available to trusted
+entities:
+Verbs: 
+create
+, 
+update
+, 
+patch
+, 
+delete
+, 
+deletecollection
+API group: 
+admissionregistration.k8s.io/v1
+API kind: MutatingWebhookConfigurations
+If your mutating webhook server runs in the cluster, limit access to create or
+modify any resources in that namespace.
+Examples of good implementations
+Note:
+ This section links to third party projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for these projects, which are listed alphabetically. To add a project to this list, read the 
+content guide
+ before submitting a change. 
+More information.
+The following projects are examples of "good" custom webhook server
+implementations. You can use them as a starting point when designing your own
+webhooks. Don't use these examples as-is; use them as a starting point and
+design your webhooks to run well in your specific environment.
+cert-manager
+Gatekeeper Open Policy Agent (OPA)
+What's next
+Use webhooks for authentication and authorization
+Learn about MutatingAdmissionPolicies
+Learn about ValidatingAdmissionPolicies
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified September 19, 2025 at 9:38 PM PST: 
+fix: typos (a5d40c68e0)
+Items on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the 
+CNCF website guidelines
+ for more details.
+You should read the 
+content guide
+ before proposing a change that adds an extra third-party link.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

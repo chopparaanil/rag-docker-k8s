@@ -1,0 +1,3562 @@
+Node | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Node
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Create an issue
+
+
+ (auto-generated page)
+ Print entire section
+Node
+NodeSpec
+NodeStatus
+NodeList
+Operations
+get
+ read the specified Node
+get
+ read status of the specified Node
+list
+ list or watch objects of kind Node
+create
+ create a Node
+update
+ replace the specified Node
+update
+ replace status of the specified Node
+patch
+ partially update the specified Node
+patch
+ partially update status of the specified Node
+delete
+ delete a Node
+deletecollection
+ delete collection of Node
+Kubernetes Documentation
+Reference
+Kubernetes API
+Cluster Resources
+Node
+Node
+Node is a worker node in Kubernetes.
+apiVersion: v1
+import "k8s.io/api/core/v1"
+Node
+Node is a worker node in Kubernetes. Each node will have a unique identifier in the cache (i.e. in etcd).
+apiVersion
+: v1
+kind
+: Node
+metadata
+ (
+ObjectMeta
+)
+Standard object's metadata. More info: 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+spec
+ (
+NodeSpec
+)
+Spec defines the behavior of a node. 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+status
+ (
+NodeStatus
+)
+Most recently observed status of the node. Populated by the system. Read-only. More info: 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+NodeSpec
+NodeSpec describes the attributes that a node is created with.
+configSource
+ (NodeConfigSource)
+Deprecated: Previously used to specify the source of the node's configuration for the DynamicKubeletConfig feature. This feature is removed.
+NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil. This API is deprecated since 1.22
+configSource.configMap
+ (ConfigMapNodeConfigSource)
+ConfigMap is a reference to a Node's ConfigMap
+ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node. This API is deprecated since 1.22: 
+https://git.k8s.io/enhancements/keps/sig-node/281-dynamic-kubelet-configuration
+configSource.configMap.kubeletConfigKey
+ (string), required
+KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+configSource.configMap.name
+ (string), required
+Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+configSource.configMap.namespace
+ (string), required
+Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+configSource.configMap.resourceVersion
+ (string)
+ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+configSource.configMap.uid
+ (string)
+UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+externalID
+ (string)
+Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: 
+https://issues.k8s.io/61966
+podCIDR
+ (string)
+PodCIDR represents the pod IP range assigned to the node.
+podCIDRs
+ ([]string)
+Set: unique values will be kept during a merge
+podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6.
+providerID
+ (string)
+ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
+taints
+ ([]Taint)
+Atomic: will be replaced during a merge
+If specified, the node's taints.
+The node this Taint is attached to has the "effect" on any pod that does not tolerate the Taint.
+taints.effect
+ (string), required
+Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are NoSchedule, PreferNoSchedule and NoExecute.
+taints.key
+ (string), required
+Required. The taint key to be applied to a node.
+taints.timeAdded
+ (Time)
+TimeAdded represents the time at which the taint was added.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+taints.value
+ (string)
+The taint value corresponding to the taint key.
+unschedulable
+ (boolean)
+Unschedulable controls node schedulability of new pods. By default, node is schedulable. More info: 
+https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
+NodeStatus
+NodeStatus is information about the current status of a node.
+addresses
+ ([]NodeAddress)
+Patch strategy: merge on key 
+type
+Map: unique values on key type will be kept during a merge
+List of addresses reachable to the node. Queried from cloud provider, if available. More info: 
+https://kubernetes.io/docs/reference/node/node-status/#addresses
+ Note: This field is declared as mergeable, but the merge key is not sufficiently unique, which can cause data corruption when it is merged. Callers should instead use a full-replacement patch. See 
+https://pr.k8s.io/79391
+ for an example. Consumers should assume that addresses can change during the lifetime of a Node. However, there are some exceptions where this may not be possible, such as Pods that inherit a Node's address in its own status or consumers of the downward API (status.hostIP).
+NodeAddress contains information for the node's address.
+addresses.address
+ (string), required
+The node address.
+addresses.type
+ (string), required
+Node address type, one of Hostname, ExternalIP or InternalIP.
+allocatable
+ (map[string]
+Quantity
+)
+Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity.
+capacity
+ (map[string]
+Quantity
+)
+Capacity represents the total resources of a node. More info: 
+https://kubernetes.io/docs/reference/node/node-status/#capacity
+conditions
+ ([]NodeCondition)
+Patch strategy: merge on key 
+type
+Map: unique values on key type will be kept during a merge
+Conditions is an array of current observed node conditions. More info: 
+https://kubernetes.io/docs/reference/node/node-status/#condition
+NodeCondition contains condition information for a node.
+conditions.status
+ (string), required
+Status of the condition, one of True, False, Unknown.
+conditions.type
+ (string), required
+Type of node condition.
+conditions.lastHeartbeatTime
+ (Time)
+Last time we got an update on a given condition.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+conditions.lastTransitionTime
+ (Time)
+Last time the condition transit from one status to another.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+conditions.message
+ (string)
+Human readable message indicating details about last transition.
+conditions.reason
+ (string)
+(brief) reason for the condition's last transition.
+config
+ (NodeConfigStatus)
+Status of the config assigned to the node via the dynamic Kubelet config feature.
+NodeConfigStatus describes the status of the config assigned by Node.Spec.ConfigSource.
+config.active
+ (NodeConfigSource)
+Active reports the checkpointed config the node is actively using. Active will represent either the current version of the Assigned config, or the current LastKnownGood config, depending on whether attempting to use the Assigned config results in an error.
+NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil. This API is deprecated since 1.22
+config.active.configMap
+ (ConfigMapNodeConfigSource)
+ConfigMap is a reference to a Node's ConfigMap
+ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node. This API is deprecated since 1.22: 
+https://git.k8s.io/enhancements/keps/sig-node/281-dynamic-kubelet-configuration
+config.active.configMap.kubeletConfigKey
+ (string), required
+KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+config.active.configMap.name
+ (string), required
+Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+config.active.configMap.namespace
+ (string), required
+Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+config.active.configMap.resourceVersion
+ (string)
+ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+config.active.configMap.uid
+ (string)
+UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+config.assigned
+ (NodeConfigSource)
+Assigned reports the checkpointed config the node will try to use. When Node.Spec.ConfigSource is updated, the node checkpoints the associated config payload to local disk, along with a record indicating intended config. The node refers to this record to choose its config checkpoint, and reports this record in Assigned. Assigned only updates in the status after the record has been checkpointed to disk. When the Kubelet is restarted, it tries to make the Assigned config the Active config by loading and validating the checkpointed payload identified by Assigned.
+NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil. This API is deprecated since 1.22
+config.assigned.configMap
+ (ConfigMapNodeConfigSource)
+ConfigMap is a reference to a Node's ConfigMap
+ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node. This API is deprecated since 1.22: 
+https://git.k8s.io/enhancements/keps/sig-node/281-dynamic-kubelet-configuration
+config.assigned.configMap.kubeletConfigKey
+ (string), required
+KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+config.assigned.configMap.name
+ (string), required
+Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+config.assigned.configMap.namespace
+ (string), required
+Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+config.assigned.configMap.resourceVersion
+ (string)
+ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+config.assigned.configMap.uid
+ (string)
+UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+config.error
+ (string)
+Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting to load or validate the Assigned config, etc. Errors may occur at different points while syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g. loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In the latter case, it is usually possible to resolve the error by fixing the config assigned in Spec.ConfigSource. You can find additional information for debugging by searching the error message in the Kubelet log. Error is a human-readable description of the error state; machines can check whether or not Error is empty, but should not rely on the stability of the Error text across Kubelet versions.
+config.lastKnownGood
+ (NodeConfigSource)
+LastKnownGood reports the checkpointed config the node will fall back to when it encounters an error attempting to use the Assigned config. The Assigned config becomes the LastKnownGood config when the node determines that the Assigned config is stable and correct. This is currently implemented as a 10-minute soak period starting when the local record of Assigned config is updated. If the Assigned config is Active at the end of this period, it becomes the LastKnownGood. Note that if Spec.ConfigSource is reset to nil (use local defaults), the LastKnownGood is also immediately reset to nil, because the local default config is always assumed good. You should not make assumptions about the node's method of determining config stability and correctness, as this may change or become configurable in the future.
+NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil. This API is deprecated since 1.22
+config.lastKnownGood.configMap
+ (ConfigMapNodeConfigSource)
+ConfigMap is a reference to a Node's ConfigMap
+ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node. This API is deprecated since 1.22: 
+https://git.k8s.io/enhancements/keps/sig-node/281-dynamic-kubelet-configuration
+config.lastKnownGood.configMap.kubeletConfigKey
+ (string), required
+KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
+config.lastKnownGood.configMap.name
+ (string), required
+Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+config.lastKnownGood.configMap.namespace
+ (string), required
+Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
+config.lastKnownGood.configMap.resourceVersion
+ (string)
+ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+config.lastKnownGood.configMap.uid
+ (string)
+UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
+daemonEndpoints
+ (NodeDaemonEndpoints)
+Endpoints of daemons running on the Node.
+NodeDaemonEndpoints lists ports opened by daemons running on the Node.
+daemonEndpoints.kubeletEndpoint
+ (DaemonEndpoint)
+Endpoint on which Kubelet is listening.
+DaemonEndpoint contains information about a single Daemon endpoint.
+daemonEndpoints.kubeletEndpoint.Port
+ (int32), required
+Port number of the given endpoint.
+declaredFeatures
+ ([]string)
+Atomic: will be replaced during a merge
+DeclaredFeatures represents the features related to feature gates that are declared by the node.
+features
+ (NodeFeatures)
+Features describes the set of features implemented by the CRI implementation.
+NodeFeatures describes the set of features implemented by the CRI implementation. The features contained in the NodeFeatures should depend only on the cri implementation independent of runtime handlers.
+features.supplementalGroupsPolicy
+ (boolean)
+SupplementalGroupsPolicy is set to true if the runtime supports SupplementalGroupsPolicy and ContainerUser.
+images
+ ([]ContainerImage)
+Atomic: will be replaced during a merge
+List of container images on this node
+Describe a container image
+images.names
+ ([]string)
+Atomic: will be replaced during a merge
+Names by which this image is known. e.g. ["kubernetes.example/hyperkube:v1.0.7", "cloud-vendor.registry.example/cloud-vendor/hyperkube:v1.0.7"]
+images.sizeBytes
+ (int64)
+The size of the image in bytes.
+nodeInfo
+ (NodeSystemInfo)
+Set of ids/uuids to uniquely identify the node. More info: 
+https://kubernetes.io/docs/reference/node/node-status/#info
+NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
+nodeInfo.architecture
+ (string), required
+The Architecture reported by the node
+nodeInfo.bootID
+ (string), required
+Boot ID reported by the node.
+nodeInfo.containerRuntimeVersion
+ (string), required
+ContainerRuntime Version reported by the node through runtime remote API (e.g. containerd://1.4.2).
+nodeInfo.kernelVersion
+ (string), required
+Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
+nodeInfo.kubeProxyVersion
+ (string), required
+Deprecated: KubeProxy Version reported by the node.
+nodeInfo.kubeletVersion
+ (string), required
+Kubelet Version reported by the node.
+nodeInfo.machineID
+ (string), required
+MachineID reported by the node. For unique machine identification in the cluster this field is preferred. Learn more from man(5) machine-id: 
+http://man7.org/linux/man-pages/man5/machine-id.5.html
+nodeInfo.operatingSystem
+ (string), required
+The Operating System reported by the node
+nodeInfo.osImage
+ (string), required
+OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
+nodeInfo.systemUUID
+ (string), required
+SystemUUID reported by the node. For unique machine identification MachineID is preferred. This field is specific to Red Hat hosts 
+https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html/rhsm/uuid
+nodeInfo.swap
+ (NodeSwapStatus)
+Swap Info reported by the node.
+NodeSwapStatus represents swap memory information.
+nodeInfo.swap.capacity
+ (int64)
+Total amount of swap memory in bytes.
+phase
+ (string)
+NodePhase is the recently observed lifecycle phase of the node. More info: 
+https://kubernetes.io/docs/concepts/nodes/node/#phase
+ The field is never populated, and now is deprecated.
+runtimeHandlers
+ ([]NodeRuntimeHandler)
+Atomic: will be replaced during a merge
+The available runtime handlers.
+NodeRuntimeHandler is a set of runtime handler information.
+runtimeHandlers.features
+ (NodeRuntimeHandlerFeatures)
+Supported features.
+NodeRuntimeHandlerFeatures is a set of features implemented by the runtime handler.
+runtimeHandlers.features.recursiveReadOnlyMounts
+ (boolean)
+RecursiveReadOnlyMounts is set to true if the runtime handler supports RecursiveReadOnlyMounts.
+runtimeHandlers.features.userNamespaces
+ (boolean)
+UserNamespaces is set to true if the runtime handler supports UserNamespaces, including for volumes.
+runtimeHandlers.name
+ (string)
+Runtime handler name. Empty for the default runtime handler.
+volumesAttached
+ ([]AttachedVolume)
+Atomic: will be replaced during a merge
+List of volumes that are attached to the node.
+AttachedVolume describes a volume attached to a node
+volumesAttached.devicePath
+ (string), required
+DevicePath represents the device path where the volume should be available
+volumesAttached.name
+ (string), required
+Name of the attached volume
+volumesInUse
+ ([]string)
+Atomic: will be replaced during a merge
+List of attachable volumes in use (mounted) by the node.
+NodeList
+NodeList is the whole list of all Nodes which have been registered with master.
+apiVersion
+: v1
+kind
+: NodeList
+metadata
+ (
+ListMeta
+)
+Standard list metadata. More info: 
+https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+items
+ ([]
+Node
+), required
+List of nodes
+Operations
+get
+ read the specified Node
+HTTP Request
+GET /api/v1/nodes/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+401: Unauthorized
+get
+ read status of the specified Node
+HTTP Request
+GET /api/v1/nodes/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+401: Unauthorized
+list
+ list or watch objects of kind Node
+HTTP Request
+GET /api/v1/nodes
+Parameters
+allowWatchBookmarks
+ (
+in query
+): boolean
+allowWatchBookmarks
+continue
+ (
+in query
+): string
+continue
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+watch
+ (
+in query
+): boolean
+watch
+Response
+200 (
+NodeList
+): OK
+401: Unauthorized
+create
+ create a Node
+HTTP Request
+POST /api/v1/nodes
+Parameters
+body
+: 
+Node
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+201 (
+Node
+): Created
+202 (
+Node
+): Accepted
+401: Unauthorized
+update
+ replace the specified Node
+HTTP Request
+PUT /api/v1/nodes/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+body
+: 
+Node
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+201 (
+Node
+): Created
+401: Unauthorized
+update
+ replace status of the specified Node
+HTTP Request
+PUT /api/v1/nodes/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+body
+: 
+Node
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+201 (
+Node
+): Created
+401: Unauthorized
+patch
+ partially update the specified Node
+HTTP Request
+PATCH /api/v1/nodes/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+201 (
+Node
+): Created
+401: Unauthorized
+patch
+ partially update status of the specified Node
+HTTP Request
+PATCH /api/v1/nodes/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+Node
+): OK
+201 (
+Node
+): Created
+401: Unauthorized
+delete
+ delete a Node
+HTTP Request
+DELETE /api/v1/nodes/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the Node
+body
+: 
+DeleteOptions
+dryRun
+ (
+in query
+): string
+dryRun
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+Response
+200 (
+Status
+): OK
+202 (
+Status
+): Accepted
+401: Unauthorized
+deletecollection
+ delete collection of Node
+HTTP Request
+DELETE /api/v1/nodes
+Parameters
+body
+: 
+DeleteOptions
+continue
+ (
+in query
+): string
+continue
+dryRun
+ (
+in query
+): string
+dryRun
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+Response
+200 (
+Status
+): OK
+401: Unauthorized
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 24, 2026 at 2:17 PM PST: 
+Update API resource reference for v1.36.0 (#55505) (d405670c62)
+This page is automatically generated.
+If you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

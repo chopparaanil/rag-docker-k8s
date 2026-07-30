@@ -1,0 +1,3622 @@
+ReplicaSet | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Português (Portuguese)
+
+
+Español (Spanish)
+
+
+Tiếng Việt (Vietnamese)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+ReplicaSet
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ ReplicaSet API reference
+
+
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+How a ReplicaSet works
+When to use a ReplicaSet
+Example
+Non-Template Pod acquisitions
+Writing a ReplicaSet manifest
+Pod Template
+Pod Selector
+Replicas
+Working with ReplicaSets
+Deleting a ReplicaSet and its Pods
+Deleting just a ReplicaSet
+Terminating Pods
+Isolating Pods from a ReplicaSet
+Scaling a ReplicaSet
+Pod deletion cost
+ReplicaSet as a Horizontal Pod Autoscaler Target
+Alternatives to ReplicaSet
+Deployment (recommended)
+Bare Pods
+Job
+DaemonSet
+ReplicationController
+What's next
+Kubernetes Documentation
+Concepts
+Workloads
+Workload Management
+ReplicaSet
+ReplicaSet
+A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. Usually, you define a Deployment and let that Deployment manage ReplicaSets automatically.
+A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often
+used to guarantee the availability of a specified number of identical Pods.
+How a ReplicaSet works
+A ReplicaSet is defined with fields, including a selector that specifies how to identify Pods it can acquire, a number
+of replicas indicating how many Pods it should be maintaining, and a pod template specifying the data of new Pods
+it should create to meet the number of replicas criteria. A ReplicaSet then fulfills its purpose by creating
+and deleting Pods as needed to reach the desired number. When a ReplicaSet needs to create new Pods, it uses its Pod
+template.
+A ReplicaSet is linked to its Pods via the Pods' 
+metadata.ownerReferences
+
+field, which specifies what resource the current object is owned by. All Pods acquired by a ReplicaSet have their owning
+ReplicaSet's identifying information within their ownerReferences field. It's through this link that the ReplicaSet
+knows of the state of the Pods it is maintaining and plans accordingly.
+A ReplicaSet identifies new Pods to acquire by using its selector. If there is a Pod that has no
+OwnerReference or the OwnerReference is not a 
+Controller
+ and it
+matches a ReplicaSet's selector, it will be immediately acquired by said ReplicaSet.
+When to use a ReplicaSet
+A ReplicaSet ensures that a specified number of pod replicas are running at any given
+time. However, a Deployment is a higher-level concept that manages ReplicaSets and
+provides declarative updates to Pods along with a lot of other useful features.
+Therefore, we recommend using Deployments instead of directly using ReplicaSets, unless
+you require custom update orchestration or don't require updates at all.
+This actually means that you may never need to manipulate ReplicaSet objects:
+use a Deployment instead, and define your application in the spec section.
+Example
+controllers/frontend.yaml
+
+
+apiVersion
+:
+ 
+apps/v1
+
+
+kind
+:
+ 
+ReplicaSet
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+frontend
+
+
+  
+labels
+:
+
+
+    
+app
+:
+ 
+guestbook
+
+
+    
+tier
+:
+ 
+frontend
+
+
+spec
+:
+
+
+  
+# modify replicas according to your case
+
+
+  
+replicas
+:
+ 
+3
+
+
+  
+selector
+:
+
+
+    
+matchLabels
+:
+
+
+      
+tier
+:
+ 
+frontend
+
+
+  
+template
+:
+
+
+    
+metadata
+:
+
+
+      
+labels
+:
+
+
+        
+tier
+:
+ 
+frontend
+
+
+    
+spec
+:
+
+
+      
+containers
+:
+
+
+      
+- 
+name
+:
+ 
+php-redis
+
+
+        
+image
+:
+ 
+us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
+
+
+Saving this manifest into 
+frontend.yaml
+ and submitting it to a Kubernetes cluster will
+create the defined ReplicaSet and the Pods that it manages.
+kubectl apply -f https://kubernetes.io/examples/controllers/frontend.yaml
+
+You can then get the current ReplicaSets deployed:
+kubectl get rs
+
+And see the frontend one you created:
+NAME       DESIRED   CURRENT   READY   AGE
+frontend   3         3         3       6s
+
+You can also check on the state of the ReplicaSet:
+kubectl describe rs/frontend
+
+And you will see output similar to:
+Name:         frontend
+Namespace:    default
+Selector:     tier=frontend
+Labels:       app=guestbook
+              tier=frontend
+Annotations:  <none>
+Replicas:     3 current / 3 desired
+Pods Status:  3 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:  tier=frontend
+  Containers:
+   php-redis:
+    Image:        us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Events:
+  Type    Reason            Age   From                   Message
+  ----    ------            ----  ----                   -------
+  Normal  SuccessfulCreate  13s   replicaset-controller  Created pod: frontend-gbgfx
+  Normal  SuccessfulCreate  13s   replicaset-controller  Created pod: frontend-rwz57
+  Normal  SuccessfulCreate  13s   replicaset-controller  Created pod: frontend-wkl7w
+
+And lastly you can check for the Pods brought up:
+kubectl get pods
+
+You should see Pod information similar to:
+NAME             READY   STATUS    RESTARTS   AGE
+frontend-gbgfx   1/1     Running   0          10m
+frontend-rwz57   1/1     Running   0          10m
+frontend-wkl7w   1/1     Running   0          10m
+
+You can also verify that the owner reference of these pods is set to the frontend ReplicaSet.
+To do this, get the yaml of one of the Pods running:
+kubectl get pods frontend-gbgfx -o yaml
+
+The output will look similar to this, with the frontend ReplicaSet's info set in the metadata's ownerReferences field:
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+creationTimestamp
+:
+ 
+"2024-02-28T22:30:44Z"
+
+
+  
+generateName
+:
+ 
+frontend-
+
+
+  
+labels
+:
+
+
+    
+tier
+:
+ 
+frontend
+
+
+  
+name
+:
+ 
+frontend-gbgfx
+
+
+  
+namespace
+:
+ 
+default
+
+
+  
+ownerReferences
+:
+
+
+  
+- 
+apiVersion
+:
+ 
+apps/v1
+
+
+    
+blockOwnerDeletion
+:
+ 
+true
+
+
+    
+controller
+:
+ 
+true
+
+
+    
+kind
+:
+ 
+ReplicaSet
+
+
+    
+name
+:
+ 
+frontend
+
+
+    
+uid
+:
+ 
+e129deca-f864-481b-bb16-b27abfd92292
+
+
+...
+
+
+Non-Template Pod acquisitions
+While you can create bare Pods with no problems, it is strongly recommended to make sure that the bare Pods do not have
+labels which match the selector of one of your ReplicaSets. The reason for this is because a ReplicaSet is not limited
+to owning Pods specified by its template-- it can acquire other Pods in the manner specified in the previous sections.
+Take the previous frontend ReplicaSet example, and the Pods specified in the following manifest:
+pods/pod-rs.yaml
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+pod1
+
+
+  
+labels
+:
+
+
+    
+tier
+:
+ 
+frontend
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+hello1
+
+
+    
+image
+:
+ 
+gcr.io/google-samples/hello-app:2.0
+
+
+
+
+---
+
+
+
+
+apiVersion
+:
+ 
+v1
+
+
+kind
+:
+ 
+Pod
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+pod2
+
+
+  
+labels
+:
+
+
+    
+tier
+:
+ 
+frontend
+
+
+spec
+:
+
+
+  
+containers
+:
+
+
+  
+- 
+name
+:
+ 
+hello2
+
+
+    
+image
+:
+ 
+gcr.io/google-samples/hello-app:1.0
+
+
+As those Pods do not have a Controller (or any object) as their owner reference and match the selector of the frontend
+ReplicaSet, they will immediately be acquired by it.
+Suppose you create the Pods after the frontend ReplicaSet has been deployed and has set up its initial Pod replicas to
+fulfill its replica count requirement:
+kubectl apply -f https://kubernetes.io/examples/pods/pod-rs.yaml
+
+The new Pods will be acquired by the ReplicaSet, and then immediately terminated as the ReplicaSet would be over
+its desired count.
+Fetching the Pods:
+kubectl get pods
+
+The output shows that the new Pods are either already terminated, or in the process of being terminated:
+NAME             READY   STATUS        RESTARTS   AGE
+frontend-b2zdv   1/1     Running       0          10m
+frontend-vcmts   1/1     Running       0          10m
+frontend-wtsmm   1/1     Running       0          10m
+pod1             0/1     Terminating   0          1s
+pod2             0/1     Terminating   0          1s
+
+If you create the Pods first:
+kubectl apply -f https://kubernetes.io/examples/pods/pod-rs.yaml
+
+And then create the ReplicaSet however:
+kubectl apply -f https://kubernetes.io/examples/controllers/frontend.yaml
+
+You shall see that the ReplicaSet has acquired the Pods and has only created new ones according to its spec until the
+number of its new Pods and the original matches its desired count. As fetching the Pods:
+kubectl get pods
+
+Will reveal in its output:
+NAME             READY   STATUS    RESTARTS   AGE
+frontend-hmmj2   1/1     Running   0          9s
+pod1             1/1     Running   0          36s
+pod2             1/1     Running   0          36s
+
+In this manner, a ReplicaSet can own a non-homogeneous set of Pods
+Writing a ReplicaSet manifest
+As with all other Kubernetes API objects, a ReplicaSet needs the 
+apiVersion
+, 
+kind
+, and 
+metadata
+ fields.
+For ReplicaSets, the 
+kind
+ is always a ReplicaSet.
+When the control plane creates new Pods for a ReplicaSet, the 
+.metadata.name
+ of the
+ReplicaSet is part of the basis for naming those Pods. The name of a ReplicaSet must be a valid
+
+DNS subdomain
+
+value, but this can produce unexpected results for the Pod hostnames. For best compatibility,
+the name should follow the more restrictive rules for a
+
+DNS label
+.
+A ReplicaSet also needs a 
+.spec
+ section
+.
+Pod Template
+The 
+.spec.template
+ is a 
+pod template
+ which is also
+required to have labels in place. In our 
+frontend.yaml
+ example we had one label: 
+tier: frontend
+.
+Be careful not to overlap with the selectors of other controllers, lest they try to adopt this Pod.
+For the template's 
+restart policy
+ field,
+
+.spec.template.spec.restartPolicy
+, the only allowed value is 
+Always
+, which is the default.
+Pod Selector
+The 
+.spec.selector
+ field is a 
+label selector
+. As discussed
+
+earlier
+ these are the labels used to identify potential Pods to acquire. In our
+
+frontend.yaml
+ example, the selector was:
+matchLabels
+:
+
+
+  
+tier
+:
+ 
+frontend
+
+
+In the ReplicaSet, 
+.spec.template.metadata.labels
+ must match 
+spec.selector
+, or it will
+be rejected by the API.
+Note:
+For 2 ReplicaSets specifying the same 
+.spec.selector
+ but different
+
+.spec.template.metadata.labels
+ and 
+.spec.template.spec
+ fields, each ReplicaSet ignores the
+Pods created by the other ReplicaSet.
+Replicas
+You can specify how many Pods should run concurrently by setting 
+.spec.replicas
+. The ReplicaSet will create/delete
+its Pods to match this number.
+If you do not specify 
+.spec.replicas
+, then it defaults to 1.
+Working with ReplicaSets
+Deleting a ReplicaSet and its Pods
+To delete a ReplicaSet and all of its Pods, use
+
+kubectl delete
+. The
+
+Garbage collector
+ automatically deletes all of
+the dependent Pods by default.
+When using the REST API or the 
+client-go
+ library, you must set 
+propagationPolicy
+ to
+
+Background
+ or 
+Foreground
+ in the 
+-d
+ option. For example:
+kubectl proxy --port
+=
+8080
+
+
+curl -X DELETE  
+'localhost:8080/apis/apps/v1/namespaces/default/replicasets/frontend'
+ 
+\
+
+  -d 
+'{"kind":"DeleteOptions","apiVersion":"v1","propagationPolicy":"Foreground"}'
+ 
+\
+
+  -H 
+"Content-Type: application/json"
+
+
+Deleting just a ReplicaSet
+You can delete a ReplicaSet without affecting any of its Pods using
+
+kubectl delete
+
+with the 
+--cascade=orphan
+ option.
+When using the REST API or the 
+client-go
+ library, you must set 
+propagationPolicy
+ to 
+Orphan
+.
+For example:
+kubectl proxy --port
+=
+8080
+
+
+curl -X DELETE  
+'localhost:8080/apis/apps/v1/namespaces/default/replicasets/frontend'
+ 
+\
+
+  -d 
+'{"kind":"DeleteOptions","apiVersion":"v1","propagationPolicy":"Orphan"}'
+ 
+\
+
+  -H 
+"Content-Type: application/json"
+
+
+Once the original is deleted, you can create a new ReplicaSet to replace it. As long
+as the old and new 
+.spec.selector
+ are the same, then the new one will adopt the old Pods.
+However, it will not make any effort to make existing Pods match a new, different pod template.
+To update Pods to a new spec in a controlled way, use a
+
+Deployment
+, as
+ReplicaSets do not support a rolling update directly.
+Terminating Pods
+FEATURE STATE:
+
+
+Kubernetes v1.35 [beta]
+(enabled by default)
+You can enable this feature by setting the 
+DeploymentReplicaSetTerminatingReplicas
+
+
+feature gate
+
+on the 
+API server
+
+and on the 
+kube-controller-manager
+Pods that become terminating due to deletion or scale down may take a long time to terminate, and may consume
+additional resources during that period. As a result, the total number of all pods can temporarily exceed
+
+.spec.replicas
+. Terminating pods can be tracked using the 
+.status.terminatingReplicas
+ field of the ReplicaSet.
+Isolating Pods from a ReplicaSet
+You can remove Pods from a ReplicaSet by changing their labels. This technique may be used to remove Pods
+from service for debugging, data recovery, etc. Pods that are removed in this way will be replaced automatically (
+assuming that the number of replicas is not also changed).
+Scaling a ReplicaSet
+A ReplicaSet can be easily scaled up or down by simply updating the 
+.spec.replicas
+ field. The ReplicaSet controller
+ensures that a desired number of Pods with a matching label selector are available and operational.
+When scaling down, the ReplicaSet controller chooses which pods to delete by sorting the available pods to
+prioritize scaling down pods based on the following general algorithm:
+Pending (and unschedulable) pods are scaled down first
+If 
+controller.kubernetes.io/pod-deletion-cost
+ annotation is set, then
+the pod with the lower value will come first.
+Pods on nodes with more replicas come before pods on nodes with fewer replicas.
+If the pods' creation times differ, the pod that was created more recently
+comes before the older pod (the creation times are bucketed on an integer log scale).
+If all of the above match, then selection is random.
+Pod deletion cost
+FEATURE STATE:
+
+
+Kubernetes v1.22 [beta]
+Using the 
+controller.kubernetes.io/pod-deletion-cost
+
+annotation, users can set a preference regarding which pods to remove first when downscaling a ReplicaSet.
+The annotation should be set on the pod, the range is [-2147483648, 2147483647]. It represents the cost of
+deleting a pod compared to other pods belonging to the same ReplicaSet. Pods with lower deletion
+cost are preferred to be deleted before pods with higher deletion cost.
+The implicit value for this annotation for pods that don't set it is 0; negative values are permitted.
+Invalid values will be rejected by the API server.
+This feature is beta and enabled by default. You can disable it using the
+
+feature gate
+
+
+PodDeletionCost
+ in both kube-apiserver and kube-controller-manager.
+Note:
+This is honored on a best-effort basis, so it does not offer any guarantees on pod deletion order.
+Users should avoid updating the annotation frequently, such as updating it based on a metric value,
+because doing so will generate a significant number of pod updates on the apiserver.
+Example Use Case
+The different pods of an application could have different utilization levels. On scale down, the application
+may prefer to remove the pods with lower utilization. To avoid frequently updating the pods, the application
+should update 
+controller.kubernetes.io/pod-deletion-cost
+ once before issuing a scale down (setting the
+annotation to a value proportional to pod utilization level). This works if the application itself controls
+the down scaling; for example, the driver pod of a Spark deployment.
+ReplicaSet as a Horizontal Pod Autoscaler Target
+A ReplicaSet can also be a target for
+
+Horizontal Pod Autoscalers (HPA)
+. That is,
+a ReplicaSet can be auto-scaled by an HPA. Here is an example HPA targeting
+the ReplicaSet we created in the previous example.
+controllers/hpa-rs.yaml
+
+
+apiVersion
+:
+ 
+autoscaling/v1
+
+
+kind
+:
+ 
+HorizontalPodAutoscaler
+
+
+metadata
+:
+
+
+  
+name
+:
+ 
+frontend-scaler
+
+
+spec
+:
+
+
+  
+scaleTargetRef
+:
+
+
+    
+apiVersion
+:
+ 
+apps/v1
+
+
+    
+kind
+:
+ 
+ReplicaSet
+
+
+    
+name
+:
+ 
+frontend
+
+
+  
+minReplicas
+:
+ 
+3
+
+
+  
+maxReplicas
+:
+ 
+10
+
+
+  
+targetCPUUtilizationPercentage
+:
+ 
+50
+
+
+Saving this manifest into 
+hpa-rs.yaml
+ and submitting it to a Kubernetes cluster should
+create the defined HPA that autoscales the target ReplicaSet depending on the CPU usage
+of the replicated Pods.
+kubectl apply -f https://k8s.io/examples/controllers/hpa-rs.yaml
+
+Alternatively, you can use the 
+kubectl autoscale
+ command to accomplish the same
+(and it's easier!)
+kubectl autoscale rs frontend --max
+=
+10
+ --min
+=
+3
+ --cpu
+=
+50%
+
+Alternatives to ReplicaSet
+Deployment (recommended)
+Deployment
+ is an object which can own ReplicaSets and update
+them and their Pods via declarative, server-side rolling updates.
+While ReplicaSets can be used independently, today they're mainly used by Deployments as a mechanism to orchestrate Pod
+creation, deletion and updates. When you use Deployments you don't have to worry about managing the ReplicaSets that
+they create. Deployments own and manage their ReplicaSets.
+As such, it is recommended to use Deployments when you want ReplicaSets.
+Bare Pods
+Unlike the case where a user directly created Pods, a ReplicaSet replaces Pods that are deleted or
+terminated for any reason, such as in the case of node failure or disruptive node maintenance,
+such as a kernel upgrade. For this reason, we recommend that you use a ReplicaSet even if your
+application requires only a single Pod. Think of it similarly to a process supervisor, only it
+supervises multiple Pods across multiple nodes instead of individual processes on a single node. A
+ReplicaSet delegates local container restarts to some agent on the node such as Kubelet.
+Job
+Use a 
+Job
+ instead of a ReplicaSet for Pods that are
+expected to terminate on their own (that is, batch jobs).
+DaemonSet
+Use a 
+DaemonSet
+ instead of a ReplicaSet for Pods that provide a
+machine-level function, such as machine monitoring or machine logging. These Pods have a lifetime that is tied
+to a machine lifetime: the Pod needs to be running on the machine before other Pods start, and are
+safe to terminate when the machine is otherwise ready to be rebooted/shutdown.
+ReplicationController
+ReplicaSets are the successors to 
+ReplicationControllers
+.
+The two serve the same purpose, and behave similarly, except that a ReplicationController does not support set-based
+selector requirements as described in the 
+labels user guide
+.
+As such, ReplicaSets are preferred over ReplicationControllers
+What's next
+Learn about 
+Pods
+.
+Learn about 
+Deployments
+.
+Run a Stateless Application Using a Deployment
+,
+which relies on ReplicaSets to work.
+ReplicaSet
+ is a top-level resource in the Kubernetes REST API.
+Read the
+
+ReplicaSet
+
+object definition to understand the API for replica sets.
+Read about 
+PodDisruptionBudget
+ and how
+you can use it to manage application availability during disruptions.
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified September 26, 2025 at 6:20 PM PST: 
+Fix HPA CLI example in ReplicaSet doc (55add008ed)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

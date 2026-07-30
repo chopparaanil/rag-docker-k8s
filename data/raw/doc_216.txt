@@ -1,0 +1,3597 @@
+Node-pressure Eviction | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+中文 (Chinese)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+Node-pressure Eviction
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Edit this page
+
+
+ Create child page
+
+
+ Create an issue
+
+
+ Print entire section
+Self healing behavior
+Self healing for static pods
+Eviction signals and thresholds
+Eviction signals
+Deprecated kubelet garbage collection features
+Eviction thresholds
+Eviction monitoring interval
+Node conditions
+Node condition oscillation
+Reclaiming node level resources
+Pod selection for kubelet eviction
+Minimum eviction reclaim
+Node out of memory behavior
+Good practices
+Schedulable resources and eviction policies
+DaemonSets and node-pressure eviction
+Known issues
+kubelet may not observe memory pressure right away
+active_file memory is not considered as available memory
+What's next
+Kubernetes Documentation
+Concepts
+Scheduling, Preemption and Eviction
+Node-pressure Eviction
+Node-pressure Eviction
+Node-pressure eviction is the process by which the 
+kubelet
+ proactively terminates
+pods to reclaim 
+resource
+
+on nodes.
+The 
+kubelet
+ monitors resources
+like memory, disk space, and filesystem inodes on your cluster's nodes.
+When one or more of these resources reach specific consumption levels, the
+kubelet can proactively fail one or more pods on the node to reclaim resources
+and prevent starvation.
+During a node-pressure eviction, the kubelet sets the 
+phase
+ for the
+selected pods to 
+Failed
+, and terminates the Pod.
+Node-pressure eviction is not the same as
+
+API-initiated eviction
+.
+The kubelet does not respect your configured 
+PodDisruptionBudget
+
+or the pod's
+
+terminationGracePeriodSeconds
+. If you use 
+soft eviction thresholds
+,
+the kubelet respects your configured 
+eviction-max-pod-grace-period
+. If you use
+
+hard eviction thresholds
+, the kubelet uses a 
+0s
+ grace period (immediate shutdown) for termination.
+Self healing behavior
+The kubelet attempts to 
+reclaim node-level resources
+
+before it terminates end-user pods. For example, it removes unused container
+images when disk resources are starved.
+If the pods are managed by a 
+workload
+
+management object (such as 
+StatefulSet
+
+or 
+Deployment
+) that
+replaces failed pods, the control plane (
+kube-controller-manager
+) creates new
+pods in place of the evicted pods.
+Self healing for static pods
+If you are running a 
+static pod
+
+on a node that is under resource pressure, the kubelet may evict that static
+Pod. The kubelet then tries to create a replacement, because static Pods always
+represent an intent to run a Pod on that node.
+The kubelet takes the 
+priority
+ of the static pod into account when creating
+a replacement. If the static pod manifest specifies a low priority, and there
+are higher-priority Pods defined within the cluster's control plane, and the
+node is under resource pressure, the kubelet may not be able to make room for
+that static pod. The kubelet continues to attempt to run all static pods even
+when there is resource pressure on a node.
+Eviction signals and thresholds
+The kubelet uses various parameters to make eviction decisions, like the following:
+Eviction signals
+Eviction thresholds
+Monitoring intervals
+Eviction signals
+Eviction signals are the current state of a particular resource at a specific
+point in time. The kubelet uses eviction signals to make eviction decisions by
+comparing the signals to eviction thresholds, which are the minimum amount of
+the resource that should be available on the node.
+The kubelet uses the following eviction signals:
+Eviction Signal
+Description
+Linux Only
+memory.available
+memory.available
+ := 
+node.status.capacity[memory]
+ - 
+node.stats.memory.workingSet
+nodefs.available
+nodefs.available
+ := 
+node.stats.fs.available
+nodefs.inodesFree
+nodefs.inodesFree
+ := 
+node.stats.fs.inodesFree
+•
+imagefs.available
+imagefs.available
+ := 
+node.stats.runtime.imagefs.available
+imagefs.inodesFree
+imagefs.inodesFree
+ := 
+node.stats.runtime.imagefs.inodesFree
+•
+containerfs.available
+containerfs.available
+ := 
+node.stats.runtime.containerfs.available
+containerfs.inodesFree
+containerfs.inodesFree
+ := 
+node.stats.runtime.containerfs.inodesFree
+•
+pid.available
+pid.available
+ := 
+node.stats.rlimit.maxpid
+ - 
+node.stats.rlimit.curproc
+•
+In this table, the 
+Description
+ column shows how kubelet gets the value of the
+signal. Each signal supports either a percentage or a literal value. The kubelet
+calculates the percentage value relative to the total capacity associated with
+the signal.
+Memory signals
+On Linux nodes, the value for 
+memory.available
+ is derived from the cgroupfs instead of tools
+like 
+free -m
+. This is important because 
+free -m
+ does not work in a
+container, and if users use the 
+node allocatable
+
+feature, out of resource decisions
+are made local to the end user Pod part of the cgroup hierarchy as well as the
+root node. This 
+script
+ or
+
+cgroupv2 script
+
+reproduces the same set of steps that the kubelet performs to calculate
+
+memory.available
+. The kubelet excludes inactive_file (the number of bytes of
+file-backed memory on the inactive LRU list) from its calculation, as it assumes that
+memory is reclaimable under pressure.
+On Windows nodes, the value for 
+memory.available
+ is derived from the node's global
+memory commit levels (queried through the 
+GetPerformanceInfo()
+
+system call) by subtracting the node's global 
+CommitTotal
+ from the node's 
+CommitLimit
+. Please note that 
+CommitLimit
+ can change if the node's page-file size changes!
+Filesystem signals
+The kubelet recognizes three specific filesystem identifiers that can be used with
+eviction signals (
+<identifier>.inodesFree
+ or 
+<identifier>.available
+):
+nodefs
+: The node's main filesystem, used for local disk volumes,
+emptyDir volumes not backed by memory, log storage, ephemeral storage,
+and more. For example, 
+nodefs
+ contains 
+/var/lib/kubelet
+.
+imagefs
+: An optional filesystem that container runtimes can use to store
+container images (which are the read-only layers) and container writable
+layers.
+containerfs
+: An optional filesystem that container runtime can use to
+store the writeable layers. Similar to the main filesystem (see 
+nodefs
+),
+it's used to store local disk volumes, emptyDir volumes not backed by memory,
+log storage, and ephemeral storage, except for the container images. When
+
+containerfs
+ is used, the 
+imagefs
+ filesystem can be split to only store
+images (read-only layers) and nothing else.
+Note:
+FEATURE STATE:
+
+
+Kubernetes v1.31 [beta]
+(enabled by default)
+The 
+split image filesystem
+ feature, which enables support for the 
+containerfs
+
+filesystem, adds several new eviction signals, thresholds and metrics. To use
+
+containerfs
+, the Kubernetes release v1.36 requires the
+
+KubeletSeparateDiskGC
+ 
+feature gate
+
+to be enabled. Currently, only CRI-O (v1.29 or higher) offers the 
+containerfs
+
+filesystem support.
+As such, kubelet generally allows three options for container filesystems:
+Everything is on the single 
+nodefs
+, also referred to as "rootfs" or
+simply "root", and there is no dedicated image filesystem.
+Container storage (see 
+nodefs
+) is on a dedicated disk, and 
+imagefs
+
+(writable and read-only layers) is separate from the root filesystem.
+This is often referred to as "split disk" (or "separate disk") filesystem.
+Container filesystem 
+containerfs
+ (same as 
+nodefs
+ plus writable
+layers) is on root and the container images (read-only layers) are
+stored on separate 
+imagefs
+. This is often referred to as "split image"
+filesystem.
+The kubelet will attempt to auto-discover these filesystems with their current
+configuration directly from the underlying container runtime and will ignore
+other local node filesystems.
+The kubelet does not support other container filesystems or storage configurations,
+and it does not currently support multiple filesystems for images and containers.
+Deprecated kubelet garbage collection features
+Some kubelet garbage collection features are deprecated in favor of eviction:
+Existing Flag
+Rationale
+--maximum-dead-containers
+deprecated once old logs are stored outside of container's context
+--maximum-dead-containers-per-container
+deprecated once old logs are stored outside of container's context
+--minimum-container-ttl-duration
+deprecated once old logs are stored outside of container's context
+Eviction thresholds
+You can specify custom eviction thresholds for the kubelet to use when it makes
+eviction decisions. You can configure 
+soft
+ and
+
+hard
+ eviction thresholds.
+Eviction thresholds have the form 
+[eviction-signal][operator][quantity]
+, where:
+eviction-signal
+ is the 
+eviction signal
+ to use.
+operator
+ is the 
+relational operator
+
+you want, such as 
+<
+ (less than).
+quantity
+ is the eviction threshold amount, such as 
+1Gi
+. The value of 
+quantity
+
+must match the quantity representation used by Kubernetes. You can use either
+literal values or percentages (
+%
+).
+For example, if a node has 10GiB of total memory and you want trigger eviction if
+the available memory falls below 1GiB, you can define the eviction threshold as
+either 
+memory.available<10%
+ or 
+memory.available<1Gi
+ (you cannot use both).
+Soft eviction thresholds
+A soft eviction threshold pairs an eviction threshold with a required
+administrator-specified grace period. The kubelet does not evict pods until the
+grace period is exceeded. The kubelet returns an error on startup if you do
+not specify a grace period.
+You can specify both a soft eviction threshold grace period and a maximum
+allowed pod termination grace period for kubelet to use during evictions. If you
+specify a maximum allowed grace period and the soft eviction threshold is met,
+the kubelet uses the lesser of the two grace periods. If you do not specify a
+maximum allowed grace period, the kubelet kills evicted pods immediately without
+graceful termination.
+You can use the following flags to configure soft eviction thresholds:
+eviction-soft
+: A set of eviction thresholds like 
+memory.available<1.5Gi
+
+that can trigger pod eviction if held over the specified grace period.
+eviction-soft-grace-period
+: A set of eviction grace periods like 
+memory.available=1m30s
+
+that define how long a soft eviction threshold must hold before triggering a Pod eviction.
+eviction-max-pod-grace-period
+: The maximum allowed grace period (in seconds)
+to use when terminating pods in response to a soft eviction threshold being met.
+Hard eviction thresholds
+A hard eviction threshold has no grace period. When a hard eviction threshold is
+met, the kubelet kills pods immediately without graceful termination to reclaim
+the starved resource.
+You can use the 
+eviction-hard
+ flag to configure a set of hard eviction
+thresholds like 
+memory.available<1Gi
+.
+The kubelet has the following default hard eviction thresholds:
+memory.available<100Mi
+ (Linux nodes)
+memory.available<500Mi
+ (Windows nodes)
+nodefs.available<10%
+imagefs.available<15%
+nodefs.inodesFree<5%
+ (Linux nodes)
+imagefs.inodesFree<5%
+ (Linux nodes)
+These default values of hard eviction thresholds will only be set if none
+of the parameters is changed. If you change the value of any parameter,
+then the values of other parameters will not be inherited as the default
+values and will be set to zero. In order to provide custom values, you
+should provide all the thresholds respectively. You can also set the kubelet config
+MergeDefaultEvictionSettings to true in the kubelet configuration file.
+If set to true and any parameter is changed, then the other parameters will
+inherit their default values instead of 0.
+The 
+containerfs.available
+ and 
+containerfs.inodesFree
+ (Linux nodes) default
+eviction thresholds will be set as follows:
+If a single filesystem is used for everything, then 
+containerfs
+ thresholds
+are set the same as 
+nodefs
+.
+If separate filesystems are configured for both images and containers,
+then 
+containerfs
+ thresholds are set the same as 
+imagefs
+.
+Setting custom overrides for thresholds related to 
+containersfs
+ is currently
+not supported, and a warning will be issued if an attempt to do so is made; any
+provided custom values will, as such, be ignored.
+Eviction monitoring interval
+The kubelet evaluates eviction thresholds based on its configured 
+housekeeping-interval
+,
+which defaults to 
+10s
+.
+Node conditions
+The kubelet reports 
+node conditions
+
+to reflect that the node is under pressure because hard or soft eviction
+threshold is met, independent of configured grace periods.
+The kubelet maps eviction signals to node conditions as follows:
+Node Condition
+Eviction Signal
+Description
+MemoryPressure
+memory.available
+Available memory on the node has satisfied an eviction threshold
+DiskPressure
+nodefs.available
+, 
+nodefs.inodesFree
+, 
+imagefs.available
+, 
+imagefs.inodesFree
+, 
+containerfs.available
+, or 
+containerfs.inodesFree
+Available disk space and inodes on either the node's root filesystem, image filesystem, or container filesystem has satisfied an eviction threshold
+PIDPressure
+pid.available
+Available processes identifiers on the (Linux) node has fallen below an eviction threshold
+The control plane also 
+maps
+
+these node conditions to taints.
+The kubelet updates the node conditions based on the configured
+
+--node-status-update-frequency
+, which defaults to 
+10s
+.
+Node condition oscillation
+In some cases, nodes oscillate above and below soft eviction thresholds without
+holding for the defined grace periods. This causes the reported node condition
+to constantly switch between 
+true
+ and 
+false
+, leading to bad eviction decisions.
+To protect against oscillation, you can use the 
+eviction-pressure-transition-period
+
+flag, which controls how long the kubelet must wait before transitioning a node
+condition to a different state. The transition period has a default value of 
+5m
+.
+Reclaiming node level resources
+The kubelet tries to reclaim node-level resources before it evicts end-user pods.
+When a 
+DiskPressure
+ node condition is reported, the kubelet reclaims node-level
+resources based on the filesystems on the node.
+Without 
+imagefs
+ or 
+containerfs
+If the node only has a 
+nodefs
+ filesystem that meets eviction thresholds,
+the kubelet frees up disk space in the following order:
+Garbage collect dead pods and containers.
+Delete unused images.
+With 
+imagefs
+If the node has a dedicated 
+imagefs
+ filesystem for container runtimes to use,
+the kubelet does the following:
+If the 
+nodefs
+ filesystem meets the eviction thresholds, the kubelet garbage
+collects dead pods and containers.
+If the 
+imagefs
+ filesystem meets the eviction thresholds, the kubelet
+deletes all unused images.
+With 
+imagefs
+ and 
+containerfs
+If the node has a dedicated 
+containerfs
+ alongside the 
+imagefs
+ filesystem
+configured for the container runtimes to use, then kubelet will attempt to
+reclaim resources as follows:
+If the 
+containerfs
+ filesystem meets the eviction thresholds, the kubelet
+garbage collects dead pods and containers.
+If the 
+imagefs
+ filesystem meets the eviction thresholds, the kubelet
+deletes all unused images.
+Pod selection for kubelet eviction
+If the kubelet's attempts to reclaim node-level resources don't bring the eviction
+signal below the threshold, the kubelet begins to evict end-user pods.
+The kubelet uses the following parameters to determine the pod eviction order:
+Whether the pod's resource usage exceeds requests
+Pod Priority
+The pod's resource usage relative to requests
+As a result, kubelet ranks and evicts pods in the following order:
+BestEffort
+ or 
+Burstable
+ pods where the usage exceeds requests. These pods
+are evicted based on their Priority and then by how much their usage level
+exceeds the request.
+Guaranteed
+ pods and 
+Burstable
+ pods where the usage is less than requests
+are evicted last, based on their Priority.
+Note:
+The kubelet does not use the pod's 
+QoS class
+ to determine the eviction order.
+You can use the QoS class to estimate the most likely pod eviction order when
+reclaiming resources like memory. QoS classification does not apply to EphemeralStorage requests,
+so the above scenario will not apply if the node is, for example, under 
+DiskPressure
+.
+Guaranteed
+ pods are guaranteed only when requests and limits are specified for
+all the containers and they are equal. These pods will never be evicted because
+of another pod's resource consumption. If a system daemon (such as 
+kubelet
+
+and 
+journald
+) is consuming more resources than were reserved via
+
+system-reserved
+ or 
+kube-reserved
+ allocations, and the node only has
+
+Guaranteed
+ or 
+Burstable
+ pods using less resources than requests left on it,
+then the kubelet must choose to evict one of these pods to preserve node stability
+and to limit the impact of resource starvation on other pods. In this case, it
+will choose to evict pods of lowest Priority first.
+If you are running a 
+static pod
+
+and want to avoid having it evicted under resource pressure, set the
+
+priority
+ field for that Pod directly. Static pods do not support the
+
+priorityClassName
+ field.
+When the kubelet evicts pods in response to inode or process ID starvation, it uses
+the Pods' relative priority to determine the eviction order, because inodes and PIDs have no
+requests.
+The kubelet sorts pods differently based on whether the node has a dedicated
+
+imagefs
+ or 
+containerfs
+ filesystem:
+Without 
+imagefs
+ or 
+containerfs
+ (
+nodefs
+ and 
+imagefs
+ use the same filesystem)
+If 
+nodefs
+ triggers evictions, the kubelet sorts pods based on their
+total disk usage (
+local volumes + logs and a writable layer of all containers
+).
+With 
+imagefs
+ (
+nodefs
+ and 
+imagefs
+ filesystems are separate)
+If 
+nodefs
+ triggers evictions, the kubelet sorts pods based on 
+nodefs
+
+usage (
+local volumes + logs of all containers
+).
+If 
+imagefs
+ triggers evictions, the kubelet sorts pods based on the
+writable layer usage of all containers.
+With 
+imagesfs
+ and 
+containerfs
+ (
+imagefs
+ and 
+containerfs
+ have been split)
+If 
+containerfs
+ triggers evictions, the kubelet sorts pods based on
+
+containerfs
+ usage (
+local volumes + logs and a writable layer of all containers
+).
+If 
+imagefs
+ triggers evictions, the kubelet sorts pods based on the
+
+storage of images
+ rank, which represents the disk usage of a given image.
+Minimum eviction reclaim
+Note:
+As of Kubernetes v1.36, you cannot set a custom value
+for the 
+containerfs.available
+ metric. The configuration for this specific
+metric will be set automatically to reflect values set for either the 
+nodefs
+
+or 
+imagefs
+, depending on the configuration.
+In some cases, pod eviction only reclaims a small amount of the starved resource.
+This can lead to the kubelet repeatedly hitting the configured eviction thresholds
+and triggering multiple evictions.
+You can use the 
+--eviction-minimum-reclaim
+ flag or a 
+kubelet config file
+
+to configure a minimum reclaim amount for each resource. When the kubelet notices
+that a resource is starved, it continues to reclaim that resource until it
+reclaims the quantity you specify.
+For example, the following configuration sets minimum reclaim amounts:
+apiVersion
+:
+ 
+kubelet.config.k8s.io/v1beta1
+
+
+kind
+:
+ 
+KubeletConfiguration
+
+
+evictionHard
+:
+
+
+  
+memory.available
+:
+ 
+"500Mi"
+
+
+  
+nodefs.available
+:
+ 
+"1Gi"
+
+
+  
+imagefs.available
+:
+ 
+"100Gi"
+
+
+evictionMinimumReclaim
+:
+
+
+  
+memory.available
+:
+ 
+"0Mi"
+
+
+  
+nodefs.available
+:
+ 
+"500Mi"
+
+
+  
+imagefs.available
+:
+ 
+"2Gi"
+
+
+In this example, if the 
+nodefs.available
+ signal meets the eviction threshold,
+the kubelet reclaims the resource until the signal reaches the threshold of 1GiB,
+and then continues to reclaim the minimum amount of 500MiB, until the available
+nodefs storage value reaches 1.5GiB.
+Similarly, the kubelet tries to reclaim the 
+imagefs
+ resource until the 
+imagefs.available
+
+value reaches 
+102Gi
+, representing 102 GiB of available container image storage. If the amount
+of storage that the kubelet could reclaim is less than 2GiB, the kubelet doesn't reclaim anything.
+The default 
+eviction-minimum-reclaim
+ is 
+0
+ for all resources.
+Node out of memory behavior
+If the node experiences an 
+out of memory
+ (OOM) event prior to the kubelet
+being able to reclaim memory, the node depends on the 
+oom_killer
+
+to respond.
+The kubelet sets an 
+oom_score_adj
+ value for each container based on the QoS for the pod.
+Quality of Service
+oom_score_adj
+Guaranteed
+-997
+BestEffort
+1000
+Burstable
+min(max(2, 1000 - (1000 × memoryRequestBytes) / machineMemoryCapacityBytes), 999)
+Note:
+The kubelet also sets an 
+oom_score_adj
+ value of 
+-997
+ for any containers in Pods that have
+
+system-node-critical
+ 
+Priority
+.
+If the kubelet can't reclaim memory before a node experiences OOM, the
+
+oom_killer
+ calculates an 
+oom_score
+ based on the percentage of memory it's
+using on the node, and then adds the 
+oom_score_adj
+ to get an effective 
+oom_score
+
+for each container. It then kills the container with the highest score.
+This means that containers in low QoS pods that consume a large amount of memory
+relative to their scheduling requests are killed first.
+Unlike pod eviction, if a container is OOM killed, the kubelet can restart it
+based on its 
+restartPolicy
+.
+Good practices
+The following sections describe good practice for eviction configuration.
+Schedulable resources and eviction policies
+When you configure the kubelet with an eviction policy, you should make sure that
+the scheduler will not schedule pods if they will trigger eviction because they
+immediately induce memory pressure.
+Consider the following scenario:
+Node memory capacity: 10GiB
+Operator wants to reserve 10% of memory capacity for system daemons (kernel, 
+kubelet
+, etc.)
+Operator wants to evict Pods at 95% memory utilization to reduce incidence of system OOM.
+For this to work, the kubelet is launched as follows:
+--eviction-hard=memory.available<500Mi
+--system-reserved=memory=1.5Gi
+
+In this configuration, the 
+--system-reserved
+ flag reserves 1.5GiB of memory
+for the system, which is 
+10% of the total memory + the eviction threshold amount
+.
+The node can reach the eviction threshold if a pod is using more than its request,
+or if the system is using more than 1GiB of memory, which makes the 
+memory.available
+
+signal fall below 500MiB and triggers the threshold.
+DaemonSets and node-pressure eviction
+Pod priority is a major factor in making eviction decisions. If you do not want
+the kubelet to evict pods that belong to a DaemonSet, give those pods a high
+enough priority by specifying a suitable 
+priorityClassName
+ in the pod spec.
+You can also use a lower priority, or the default, to only allow pods from that
+DaemonSet to run when there are enough resources.
+Known issues
+The following sections describe known issues related to out of resource handling.
+kubelet may not observe memory pressure right away
+By default, the kubelet polls cAdvisor to collect memory usage stats at a
+regular interval. If memory usage increases within that window rapidly, the
+kubelet may not observe 
+MemoryPressure
+ fast enough, and the OOM killer
+will still be invoked.
+You can use the 
+--kernel-memcg-notification
+ flag to enable the 
+memcg
+
+notification API on the kubelet to get notified immediately when a threshold
+is crossed.
+If you are not trying to achieve extreme utilization, but a sensible measure of
+overcommit, a viable workaround for this issue is to use the 
+--kube-reserved
+
+and 
+--system-reserved
+ flags to allocate memory for the system.
+active_file memory is not considered as available memory
+On Linux, the kernel tracks the number of bytes of file-backed memory on active
+least recently used (LRU) list as the 
+active_file
+ statistic. The kubelet treats 
+active_file
+ memory
+areas as not reclaimable. For workloads that make intensive use of block-backed
+local storage, including ephemeral local storage, kernel-level caches of file
+and block data means that many recently accessed cache pages are likely to be
+counted as 
+active_file
+. If enough of these kernel block buffers are on the
+active LRU list, the kubelet is liable to observe this as high resource use and
+taint the node as experiencing memory pressure - triggering pod eviction.
+For more details, see 
+https://github.com/kubernetes/kubernetes/issues/43916
+You can work around that behavior by setting the memory limit and memory request
+the same for containers likely to perform intensive I/O activity. You will need
+to estimate or measure an optimal memory limit value for that container.
+What's next
+Learn about 
+API-initiated Eviction
+Learn about 
+Pod Priority and Preemption
+Learn about 
+PodDisruptionBudgets
+Learn about 
+Quality of Service
+ (QoS)
+Check out the 
+Eviction API
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified September 19, 2025 at 9:38 PM PST: 
+fix: typos (a5d40c68e0)
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3

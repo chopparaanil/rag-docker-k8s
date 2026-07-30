@@ -1,0 +1,3983 @@
+ResourceClaim | Kubernetes
+
+
+Kubernetes
+Documentation
+Kubernetes Blog
+Training
+Careers
+Partners
+Community
+Versions
+Release Information
+
+
+v1.36
+
+
+v1.35
+
+
+v1.34
+
+
+v1.33
+
+
+v1.32
+English
+বাংলা (Bengali)
+
+
+
+বাংলা (Bengali) 
+
+
+中文 (Chinese)
+
+
+
+中文 (Chinese) 
+
+
+Français (French)
+
+
+
+Français (French) 
+
+
+Deutsch (German)
+
+
+
+Deutsch (German) 
+
+
+हिन्दी (Hindi)
+
+
+
+हिन्दी (Hindi) 
+
+
+Bahasa Indonesia (Indonesian)
+
+
+
+Bahasa Indonesia (Indonesian) 
+
+
+Italiano (Italian)
+
+
+
+Italiano (Italian) 
+
+
+日本語 (Japanese)
+
+
+
+日本語 (Japanese) 
+
+
+한국어 (Korean)
+
+
+
+한국어 (Korean) 
+
+
+Polski (Polish)
+
+
+
+Polski (Polish) 
+
+
+Português (Portuguese)
+
+
+
+Português (Portuguese) 
+
+
+Русский (Russian)
+
+
+
+Русский (Russian) 
+
+
+Español (Spanish)
+
+
+
+Español (Spanish) 
+
+
+Українська (Ukrainian)
+
+
+
+Українська (Ukrainian) 
+
+
+Tiếng Việt (Vietnamese)
+
+
+
+Tiếng Việt (Vietnamese) 
+ResourceClaim
+English
+বাংলা (Bengali)
+
+
+中文 (Chinese)
+
+
+Français (French)
+
+
+Deutsch (German)
+
+
+हिन्दी (Hindi)
+
+
+Bahasa Indonesia (Indonesian)
+
+
+Italiano (Italian)
+
+
+日本語 (Japanese)
+
+
+한국어 (Korean)
+
+
+Polski (Polish)
+
+
+Português (Portuguese)
+
+
+Русский (Russian)
+
+
+Español (Spanish)
+
+
+Українська (Ukrainian)
+
+
+Tiếng Việt (Vietnamese)
+Kubernetes Documentation
+
+
+Documentation
+
+
+Available Documentation Versions
+
+
+Getting started
+
+
+Learning environment
+
+
+Production environment
+
+
+Container Runtimes
+
+
+Installing Kubernetes with deployment tools
+
+
+Bootstrapping clusters with kubeadm
+
+
+Installing kubeadm
+
+
+Troubleshooting kubeadm
+
+
+Creating a cluster with kubeadm
+
+
+Customizing components with the kubeadm API
+
+
+Options for Highly Available Topology
+
+
+Creating Highly Available Clusters with kubeadm
+
+
+Set up a High Availability etcd Cluster with kubeadm
+
+
+Configuring each kubelet in your cluster using kubeadm
+
+
+Dual-stack support with kubeadm
+
+
+Turnkey Cloud Solutions
+
+
+Best practices
+
+
+Considerations for large clusters
+
+
+Running in multiple zones
+
+
+Validate node setup
+
+
+Enforcing Pod Security Standards
+
+
+PKI certificates and requirements
+
+
+Concepts
+
+
+Overview
+
+
+Kubernetes Components
+
+
+Objects In Kubernetes
+
+
+Kubernetes Object Management
+
+
+Object Names and IDs
+
+
+Labels and Selectors
+
+
+Namespaces
+
+
+Annotations
+
+
+Field Selectors
+
+
+Finalizers
+
+
+Owners and Dependents
+
+
+Recommended Labels
+
+
+Storage Versions
+
+
+The Kubernetes API
+
+
+The kubectl command-line tool
+
+
+Cluster Architecture
+
+
+Nodes
+
+
+Communication between Nodes and the Control Plane
+
+
+Controllers
+
+
+Leases
+
+
+Cloud Controller Manager
+
+
+About cgroup v2
+
+
+Kubernetes Self-Healing
+
+
+Garbage Collection
+
+
+Mixed Version Proxy
+
+
+Containers
+
+
+Images
+
+
+Container Environment
+
+
+Runtime Class
+
+
+Container Lifecycle Hooks
+
+
+Container Runtime Interface (CRI)
+
+
+Workloads
+
+
+Pods
+
+
+Pod Lifecycle
+
+
+Pod Conditions
+
+
+Init Containers
+
+
+Sidecar Containers
+
+
+Ephemeral Containers
+
+
+Disruptions
+
+
+Pod Hostname
+
+
+Pod Quality of Service Classes
+
+
+Scheduling Group
+
+
+User Namespaces
+
+
+Downward API
+
+
+Advanced Pod Configuration
+
+
+Workload API
+
+
+Pod Group Disruption and Priority
+
+
+PodGroup Scheduling Policies
+
+
+Topology-Aware Workload Scheduling
+
+
+Workload Management
+
+
+Deployments
+
+
+ReplicaSet
+
+
+StatefulSets
+
+
+DaemonSet
+
+
+Jobs
+
+
+Automatic Cleanup for Finished Jobs
+
+
+CronJob
+
+
+ReplicationController
+
+
+PodGroup API
+
+
+PodGroup Lifecycle
+
+
+Managing Workloads
+
+
+Autoscaling Workloads
+
+
+Horizontal Pod Autoscaling
+
+
+Resource managers
+
+
+Vertical Pod Autoscaling
+
+
+Services, Load Balancing, and Networking
+
+
+Service
+
+
+Ingress
+
+
+Ingress Controllers
+
+
+Gateway API
+
+
+EndpointSlices
+
+
+Network Policies
+
+
+DNS for Services and Pods
+
+
+IPv4/IPv6 dual-stack
+
+
+Topology Aware Routing
+
+
+Networking on Windows
+
+
+Service ClusterIP allocation
+
+
+Service Internal Traffic Policy
+
+
+Storage
+
+
+Volumes
+
+
+Persistent Volumes
+
+
+Projected Volumes
+
+
+Ephemeral Volumes
+
+
+Storage Classes
+
+
+Volume Attributes Classes
+
+
+Dynamic Volume Provisioning
+
+
+Volume Snapshots
+
+
+Volume Snapshot Classes
+
+
+CSI Volume Cloning
+
+
+Storage Capacity
+
+
+Node-specific Volume Limits
+
+
+Local ephemeral storage
+
+
+Volume Health Monitoring
+
+
+Windows Storage
+
+
+Configuration
+
+
+ConfigMaps
+
+
+Secrets
+
+
+Liveness, Readiness, and Startup Probes
+
+
+Resource Management for Pods and Containers
+
+
+Organizing Cluster Access Using kubeconfig Files
+
+
+Resource Management for Windows nodes
+
+
+Security
+
+
+Cloud Native Security
+
+
+Pod Security Standards
+
+
+Pod Security Admission
+
+
+Service Accounts
+
+
+Pod Security Policies
+
+
+Security For Linux Nodes
+
+
+Security For Windows Nodes
+
+
+Controlling Access to the Kubernetes API
+
+
+Role Based Access Control Good Practices
+
+
+Good practices for Kubernetes Secrets
+
+
+Multi-tenancy
+
+
+Hardening Guide - Authentication Mechanisms
+
+
+Hardening Guide - Dynamic Resource Allocation
+
+
+Hardening Guide - Scheduler Configuration
+
+
+Kubernetes API Server Bypass Risks
+
+
+Linux kernel security constraints for Pods and containers
+
+
+Security Checklist
+
+
+Application Security Checklist
+
+
+Policies
+
+
+Limit Ranges
+
+
+Resource Quotas
+
+
+Process ID Limits And Reservations
+
+
+Scheduling, Preemption and Eviction
+
+
+Kubernetes Scheduler
+
+
+Topology-Aware Workload Scheduling
+
+
+Assigning Pods to Nodes
+
+
+Pod Overhead
+
+
+Pod Scheduling Readiness
+
+
+Pod Topology Spread Constraints
+
+
+Taints and Tolerations
+
+
+Scheduling Framework
+
+
+Dynamic Resource Allocation
+
+
+Gang Scheduling
+
+
+Scheduler Performance Tuning
+
+
+PodGroup Scheduling
+
+
+Resource Bin Packing
+
+
+Workload-Aware Preemption
+
+
+Pod Priority and Preemption
+
+
+Node-pressure Eviction
+
+
+API-initiated Eviction
+
+
+Node Declared Features
+
+
+Cluster Administration
+
+
+Node Shutdowns
+
+
+Swap memory management
+
+
+Node Autoscaling
+
+
+Certificates
+
+
+Cluster Networking
+
+
+Observability
+
+
+Admission Webhook Good Practices
+
+
+Good practices for Dynamic Resource Allocation as a Cluster Admin
+
+
+Logging Architecture
+
+
+Compatibility Version For Kubernetes Control Plane Components
+
+
+Metrics For Kubernetes System Components
+
+
+Metrics for Kubernetes Object States
+
+
+System Logs
+
+
+Traces For Kubernetes System Components
+
+
+Proxies in Kubernetes
+
+
+API Priority and Fairness
+
+
+Installing Addons
+
+
+Coordinated Leader Election
+
+
+Windows in Kubernetes
+
+
+Windows containers in Kubernetes
+
+
+Guide for Running Windows Containers in Kubernetes
+
+
+Extending Kubernetes
+
+
+Compute, Storage, and Networking Extensions
+
+
+Network Plugins
+
+
+Device Plugins
+
+
+Extending the Kubernetes API
+
+
+Custom Resources
+
+
+Kubernetes API Aggregation Layer
+
+
+Operator pattern
+
+
+Tasks
+
+
+Install Tools
+
+
+Install and Set Up kubectl on Linux
+
+
+Install and Set Up kubectl on macOS
+
+
+Install and Set Up kubectl on Windows
+
+
+Administer a Cluster
+
+
+Administration with kubeadm
+
+
+Adding Linux worker nodes
+
+
+Adding Windows worker nodes
+
+
+Upgrading kubeadm clusters
+
+
+Upgrading Linux nodes
+
+
+Upgrading Windows nodes
+
+
+Configuring a cgroup driver
+
+
+Certificate Management with kubeadm
+
+
+Reconfiguring a kubeadm cluster
+
+
+Changing The Kubernetes Package Repository
+
+
+Overprovision Node Capacity For A Cluster
+
+
+Migrating from dockershim
+
+
+Changing the Container Runtime on a Node from Docker Engine to containerd
+
+
+Find Out What Container Runtime is Used on a Node
+
+
+Troubleshooting CNI plugin-related errors
+
+
+Check whether dockershim removal affects you
+
+
+Migrating telemetry and security agents from dockershim
+
+
+Generate Certificates Manually
+
+
+Manage Memory, CPU, and API Resources
+
+
+Configure Default Memory Requests and Limits for a Namespace
+
+
+Configure Default CPU Requests and Limits for a Namespace
+
+
+Configure Minimum and Maximum Memory Constraints for a Namespace
+
+
+Configure Minimum and Maximum CPU Constraints for a Namespace
+
+
+Configure Memory and CPU Quotas for a Namespace
+
+
+Configure a Pod Quota for a Namespace
+
+
+Install a Network Policy Provider
+
+
+Use Antrea for NetworkPolicy
+
+
+Use Calico for NetworkPolicy
+
+
+Use Cilium for NetworkPolicy
+
+
+Use Kube-router for NetworkPolicy
+
+
+Romana for NetworkPolicy
+
+
+Weave Net for NetworkPolicy
+
+
+Access Clusters Using the Kubernetes API
+
+
+Enable Or Disable Feature Gates
+
+
+Advertise Extended Resources for a Node
+
+
+Autoscale the DNS Service in a Cluster
+
+
+Change the Access Mode of a PersistentVolume to ReadWriteOncePod
+
+
+Change the default StorageClass
+
+
+Switching from Polling to CRI Event-based Updates to Container Status
+
+
+Change the Reclaim Policy of a PersistentVolume
+
+
+Cloud Controller Manager Administration
+
+
+Configure a kubelet image credential provider
+
+
+Configure Quotas for API Objects
+
+
+Control CPU Management Policies on the Node
+
+
+Control Memory Management Policies on a Node
+
+
+Control Topology Management Policies on a node
+
+
+Customizing DNS Service
+
+
+Debugging DNS Resolution
+
+
+Declare Network Policy
+
+
+Developing Cloud Controller Manager
+
+
+Enable Or Disable A Kubernetes API
+
+
+Encrypting Confidential Data at Rest
+
+
+Decrypt Confidential Data that is Already Encrypted at Rest
+
+
+Guaranteed Scheduling For Critical Add-On Pods
+
+
+IP Masquerade Agent User Guide
+
+
+Limit Storage Consumption
+
+
+Migrate Replicated Control Plane To Use Cloud Controller Manager
+
+
+Operating etcd clusters for Kubernetes
+
+
+Reserve Compute Resources for System Daemons
+
+
+Running Kubernetes Node Components as a Non-root User
+
+
+Safely Drain a Node
+
+
+Securing a Cluster
+
+
+Harden Dynamic Resource Allocation in Your Cluster
+
+
+Set Kubelet Parameters Via A Configuration File
+
+
+Share a Cluster with Namespaces
+
+
+Upgrade A Cluster
+
+
+Use Cascading Deletion in a Cluster
+
+
+Using a KMS provider for data encryption
+
+
+Using CoreDNS for Service Discovery
+
+
+Using NodeLocal DNSCache in Kubernetes Clusters
+
+
+Using sysctls in a Kubernetes Cluster
+
+
+Verify Signed Kubernetes Artifacts
+
+
+Configure Pods and Containers
+
+
+Assign Memory Resources to Containers and Pods
+
+
+Assign CPU Resources to Containers and Pods
+
+
+Assign Devices to Pods and Containers
+
+
+Set Up DRA in a Cluster
+
+
+Allocate Devices to Workloads with DRA
+
+
+Access DRA Device Metadata
+
+
+Assign Pod-level CPU and memory resources
+
+
+Configure GMSA for Windows Pods and containers
+
+
+Resize CPU and Memory Resources assigned to Containers
+
+
+Resize CPU and Memory Resources assigned to Pods
+
+
+Configure RunAsUserName for Windows pods and containers
+
+
+Create a Windows HostProcess Pod
+
+
+Configure Quality of Service for Pods
+
+
+Assign Extended Resources to a Container
+
+
+Configure a Pod to Use a Volume for Storage
+
+
+Configure a Pod to Use a Projected Volume for Storage
+
+
+Configure a Security Context for a Pod or Container
+
+
+Configure Service Accounts for Pods
+
+
+Pull an Image from a Private Registry
+
+
+Configure Liveness, Readiness and Startup Probes
+
+
+Assign Pods to Nodes
+
+
+Assign Pods to Nodes using Node Affinity
+
+
+Configure Pod Initialization
+
+
+Attach Handlers to Container Lifecycle Events
+
+
+Configure a Pod to Use a ConfigMap
+
+
+Share Process Namespace between Containers in a Pod
+
+
+Use a User Namespace With a Pod
+
+
+Use an Image Volume With a Pod
+
+
+Create static Pods
+
+
+Translate a Docker Compose File to Kubernetes Resources
+
+
+Enforce Pod Security Standards by Configuring the Built-in Admission Controller
+
+
+Enforce Pod Security Standards with Namespace Labels
+
+
+Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller
+
+
+Monitoring, Logging, and Debugging
+
+
+Logging in Kubernetes
+
+
+Monitoring in Kubernetes
+
+
+Troubleshooting Applications
+
+
+Debug Pods
+
+
+Debug Services
+
+
+Debug a StatefulSet
+
+
+Determine the Reason for Pod Failure
+
+
+Debug Init Containers
+
+
+Debug Running Pods
+
+
+Get a Shell to a Running Container
+
+
+Troubleshooting Clusters
+
+
+Troubleshooting kubectl
+
+
+Resource metrics pipeline
+
+
+Tools for Monitoring Resources
+
+
+Monitor Node Health
+
+
+Debugging Kubernetes nodes with crictl
+
+
+Troubleshooting Topology Management
+
+
+Auditing
+
+
+Debugging Kubernetes Nodes With Kubectl
+
+
+Developing and debugging services locally using telepresence
+
+
+Windows debugging tips
+
+
+Manage Kubernetes Objects
+
+
+Declarative Management of Kubernetes Objects Using Configuration Files
+
+
+Declarative Management of Kubernetes Objects Using Kustomize
+
+
+Managing Kubernetes Objects Using Imperative Commands
+
+
+Imperative Management of Kubernetes Objects Using Configuration Files
+
+
+Update API Objects in Place Using kubectl patch
+
+
+Migrate Kubernetes Objects Using Storage Version Migration
+
+
+Managing Secrets
+
+
+Managing Secrets using kubectl
+
+
+Managing Secrets using Configuration File
+
+
+Managing Secrets using Kustomize
+
+
+Inject Data Into Applications
+
+
+Define a Command and Arguments for a Container
+
+
+Define Dependent Environment Variables
+
+
+Define Environment Variables for a Container
+
+
+Define Environment Variable Values Using An Init Container
+
+
+Expose Pod Information to Containers Through Environment Variables
+
+
+Expose Pod Information to Containers Through Files
+
+
+Distribute Credentials Securely Using Secrets
+
+
+Run Applications
+
+
+Run a Stateless Application Using a Deployment
+
+
+Horizontal Manual Scaling for a Deployment
+
+
+Run a Single-Instance Stateful Application
+
+
+Run a Replicated Stateful Application
+
+
+Scale a StatefulSet
+
+
+Delete a StatefulSet
+
+
+Force Delete StatefulSet Pods
+
+
+HorizontalPodAutoscaler Walkthrough
+
+
+Specifying a Disruption Budget for your Application
+
+
+Accessing the Kubernetes API from a Pod
+
+
+Run Jobs
+
+
+Running Automated Tasks with a CronJob
+
+
+Coarse Parallel Processing Using a Work Queue
+
+
+Fine Parallel Processing Using a Work Queue
+
+
+Indexed Job for Parallel Processing with Static Work Assignment
+
+
+Job with Pod-to-Pod Communication
+
+
+Parallel Processing using Expansions
+
+
+Handling retriable and non-retriable pod failures with Pod failure policy
+
+
+Access Applications in a Cluster
+
+
+Deploy and Access the Kubernetes Dashboard
+
+
+Accessing Clusters
+
+
+Configure Access to Multiple Clusters
+
+
+Use Port Forwarding to Access Applications in a Cluster
+
+
+Use a Service to Access an Application in a Cluster
+
+
+Connect a Frontend to a Backend Using Services
+
+
+Create an External Load Balancer
+
+
+List All Container Images Running in a Cluster
+
+
+Communicate Between Containers in the Same Pod Using a Shared Volume
+
+
+Configure DNS for a Cluster
+
+
+Access Services Running on Clusters
+
+
+Extend Kubernetes
+
+
+Configure the Aggregation Layer
+
+
+Use Custom Resources
+
+
+Extend the Kubernetes API with CustomResourceDefinitions
+
+
+Versions in CustomResourceDefinitions
+
+
+Set up an Extension API Server
+
+
+Configure Multiple Schedulers
+
+
+Use an HTTP Proxy to Access the Kubernetes API
+
+
+Use a SOCKS5 Proxy to Access the Kubernetes API
+
+
+Set up Konnectivity service
+
+
+TLS
+
+
+Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest
+
+
+Configure Certificate Rotation for the Kubelet
+
+
+Manage TLS Certificates in a Cluster
+
+
+Manual Rotation of CA Certificates
+
+
+Manage Cluster Daemons
+
+
+Building a Basic DaemonSet
+
+
+Perform a Rolling Update on a DaemonSet
+
+
+Perform a Rollback on a DaemonSet
+
+
+Running Pods on Only Some Nodes
+
+
+Networking
+
+
+Adding entries to Pod /etc/hosts with HostAliases
+
+
+Extend Service IP Ranges
+
+
+Kubernetes Default ServiceCIDR Reconfiguration
+
+
+Validate IPv4/IPv6 dual-stack
+
+
+Extend kubectl with plugins
+
+
+Manage HugePages
+
+
+Schedule GPUs
+
+
+Tutorials
+
+
+Hello Minikube
+
+
+Learn Kubernetes Basics
+
+
+Create a Cluster
+
+
+Using Minikube to Create a Cluster
+
+
+Deploy an App
+
+
+Using kubectl to Create a Deployment
+
+
+Explore Your App
+
+
+Viewing Pods and Nodes
+
+
+Expose Your App Publicly
+
+
+Using a Service to Expose Your App
+
+
+Scale Your App
+
+
+Running Multiple Instances of Your App
+
+
+Update Your App
+
+
+Performing a Rolling Update
+
+
+Configuration
+
+
+Updating Configuration via a ConfigMap
+
+
+Configuring Redis using a ConfigMap
+
+
+Adopting Sidecar Containers
+
+
+Configure a Pod to Use a PersistentVolume for Storage
+
+
+Security
+
+
+Apply Pod Security Standards at the Cluster Level
+
+
+Apply Pod Security Standards at the Namespace Level
+
+
+Restrict a Container's Access to Resources with AppArmor
+
+
+Restrict a Container's Syscalls with seccomp
+
+
+Stateless Applications
+
+
+Exposing an External IP Address to Access an Application in a Cluster
+
+
+Example: Deploying PHP Guestbook application with Redis
+
+
+Stateful Applications
+
+
+StatefulSet Basics
+
+
+Example: Deploying WordPress and MySQL with Persistent Volumes
+
+
+Example: Deploying Cassandra with a StatefulSet
+
+
+Running ZooKeeper, A Distributed System Coordinator
+
+
+Cluster Management
+
+
+Running Kubelet in Standalone Mode
+
+
+Configuring swap memory on Kubernetes nodes
+
+
+Install Drivers and Allocate Devices with DRA
+
+
+Namespaces Walkthrough
+
+
+Services
+
+
+Connecting Applications with Services
+
+
+Using Source IP
+
+
+Explore Termination Behavior for Pods And Their Endpoints
+
+
+Reference
+
+
+Glossary
+
+
+API Overview
+
+
+Declarative API Validation
+
+
+Kubernetes API Concepts
+
+
+Server-Side Apply
+
+
+Client Libraries
+
+
+Common Expression Language in Kubernetes
+
+
+Kubernetes Deprecation Policy
+
+
+Deprecated API Migration Guide
+
+
+Kubernetes API health endpoints
+
+
+API Access Control
+
+
+Authenticating
+
+
+Authenticating with Bootstrap Tokens
+
+
+Authorization
+
+
+Using RBAC Authorization
+
+
+Using Node Authorization
+
+
+Webhook Mode
+
+
+Using ABAC Authorization
+
+
+Admission Control
+
+
+Dynamic Admission Control
+
+
+Managing Service Accounts
+
+
+User Impersonation
+
+
+Certificates and Certificate Signing Requests
+
+
+Mapping PodSecurityPolicies to Pod Security Standards
+
+
+Kubelet authentication/authorization
+
+
+TLS bootstrapping
+
+
+Manifest-Based Admission Control
+
+
+Mutating Admission Policy
+
+
+Validating Admission Policy
+
+
+Well-Known Labels, Annotations and Taints
+
+
+Audit Annotations
+
+
+Kubernetes API
+
+
+Workload Resources
+
+
+Pod
+
+
+Binding
+
+
+PodTemplate
+
+
+PodGroup v1alpha2
+
+
+ReplicationController
+
+
+ReplicaSet
+
+
+Deployment
+
+
+StatefulSet
+
+
+ControllerRevision
+
+
+DaemonSet
+
+
+Job
+
+
+CronJob
+
+
+HorizontalPodAutoscaler
+
+
+HorizontalPodAutoscaler
+
+
+PriorityClass
+
+
+DeviceTaintRule v1beta2
+
+
+ResourceClaim
+
+
+ResourceClaimTemplate
+
+
+ResourceSlice
+
+
+Workload v1alpha2
+
+
+Service Resources
+
+
+Service
+
+
+Endpoints
+
+
+EndpointSlice
+
+
+Ingress
+
+
+IngressClass
+
+
+Config and Storage Resources
+
+
+ConfigMap
+
+
+Secret
+
+
+CSIDriver
+
+
+CSINode
+
+
+CSIStorageCapacity
+
+
+PersistentVolumeClaim
+
+
+PersistentVolume
+
+
+StorageClass
+
+
+StorageVersionMigration v1beta1
+
+
+Volume
+
+
+VolumeAttachment
+
+
+VolumeAttributesClass
+
+
+Authentication Resources
+
+
+ServiceAccount
+
+
+TokenRequest
+
+
+TokenReview
+
+
+CertificateSigningRequest
+
+
+ClusterTrustBundle v1beta1
+
+
+SelfSubjectReview
+
+
+PodCertificateRequest v1beta1
+
+
+Authorization Resources
+
+
+LocalSubjectAccessReview
+
+
+SelfSubjectAccessReview
+
+
+SelfSubjectRulesReview
+
+
+SubjectAccessReview
+
+
+ClusterRole
+
+
+ClusterRoleBinding
+
+
+Role
+
+
+RoleBinding
+
+
+Policy Resources
+
+
+FlowSchema
+
+
+LimitRange
+
+
+ResourceQuota
+
+
+NetworkPolicy
+
+
+PodDisruptionBudget
+
+
+PriorityLevelConfiguration
+
+
+ValidatingAdmissionPolicy
+
+
+ValidatingAdmissionPolicyBinding
+
+
+MutatingAdmissionPolicy
+
+
+MutatingAdmissionPolicyBinding
+
+
+Extend Resources
+
+
+CustomResourceDefinition
+
+
+DeviceClass
+
+
+MutatingWebhookConfiguration
+
+
+ValidatingWebhookConfiguration
+
+
+Cluster Resources
+
+
+APIService
+
+
+ComponentStatus
+
+
+Event
+
+
+IPAddress
+
+
+Lease
+
+
+LeaseCandidate v1beta1
+
+
+Namespace
+
+
+Node
+
+
+RuntimeClass
+
+
+ResourcePoolStatusRequest v1alpha3
+
+
+ServiceCIDR
+
+
+Common Definitions
+
+
+DeleteOptions
+
+
+LabelSelector
+
+
+ListMeta
+
+
+LocalObjectReference
+
+
+NodeSelectorRequirement
+
+
+ObjectFieldSelector
+
+
+ObjectMeta
+
+
+ObjectReference
+
+
+Patch
+
+
+Quantity
+
+
+ResourceFieldSelector
+
+
+Status
+
+
+TypedLocalObjectReference
+
+
+Common Parameters
+
+
+Instrumentation
+
+
+Service Level Indicator Metrics
+
+
+CRI Pod & Container Metrics
+
+
+Native Histograms
+
+
+Node metrics data
+
+
+Understand Pressure Stall Information (PSI) Metrics
+
+
+Kubernetes z-pages
+
+
+Kubernetes Metrics Reference
+
+
+Kubernetes Issues and Security
+
+
+Kubernetes Issue Tracker
+
+
+Kubernetes Security and Disclosure Information
+
+
+CVE feed
+
+
+Node Reference Information
+
+
+Kubelet Checkpoint API
+
+
+Linux Kernel Version Requirements
+
+
+Articles on dockershim Removal and on Using CRI-compatible Runtimes
+
+
+Kubelet Pod Info gRPC API
+
+
+Node Labels Populated By The Kubelet
+
+
+Kubelet Sync Loop
+
+
+Local Files And Paths Used By The Kubelet
+
+
+Kubelet Configuration Directory Merging
+
+
+Kubelet Device Manager API Versions
+
+
+Kubelet Systemd Watchdog
+
+
+Node Status
+
+
+Seccomp and Kubernetes
+
+
+Linux Node Swap Behaviors
+
+
+Networking Reference
+
+
+Protocols for Services
+
+
+Ports and Protocols
+
+
+Virtual IPs and Service Proxies
+
+
+Setup tools
+
+
+Kubeadm
+
+
+kubeadm init
+
+
+kubeadm join
+
+
+kubeadm upgrade
+
+
+kubeadm upgrade phases
+
+
+kubeadm config
+
+
+kubeadm reset
+
+
+kubeadm token
+
+
+kubeadm version
+
+
+kubeadm alpha
+
+
+kubeadm certs
+
+
+kubeadm init phase
+
+
+kubeadm join phase
+
+
+kubeadm kubeconfig
+
+
+kubeadm reset phase
+
+
+Implementation details
+
+
+Command line tool (kubectl)
+
+
+Introduction to kubectl
+
+
+kubectl Quick Reference
+
+
+kubectl reference
+
+
+kubectl
+
+
+kubectl annotate
+
+
+kubectl api-resources
+
+
+kubectl api-versions
+
+
+kubectl apply
+
+
+kubectl apply edit-last-applied
+
+
+kubectl apply set-last-applied
+
+
+kubectl apply view-last-applied
+
+
+kubectl attach
+
+
+kubectl auth
+
+
+kubectl auth can-i
+
+
+kubectl auth reconcile
+
+
+kubectl auth whoami
+
+
+kubectl autoscale
+
+
+kubectl certificate
+
+
+kubectl certificate approve
+
+
+kubectl certificate deny
+
+
+kubectl cluster-info
+
+
+kubectl cluster-info dump
+
+
+kubectl completion
+
+
+kubectl config
+
+
+kubectl config current-context
+
+
+kubectl config delete-cluster
+
+
+kubectl config delete-context
+
+
+kubectl config delete-user
+
+
+kubectl config get-clusters
+
+
+kubectl config get-contexts
+
+
+kubectl config get-users
+
+
+kubectl config rename-context
+
+
+kubectl config set
+
+
+kubectl config set-cluster
+
+
+kubectl config set-context
+
+
+kubectl config set-credentials
+
+
+kubectl config unset
+
+
+kubectl config use-context
+
+
+kubectl config view
+
+
+kubectl cordon
+
+
+kubectl cp
+
+
+kubectl create
+
+
+kubectl create clusterrole
+
+
+kubectl create clusterrolebinding
+
+
+kubectl create configmap
+
+
+kubectl create cronjob
+
+
+kubectl create deployment
+
+
+kubectl create ingress
+
+
+kubectl create job
+
+
+kubectl create namespace
+
+
+kubectl create poddisruptionbudget
+
+
+kubectl create priorityclass
+
+
+kubectl create quota
+
+
+kubectl create role
+
+
+kubectl create rolebinding
+
+
+kubectl create secret
+
+
+kubectl create secret docker-registry
+
+
+kubectl create secret generic
+
+
+kubectl create secret tls
+
+
+kubectl create service
+
+
+kubectl create service clusterip
+
+
+kubectl create service externalname
+
+
+kubectl create service loadbalancer
+
+
+kubectl create service nodeport
+
+
+kubectl create serviceaccount
+
+
+kubectl create token
+
+
+kubectl debug
+
+
+kubectl delete
+
+
+kubectl describe
+
+
+kubectl diff
+
+
+kubectl drain
+
+
+kubectl edit
+
+
+kubectl events
+
+
+kubectl exec
+
+
+kubectl explain
+
+
+kubectl expose
+
+
+kubectl get
+
+
+kubectl kuberc
+
+
+kubectl kuberc set
+
+
+kubectl kuberc view
+
+
+kubectl kustomize
+
+
+kubectl label
+
+
+kubectl logs
+
+
+kubectl options
+
+
+kubectl patch
+
+
+kubectl plugin
+
+
+kubectl plugin list
+
+
+kubectl port-forward
+
+
+kubectl proxy
+
+
+kubectl replace
+
+
+kubectl rollout
+
+
+kubectl rollout history
+
+
+kubectl rollout pause
+
+
+kubectl rollout restart
+
+
+kubectl rollout resume
+
+
+kubectl rollout status
+
+
+kubectl rollout undo
+
+
+kubectl run
+
+
+kubectl scale
+
+
+kubectl set
+
+
+kubectl set env
+
+
+kubectl set image
+
+
+kubectl set resources
+
+
+kubectl set selector
+
+
+kubectl set serviceaccount
+
+
+kubectl set subject
+
+
+kubectl taint
+
+
+kubectl top
+
+
+kubectl top node
+
+
+kubectl top pod
+
+
+kubectl uncordon
+
+
+kubectl version
+
+
+kubectl wait
+
+
+kubectl Commands
+
+
+kubectl
+
+
+JSONPath Support
+
+
+kubectl for Docker Users
+
+
+kubectl Usage Conventions
+
+
+Kubectl user preferences (kuberc)
+
+
+Encodings
+
+
+KYAML Reference
+
+
+Component tools
+
+
+Feature Gates
+
+
+Feature Gates (removed)
+
+
+kube-apiserver
+
+
+kube-controller-manager
+
+
+kube-proxy
+
+
+kube-scheduler
+
+
+kubelet
+
+
+Debug cluster
+
+
+Flow control
+
+
+Configuration APIs
+
+
+Client Authentication (v1)
+
+
+Client Authentication (v1beta1)
+
+
+Event Rate Limit Configuration (v1alpha1)
+
+
+Image Policy API (v1alpha1)
+
+
+kube-apiserver Admission (v1)
+
+
+kube-apiserver Audit Configuration (v1)
+
+
+kube-apiserver Configuration (v1)
+
+
+kube-apiserver Configuration (v1alpha1)
+
+
+kube-apiserver Configuration (v1beta1)
+
+
+kube-controller-manager Configuration (v1alpha1)
+
+
+kube-proxy Configuration (v1alpha1)
+
+
+kube-scheduler Configuration (v1)
+
+
+kubeadm Configuration (v1beta3)
+
+
+kubeadm Configuration (v1beta4)
+
+
+kubeconfig (v1)
+
+
+Kubelet Configuration (v1)
+
+
+Kubelet Configuration (v1alpha1)
+
+
+Kubelet Configuration (v1beta1)
+
+
+Kubelet CredentialProvider (v1)
+
+
+kuberc (v1alpha1)
+
+
+kuberc (v1beta1)
+
+
+WebhookAdmission Configuration (v1)
+
+
+External APIs
+
+
+Kubernetes Custom Metrics (v1beta2)
+
+
+Kubernetes External Metrics (v1beta1)
+
+
+Kubernetes Metrics (v1beta1)
+
+
+Scheduling
+
+
+Scheduler Configuration
+
+
+Scheduling Policies
+
+
+Other Tools
+
+
+Contribute
+
+
+Contribute to Kubernetes Documentation
+
+
+Contributing to Kubernetes blogs
+
+
+Submitting articles to Kubernetes blogs
+
+
+Blog guidelines
+
+
+Blog article mirroring
+
+
+Post-release communications
+
+
+Helping as a blog writing buddy
+
+
+Suggesting content improvements
+
+
+Contributing new content
+
+
+Opening a pull request
+
+
+Previewing locally
+
+
+Documenting for a release
+
+
+Case studies
+
+
+Reviewing changes
+
+
+Reviewing pull requests
+
+
+For approvers and reviewers
+
+
+Localizing Kubernetes documentation
+
+
+Participating in SIG Docs
+
+
+Roles and responsibilities
+
+
+Issue Wranglers
+
+
+PR wranglers
+
+
+Documentation style overview
+
+
+Content guide
+
+
+Style guide
+
+
+Diagram guide
+
+
+Writing a new topic
+
+
+Page content types
+
+
+Content organization
+
+
+Custom Hugo Shortcodes
+
+
+Updating Reference Documentation
+
+
+Quickstart
+
+
+Contributing to the Upstream Kubernetes Code
+
+
+Generating Reference Documentation for the Kubernetes API
+
+
+Generating Reference Documentation for kubectl Commands
+
+
+Generating Reference Documentation for Metrics
+
+
+Generating Reference Pages for Kubernetes Components and Tools
+
+
+
+
+Advanced contributing
+
+
+Viewing Site Analytics
+
+
+Docs smoke test page
+ Create an issue
+
+
+ (auto-generated page)
+ Print entire section
+ResourceClaim
+ResourceClaimSpec
+ResourceClaimStatus
+ResourceClaimList
+Operations
+get
+ read the specified ResourceClaim
+get
+ read status of the specified ResourceClaim
+list
+ list or watch objects of kind ResourceClaim
+list
+ list or watch objects of kind ResourceClaim
+create
+ create a ResourceClaim
+update
+ replace the specified ResourceClaim
+update
+ replace status of the specified ResourceClaim
+patch
+ partially update the specified ResourceClaim
+patch
+ partially update status of the specified ResourceClaim
+delete
+ delete a ResourceClaim
+deletecollection
+ delete collection of ResourceClaim
+Kubernetes Documentation
+Reference
+Kubernetes API
+Workload Resources
+ResourceClaim
+ResourceClaim
+ResourceClaim describes a request for access to resources in the cluster, for use by workloads.
+apiVersion: resource.k8s.io/v1
+import "k8s.io/api/resource/v1"
+ResourceClaim
+ResourceClaim describes a request for access to resources in the cluster, for use by workloads. For example, if a workload needs an accelerator device with specific properties, this is how that request is expressed. The status stanza tracks whether this claim has been satisfied and what specific resources have been allocated.
+apiVersion
+: resource.k8s.io/v1
+kind
+: ResourceClaim
+metadata
+ (
+ObjectMeta
+)
+Standard object metadata
+spec
+ (
+ResourceClaimSpec
+), required
+Spec describes what is being requested and how to configure it. The spec is immutable.
+status
+ (
+ResourceClaimStatus
+)
+Status describes whether the claim is ready to use and what has been allocated.
+ResourceClaimSpec
+ResourceClaimSpec defines what is being requested in a ResourceClaim and how to configure it.
+devices
+ (DeviceClaim)
+Devices defines how to request devices.
+DeviceClaim defines how to request devices with a ResourceClaim.
+devices.config
+ ([]DeviceClaimConfiguration)
+Atomic: will be replaced during a merge
+This field holds configuration for multiple potential drivers which could satisfy requests in this claim. It is ignored while allocating the claim.
+DeviceClaimConfiguration is used for configuration parameters in DeviceClaim.
+devices.config.opaque
+ (OpaqueDeviceConfiguration)
+Opaque provides driver-specific configuration parameters.
+OpaqueDeviceConfiguration contains configuration parameters for a driver in a format defined by the driver vendor.
+devices.config.opaque.driver
+ (string), required
+Driver is used to determine which kubelet plugin needs to be passed these configuration parameters.
+An admission policy provided by the driver developer could use this to decide whether it needs to validate them.
+Must be a DNS subdomain and should end with a DNS domain owned by the vendor of the driver. It should use only lower case characters.
+devices.config.opaque.parameters
+ (RawExtension), required
+Parameters can contain arbitrary data. It is the responsibility of the driver developer to handle validation and versioning. Typically this includes self-identification and a version ("kind" + "apiVersion" for Kubernetes types), with conversion between different versions.
+The length of the raw data must be smaller or equal to 10 Ki.
+*RawExtension is used to hold extensions in external versions.
+To use this, make a field which has RawExtension as its type in your external, versioned struct, and Object in your internal struct. You also need to register your various plugin types.
+// Internal package:
+type MyAPIObject struct {
+	runtime.TypeMeta `json:",inline"`
+	MyPlugin runtime.Object `json:"myPlugin"`
+}
+
+type PluginA struct {
+	AOption string `json:"aOption"`
+}
+
+// External package:
+type MyAPIObject struct {
+	runtime.TypeMeta `json:",inline"`
+	MyPlugin runtime.RawExtension `json:"myPlugin"`
+}
+
+type PluginA struct {
+	AOption string `json:"aOption"`
+}
+
+// On the wire, the JSON will look something like this:
+{
+	"kind":"MyAPIObject",
+	"apiVersion":"v1",
+	"myPlugin": {
+		"kind":"PluginA",
+		"aOption":"foo",
+	},
+}
+
+So what happens? Decode first uses json or yaml to unmarshal the serialized data into your external MyAPIObject. That causes the raw JSON to be stored, but not unpacked. The next step is to copy (using pkg/conversion) into the internal struct. The runtime package's DefaultScheme has conversion functions installed which will unpack the JSON stored in RawExtension, turning it into the correct object type, and storing it in the Object. (TODO: In the case where the object is of an unknown type, a runtime.Unknown object will be created and stored.)*
+devices.config.requests
+ ([]string)
+Atomic: will be replaced during a merge
+Requests lists the names of requests where the configuration applies. If empty, it applies to all requests.
+References to subrequests must include the name of the main request and may include the subrequest using the format <main request>[/<subrequest>]. If just the main request is given, the configuration applies to all subrequests.
+devices.constraints
+ ([]DeviceConstraint)
+Atomic: will be replaced during a merge
+These constraints must be satisfied by the set of devices that get allocated for the claim.
+DeviceConstraint must have exactly one field set besides Requests.
+devices.constraints.distinctAttribute
+ (string)
+DistinctAttribute requires that all devices in question have this attribute and that its type and value are unique across those devices.
+When the DRAListTypeAttributes feature gate is enabled, comparison uses set semantics (i.e., element order and duplicates are ignored): list-valued attributes must be pairwise disjoint across devices. Scalar values are treated as singleton sets for backward compatibility.
+This acts as the inverse of MatchAttribute.
+This constraint is used to avoid allocating multiple requests to the same device by ensuring attribute-level differentiation.
+This is useful for scenarios where resource requests must be fulfilled by separate physical devices. For example, a container requests two network interfaces that must be allocated from two different physical NICs.
+devices.constraints.matchAttribute
+ (string)
+MatchAttribute requires that all devices in question have this attribute and that its type and value are the same across those devices.
+For example, if you specified "dra.example.com/numa" (a hypothetical example!), then only devices in the same NUMA node will be chosen. A device which does not have that attribute will not be chosen. All devices should use a value of the same type for this attribute because that is part of its specification, but if one device doesn't, then it also will not be chosen.
+When the DRAListTypeAttributes feature gate is enabled, comparison uses set semantics(i.e., element order and duplicates are ignored): list-valued attributes match when the intersection across all devices is non-empty. Scalar values are treated as single-element lists for backward compatibility.
+Must include the domain qualifier.
+devices.constraints.requests
+ ([]string)
+Atomic: will be replaced during a merge
+Requests is a list of the one or more requests in this claim which must co-satisfy this constraint. If a request is fulfilled by multiple devices, then all of the devices must satisfy the constraint. If this is not specified, this constraint applies to all requests in this claim.
+References to subrequests must include the name of the main request and may include the subrequest using the format <main request>[/<subrequest>]. If just the main request is given, the constraint applies to all subrequests.
+devices.requests
+ ([]DeviceRequest)
+Atomic: will be replaced during a merge
+Requests represent individual requests for distinct devices which must all be satisfied. If empty, nothing needs to be allocated.
+DeviceRequest is a request for devices required for a claim. This is typically a request for a single resource like a device, but can also ask for several identical devices. With FirstAvailable it is also possible to provide a prioritized list of requests.
+devices.requests.name
+ (string), required
+Name can be used to reference this request in a pod.spec.containers[].resources.claims entry and in a constraint of the claim.
+References using the name in the DeviceRequest will uniquely identify a request when the Exactly field is set. When the FirstAvailable field is set, a reference to the name of the DeviceRequest will match whatever subrequest is chosen by the scheduler.
+Must be a DNS label.
+devices.requests.exactly
+ (ExactDeviceRequest)
+Exactly specifies the details for a single request that must be met exactly for the request to be satisfied.
+One of Exactly or FirstAvailable must be set.
+ExactDeviceRequest is a request for one or more identical devices.
+devices.requests.exactly.deviceClassName
+ (string), required
+DeviceClassName references a specific DeviceClass, which can define additional configuration and selectors to be inherited by this request.
+A DeviceClassName is required.
+Administrators may use this to restrict which devices may get requested by only installing classes with selectors for permitted devices. If users are free to request anything without restrictions, then administrators can create an empty DeviceClass for users to reference.
+devices.requests.exactly.adminAccess
+ (boolean)
+AdminAccess indicates that this is a claim for administrative access to the device(s). Claims with AdminAccess are expected to be used for monitoring or other management services for a device. They ignore all ordinary claims to the device with respect to access modes and any resource allocations.
+Admin access is disabled if this field is unset or set to false, otherwise it is enabled.
+devices.requests.exactly.allocationMode
+ (string)
+AllocationMode and its related fields define how devices are allocated to satisfy this request. Supported values are:
+ExactCount: This request is for a specific number of devices.
+This is the default. The exact number is provided in the
+count field.
+All: This request is for all of the matching devices in a pool.
+At least one device must exist on the node for the allocation to succeed.
+Allocation will fail if some devices are already allocated,
+unless adminAccess is requested.
+If AllocationMode is not specified, the default mode is ExactCount. If the mode is ExactCount and count is not specified, the default count is one. Any other requests must specify this field.
+More modes may get added in the future. Clients must refuse to handle requests with unknown modes.
+devices.requests.exactly.capacity
+ (CapacityRequirements)
+Capacity define resource requirements against each capacity.
+If this field is unset and the device supports multiple allocations, the default value will be applied to each capacity according to requestPolicy. For the capacity that has no requestPolicy, default is the full capacity value.
+Applies to each device allocation. If Count > 1, the request fails if there aren't enough devices that meet the requirements. If AllocationMode is set to All, the request fails if there are devices that otherwise match the request, and have this capacity, with a value >= the requested amount, but which cannot be allocated to this request.
+CapacityRequirements defines the capacity requirements for a specific device request.
+devices.requests.exactly.capacity.requests
+ (map[string]
+Quantity
+)
+Requests represent individual device resource requests for distinct resources, all of which must be provided by the device.
+This value is used as an additional filtering condition against the available capacity on the device. This is semantically equivalent to a CEL selector with 
+device.capacity[\<domain>].\<name>.compareTo(quantity(\<request quantity>)) >= 0
+. For example, device.capacity['test-driver.cdi.k8s.io'].counters.compareTo(quantity('2')) >= 0.
+When a requestPolicy is defined, the requested amount is adjusted upward to the nearest valid value based on the policy. If the requested amount cannot be adjusted to a valid value—because it exceeds what the requestPolicy allows— the device is considered ineligible for allocation.
+For any capacity that is not explicitly requested: - If no requestPolicy is set, the default consumed capacity is equal to the full device capacity
+(i.e., the whole device is claimed).
+If a requestPolicy is set, the default consumed capacity is determined according to that policy.
+If the device allows multiple allocation, the aggregated amount across all requests must not exceed the capacity value. The consumed capacity, which may be adjusted based on the requestPolicy if defined, is recorded in the resource claim’s status.devices[*].consumedCapacity field.
+devices.requests.exactly.count
+ (int64)
+Count is used only when the count mode is "ExactCount". Must be greater than zero. If AllocationMode is ExactCount and this field is not specified, the default is one.
+devices.requests.exactly.selectors
+ ([]DeviceSelector)
+Atomic: will be replaced during a merge
+Selectors define criteria which must be satisfied by a specific device in order for that device to be considered for this request. All selectors must be satisfied for a device to be considered.
+DeviceSelector must have exactly one field set.
+devices.requests.exactly.selectors.cel
+ (CELDeviceSelector)
+CEL contains a CEL expression for selecting a device.
+CELDeviceSelector contains a CEL expression for selecting a device.
+devices.requests.exactly.selectors.cel.expression
+ (string), required
+Expression is a CEL expression which evaluates a single device. It must evaluate to true when the device under consideration satisfies the desired criteria, and false when it does not. Any other result is an error and causes allocation of devices to abort.
+The expression's input is an object named "device", which carries the following properties:
+driver (string): the name of the driver which defines this device.
+attributes (map[string]object): the device's attributes, grouped by prefix
+(e.g. device.attributes["dra.example.com"] evaluates to an object with all
+of the attributes which were prefixed by "dra.example.com".
+capacity (map[string]object): the device's capacities, grouped by prefix.
+allowMultipleAllocations (bool): the allowMultipleAllocations property of the device
+(v1.34+ with the DRAConsumableCapacity feature enabled).
+Example: Consider a device with driver="dra.example.com", which exposes two attributes named "model" and "ext.example.com/family" and which exposes one capacity named "modules". This input to this expression would have the following fields:
+device.driver
+device.attributes["dra.example.com"].model
+device.attributes["ext.example.com"].family
+device.capacity["dra.example.com"].modules
+
+The device.driver field can be used to check for a specific driver, either as a high-level precondition (i.e. you only want to consider devices from this driver) or as part of a multi-clause expression that is meant to consider devices from different drivers.
+The value type of each attribute is defined by the device definition, and users who write these expressions must consult the documentation for their specific drivers. The value type of each capacity is Quantity.
+If an unknown prefix is used as a lookup in either device.attributes or device.capacity, an empty map will be returned. Any reference to an unknown field will cause an evaluation error and allocation to abort.
+A robust expression should check for the existence of attributes before referencing them.
+For ease of use, the cel.bind() function is enabled, and can be used to simplify expressions that access multiple attributes with the same domain. For example:
+cel.bind(dra, device.attributes["dra.example.com"], dra.someBool && dra.anotherBool)
+
+When the DRAListTypeAttributes feature gate is enabled, the includes() helper is available and it can work for both scalar and list-type attributes. It was introduced to support smooth migration from scalar attributes to list-type attributes while keeping CEL expressions simple. For example:
+device.attributes["dra.example.com"].models.includes("some-model")
+
+The length of the expression must be smaller or equal to 10 Ki. The cost of evaluating it is also limited based on the estimated number of logical steps.
+devices.requests.exactly.tolerations
+ ([]DeviceToleration)
+Atomic: will be replaced during a merge
+If specified, the request's tolerations.
+Tolerations for NoSchedule are required to allocate a device which has a taint with that effect. The same applies to NoExecute.
+In addition, should any of the allocated devices get tainted with NoExecute after allocation and that effect is not tolerated, then all pods consuming the ResourceClaim get deleted to evict them. The scheduler will not let new pods reserve the claim while it has these tainted devices. Once all pods are evicted, the claim will get deallocated.
+The maximum number of tolerations is 16.
+This is a beta field and requires enabling the DRADeviceTaints feature gate.
+The ResourceClaim this DeviceToleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator 
+.
+devices.requests.exactly.tolerations.effect
+ (string)
+Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule and NoExecute.
+devices.requests.exactly.tolerations.key
+ (string)
+Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys. Must be a label name.
+devices.requests.exactly.tolerations.operator
+ (string)
+Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a ResourceClaim can tolerate all taints of a particular category.
+devices.requests.exactly.tolerations.tolerationSeconds
+ (int64)
+TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system. If larger than zero, the time when the pod needs to be evicted is calculated as <time when taint was adedd> + <toleration seconds>.
+devices.requests.exactly.tolerations.value
+ (string)
+Value is the taint value the toleration matches to. If the operator is Exists, the value must be empty, otherwise just a regular string. Must be a label value.
+devices.requests.firstAvailable
+ ([]DeviceSubRequest)
+Atomic: will be replaced during a merge
+FirstAvailable contains subrequests, of which exactly one will be selected by the scheduler. It tries to satisfy them in the order in which they are listed here. So if there are two entries in the list, the scheduler will only check the second one if it determines that the first one can not be used.
+DRA does not yet implement scoring, so the scheduler will select the first set of devices that satisfies all the requests in the claim. And if the requirements can be satisfied on more than one node, other scheduling features will determine which node is chosen. This means that the set of devices allocated to a claim might not be the optimal set available to the cluster. Scoring will be implemented later.
+*DeviceSubRequest describes a request for device provided in the claim.spec.devices.requests[].firstAvailable array. Each is typically a request for a single resource like a device, but can also ask for several identical devices.
+DeviceSubRequest is similar to ExactDeviceRequest, but doesn't expose the AdminAccess field as that one is only supported when requesting a specific device.*
+devices.requests.firstAvailable.deviceClassName
+ (string), required
+DeviceClassName references a specific DeviceClass, which can define additional configuration and selectors to be inherited by this subrequest.
+A class is required. Which classes are available depends on the cluster.
+Administrators may use this to restrict which devices may get requested by only installing classes with selectors for permitted devices. If users are free to request anything without restrictions, then administrators can create an empty DeviceClass for users to reference.
+devices.requests.firstAvailable.name
+ (string), required
+Name can be used to reference this subrequest in the list of constraints or the list of configurations for the claim. References must use the format <main request>/<subrequest>.
+Must be a DNS label.
+devices.requests.firstAvailable.allocationMode
+ (string)
+AllocationMode and its related fields define how devices are allocated to satisfy this subrequest. Supported values are:
+ExactCount: This request is for a specific number of devices.
+This is the default. The exact number is provided in the
+count field.
+All: This subrequest is for all of the matching devices in a pool.
+Allocation will fail if some devices are already allocated,
+unless adminAccess is requested.
+If AllocationMode is not specified, the default mode is ExactCount. If the mode is ExactCount and count is not specified, the default count is one. Any other subrequests must specify this field.
+More modes may get added in the future. Clients must refuse to handle requests with unknown modes.
+devices.requests.firstAvailable.capacity
+ (CapacityRequirements)
+Capacity define resource requirements against each capacity.
+If this field is unset and the device supports multiple allocations, the default value will be applied to each capacity according to requestPolicy. For the capacity that has no requestPolicy, default is the full capacity value.
+Applies to each device allocation. If Count > 1, the request fails if there aren't enough devices that meet the requirements. If AllocationMode is set to All, the request fails if there are devices that otherwise match the request, and have this capacity, with a value >= the requested amount, but which cannot be allocated to this request.
+CapacityRequirements defines the capacity requirements for a specific device request.
+devices.requests.firstAvailable.capacity.requests
+ (map[string]
+Quantity
+)
+Requests represent individual device resource requests for distinct resources, all of which must be provided by the device.
+This value is used as an additional filtering condition against the available capacity on the device. This is semantically equivalent to a CEL selector with 
+device.capacity[\<domain>].\<name>.compareTo(quantity(\<request quantity>)) >= 0
+. For example, device.capacity['test-driver.cdi.k8s.io'].counters.compareTo(quantity('2')) >= 0.
+When a requestPolicy is defined, the requested amount is adjusted upward to the nearest valid value based on the policy. If the requested amount cannot be adjusted to a valid value—because it exceeds what the requestPolicy allows— the device is considered ineligible for allocation.
+For any capacity that is not explicitly requested: - If no requestPolicy is set, the default consumed capacity is equal to the full device capacity
+(i.e., the whole device is claimed).
+If a requestPolicy is set, the default consumed capacity is determined according to that policy.
+If the device allows multiple allocation, the aggregated amount across all requests must not exceed the capacity value. The consumed capacity, which may be adjusted based on the requestPolicy if defined, is recorded in the resource claim’s status.devices[*].consumedCapacity field.
+devices.requests.firstAvailable.count
+ (int64)
+Count is used only when the count mode is "ExactCount". Must be greater than zero. If AllocationMode is ExactCount and this field is not specified, the default is one.
+devices.requests.firstAvailable.selectors
+ ([]DeviceSelector)
+Atomic: will be replaced during a merge
+Selectors define criteria which must be satisfied by a specific device in order for that device to be considered for this subrequest. All selectors must be satisfied for a device to be considered.
+DeviceSelector must have exactly one field set.
+devices.requests.firstAvailable.selectors.cel
+ (CELDeviceSelector)
+CEL contains a CEL expression for selecting a device.
+CELDeviceSelector contains a CEL expression for selecting a device.
+devices.requests.firstAvailable.selectors.cel.expression
+ (string), required
+Expression is a CEL expression which evaluates a single device. It must evaluate to true when the device under consideration satisfies the desired criteria, and false when it does not. Any other result is an error and causes allocation of devices to abort.
+The expression's input is an object named "device", which carries the following properties:
+driver (string): the name of the driver which defines this device.
+attributes (map[string]object): the device's attributes, grouped by prefix
+(e.g. device.attributes["dra.example.com"] evaluates to an object with all
+of the attributes which were prefixed by "dra.example.com".
+capacity (map[string]object): the device's capacities, grouped by prefix.
+allowMultipleAllocations (bool): the allowMultipleAllocations property of the device
+(v1.34+ with the DRAConsumableCapacity feature enabled).
+Example: Consider a device with driver="dra.example.com", which exposes two attributes named "model" and "ext.example.com/family" and which exposes one capacity named "modules". This input to this expression would have the following fields:
+device.driver
+device.attributes["dra.example.com"].model
+device.attributes["ext.example.com"].family
+device.capacity["dra.example.com"].modules
+
+The device.driver field can be used to check for a specific driver, either as a high-level precondition (i.e. you only want to consider devices from this driver) or as part of a multi-clause expression that is meant to consider devices from different drivers.
+The value type of each attribute is defined by the device definition, and users who write these expressions must consult the documentation for their specific drivers. The value type of each capacity is Quantity.
+If an unknown prefix is used as a lookup in either device.attributes or device.capacity, an empty map will be returned. Any reference to an unknown field will cause an evaluation error and allocation to abort.
+A robust expression should check for the existence of attributes before referencing them.
+For ease of use, the cel.bind() function is enabled, and can be used to simplify expressions that access multiple attributes with the same domain. For example:
+cel.bind(dra, device.attributes["dra.example.com"], dra.someBool && dra.anotherBool)
+
+When the DRAListTypeAttributes feature gate is enabled, the includes() helper is available and it can work for both scalar and list-type attributes. It was introduced to support smooth migration from scalar attributes to list-type attributes while keeping CEL expressions simple. For example:
+device.attributes["dra.example.com"].models.includes("some-model")
+
+The length of the expression must be smaller or equal to 10 Ki. The cost of evaluating it is also limited based on the estimated number of logical steps.
+devices.requests.firstAvailable.tolerations
+ ([]DeviceToleration)
+Atomic: will be replaced during a merge
+If specified, the request's tolerations.
+Tolerations for NoSchedule are required to allocate a device which has a taint with that effect. The same applies to NoExecute.
+In addition, should any of the allocated devices get tainted with NoExecute after allocation and that effect is not tolerated, then all pods consuming the ResourceClaim get deleted to evict them. The scheduler will not let new pods reserve the claim while it has these tainted devices. Once all pods are evicted, the claim will get deallocated.
+The maximum number of tolerations is 16.
+This is a beta field and requires enabling the DRADeviceTaints feature gate.
+The ResourceClaim this DeviceToleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator 
+.
+devices.requests.firstAvailable.tolerations.effect
+ (string)
+Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule and NoExecute.
+devices.requests.firstAvailable.tolerations.key
+ (string)
+Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys. Must be a label name.
+devices.requests.firstAvailable.tolerations.operator
+ (string)
+Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a ResourceClaim can tolerate all taints of a particular category.
+devices.requests.firstAvailable.tolerations.tolerationSeconds
+ (int64)
+TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system. If larger than zero, the time when the pod needs to be evicted is calculated as <time when taint was adedd> + <toleration seconds>.
+devices.requests.firstAvailable.tolerations.value
+ (string)
+Value is the taint value the toleration matches to. If the operator is Exists, the value must be empty, otherwise just a regular string. Must be a label value.
+ResourceClaimStatus
+ResourceClaimStatus tracks whether the resource has been allocated and what the result of that was.
+allocation
+ (AllocationResult)
+Allocation is set once the claim has been allocated successfully.
+AllocationResult contains attributes of an allocated resource.
+allocation.allocationTimestamp
+ (Time)
+AllocationTimestamp stores the time when the resources were allocated. This field is not guaranteed to be set, in which case that time is unknown.
+This is a beta field and requires enabling the DRADeviceBindingConditions and DRAResourceClaimDeviceStatus feature gate.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+allocation.devices
+ (DeviceAllocationResult)
+Devices is the result of allocating devices.
+DeviceAllocationResult is the result of allocating devices.
+allocation.devices.config
+ ([]DeviceAllocationConfiguration)
+Atomic: will be replaced during a merge
+This field is a combination of all the claim and class configuration parameters. Drivers can distinguish between those based on a flag.
+This includes configuration parameters for drivers which have no allocated devices in the result because it is up to the drivers which configuration parameters they support. They can silently ignore unknown configuration parameters.
+DeviceAllocationConfiguration gets embedded in an AllocationResult.
+allocation.devices.config.source
+ (string), required
+Source records whether the configuration comes from a class and thus is not something that a normal user would have been able to set or from a claim.
+allocation.devices.config.opaque
+ (OpaqueDeviceConfiguration)
+Opaque provides driver-specific configuration parameters.
+OpaqueDeviceConfiguration contains configuration parameters for a driver in a format defined by the driver vendor.
+allocation.devices.config.opaque.driver
+ (string), required
+Driver is used to determine which kubelet plugin needs to be passed these configuration parameters.
+An admission policy provided by the driver developer could use this to decide whether it needs to validate them.
+Must be a DNS subdomain and should end with a DNS domain owned by the vendor of the driver. It should use only lower case characters.
+allocation.devices.config.opaque.parameters
+ (RawExtension), required
+Parameters can contain arbitrary data. It is the responsibility of the driver developer to handle validation and versioning. Typically this includes self-identification and a version ("kind" + "apiVersion" for Kubernetes types), with conversion between different versions.
+The length of the raw data must be smaller or equal to 10 Ki.
+*RawExtension is used to hold extensions in external versions.
+To use this, make a field which has RawExtension as its type in your external, versioned struct, and Object in your internal struct. You also need to register your various plugin types.
+// Internal package:
+type MyAPIObject struct {
+runtime.TypeMeta 
+json:",inline"
+
+MyPlugin runtime.Object 
+json:"myPlugin"
+
+}
+type PluginA struct {
+AOption string 
+json:"aOption"
+
+}
+// External package:
+type MyAPIObject struct {
+runtime.TypeMeta 
+json:",inline"
+
+MyPlugin runtime.RawExtension 
+json:"myPlugin"
+
+}
+type PluginA struct {
+AOption string 
+json:"aOption"
+
+}
+// On the wire, the JSON will look something like this:
+{
+"kind":"MyAPIObject",
+"apiVersion":"v1",
+"myPlugin": {
+"kind":"PluginA",
+"aOption":"foo",
+},
+}
+So what happens? Decode first uses json or yaml to unmarshal the serialized data into your external MyAPIObject. That causes the raw JSON to be stored, but not unpacked. The next step is to copy (using pkg/conversion) into the internal struct. The runtime package's DefaultScheme has conversion functions installed which will unpack the JSON stored in RawExtension, turning it into the correct object type, and storing it in the Object. (TODO: In the case where the object is of an unknown type, a runtime.Unknown object will be created and stored.)*
+allocation.devices.config.requests
+ ([]string)
+Atomic: will be replaced during a merge
+Requests lists the names of requests where the configuration applies. If empty, its applies to all requests.
+References to subrequests must include the name of the main request and may include the subrequest using the format <main request>[/<subrequest>]. If just the main request is given, the configuration applies to all subrequests.
+allocation.devices.results
+ ([]DeviceRequestAllocationResult)
+Atomic: will be replaced during a merge
+Results lists all allocated devices.
+DeviceRequestAllocationResult contains the allocation result for one request.
+allocation.devices.results.device
+ (string), required
+Device references one device instance via its name in the driver's resource pool. It must be a DNS label.
+allocation.devices.results.driver
+ (string), required
+Driver specifies the name of the DRA driver whose kubelet plugin should be invoked to process the allocation once the claim is needed on a node.
+Must be a DNS subdomain and should end with a DNS domain owned by the vendor of the driver. It should use only lower case characters.
+allocation.devices.results.pool
+ (string), required
+This name together with the driver name and the device name field identify which device was allocated (
+\<driver name>/\<pool name>/\<device name>
+).
+Must not be longer than 253 characters and may contain one or more DNS sub-domains separated by slashes.
+allocation.devices.results.request
+ (string), required
+Request is the name of the request in the claim which caused this device to be allocated. If it references a subrequest in the firstAvailable list on a DeviceRequest, this field must include both the name of the main request and the subrequest using the format <main request>/<subrequest>.
+Multiple devices may have been allocated per request.
+allocation.devices.results.adminAccess
+ (boolean)
+AdminAccess indicates that this device was allocated for administrative access. See the corresponding request field for a definition of mode.
+Admin access is disabled if this field is unset or set to false, otherwise it is enabled.
+allocation.devices.results.bindingConditions
+ ([]string)
+Atomic: will be replaced during a merge
+BindingConditions contains a copy of the BindingConditions from the corresponding ResourceSlice at the time of allocation.
+This is a beta field and requires enabling the DRADeviceBindingConditions and DRAResourceClaimDeviceStatus feature gates.
+allocation.devices.results.bindingFailureConditions
+ ([]string)
+Atomic: will be replaced during a merge
+BindingFailureConditions contains a copy of the BindingFailureConditions from the corresponding ResourceSlice at the time of allocation.
+This is a beta field and requires enabling the DRADeviceBindingConditions and DRAResourceClaimDeviceStatus feature gates.
+allocation.devices.results.consumedCapacity
+ (map[string]
+Quantity
+)
+ConsumedCapacity tracks the amount of capacity consumed per device as part of the claim request. The consumed amount may differ from the requested amount: it is rounded up to the nearest valid value based on the device’s requestPolicy if applicable (i.e., may not be less than the requested amount).
+The total consumed capacity for each device must not exceed the DeviceCapacity's Value.
+This field is populated only for devices that allow multiple allocations. All capacity entries are included, even if the consumed amount is zero.
+allocation.devices.results.shareID
+ (string)
+ShareID uniquely identifies an individual allocation share of the device, used when the device supports multiple simultaneous allocations. It serves as an additional map key to differentiate concurrent shares of the same device.
+allocation.devices.results.tolerations
+ ([]DeviceToleration)
+Atomic: will be replaced during a merge
+A copy of all tolerations specified in the request at the time when the device got allocated.
+The maximum number of tolerations is 16.
+This is a beta field and requires enabling the DRADeviceTaints feature gate.
+The ResourceClaim this DeviceToleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator 
+.
+allocation.devices.results.tolerations.effect
+ (string)
+Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule and NoExecute.
+allocation.devices.results.tolerations.key
+ (string)
+Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys. Must be a label name.
+allocation.devices.results.tolerations.operator
+ (string)
+Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a ResourceClaim can tolerate all taints of a particular category.
+allocation.devices.results.tolerations.tolerationSeconds
+ (int64)
+TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system. If larger than zero, the time when the pod needs to be evicted is calculated as <time when taint was adedd> + <toleration seconds>.
+allocation.devices.results.tolerations.value
+ (string)
+Value is the taint value the toleration matches to. If the operator is Exists, the value must be empty, otherwise just a regular string. Must be a label value.
+allocation.nodeSelector
+ (NodeSelector)
+NodeSelector defines where the allocated resources are available. If unset, they are available everywhere.
+A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.
+allocation.nodeSelector.nodeSelectorTerms
+ ([]NodeSelectorTerm), required
+Atomic: will be replaced during a merge
+Required. A list of node selector terms. The terms are ORed.
+A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+allocation.nodeSelector.nodeSelectorTerms.matchExpressions
+ ([]
+NodeSelectorRequirement
+)
+Atomic: will be replaced during a merge
+A list of node selector requirements by node's labels.
+allocation.nodeSelector.nodeSelectorTerms.matchFields
+ ([]
+NodeSelectorRequirement
+)
+Atomic: will be replaced during a merge
+A list of node selector requirements by node's fields.
+devices
+ ([]AllocatedDeviceStatus)
+Map: unique values on keys 
+driver, device, pool, shareID
+ will be kept during a merge
+Devices contains the status of each device allocated for this claim, as reported by the driver. This can include driver-specific information. Entries are owned by their respective drivers.
+*AllocatedDeviceStatus contains the status of an allocated device, if the driver chooses to report it. This may include driver-specific information.
+The combination of Driver, Pool, Device, and ShareID must match the corresponding key in Status.Allocation.Devices.*
+devices.device
+ (string), required
+Device references one device instance via its name in the driver's resource pool. It must be a DNS label.
+devices.driver
+ (string), required
+Driver specifies the name of the DRA driver whose kubelet plugin should be invoked to process the allocation once the claim is needed on a node.
+Must be a DNS subdomain and should end with a DNS domain owned by the vendor of the driver. It should use only lower case characters.
+devices.pool
+ (string), required
+This name together with the driver name and the device name field identify which device was allocated (
+\<driver name>/\<pool name>/\<device name>
+).
+Must not be longer than 253 characters and may contain one or more DNS sub-domains separated by slashes.
+devices.conditions
+ ([]Condition)
+Map: unique values on key type will be kept during a merge
+Conditions contains the latest observation of the device's state. If the device has been configured according to the class and claim config references, the 
+Ready
+ condition should be True.
+Must not contain more than 8 entries.
+Condition contains details for one aspect of the current state of this API Resource.
+devices.conditions.lastTransitionTime
+ (Time), required
+lastTransitionTime is the last time the condition transitioned from one status to another. This should be when the underlying condition changed. If that is not known, then using the time when the API field changed is acceptable.
+Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.
+devices.conditions.message
+ (string), required
+message is a human readable message indicating details about the transition. This may be an empty string.
+devices.conditions.reason
+ (string), required
+reason contains a programmatic identifier indicating the reason for the condition's last transition. Producers of specific condition types may define expected values and meanings for this field, and whether the values are considered a guaranteed API. The value should be a CamelCase string. This field may not be empty.
+devices.conditions.status
+ (string), required
+status of the condition, one of True, False, Unknown.
+devices.conditions.type
+ (string), required
+type of condition in CamelCase or in foo.example.com/CamelCase.
+devices.conditions.observedGeneration
+ (int64)
+observedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.
+devices.data
+ (RawExtension)
+Data contains arbitrary driver-specific data.
+The length of the raw data must be smaller or equal to 10 Ki.
+*RawExtension is used to hold extensions in external versions.
+To use this, make a field which has RawExtension as its type in your external, versioned struct, and Object in your internal struct. You also need to register your various plugin types.
+// Internal package:
+type MyAPIObject struct {
+	runtime.TypeMeta `json:",inline"`
+	MyPlugin runtime.Object `json:"myPlugin"`
+}
+
+type PluginA struct {
+	AOption string `json:"aOption"`
+}
+
+// External package:
+type MyAPIObject struct {
+	runtime.TypeMeta `json:",inline"`
+	MyPlugin runtime.RawExtension `json:"myPlugin"`
+}
+
+type PluginA struct {
+	AOption string `json:"aOption"`
+}
+
+// On the wire, the JSON will look something like this:
+{
+	"kind":"MyAPIObject",
+	"apiVersion":"v1",
+	"myPlugin": {
+		"kind":"PluginA",
+		"aOption":"foo",
+	},
+}
+
+So what happens? Decode first uses json or yaml to unmarshal the serialized data into your external MyAPIObject. That causes the raw JSON to be stored, but not unpacked. The next step is to copy (using pkg/conversion) into the internal struct. The runtime package's DefaultScheme has conversion functions installed which will unpack the JSON stored in RawExtension, turning it into the correct object type, and storing it in the Object. (TODO: In the case where the object is of an unknown type, a runtime.Unknown object will be created and stored.)*
+devices.networkData
+ (NetworkDeviceData)
+NetworkData contains network-related information specific to the device.
+NetworkDeviceData provides network-related details for the allocated device. This information may be filled by drivers or other components to configure or identify the device within a network context.
+devices.networkData.hardwareAddress
+ (string)
+HardwareAddress represents the hardware address (e.g. MAC Address) of the device's network interface.
+Must not be longer than 128 bytes.
+devices.networkData.interfaceName
+ (string)
+InterfaceName specifies the name of the network interface associated with the allocated device. This might be the name of a physical or virtual network interface being configured in the pod.
+Must not be longer than 256 bytes.
+devices.networkData.ips
+ ([]string)
+Atomic: will be replaced during a merge
+IPs lists the network addresses assigned to the device's network interface. This can include both IPv4 and IPv6 addresses. The IPs are in the CIDR notation, which includes both the address and the associated subnet mask. e.g.: "192.0.2.5/24" for IPv4 and "2001:db8::5/64" for IPv6.
+devices.shareID
+ (string)
+ShareID uniquely identifies an individual allocation share of the device.
+reservedFor
+ ([]ResourceClaimConsumerReference)
+Patch strategy: merge on key 
+uid
+Map: unique values on key uid will be kept during a merge
+ReservedFor indicates which entities are currently allowed to use the claim. A Pod which references a ResourceClaim which is not reserved for that Pod will not be started. A claim that is in use or might be in use because it has been reserved must not get deallocated.
+In a cluster with multiple scheduler instances, two pods might get scheduled concurrently by different schedulers. When they reference the same ResourceClaim which already has reached its maximum number of consumers, only one pod can be scheduled.
+Both schedulers try to add their pod to the claim.status.reservedFor field, but only the update that reaches the API server first gets stored. The other one fails with an error and the scheduler which issued it knows that it must put the pod back into the queue, waiting for the ResourceClaim to become usable again.
+There can be at most 256 such reservations. This may get increased in the future, but not reduced.
+ResourceClaimConsumerReference contains enough information to let you locate the consumer of a ResourceClaim. The user must be a resource in the same namespace as the ResourceClaim.
+reservedFor.name
+ (string), required
+Name is the name of resource being referenced.
+reservedFor.resource
+ (string), required
+Resource is the type of resource being referenced, for example "pods".
+reservedFor.uid
+ (string), required
+UID identifies exactly one incarnation of the resource.
+reservedFor.apiGroup
+ (string)
+APIGroup is the group for the resource being referenced. It is empty for the core API. This matches the group in the APIVersion that is used when creating the resources.
+ResourceClaimList
+ResourceClaimList is a collection of claims.
+apiVersion
+: resource.k8s.io/v1
+kind
+: ResourceClaimList
+metadata
+ (
+ListMeta
+)
+Standard list metadata
+items
+ ([]
+ResourceClaim
+), required
+Items is the list of resource claims.
+Operations
+get
+ read the specified ResourceClaim
+HTTP Request
+GET /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+401: Unauthorized
+get
+ read status of the specified ResourceClaim
+HTTP Request
+GET /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+401: Unauthorized
+list
+ list or watch objects of kind ResourceClaim
+HTTP Request
+GET /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+allowWatchBookmarks
+ (
+in query
+): boolean
+allowWatchBookmarks
+continue
+ (
+in query
+): string
+continue
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+watch
+ (
+in query
+): boolean
+watch
+Response
+200 (
+ResourceClaimList
+): OK
+401: Unauthorized
+list
+ list or watch objects of kind ResourceClaim
+HTTP Request
+GET /apis/resource.k8s.io/v1/resourceclaims
+Parameters
+allowWatchBookmarks
+ (
+in query
+): boolean
+allowWatchBookmarks
+continue
+ (
+in query
+): string
+continue
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+watch
+ (
+in query
+): boolean
+watch
+Response
+200 (
+ResourceClaimList
+): OK
+401: Unauthorized
+create
+ create a ResourceClaim
+HTTP Request
+POST /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+ResourceClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+201 (
+ResourceClaim
+): Created
+202 (
+ResourceClaim
+): Accepted
+401: Unauthorized
+update
+ replace the specified ResourceClaim
+HTTP Request
+PUT /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+ResourceClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+201 (
+ResourceClaim
+): Created
+401: Unauthorized
+update
+ replace status of the specified ResourceClaim
+HTTP Request
+PUT /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+ResourceClaim
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+201 (
+ResourceClaim
+): Created
+401: Unauthorized
+patch
+ partially update the specified ResourceClaim
+HTTP Request
+PATCH /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+201 (
+ResourceClaim
+): Created
+401: Unauthorized
+patch
+ partially update status of the specified ResourceClaim
+HTTP Request
+PATCH /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}/status
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+Patch
+, required
+dryRun
+ (
+in query
+): string
+dryRun
+fieldManager
+ (
+in query
+): string
+fieldManager
+fieldValidation
+ (
+in query
+): string
+fieldValidation
+force
+ (
+in query
+): boolean
+force
+pretty
+ (
+in query
+): string
+pretty
+Response
+200 (
+ResourceClaim
+): OK
+201 (
+ResourceClaim
+): Created
+401: Unauthorized
+delete
+ delete a ResourceClaim
+HTTP Request
+DELETE /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims/{name}
+Parameters
+name
+ (
+in path
+): string, required
+name of the ResourceClaim
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+DeleteOptions
+dryRun
+ (
+in query
+): string
+dryRun
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+Response
+200 (
+ResourceClaim
+): OK
+202 (
+ResourceClaim
+): Accepted
+401: Unauthorized
+deletecollection
+ delete collection of ResourceClaim
+HTTP Request
+DELETE /apis/resource.k8s.io/v1/namespaces/{namespace}/resourceclaims
+Parameters
+namespace
+ (
+in path
+): string, required
+namespace
+body
+: 
+DeleteOptions
+continue
+ (
+in query
+): string
+continue
+dryRun
+ (
+in query
+): string
+dryRun
+fieldSelector
+ (
+in query
+): string
+fieldSelector
+gracePeriodSeconds
+ (
+in query
+): integer
+gracePeriodSeconds
+ignoreStoreReadErrorWithClusterBreakingPotential
+ (
+in query
+): boolean
+ignoreStoreReadErrorWithClusterBreakingPotential
+labelSelector
+ (
+in query
+): string
+labelSelector
+limit
+ (
+in query
+): integer
+limit
+pretty
+ (
+in query
+): string
+pretty
+propagationPolicy
+ (
+in query
+): string
+propagationPolicy
+resourceVersion
+ (
+in query
+): string
+resourceVersion
+resourceVersionMatch
+ (
+in query
+): string
+resourceVersionMatch
+sendInitialEvents
+ (
+in query
+): boolean
+sendInitialEvents
+shardSelector
+ (
+in query
+): string
+shardSelector
+timeoutSeconds
+ (
+in query
+): integer
+timeoutSeconds
+Response
+200 (
+Status
+): OK
+401: Unauthorized
+Feedback
+Was this page helpful?
+Yes
+
+
+No
+Thanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on
+
+Stack Overflow
+.
+Open an issue in the 
+GitHub Repository
+ if you want to
+
+report a problem
+
+or
+
+suggest an improvement
+.
+Last modified April 24, 2026 at 2:17 PM PST: 
+Update API resource reference for v1.36.0 (#55505) (d405670c62)
+This page is automatically generated.
+If you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project.
+© 2026 The Kubernetes Authors | Documentation Distributed under 
+CC BY 4.0
+© 2026 The Linux Foundation ®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our 
+Trademark Usage page
+ICP license: 京ICP备17074266号-3
